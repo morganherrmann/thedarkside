@@ -37,7 +37,8 @@ void main()
    if (fs_Pos.y < 0.5f){
      colorA = vec3(0.89, 0.196, 0.518);
      colorB = vec3(0.169, 0.729, 0.937);
-     out_Col = vec4(mix(colorA, colorB, t), 01.f);
+     vec3 black = vec3(0.0, 0.0, 0.0);
+     out_Col = vec4(mix(colorA, black, t), 01.f);
    }else if (fs_Pos.y < .54f){
      colorA = vec3(0.89, 0.196, 0.518);
      colorB = vec3(0.169, 0.729, 0.937);

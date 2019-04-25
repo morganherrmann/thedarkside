@@ -1,52 +1,50 @@
 #version 300 es
 precision highp float;
 
+uniform vec2 u_PlanePos; // Our location in the virtual world displayed by the plane
 
-uniform vec2 u_Dimensions;
-uniform float u_Time;
+in vec3 fs_Pos;
+in vec4 fs_Nor;
+in vec4 fs_Col;
 
-in vec2 fs_Pos;
-out vec4 out_Col;
 
-float noise(vec2 p) {
-	return fract(sin(dot(p.xy ,vec2(12.9898,78.233))) * 456367.5453);
+
+
+in float fs_Sine;
+
+out vec4 out_Col; // This is the final output color that you will see on your
+                  // screen for the pixel that is currently being processed.
+
+                  float random1( vec2 p , vec2 seed) {
+                    return fract(sin(dot(p + seed, vec2(127.1, 311.7))) * 43758.5453);
+                  }
+
+//WORLD IS SPLIT INTO 3 REGIONS. DR SEUSS, BEACH, DESERT MOUNTAINS
+
+void main()
+{
+
+
+    vec3 colorA;
+    vec3 colorB;
+
+
+
+     //-----DR SEUSS ------
+   float t = clamp(smoothstep(10.0, 20.0, length(fs_Pos / 2.f)), 0.0, 1.0); // Distance fog
+   out_Col = vec4(mix(vec3(0.5 * (fs_Sine + 1.0)), vec3(164.0 / 255.0, 233.0 / 255.0, 1.0), t), 1.0);
+
+
+	 colorA = vec3(0.169, 0.729, 0.937);
+ colorB = vec3(0.698,0.227, 0.827);
+ out_Col = vec4(mix(colorA, colorB, fs_Sine / 5.f), 1.f);
+
+ if (fs_Sine < 0.5f){
+	 colorA = vec3(0.169, 0.729, 0.937);
+	 colorB = vec3(123.f/255.f, 221.f/255.f, 228.f/255.f);
+	 out_Col = vec4(mix(colorA, colorB, fs_Sine), 1.f);
+
 }
-
-//SOURCE INSPIRATION http://glslsandbox.com/e#22429.6
-
-
-void main() {
-  //out_Col = vec4(0.2, 0.9, fs_Pos.y * 4.0, 0.5);
-  vec2 uv = (fs_Pos);
-  float intensity = 0.8;
-
-    //Create the stacked layers
-
-    //so what this is doing is creating offset layers
-    //and the height of each section follows a cosin curve
-    //ok sweet
-	for (float inc = 1.0; inc < 25.0; inc++) {
-
-		float fi = inc;
-
-		float s = floor(5.0*(uv.x)/fi + 50.0*fi + u_Time / 1000.0);
-
-        float yLimit = noise(vec2(s));
-        yLimit *= fi/95.0;
-        yLimit -= 0.04*fi;
-        yLimit += 0.125 * cos(uv.x*5.0 + u_Time / 1000.0 + fi/9.0);
-       	yLimit += 0.8;
-
-		if (uv.y < yLimit) {
-			intensity = inc/10.0;
-		}
-	}
-
-  float col1 = mix(intensity * uv.x * 0.8 + 0.2, 0.0, 01.1);
-
-	//Set the final color
-	out_Col = vec4(vec3(col1, intensity*uv.y * 0.9 + 0.5, 0.9), 1.0 );
-
 
 
 

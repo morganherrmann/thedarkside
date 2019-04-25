@@ -93,7 +93,7 @@ function loadScene() {
 
 
 
-  plane = new Plane(vec3.fromValues(0,0,0), vec2.fromValues(1000,1000), 20);
+  plane = new Plane(vec3.fromValues(0,0,0), vec2.fromValues(2000,2000), 20);
   plane.create();
   planePos = vec2.fromValues(0,120);
 
@@ -320,11 +320,11 @@ function main() {
 
   //elapsed = new Date().valueOf() - start.valueOf();
 
-  const camera = new Camera(vec3.fromValues(0, 20, 5), vec3.fromValues(0, 0, -20));
+  const camera = new Camera(vec3.fromValues(0, 5, 5), vec3.fromValues(0, 0, -20));
 
   const renderer = new OpenGLRenderer(canvas);
   //THISSSSSSSSSSSSSS
-  //renderer.setClearColor(0.3, 0.81, 0.92, 1);
+  renderer.setClearColor(0.0, 0.0, 0.0, 1);
   gl.enable(gl.DEPTH_TEST);
 
   const lambert = new ShaderProgram([
@@ -585,104 +585,113 @@ const dark25 = new ShaderProgram([
 
     elapsed = new Date().valueOf() - start.valueOf();
     if (elapsed <= 2000){
-    renderer.render(camera, dark1, [screenQuad]);
+    renderer.render(camera, dark1, elapsed, [screenQuad]);
   }
-  if (elapsed > 2000 && elapsed <= 11000){
-  renderer.render(camera, dark2, [screenQuad]);
+  if (elapsed > 2000 && elapsed <= 11500){
+  renderer.render(camera, dark2,elapsed, [screenQuad]);
 }
-if (elapsed > 11000 && elapsed <= 21500){
+if (elapsed > 11500 && elapsed <= 21500){
   let velocity: vec2 = vec2.fromValues(0,0);
-  velocity[1] += 0.1 - Math.abs(Math.cos(elapsed / 1000));
-  velocity[0] += 0.075 + Math.sin(elapsed / 1000);
+  velocity[1] += -0.05 - Math.abs(Math.cos(10.471 * elapsed / 5000));
+  velocity[0] += 0.5 + Math.sin(10.471 * elapsed / 5000);
   let newPos: vec2 = vec2.fromValues(0,0);
     vec2.add(newPos, velocity, planePos);
     dark3.setPlanePos(newPos);
     planePos = newPos;
 
-renderer.render(camera, dark3, [plane]);
-renderer.render(camera, dark2, [screenQuad]);
+renderer.render(camera, dark3,elapsed, [plane]);
+renderer.render(camera, dark4, elapsed,[screenQuad]);
 }
 
 
 if (elapsed > 21500 && elapsed <= 41000){
-renderer.render(camera, dark4, [screenQuad]);
+renderer.render(camera, dark4,elapsed, [screenQuad]);
 }
 if (elapsed > 41000 && elapsed <= 49500){
-renderer.render(camera, dark5, [screenQuad]);
+
+  let velocity: vec2 = vec2.fromValues(0,0);
+  //velocity[1] += -0.05 - Math.abs(Math.cos(10.471 * elapsed / 5000));
+  velocity[0] += 0.9 + Math.sin(0.471 * elapsed / 5000);
+
+  let newPos: vec2 = vec2.fromValues(0,0);
+    vec2.add(newPos, velocity, planePos);
+    dark5.setPlanePos(newPos);
+    planePos = newPos;
+renderer.render(camera, dark5, elapsed, [plane]);
 }
 
 if (elapsed > 49500 && elapsed <= 60000){
-renderer.render(camera, dark6, [screenQuad]);
+renderer.render(camera, dark6,elapsed, [screenQuad]);
 }
 if (elapsed > 60000 && elapsed <= 70000){
-renderer.render(camera, dark7, [screenQuad]);
+renderer.render(camera, dark7,elapsed, [screenQuad]);
 }
 if (elapsed > 70000 && elapsed <= 79000){
-renderer.render(camera, dark8, [screenQuad]);
+renderer.render(camera, dark8,elapsed, [screenQuad]);
 }
 
 if (elapsed > 79000 && elapsed <= 89000){
-renderer.render(camera, dark9, [screenQuad]);
+renderer.render(camera, dark9, elapsed,[screenQuad]);
 }
 
 if (elapsed > 89000 && elapsed <= 98000){
-renderer.render(camera, dark10, [screenQuad]);
+renderer.render(camera, dark10,elapsed, [screenQuad]);
 }
 
 if (elapsed > 98000 && elapsed <= 108000){
-renderer.render(camera, dark11, [screenQuad]);
+renderer.render(camera, dark11,elapsed, [screenQuad]);
 }
 
-if (elapsed > 108000 && elapsed <= 116000){
-renderer.render(camera, dark12, [screenQuad]);
+if (elapsed > 108000 && elapsed <= 117000){
+renderer.render(camera, dark12,elapsed, [screenQuad]);
 }
 
-if (elapsed > 116000 && elapsed <= 127000){
-renderer.render(camera, dark13, [screenQuad]);
+if (elapsed > 117000 && elapsed <= 127000){
+renderer.render(camera, dark13,elapsed, [screenQuad]);
 }
 
 if (elapsed > 127000 && elapsed <= 137000){
-renderer.render(camera, dark14, [screenQuad]);
+renderer.render(camera, dark14, elapsed,[screenQuad]);
 }
 
 if (elapsed > 137000 && elapsed <= 146000){
-renderer.render(camera, dark15, [screenQuad]);
+renderer.render(camera, dark15,elapsed, [screenQuad]);
 }
 
 if (elapsed > 146000 && elapsed <= 152000){
-renderer.render(camera, dark16, [screenQuad]);
+renderer.render(camera, dark16,elapsed, [screenQuad]);
 }
 
 if (elapsed > 152000 && elapsed <= 161000){
-renderer.render(camera, dark17, [screenQuad]);
+renderer.render(camera, dark17,elapsed, [screenQuad]);
 }
 
 if (elapsed > 161000 && elapsed <= 171000){
-renderer.render(camera, dark18, [screenQuad]);
+renderer.render(camera, dark18,elapsed, [screenQuad]);
 }
 
 if (elapsed > 171000 && elapsed <= 180000){
-renderer.render(camera, dark19, [screenQuad]);
+renderer.render(camera, dark19,elapsed, [screenQuad]);
 }
 
 if (elapsed > 180000 && elapsed <= 190000){
-renderer.render(camera, dark20, [screenQuad]);
+renderer.render(camera, dark20,elapsed, [screenQuad]);
 }
 
 if (elapsed > 190000 && elapsed <= 199000){
-renderer.render(camera, dark21, [screenQuad]);
+renderer.render(camera, dark21,elapsed, [screenQuad]);
 }
 
 if (elapsed > 199000 && elapsed <= 209000){
-renderer.render(camera, dark22, [screenQuad]);
+renderer.render(camera, dark22,elapsed, [screenQuad]);
 }
 
 if (elapsed > 209000 && elapsed <= 218000){
-renderer.render(camera, dark23, [screenQuad]);
+renderer.render(camera, dark23,elapsed, [screenQuad]);
 }
 
 if (elapsed > 218000 && elapsed <= 227000){
-renderer.render(camera, dark24, [screenQuad]);
+renderer.render(camera, dark24, elapsed,[screenQuad]);
 }
 
 
@@ -720,6 +729,17 @@ renderer.render(camera, dark24, [screenQuad]);
   camera.setAspectRatio(window.innerWidth / window.innerHeight);
   boxShader.setDimensions(window.innerWidth, window.innerHeight);
   tealShader.setDimensions(window.innerWidth, window.innerHeight);
+  dark2.setDimensions(window.innerWidth, window.innerHeight);
+  dark3.setDimensions(window.innerWidth, window.innerHeight);
+  dark4.setDimensions(window.innerWidth, window.innerHeight);
+  dark5.setDimensions(window.innerWidth, window.innerHeight);
+  dark6.setDimensions(window.innerWidth, window.innerHeight);
+  dark7.setDimensions(window.innerWidth, window.innerHeight);
+  dark8.setDimensions(window.innerWidth, window.innerHeight);
+  dark9.setDimensions(window.innerWidth, window.innerHeight);
+  dark10.setDimensions(window.innerWidth, window.innerHeight);
+  dark11.setDimensions(window.innerWidth, window.innerHeight);
+  dark12.setDimensions(window.innerWidth, window.innerHeight);
   camera.updateProjectionMatrix();
 
   // Start the render loop

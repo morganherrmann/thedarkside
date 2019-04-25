@@ -16,36 +16,62 @@ float noise(vec2 p) {
 
 
 void main() {
-  //out_Col = vec4(0.2, 0.9, fs_Pos.y * 4.0, 0.5);
-  vec2 uv = (fs_Pos);
-  float intensity = 0.8;
+//  out_Col = vec4(0.2, 0.9, fs_Pos.y * 4.0, 0.5);
+  //vec2 uv = (fs_Pos);
+  //float intensity = 0.8;
 
-    //Create the stacked layers
-
-    //so what this is doing is creating offset layers
-    //and the height of each section follows a cosin curve
-    //ok sweet
-	for (float inc = 1.0; inc < 25.0; inc++) {
-
-		float fi = inc;
-
-		float s = floor(5.0*(uv.x)/fi + 50.0*fi + u_Time / 1000.0);
-
-        float yLimit = noise(vec2(s));
-        yLimit *= fi/95.0;
-        yLimit -= 0.04*fi;
-        yLimit += 0.125 * cos(uv.x*5.0 + u_Time / 1000.0 + fi/9.0);
-       	yLimit += 0.8;
-
-		if (uv.y < yLimit) {
-			intensity = inc/10.0;
+	// //-----------stuffs
+	//
+	 float t = u_Time;
+ 		vec3 c;
+	 float l = 0.0;
+	 float  z = t / 10000.0;
+   vec2 r = u_Dimensions;
+	 for(float i=0.0 ; i<3.0; i++) {
+	 	 vec2 uv;
+	 	 vec2 p = gl_FragCoord.xy/r;
+	 	 uv=p;
+	 	 p-=0.5;
+	 	 p.x*= r.x / r.y;
+	 	 z+=0.07;
+	 	 l=length(p);
+ 		uv+=p/l*(sin( z)+1.0)*abs(sin(l*9.0-z*2.0)) * sin(5.236* u_Time / 1000.0);
+	 	if(i > -0.1 && i < 0.1){
+			c.x = 0.01/length(abs(mod(uv,1.0)-0.5));
 		}
+		if(i > 0.9 && i < 1.1){
+			c.y = 0.01/length(abs(mod(uv,1.0)-0.5));
+		}
+		if(i > 1.9 && i < 2.1){
+			c.z = 0.01/length(abs(mod(uv,1.0)-0.5));
+		}
+
 	}
 
-  float col1 = mix(intensity * uv.x * 0.8 + 0.5, 0.0, 01.1);
+    vec4 white = vec4(0.89, 0.196, 0.518, 1.0);
 
-	//Set the final color
-	out_Col = vec4(vec3(col1, intensity*uv.y * 0.2 + 0.5, 0.7), 1.0 );
+    out_Col=vec4(c/l,t);
+    vec4 blue = vec4(0.169, 0.729, 0.937, 1.0);
+
+     if (c.x + c.y + c.z > 0.2){
+
+       blue = vec4(0.169, 0.729, 0.9378, 1.0);
+       out_Col = mix(blue, white, sin(5.236 * (u_Time / 1000.0) ));
+    }
+	//
+     if (c.x + c.y + c.z > 0.3){
+
+        vec4 green = vec4(0.169, 0.729, 0.937, 1.0);
+        vec4 orange = vec4(0.698,0.227, 0.827, 1.0);
+       out_Col = mix(green, orange, cos( 5.236 * u_Time/ 1000.0 ));
+    }
+
+	//-------
+
+//out_Col = vec4(1.0, 1.0, 0.0, 1.0);
+    //Create the stacked layers
+
+
 
 
 

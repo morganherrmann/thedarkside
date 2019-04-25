@@ -8,44 +8,40 @@ uniform float u_Time;
 in vec2 fs_Pos;
 out vec4 out_Col;
 
-float noise(vec2 p) {
-	return fract(sin(dot(p.xy ,vec2(12.9898,78.233))) * 456367.5453);
-}
+float viewAngle = 1.0;
+float speed = 4.0;
+float rate = 15.0;
+float baseamp = 0.15;
 
 //SOURCE INSPIRATION http://glslsandbox.com/e#22429.6
 
 
 void main() {
-  //out_Col = vec4(0.2, 0.9, fs_Pos.y * 4.0, 0.5);
-  vec2 uv = (fs_Pos);
-  float intensity = 0.8;
 
-    //Create the stacked layers
+	vec2 iResolution = u_Dimensions;
 
-    //so what this is doing is creating offset layers
-    //and the height of each section follows a cosin curve
-    //ok sweet
-	for (float inc = 1.0; inc < 25.0; inc++) {
+	vec2 p = ( gl_FragCoord.xy / u_Dimensions.xy ) * 2.0 - 1.0;
+	p.x *= u_Dimensions.x / u_Dimensions.y;
 
-		float fi = inc;
 
-		float s = floor(5.0*(uv.x)/fi + 50.0*fi + u_Time / 1000.0);
+  float x = speed * viewAngle * u_Time / 1000.0 + rate * p.x;
+  float base = (1.0 + cos(x * 5.23 + u_Time / 1000.0)) * (1.0 + sin(10.46 * u_Time / 1000.0));
+  float z = fract(0.08*x);
+  z = max(z, 1.0-z);
+  z = pow(z, 20.0);
+  float pulse = exp(-1000.0 * z);
+  vec4 ecg_color = vec4(0.6, 0.2, 0.9, 1.0);
+  vec4 c = (vec4(1.0) - pow(clamp(1.0-abs(p.y-(baseamp * base + pulse -0.8)), 0.0, 1.0), 16.0)) * ecg_color;
+    out_Col = c;
+    if (out_Col.r > 0.1){
+    out_Col.r /= sin(u_Time / 10000.0 * 10.46);
+    //out_Col.b /= cos(u_Time / 10000.0 * 10.46);
+    }
 
-        float yLimit = noise(vec2(s));
-        yLimit *= fi/95.0;
-        yLimit -= 0.04*fi;
-        yLimit += 0.125 * cos(uv.x*5.0 + u_Time / 1000.0 + fi/9.0);
-       	yLimit += 0.8;
 
-		if (uv.y < yLimit) {
-			intensity = inc/10.0;
-		}
-	}
+    float test = sin(13.659 * u_Time / 1000.0);
+	//out_Col = vec4(test, 0.3, 0.8 , 1.0);
 
-  float col1 = mix(intensity * uv.x * 0.8 + 0.5, 0.0, 01.1);
-
-	//Set the final color
-	out_Col = vec4(vec3(col1, intensity*uv.y * 0.1 + 0.9, 0.3), 1.0 );
 
 
 

@@ -12,40 +12,43 @@ float noise(vec2 p) {
 	return fract(sin(dot(p.xy ,vec2(12.9898,78.233))) * 456367.5453);
 }
 
+vec2 position(float z) {
+	return vec2(
+		0.0 + sin(z * 0.1) * 1.0 + sin(cos(z * 0.031) * 4.0) * 1.0 + sin(sin(z * 0.0091) * 3.0) * 1.0,
+		0.0 + cos(z * 0.1) * 1.0 + cos(cos(z * 0.031) * 4.0) * 1.0 + cos(sin(z * 0.0091) * 3.0) * 1.0
+	) * 1.0;
+}
+
 //SOURCE INSPIRATION http://glslsandbox.com/e#22429.6
 
 
 void main() {
-  //out_Col = vec4(0.2, 0.9, fs_Pos.y * 4.0, 0.5);
-  vec2 uv = (fs_Pos);
-  float intensity = 0.8;
 
-    //Create the stacked layers
+	vec2 iResolution = u_Dimensions;
+	vec2 p = (gl_FragCoord.xy * 2.0 - iResolution.xy) / min(iResolution.x, iResolution.y);
+	float camZ = 25.0 * u_Time / 1000.0;
+	vec2 cam = position(camZ);
 
-    //so what this is doing is creating offset layers
-    //and the height of each section follows a cosin curve
-    //ok sweet
-	for (float inc = 1.0; inc < 25.0; inc++) {
+	float dt = 0.5;
+	float camZ2 = 25.0 * (u_Time / 1000.0 + dt);
+ 	vec2 cam2 = position(camZ2);
+	vec2 dcamdt = (cam2 - cam) / dt;
 
-		float fi = inc;
-
-		float s = floor(5.0*(uv.x)/fi + 50.0*fi + u_Time / 1000.0);
-
-        float yLimit = noise(vec2(s));
-        yLimit *= fi/95.0;
-        yLimit -= 0.04*fi;
-        yLimit += 0.125 * cos(uv.x*5.0 + u_Time / 1000.0 + fi/9.0);
-       	yLimit += 0.8;
-
-		if (uv.y < yLimit) {
-			intensity = inc/10.0;
-		}
+	vec3 f = vec3(0.0);
+ 	for(float j = 1.0; j < 100.0; j++) {
+		float i = float(j);
+		float realZ = floor(camZ) + i;
+		float screenZ = realZ - camZ;
+		float r = 1.0 / screenZ;
+ 		vec2 c = (position(realZ) - cam) * 5.0 / screenZ - dcamdt * 0.2;
+        //c = vec2(ceil(c.x), ceil(c.y));
+	 	vec3 color = (vec3(sin(realZ * 0.07), sin(realZ * 0.1), 0.8) + vec3(1.0)) / 2.0;
+        float len = clamp(length(p-c), 0.0, 5.0);
+        float val = clamp(abs(len - r), 0.0, 7.5);
+ 		f += color * 0.06 / screenZ / (val + 0.06);
 	}
 
-  float col1 = mix(intensity * uv.x * 0.8 + 0.5, 0.0, 01.1);
-
-	//Set the final color
-	out_Col = vec4(vec3(col1, intensity*uv.y * 0.8 + 0.9, 0.8), 1.0 );
+	out_Col = vec4(f, 1.0);
 
 
 
