@@ -148,7 +148,7 @@ void seuss(){
 void desert(){
   fs_Pos = vs_Pos.xyz;
   float exp = smoothstep(0.1 ,0.4, abs(vs_Pos.z) + abs(u_PlanePos.y));
-  fs_Sine = pow(steppeFbm((abs(vs_Pos.z) + abs(u_PlanePos.y)) * 10.0 * sin(5.236 * u_Time / 10000.0), (abs(vs_Pos.x) + abs(u_PlanePos.x)) * 10.f), 5.5f * exp)
+  fs_Sine = pow(steppeFbm((abs(vs_Pos.z) + abs(u_PlanePos.y)) * 10.0 * sin(5.236 * u_Time / 10000.0), (abs(vs_Pos.x) + abs(u_PlanePos.x)) * 10.f), 4.5f * exp)
    * cos((5.236 * u_Time / 100000.0 + abs(vs_Pos.z) + abs(u_PlanePos.y)));
 
   if (fs_Sine < 0.f){

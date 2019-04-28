@@ -155,7 +155,7 @@ void main() {
 
 					if (cos(u_Time / 1000.0 * 5.23) <= 0.00){
 
-						color = vec3(1.0, 0.7, 1.0);
+						color = vec3(1.0, 0.4, 1.0);
 					}
 	    }
 	    if (color.r < 0.01 && color.g < 0.01 && st.y <= 0.4){

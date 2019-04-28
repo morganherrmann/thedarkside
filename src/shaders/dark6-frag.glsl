@@ -77,22 +77,22 @@ void main() {
 				v = cellular(st);
 				vec3 col1 = vec3(0.005,0.855,0.945);
 		    vec3 col2 = vec3(0.811,0.011,0.945);
-		    out_Col = vec4(mix(col1, col2, v * 1.05),1.0);
+		    out_Col = vec4(mix(col1, col2, v * 1.25),1.0);
 			}
-			else if (u_Time > 56000.0 && u_Time < 57000.0){
+			else if (u_Time > 56000.0 && u_Time < 57500.0){
 				st *= 15.0;
 				v = cellular(st);
-				vec3 col1 = vec3(0.005,0.855,0.945);
-		    vec3 col2 = vec3(0.811,0.011,0.945);
-		    out_Col = vec4(mix(col1, col2, v * 1.05),1.0);
+        vec3 col1 = vec3(0.005,0.655,0.945);
+		    vec3 col2 = vec3(0.811,0.011,0.545);
+		    out_Col = vec4(mix(col1, col2, v * 1.7),1.0);
 			}
 
 			else {
 				st *= 10.0;
 				v = cellular(st);
-				vec3 col1 = vec3(0.005,0.855,0.945);
-		    vec3 col2 = vec3(0.811,0.011,0.945);
-		    out_Col = vec4(mix(col1, col2, v * 1.05),1.0);
+				vec3 col1 = vec3(0.005,0.655,0.945);
+		    vec3 col2 = vec3(0.811,0.011,0.545);
+		    out_Col = vec4(mix(col1, col2, v * 2.305 * sin(u_Time / 1000.0 * 5.23)),1.0);
 			}
 
 

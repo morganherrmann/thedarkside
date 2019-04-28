@@ -63,11 +63,11 @@ void main() {
 
 		if (u_Time >= 140500.0 && st.x > 0.75){
 			if (out_Col.b > 0.5){
-	        out_Col.b = 0.8;
-					out_Col.g = 0.05;
+	        out_Col.b = 0.0;
+					out_Col.r = 0.75;
 	    }
-	    if (out_Col.g < 0.4){
-	        out_Col.r = 0.9;
+	    if (out_Col.g > 0.4){
+	        out_Col.r = 0.0;
 					out_Col.g = 0.6;
 	    }
 

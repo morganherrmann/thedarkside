@@ -56,7 +56,7 @@ void main() {
     float pattern = pos.x;
 
     // Add noise
-    pos = rotate2d( noise(pos) * sin(u_Time / 1000.0 * 5.23) ) * pos;
+    pos = rotate2d( noise(pos) * sin(u_Time / 1000.0 * 10.46) ) * pos;
 
     // Draw lines
     pattern = lines(pos,.5);
@@ -67,7 +67,7 @@ void main() {
     out_Col = vec4(vec3(0.0), 1.0);
 
 
-			 if (fs_Pos.x < -0.6 && u_Time > 59000.0){
+			 if (fs_Pos.x < -0.4 && u_Time > 59000.0){
 
 				 out_Col = vec4(mix(col, col2, pattern) ,1.0);
 

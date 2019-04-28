@@ -52,6 +52,7 @@ let pipes: Pipes;
 let ground: Ground;
 let question : Question;
 let brain : Question;
+let robot : Question;
 let box : Box;
 let plantMesh: LSystemMesh;
 let screenQuad: ScreenQuad;
@@ -87,6 +88,7 @@ function loadScene() {
   pipes = new Pipes();
   question = new Question();
   brain = new Question();
+  robot = new Question();
   box = new Box();
   ground = new Ground();
   plantMesh = new LSystemMesh();
@@ -124,27 +126,6 @@ function loadScene() {
   //var loader : Date  = new Date();
 
   //var loadtime : number = new Date().valueOf() - loader.valueOf();
-
-
-
-
-
-
-  for(var i = 0; i < city.buildings.length; i++){
-    var curr_building : Cube[] = city.buildings[i].stack;
-    for (var j = 0; j < curr_building.length; j++){
-      curr_building[j].create();
-    }
-
-  }
-
-  for(var i = 0; i < town.buildings.length; i++){
-    var curr_building : Cube[] = town.buildings[i].stack;
-    for (var j = 0; j < curr_building.length; j++){
-      curr_building[j].create();
-    }
-
-  }
 
 
 }
@@ -230,22 +211,12 @@ function loadScene() {
 function update() {
 
 
-  plantMesh.destroy();
-  plantMesh.clear();
 
-  let startChar: string = 'A';
-  let plantLSystem: LSystem = new LSystem(startChar, plantMesh);
 
-  for (var i = 0; i < controls.Iterations; i++) {
-    plantLSystem.computeLSystem();
-  }
+
 
   //create the Leaf and plant system
-  let turtle: Turtle = new Turtle(controls.LeafSize, plantMesh, vec3.fromValues(0, 0, 0), quat.create(), 0, 1);
-  plantLSystem.addRules(leaf, mario, plantMesh, turtle);
-  plantLSystem.drawLSystem();
 
-  plantMesh.create();
 }
 
 function main() {
@@ -255,31 +226,12 @@ function main() {
   stats.domElement.style.position = 'absolute';
   stats.domElement.style.left = '0px';
   stats.domElement.style.top = '0px';
-  document.body.appendChild(stats.domElement);
+  //uncomment for the fps
+//  document.body.appendChild(stats.domElement);
 
   // Add controls to the gui
-  const gui = new DAT.GUI();
-  gui.add(controls, 'Update');
-  gui.add(controls, 'LeafSize', 0.5, 1.5);
-  gui.add(controls, 'Iterations', 0, 4).step(1);
-  var colorPicker = gui.addColor(controls, 'Piranha Color');
-  var colorPicker2 = gui.addColor(controls, 'Tube Color');
-  var colorPicker3 = gui.addColor(controls, 'Leaf Color');
+  //const gui = new DAT.GUI();
 
-  colorPicker.onChange(function(value : Float32Array) {
-    mario.setColor(vec3.fromValues(value[0] / 255.0, value[1] / 255.0, value[2] / 255.0));
-    mario.resetColors();
-  });
-
-  colorPicker2.onChange(function(value : Float32Array) {
-    pipes.setColor(vec3.fromValues(value[0] / 255.0, value[1] / 255.0, value[2] / 255.0));
-    pipes.resetColors();
-  });
-
-  colorPicker3.onChange(function(value : Float32Array) {
-    leaf.setColor(vec3.fromValues(value[0] / 255.0, value[1] / 255.0, value[2] / 255.0));
-    leaf.resetColors();
-  });
 
   // get canvas and webgl context
   const canvas = <HTMLCanvasElement>document.getElementById('canvas');
@@ -515,6 +467,13 @@ const dark25 = new ShaderProgram([
     pipes.create();
   }
 
+  function robotCallback(indices: Array<number>, positions: Array<number>, normals: Array<number>): void {
+    robot.indices = Uint32Array.from(indices);
+    robot.positions = Float32Array.from(positions);
+    robot.normals = Float32Array.from(normals);
+    robot.create();
+  }
+
   function groundCallback(indices: Array<number>, positions: Array<number>, normals: Array<number>): void {
     ground.indices = Uint32Array.from(indices);
     ground.positions = Float32Array.from(positions);
@@ -560,6 +519,9 @@ const dark25 = new ShaderProgram([
   let brainFileName: string = "./brain.obj";
   parseOBJ(brainFileName, leafCallback);
 
+  let robotFileName: string = "./robot.obj";
+  parseOBJ(robotFileName, robotCallback);
+
   let marioFilename: string = "./bite.obj";
   parseOBJ(marioFilename, marioCallback);
 
@@ -586,6 +548,7 @@ const dark25 = new ShaderProgram([
     gl.viewport(0, 0, window.innerWidth, window.innerHeight);
     renderer.clear();
     pipes.create();
+    robot.create();
 
 
 
@@ -604,21 +567,12 @@ const dark25 = new ShaderProgram([
   renderer.render(camera, dark2,elapsed, [screenQuad]);
 }
 if (elapsed > 11500 && elapsed <= 21500){
-  let velocity: vec2 = vec2.fromValues(0,0);
-  velocity[1] += -0.05 - Math.abs(Math.cos(10.471 * elapsed / 5000));
-  velocity[0] += 0.5 + Math.sin(10.471 * elapsed / 5000);
-  let newPos: vec2 = vec2.fromValues(0,0);
-    vec2.add(newPos, velocity, planePos);
-    dark3.setPlanePos(newPos);
-    planePos = newPos;
-
-renderer.render(camera, dark3,elapsed, [plane]);
-renderer.render(camera, dark4, elapsed,[screenQuad]);
+  renderer.render(camera, dark20,elapsed, [screenQuad]);
 }
 
 
 if (elapsed > 21500 && elapsed <= 41000){
-renderer.render(camera, dark4,elapsed, [screenQuad]);
+renderer.render(camera, dark21,elapsed, [screenQuad]);
 }
 if (elapsed > 41000 && elapsed <= 49500){
 
@@ -689,7 +643,7 @@ if (elapsed > 151000 && elapsed <= 161000){
   renderer.render(camera2, lambert ,elapsed, [pipes]);
 }
 
-if (elapsed > 161000 && elapsed <= 171000){
+if (elapsed > 161000 && elapsed <= 170500){
   let velocity: vec2 = vec2.fromValues(0,0);
   velocity[1] += -0.05 - Math.abs(Math.cos(10.471 * elapsed / 5000));
   velocity[0] += 0.5 + Math.sin(10.471 * elapsed / 5000);
@@ -702,13 +656,14 @@ renderer.render(camera, dark3,elapsed, [plane]);
 renderer.render(camera, dark4, elapsed,[screenQuad]);
 }
 
-if (elapsed > 171000 && elapsed <= 180000){
+if (elapsed > 170500 && elapsed <= 180000){
   renderer.render(camera, dark16,elapsed, [screenQuad]);
     renderer.render(camera3, lambert ,elapsed, [pipes]);
 }
 
 if (elapsed > 180000 && elapsed <= 190000){
-renderer.render(camera, dark20,elapsed, [screenQuad]);
+renderer.render(camera, dark9, elapsed,[screenQuad]);
+ renderer.render(camera2, dark18,elapsed, [robot]);
 }
 
 if (elapsed > 190000 && elapsed <= 199000){
@@ -723,7 +678,7 @@ if (elapsed > 209000 && elapsed <= 218000){
 renderer.render(camera, dark23,elapsed, [screenQuad]);
 }
 
-if (elapsed > 218000 && elapsed <= 227000){
+if (elapsed > 218000 && elapsed <= 223000){
 renderer.render(camera, dark24, elapsed,[screenQuad]);
 }
 
@@ -768,6 +723,7 @@ renderer.render(camera, dark24, elapsed,[screenQuad]);
   camera3.setAspectRatio(window.innerWidth / window.innerHeight);
   boxShader.setDimensions(window.innerWidth, window.innerHeight);
   tealShader.setDimensions(window.innerWidth, window.innerHeight);
+  dark1.setDimensions(window.innerWidth, window.innerHeight);
   dark2.setDimensions(window.innerWidth, window.innerHeight);
   dark3.setDimensions(window.innerWidth, window.innerHeight);
   dark4.setDimensions(window.innerWidth, window.innerHeight);
@@ -783,8 +739,13 @@ renderer.render(camera, dark24, elapsed,[screenQuad]);
   dark14.setDimensions(window.innerWidth, window.innerHeight);
   dark15.setDimensions(window.innerWidth, window.innerHeight);
   dark16.setDimensions(window.innerWidth, window.innerHeight);
-    dark17.setDimensions(window.innerWidth, window.innerHeight);
-    dark20.setDimensions(window.innerWidth, window.innerHeight);
+  dark17.setDimensions(window.innerWidth, window.innerHeight);
+  dark18.setDimensions(window.innerWidth, window.innerHeight);
+  dark20.setDimensions(window.innerWidth, window.innerHeight);
+  dark21.setDimensions(window.innerWidth, window.innerHeight);
+  dark22.setDimensions(window.innerWidth, window.innerHeight);
+  dark23.setDimensions(window.innerWidth, window.innerHeight);
+  dark24.setDimensions(window.innerWidth, window.innerHeight);
   camera.updateProjectionMatrix();
   camera2.updateProjectionMatrix();
     camera3.updateProjectionMatrix();

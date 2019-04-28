@@ -25,7 +25,7 @@ void main() {
 
 
   float x = speed * viewAngle * u_Time / 1000.0 + rate * p.x;
-  float base = (1.0 + cos(x * 5.23 + u_Time / 1000.0)) * (1.0 + sin(10.46 * u_Time / 1000.0));
+  float base = (1.0 + cos(x * 5.23 + u_Time / 10000.0)) * (1.0 + sin(10.46 * u_Time / 10000.0));
   float z = fract(0.08*x);
   z = max(z, 1.0-z);
   z = pow(z, 20.0);
@@ -34,7 +34,7 @@ void main() {
   vec4 c = (vec4(1.0) - pow(clamp(1.0-abs(p.y-(baseamp * base + pulse -0.8)), 0.0, 1.0), 16.0)) * ecg_color;
     out_Col = c;
     if (out_Col.r > 0.1){
-    out_Col.r /= sin(u_Time / 10000.0 * 10.46);
+    out_Col.r /= sin(u_Time / 100000.0 * 10.46);
     //out_Col.b /= cos(u_Time / 10000.0 * 10.46);
     }
 
