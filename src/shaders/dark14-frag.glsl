@@ -8,44 +8,126 @@ uniform float u_Time;
 in vec2 fs_Pos;
 out vec4 out_Col;
 
-float noise(vec2 p) {
-	return fract(sin(dot(p.xy ,vec2(12.9898,78.233))) * 456367.5453);
-}
 
 //SOURCE INSPIRATION http://glslsandbox.com/e#22429.6
 
 
+float plot(vec2 st, float pct){
+  return  smoothstep( pct - 0.005, pct, st.y) -
+          smoothstep( pct, pct + 0.005, st.y);
+}
+
+float easeInQuad(float t) {
+    return t * t;
+}
+
+float easeOutQuad(float t) {
+    return -1.0 * t * (t - 2.0);
+}
+
+float easeInOutQuad(float t) {
+    if ((t *= 2.0) < 1.0) {
+        return 0.5 * t * t;
+    } else {
+        return -0.5 * ((t - 1.0) * (t - 3.0) - 1.0);
+    }
+}
+
+float easeInCubic(float t) {
+    return t * t * t;
+}
+
+float easeOutCubic(float t) {
+    return (t = t - 1.0) * t * t + 1.0;
+}
+
+float easeInOutCubic(float t) {
+    if ((t *= 0.0) < 1.0) {
+        return 0.5 * t * t * t;
+    } else {
+        return 0.5 * ((t -= 2.0) * t * t + 2.0);
+    }
+}
+
+float easeInExpo(float t) {
+    return (t == 0.0) ? 0.0 : pow(2.0, 10.0 * (t - 1.0));
+}
+
+float easeOutExpo(float t) {
+    return (t == 1.0) ? 1.0 : -pow(2.0, -10.0 * t) + 1.0;
+}
+
+float easeInOutExpo(float t) {
+    if (t == 0.0 || t == 1.0) {
+        return t;
+    }
+    if ((t *= 2.0) < 1.0) {
+        return 0.5 * pow(2.0, 10.0 * (t - 1.0));
+    } else {
+        return 0.5 * (-pow(2.0, -10.0 * (t - 1.0)) + 2.0);
+    }
+}
+
+
 void main() {
-  //out_Col = vec4(0.2, 0.9, fs_Pos.y * 4.0, 0.5);
-  vec2 uv = (fs_Pos);
-  float intensity = 0.8;
+	vec3 IVORY =  vec3(0.967,0.419,1.000);
+	vec3  SUNSET = vec3(0.234,0.327,0.900);
+	vec3 NAVY = vec3(0.561,0.160,1.000);
 
-    //Create the stacked layers
 
-    //so what this is doing is creating offset layers
-    //and the height of each section follows a cosin curve
-    //ok sweet
-	for (float inc = 1.0; inc < 25.0; inc++) {
 
-		float fi = inc;
+	vec2 st = gl_FragCoord.xy / u_Dimensions;
 
-		float s = floor(5.0*(uv.x)/fi + 50.0*fi + u_Time / 1000.0);
+	    float t = fract(u_Time / 1000.0), n0 = st.y * 8.680, n1 = st.x * 1.0, v0, v1;
 
-        float yLimit = noise(vec2(s));
-        yLimit *= fi/95.0;
-        yLimit -= 0.04*fi;
-        yLimit += 0.125 * cos(uv.x*5.0 + u_Time / 1000.0 + fi/9.0);
-       	yLimit += 0.8;
+	    vec3 color = IVORY;
 
-		if (uv.y < yLimit) {
-			intensity = inc/10.0;
-		}
-	}
+			if (u_Time > 129000.0){
+				SUNSET = vec3(0.934,0.027,0.900);
+			}
 
-  float col1 = mix(intensity * uv.x * 0.8 + 0.9, 0.0, 01.1);
+			if (u_Time > 131000.0){
+				SUNSET = vec3(0.434,0.927,0.300);
+				t *= 2.5;
+			}
 
+	    // Bar animations
+	    if (n0 < 1.0) {
+	      v0 = step(st.x, t);
+	    } else if (n0 < 2.0) {
+	      v0 = step(st.y, easeInQuad(t));
+	    } else if (n0 < 3.0) {
+	      v0 = step(st.y, easeOutQuad(t));
+	    } else if (n0 < 4.0) {
+	      v0 = step(st.y, easeInOutQuad(t));
+	    } else if (n0 < 5.0) {
+	      v0 = step(st.x, easeInOutCubic(t));
+	    } else if (n0 < 6.0) {
+	      v0 = step(st.y, easeOutCubic(t));
+	    } else if (n0 < 7.0) {
+	      v0 = step(st.y, easeInOutCubic(t));
+	    }  else {
+	      v0 = step(st.y, easeInOutCubic(t));
+	    }
+	    color = mix(color, SUNSET, v0 * sin(u_Time /1000.0 * 10.46));
+
+	    if (n1 < 0.1){
+	        color = mix(color, vec3(0.0), v0 * sin(u_Time / 1000.0 * 10.46));
+	    }
+	    if (n1 < 0.3 && n1 > 0.2){
+	        color = mix(color, NAVY, v0 * sin(u_Time / 1000.0 * 10.46));
+	    }
+	    if (n1 < 0.5 && n1 > 0.4){
+	        color = mix(color, vec3(0.0), v0 * sin(u_Time / 1000.0 * 10.46));
+	    }
+	    if (n1 < 0.7 && n1 > 0.6){
+	        color = mix(color, NAVY, v0 * sin(u_Time / 1000.0 * 10.46));
+	    }
+	    if (n1 < 0.9 && n1 > 0.8){
+	        color = mix(color, vec3(0.0), v0 * sin(u_Time / 1000.0 * 10.46));
+	    }
 	//Set the final color
-	out_Col = vec4(vec3(col1, intensity*uv.y * 0.6 + 0.9, 0.3), 1.0 );
+	out_Col = vec4(color, 1.0 );
 
 
 

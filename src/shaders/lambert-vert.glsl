@@ -23,6 +23,9 @@ void main()
     mat3 invTranspose = mat3(u_ModelInvTr);
     fs_Nor = vec4(invTranspose * vec3(vs_Nor), 0);
     vec4 modelposition = u_Model * vs_Pos;
+
+    modelposition.y += 0.05 * sin(u_Time / 1000.0 * 10.46);
+    modelposition.x += 0.5 * sin(u_Time / 1000.0 * 5.23);
     fs_LightVec = lightPos - modelposition;
 
     gl_Position = u_ViewProj * modelposition;

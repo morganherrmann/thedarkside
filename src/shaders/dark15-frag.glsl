@@ -16,36 +16,66 @@ float noise(vec2 p) {
 
 
 void main() {
-  //out_Col = vec4(0.2, 0.9, fs_Pos.y * 4.0, 0.5);
-  vec2 uv = (fs_Pos);
-  float intensity = 0.8;
 
-    //Create the stacked layers
 
-    //so what this is doing is creating offset layers
-    //and the height of each section follows a cosin curve
-    //ok sweet
-	for (float inc = 1.0; inc < 25.0; inc++) {
+//	vec2 p = ( gl_FragCoord.xy * 5.0 / u_Dimensions.xy);
+	 //p *= 0.9;
+	 vec2 iResolution = u_Dimensions;
+	 vec2 st = gl_FragCoord.xy / u_Dimensions;
+ 	vec2 p = (gl_FragCoord.xy * 5.0 - iResolution.xy) / min(iResolution.x, iResolution.y);
 
-		float fi = inc;
 
-		float s = floor(5.0*(uv.x)/fi + 50.0*fi + u_Time / 1000.0);
+	vec4 a = vec4(.7,1.9,.322,0) + sin(u_Time /1000.0 * 10.46) + atan(p.y * 6.0, p.x),
+         b = a;
+				  b.y+=.4;
+    a = cos( sin(p.x)-sin(p.y) +a ),
+    b = sin(a*p.x*p.y - p.y   +b );
 
-        float yLimit = noise(vec2(s));
-        yLimit *= fi/95.0;
-        yLimit -= 0.04*fi;
-        yLimit += 0.125 * cos(uv.x*5.0 + u_Time / 1000.0 + fi/9.0);
-       	yLimit += 0.8;
+    a =  abs(b*b-a*a);
 
-		if (uv.y < yLimit) {
-			intensity = inc/10.0;
+    vec3 col  = mix(vec3(0.9, 0.2, 0.9), vec3(0.1, 0.6, 0.9), a.y);
+    col  = mix(vec3(0.1, 0.8, 0.9), vec3(0.9, 0.15, 0.9), a.x);
+
+
+    out_Col =  1.6 * pow(1.-a+b*a,  37.+a-a);
+    out_Col.g = 0.0;
+    if (out_Col.b > 0.7){
+        out_Col.g += 0.3;
+    }
+    if (out_Col.r > 0.6){
+        out_Col.b += 0.6;
+    }
+		// if (out_Col.b > 0.7){
+		 	out_Col = vec4(out_Col.rgb, 1.0);
+		// }
+
+		if (u_Time >= 139000.0 && st.x < 0.2){
+			if (out_Col.b > 0.5){
+	        out_Col.b = 0.0;
+					out_Col.g = 0.75;
+	    }
+	    if (out_Col.r > 0.4){
+	        out_Col.r = 0.0;
+					out_Col.b = 0.8;
+	    }
+
 		}
-	}
 
-  float col1 = mix(intensity * uv.x * 0.85 + 0.5, 0.0, 01.1);
+		if (u_Time >= 140500.0 && st.x > 0.75){
+			if (out_Col.b > 0.5){
+	        out_Col.b = 0.8;
+					out_Col.g = 0.05;
+	    }
+	    if (out_Col.g < 0.4){
+	        out_Col.r = 0.9;
+					out_Col.g = 0.6;
+	    }
+
+		}
+
 
 	//Set the final color
-	out_Col = vec4(vec3(col1, intensity*uv.y * 0.81 + 0.9, 0.3), 1.0 );
+	//out_Col = vec4(vec3(col1, intensity*uv.y * 0.81 + 0.9, 0.3), 1.0 );
 
 
 

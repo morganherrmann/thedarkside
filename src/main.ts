@@ -51,6 +51,7 @@ let mario: Mario;
 let pipes: Pipes;
 let ground: Ground;
 let question : Question;
+let brain : Question;
 let box : Box;
 let plantMesh: LSystemMesh;
 let screenQuad: ScreenQuad;
@@ -76,6 +77,8 @@ let plane : Plane;
 
 let loader : any;
 
+let camera2 : Camera;
+
 
 
 function loadScene() {
@@ -83,6 +86,7 @@ function loadScene() {
   mario = new Mario();
   pipes = new Pipes();
   question = new Question();
+  brain = new Question();
   box = new Box();
   ground = new Ground();
   plantMesh = new LSystemMesh();
@@ -320,11 +324,17 @@ function main() {
 
   //elapsed = new Date().valueOf() - start.valueOf();
 
-  const camera = new Camera(vec3.fromValues(0, 5, 5), vec3.fromValues(0, 0, -20));
+ const camera = new Camera(vec3.fromValues(0, 5, 5), vec3.fromValues(0, 0, -20));
+
+ //car front
+  camera2 = new Camera(vec3.fromValues(-6, 0.5, 1.2), vec3.fromValues(0, 0, 0));
+
+  //car side
+  const camera3 = new Camera(vec3.fromValues(-3.5, 1, -1), vec3.fromValues(0, 0, 0));
 
   const renderer = new OpenGLRenderer(canvas);
   //THISSSSSSSSSSSSSS
-  renderer.setClearColor(0.0, 0.0, 0.0, 1);
+  renderer.setClearColor(0.0, 0.0, 0.0, 1.0);
   gl.enable(gl.DEPTH_TEST);
 
   const lambert = new ShaderProgram([
@@ -547,13 +557,13 @@ const dark25 = new ShaderProgram([
     rawFile.send(null);
   }
 
-  let leafFilename: string = "./leaf.obj";
-  parseOBJ(leafFilename, leafCallback);
+  let brainFileName: string = "./brain.obj";
+  parseOBJ(brainFileName, leafCallback);
 
   let marioFilename: string = "./bite.obj";
   parseOBJ(marioFilename, marioCallback);
 
-  let tubeFile: string = "./tubes.obj";
+  let tubeFile: string = "./car.obj";
   parseOBJ(tubeFile, pipesCallback);
 
   let groundFile: string = "./ground2.obj";
@@ -570,6 +580,8 @@ const dark25 = new ShaderProgram([
   // This function will be called every frame
   function tick() {
     camera.update();
+    camera2.update();
+    camera3.update();
     stats.begin();
     gl.viewport(0, 0, window.innerWidth, window.innerHeight);
     renderer.clear();
@@ -578,12 +590,13 @@ const dark25 = new ShaderProgram([
 
 
   //  renderer.render(camera, flat, [screenQuad]);
-    // renderer.render(camera, lambert, [
-    //   plantMesh,
-    //   pipes
-    // ]);
+    //  renderer.render(camera, lambert, elapsed, [
+    //     brain,
+    // //   pipes
+    //  ]);
 
     elapsed = new Date().valueOf() - start.valueOf();
+
     if (elapsed <= 2000){
     renderer.render(camera, dark1, elapsed, [screenQuad]);
   }
@@ -658,20 +671,40 @@ if (elapsed > 137000 && elapsed <= 146000){
 renderer.render(camera, dark15,elapsed, [screenQuad]);
 }
 
-if (elapsed > 146000 && elapsed <= 152000){
+if (elapsed > 146000 && elapsed <= 151000){
 renderer.render(camera, dark16,elapsed, [screenQuad]);
 }
 
-if (elapsed > 152000 && elapsed <= 161000){
-renderer.render(camera, dark17,elapsed, [screenQuad]);
+if (elapsed > 151000 && elapsed <= 161000){
+  let velocity: vec2 = vec2.fromValues(10,0);
+  velocity[0] += (1.9 + Math.abs(Math.sin(10.471 * elapsed / 1000)));
+
+  let newPos: vec2 = vec2.fromValues(0,0);
+    vec2.sub(newPos, planePos, velocity);
+    dark17.setPlanePos(newPos);
+    planePos = newPos;
+
+  renderer.render(camera2, dark17, elapsed, [plane]);
+  renderer.render(camera, dark16,elapsed, [screenQuad]);
+  renderer.render(camera2, lambert ,elapsed, [pipes]);
 }
 
 if (elapsed > 161000 && elapsed <= 171000){
-renderer.render(camera, dark18,elapsed, [screenQuad]);
+  let velocity: vec2 = vec2.fromValues(0,0);
+  velocity[1] += -0.05 - Math.abs(Math.cos(10.471 * elapsed / 5000));
+  velocity[0] += 0.5 + Math.sin(10.471 * elapsed / 5000);
+  let newPos: vec2 = vec2.fromValues(0,0);
+    vec2.add(newPos, velocity, planePos);
+    dark3.setPlanePos(newPos);
+    planePos = newPos;
+
+renderer.render(camera, dark3,elapsed, [plane]);
+renderer.render(camera, dark4, elapsed,[screenQuad]);
 }
 
 if (elapsed > 171000 && elapsed <= 180000){
-renderer.render(camera, dark19,elapsed, [screenQuad]);
+  renderer.render(camera, dark16,elapsed, [screenQuad]);
+    renderer.render(camera3, lambert ,elapsed, [pipes]);
 }
 
 if (elapsed > 180000 && elapsed <= 190000){
@@ -679,7 +712,7 @@ renderer.render(camera, dark20,elapsed, [screenQuad]);
 }
 
 if (elapsed > 190000 && elapsed <= 199000){
-renderer.render(camera, dark21,elapsed, [screenQuad]);
+renderer.render(camera, dark21, elapsed, [screenQuad]);
 }
 
 if (elapsed > 199000 && elapsed <= 209000){
@@ -711,6 +744,10 @@ renderer.render(camera, dark24, elapsed,[screenQuad]);
     renderer.setSize(window.innerWidth, window.innerHeight);
     camera.setAspectRatio(window.innerWidth / window.innerHeight);
     camera.updateProjectionMatrix();
+    camera2.setAspectRatio(window.innerWidth / window.innerHeight);
+    camera2.updateProjectionMatrix();
+    camera3.setAspectRatio(window.innerWidth / window.innerHeight);
+    camera3.updateProjectionMatrix();
     boxShader.setDimensions(window.innerWidth, window.innerHeight);
     tealShader.setDimensions(window.innerWidth, window.innerHeight);
   }, false);
@@ -727,6 +764,8 @@ renderer.render(camera, dark24, elapsed,[screenQuad]);
 
   renderer.setSize(window.innerWidth, window.innerHeight);
   camera.setAspectRatio(window.innerWidth / window.innerHeight);
+  camera2.setAspectRatio(window.innerWidth / window.innerHeight);
+  camera3.setAspectRatio(window.innerWidth / window.innerHeight);
   boxShader.setDimensions(window.innerWidth, window.innerHeight);
   tealShader.setDimensions(window.innerWidth, window.innerHeight);
   dark2.setDimensions(window.innerWidth, window.innerHeight);
@@ -740,7 +779,15 @@ renderer.render(camera, dark24, elapsed,[screenQuad]);
   dark10.setDimensions(window.innerWidth, window.innerHeight);
   dark11.setDimensions(window.innerWidth, window.innerHeight);
   dark12.setDimensions(window.innerWidth, window.innerHeight);
+  dark13.setDimensions(window.innerWidth, window.innerHeight);
+  dark14.setDimensions(window.innerWidth, window.innerHeight);
+  dark15.setDimensions(window.innerWidth, window.innerHeight);
+  dark16.setDimensions(window.innerWidth, window.innerHeight);
+    dark17.setDimensions(window.innerWidth, window.innerHeight);
+    dark20.setDimensions(window.innerWidth, window.innerHeight);
   camera.updateProjectionMatrix();
+  camera2.updateProjectionMatrix();
+    camera3.updateProjectionMatrix();
 
   // Start the render loop
   tick();
