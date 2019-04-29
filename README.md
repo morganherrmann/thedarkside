@@ -49,3 +49,11 @@ The Basics : If you play through the demo, you will notice that the graphics mov
 In this case, the music is approximately 100 BPM, so each beat is approximately 0.6 seconds.
 For example, solving sin(ax +b) for a period of 0.6 seconds gives us a coefficient of a multiple of 5.23.  I applied this concept across various functions to achieve the pulsating imagery.
 
+
+## DRAWING TECHNIQUES USED
+
+### RAY MARCHING
+Several scenes in this project, primarily album cover recreations, were recreated with 2D raymarching and use of toolbox functions to determine intersection and smoothing between objects.
+The intended goal was to have 2D, animated renditions that channeled existing album covers. 
+All shapes were drawn with ray marching and were hand placed.
+
