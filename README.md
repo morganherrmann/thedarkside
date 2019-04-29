@@ -81,3 +81,13 @@ The closest to the albums visuals, and computes the exponential falloff from a s
 
 ![](gif5.gif)
 
+### USE OF OBJ SHADERS and CAMERA MOVEMENT
+
+1) My project is able to parse vertex and normal data from OBJ files and use them in scenery.
+2) I created a stylized cartoon / comic shader based on the normals of the object file that was imported.
+3) The motions shown are actually a blend of vertex shading and moving the camera itself along a mathematical path.
+![](gif8.gif)
+![](dark.PNG)
+
+
+
