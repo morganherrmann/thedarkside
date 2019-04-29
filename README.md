@@ -69,7 +69,7 @@ Several scenes involve a glow effect. I achieved this as follows.
 Uses a predetermined count of objects, each with a location moving on a path.  For each computed metaball location, the glow was computed based on a pixels distance from each of the metaball positions.  The glow was proportional to the distance from the metaballs, summing up the total glow for an exponential fall-off.
 ![](gif3.gif) ![](gif7.gif)
 
-![](dark.PNG)
+![](dark2.PNG)
 
 #### 2) Rings of glowing points
 Similar to the metaballs, where each metaball lies on a somewhat circular path.  Then, each ring must also be computed- this forms the outer loop (so this is a bit slower to render). I also created an offset distance so that the points could be close to create strips, or farther away to create rings.
