@@ -57,3 +57,8 @@ Several scenes in this project, primarily album cover recreations, were recreate
 The intended goal was to have 2D, animated renditions that channeled existing album covers. 
 All shapes were drawn with ray marching and were hand placed.
 
+![](origin.jpg){:height="700px" width="400px"}
+![](gif2.gif)
+
+![](uprising.jpg) ![](gif1.gif)
+
