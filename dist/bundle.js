@@ -181,51 +181,12 @@ class Drawable {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__gl_matrix_common_js__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__gl_matrix_mat2_js__ = __webpack_require__(27);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__gl_matrix_mat2d_js__ = __webpack_require__(28);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__gl_matrix_mat3_js__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__gl_matrix_mat4_js__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__gl_matrix_quat_js__ = __webpack_require__(9);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__gl_matrix_quat2_js__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__gl_matrix_vec2_js__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__gl_matrix_vec3_js__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__gl_matrix_vec4_js__ = __webpack_require__(11);
-/* harmony reexport (module object) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__gl_matrix_common_js__; });
-/* unused harmony reexport mat2 */
-/* unused harmony reexport mat2d */
-/* harmony reexport (module object) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_3__gl_matrix_mat3_js__; });
-/* harmony reexport (module object) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_4__gl_matrix_mat4_js__; });
-/* harmony reexport (module object) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_5__gl_matrix_quat_js__; });
-/* unused harmony reexport quat2 */
-/* harmony reexport (module object) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_7__gl_matrix_vec2_js__; });
-/* harmony reexport (module object) */ __webpack_require__.d(__webpack_exports__, "f", function() { return __WEBPACK_IMPORTED_MODULE_8__gl_matrix_vec3_js__; });
-/* harmony reexport (module object) */ __webpack_require__.d(__webpack_exports__, "g", function() { return __WEBPACK_IMPORTED_MODULE_9__gl_matrix_vec4_js__; });
-
-
-
-
-
-
-
-
-
-
-
-
-
-/***/ }),
-/* 3 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EPSILON", function() { return EPSILON; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ARRAY_TYPE", function() { return ARRAY_TYPE; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RANDOM", function() { return RANDOM; });
-/* harmony export (immutable) */ __webpack_exports__["setMatrixArrayType"] = setMatrixArrayType;
-/* harmony export (immutable) */ __webpack_exports__["toRadian"] = toRadian;
-/* harmony export (immutable) */ __webpack_exports__["equals"] = equals;
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return EPSILON; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ARRAY_TYPE; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return RANDOM; });
+/* unused harmony export setMatrixArrayType */
+/* unused harmony export toRadian */
+/* unused harmony export equals */
 /**
  * Common utilities
  * @module glMatrix
@@ -268,6 +229,44 @@ function toRadian(a) {
 function equals(a, b) {
   return Math.abs(a - b) <= EPSILON * Math.max(1.0, Math.abs(a), Math.abs(b));
 }
+
+/***/ }),
+/* 3 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__gl_matrix_common_js__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__gl_matrix_mat2_js__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__gl_matrix_mat2d_js__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__gl_matrix_mat3_js__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__gl_matrix_mat4_js__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__gl_matrix_quat_js__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__gl_matrix_quat2_js__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__gl_matrix_vec2_js__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__gl_matrix_vec3_js__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__gl_matrix_vec4_js__ = __webpack_require__(11);
+/* unused harmony reexport glMatrix */
+/* unused harmony reexport mat2 */
+/* unused harmony reexport mat2d */
+/* harmony reexport (module object) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_3__gl_matrix_mat3_js__; });
+/* harmony reexport (module object) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_4__gl_matrix_mat4_js__; });
+/* unused harmony reexport quat */
+/* unused harmony reexport quat2 */
+/* harmony reexport (module object) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_7__gl_matrix_vec2_js__; });
+/* harmony reexport (module object) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_8__gl_matrix_vec3_js__; });
+/* harmony reexport (module object) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_9__gl_matrix_vec4_js__; });
+
+
+
+
+
+
+
+
+
+
+
+
 
 /***/ }),
 /* 4 */
@@ -3538,7 +3537,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (immutable) */ __webpack_exports__["equals"] = equals;
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "mul", function() { return mul; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "sub", function() { return sub; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__common_js__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__common_js__ = __webpack_require__(2);
 
 
 /**
@@ -3552,8 +3551,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
  * @returns {mat3} a new 3x3 matrix
  */
 function create() {
-  var out = new __WEBPACK_IMPORTED_MODULE_0__common_js__["ARRAY_TYPE"](9);
-  if (__WEBPACK_IMPORTED_MODULE_0__common_js__["ARRAY_TYPE"] != Float32Array) {
+  var out = new __WEBPACK_IMPORTED_MODULE_0__common_js__["a" /* ARRAY_TYPE */](9);
+  if (__WEBPACK_IMPORTED_MODULE_0__common_js__["a" /* ARRAY_TYPE */] != Float32Array) {
     out[1] = 0;
     out[2] = 0;
     out[3] = 0;
@@ -3594,7 +3593,7 @@ function fromMat4(out, a) {
  * @returns {mat3} a new 3x3 matrix
  */
 function clone(a) {
-  var out = new __WEBPACK_IMPORTED_MODULE_0__common_js__["ARRAY_TYPE"](9);
+  var out = new __WEBPACK_IMPORTED_MODULE_0__common_js__["a" /* ARRAY_TYPE */](9);
   out[0] = a[0];
   out[1] = a[1];
   out[2] = a[2];
@@ -3642,7 +3641,7 @@ function copy(out, a) {
  * @returns {mat3} A new mat3
  */
 function fromValues(m00, m01, m02, m10, m11, m12, m20, m21, m22) {
-  var out = new __WEBPACK_IMPORTED_MODULE_0__common_js__["ARRAY_TYPE"](9);
+  var out = new __WEBPACK_IMPORTED_MODULE_0__common_js__["a" /* ARRAY_TYPE */](9);
   out[0] = m00;
   out[1] = m01;
   out[2] = m02;
@@ -4335,7 +4334,7 @@ function equals(a, b) {
       b6 = b[6],
       b7 = b[7],
       b8 = b[8];
-  return Math.abs(a0 - b0) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["EPSILON"] * Math.max(1.0, Math.abs(a0), Math.abs(b0)) && Math.abs(a1 - b1) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["EPSILON"] * Math.max(1.0, Math.abs(a1), Math.abs(b1)) && Math.abs(a2 - b2) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["EPSILON"] * Math.max(1.0, Math.abs(a2), Math.abs(b2)) && Math.abs(a3 - b3) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["EPSILON"] * Math.max(1.0, Math.abs(a3), Math.abs(b3)) && Math.abs(a4 - b4) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["EPSILON"] * Math.max(1.0, Math.abs(a4), Math.abs(b4)) && Math.abs(a5 - b5) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["EPSILON"] * Math.max(1.0, Math.abs(a5), Math.abs(b5)) && Math.abs(a6 - b6) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["EPSILON"] * Math.max(1.0, Math.abs(a6), Math.abs(b6)) && Math.abs(a7 - b7) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["EPSILON"] * Math.max(1.0, Math.abs(a7), Math.abs(b7)) && Math.abs(a8 - b8) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["EPSILON"] * Math.max(1.0, Math.abs(a8), Math.abs(b8));
+  return Math.abs(a0 - b0) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["b" /* EPSILON */] * Math.max(1.0, Math.abs(a0), Math.abs(b0)) && Math.abs(a1 - b1) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["b" /* EPSILON */] * Math.max(1.0, Math.abs(a1), Math.abs(b1)) && Math.abs(a2 - b2) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["b" /* EPSILON */] * Math.max(1.0, Math.abs(a2), Math.abs(b2)) && Math.abs(a3 - b3) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["b" /* EPSILON */] * Math.max(1.0, Math.abs(a3), Math.abs(b3)) && Math.abs(a4 - b4) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["b" /* EPSILON */] * Math.max(1.0, Math.abs(a4), Math.abs(b4)) && Math.abs(a5 - b5) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["b" /* EPSILON */] * Math.max(1.0, Math.abs(a5), Math.abs(b5)) && Math.abs(a6 - b6) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["b" /* EPSILON */] * Math.max(1.0, Math.abs(a6), Math.abs(b6)) && Math.abs(a7 - b7) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["b" /* EPSILON */] * Math.max(1.0, Math.abs(a7), Math.abs(b7)) && Math.abs(a8 - b8) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["b" /* EPSILON */] * Math.max(1.0, Math.abs(a8), Math.abs(b8));
 }
 
 /**
@@ -4403,7 +4402,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (immutable) */ __webpack_exports__["equals"] = equals;
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "mul", function() { return mul; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "sub", function() { return sub; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__common_js__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__common_js__ = __webpack_require__(2);
 
 
 /**
@@ -4417,8 +4416,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
  * @returns {mat4} a new 4x4 matrix
  */
 function create() {
-  var out = new __WEBPACK_IMPORTED_MODULE_0__common_js__["ARRAY_TYPE"](16);
-  if (__WEBPACK_IMPORTED_MODULE_0__common_js__["ARRAY_TYPE"] != Float32Array) {
+  var out = new __WEBPACK_IMPORTED_MODULE_0__common_js__["a" /* ARRAY_TYPE */](16);
+  if (__WEBPACK_IMPORTED_MODULE_0__common_js__["a" /* ARRAY_TYPE */] != Float32Array) {
     out[1] = 0;
     out[2] = 0;
     out[3] = 0;
@@ -4446,7 +4445,7 @@ function create() {
  * @returns {mat4} a new 4x4 matrix
  */
 function clone(a) {
-  var out = new __WEBPACK_IMPORTED_MODULE_0__common_js__["ARRAY_TYPE"](16);
+  var out = new __WEBPACK_IMPORTED_MODULE_0__common_js__["a" /* ARRAY_TYPE */](16);
   out[0] = a[0];
   out[1] = a[1];
   out[2] = a[2];
@@ -4515,7 +4514,7 @@ function copy(out, a) {
  * @returns {mat4} A new mat4
  */
 function fromValues(m00, m01, m02, m03, m10, m11, m12, m13, m20, m21, m22, m23, m30, m31, m32, m33) {
-  var out = new __WEBPACK_IMPORTED_MODULE_0__common_js__["ARRAY_TYPE"](16);
+  var out = new __WEBPACK_IMPORTED_MODULE_0__common_js__["a" /* ARRAY_TYPE */](16);
   out[0] = m00;
   out[1] = m01;
   out[2] = m02;
@@ -4980,7 +4979,7 @@ function rotate(out, a, rad, axis) {
       b21 = void 0,
       b22 = void 0;
 
-  if (len < __WEBPACK_IMPORTED_MODULE_0__common_js__["EPSILON"]) {
+  if (len < __WEBPACK_IMPORTED_MODULE_0__common_js__["b" /* EPSILON */]) {
     return null;
   }
 
@@ -5241,7 +5240,7 @@ function fromRotation(out, rad, axis) {
       c = void 0,
       t = void 0;
 
-  if (len < __WEBPACK_IMPORTED_MODULE_0__common_js__["EPSILON"]) {
+  if (len < __WEBPACK_IMPORTED_MODULE_0__common_js__["b" /* EPSILON */]) {
     return null;
   }
 
@@ -5442,7 +5441,7 @@ function fromRotationTranslation(out, q, v) {
  * @returns {mat4} mat4 receiving operation result
  */
 function fromQuat2(out, a) {
-  var translation = new __WEBPACK_IMPORTED_MODULE_0__common_js__["ARRAY_TYPE"](3);
+  var translation = new __WEBPACK_IMPORTED_MODULE_0__common_js__["a" /* ARRAY_TYPE */](3);
   var bx = -a[0],
       by = -a[1],
       bz = -a[2],
@@ -5921,7 +5920,7 @@ function lookAt(out, eye, center, up) {
   var centery = center[1];
   var centerz = center[2];
 
-  if (Math.abs(eyex - centerx) < __WEBPACK_IMPORTED_MODULE_0__common_js__["EPSILON"] && Math.abs(eyey - centery) < __WEBPACK_IMPORTED_MODULE_0__common_js__["EPSILON"] && Math.abs(eyez - centerz) < __WEBPACK_IMPORTED_MODULE_0__common_js__["EPSILON"]) {
+  if (Math.abs(eyex - centerx) < __WEBPACK_IMPORTED_MODULE_0__common_js__["b" /* EPSILON */] && Math.abs(eyey - centery) < __WEBPACK_IMPORTED_MODULE_0__common_js__["b" /* EPSILON */] && Math.abs(eyez - centerz) < __WEBPACK_IMPORTED_MODULE_0__common_js__["b" /* EPSILON */]) {
     return identity(out);
   }
 
@@ -6231,7 +6230,7 @@ function equals(a, b) {
       b14 = b[14],
       b15 = b[15];
 
-  return Math.abs(a0 - b0) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["EPSILON"] * Math.max(1.0, Math.abs(a0), Math.abs(b0)) && Math.abs(a1 - b1) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["EPSILON"] * Math.max(1.0, Math.abs(a1), Math.abs(b1)) && Math.abs(a2 - b2) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["EPSILON"] * Math.max(1.0, Math.abs(a2), Math.abs(b2)) && Math.abs(a3 - b3) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["EPSILON"] * Math.max(1.0, Math.abs(a3), Math.abs(b3)) && Math.abs(a4 - b4) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["EPSILON"] * Math.max(1.0, Math.abs(a4), Math.abs(b4)) && Math.abs(a5 - b5) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["EPSILON"] * Math.max(1.0, Math.abs(a5), Math.abs(b5)) && Math.abs(a6 - b6) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["EPSILON"] * Math.max(1.0, Math.abs(a6), Math.abs(b6)) && Math.abs(a7 - b7) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["EPSILON"] * Math.max(1.0, Math.abs(a7), Math.abs(b7)) && Math.abs(a8 - b8) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["EPSILON"] * Math.max(1.0, Math.abs(a8), Math.abs(b8)) && Math.abs(a9 - b9) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["EPSILON"] * Math.max(1.0, Math.abs(a9), Math.abs(b9)) && Math.abs(a10 - b10) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["EPSILON"] * Math.max(1.0, Math.abs(a10), Math.abs(b10)) && Math.abs(a11 - b11) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["EPSILON"] * Math.max(1.0, Math.abs(a11), Math.abs(b11)) && Math.abs(a12 - b12) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["EPSILON"] * Math.max(1.0, Math.abs(a12), Math.abs(b12)) && Math.abs(a13 - b13) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["EPSILON"] * Math.max(1.0, Math.abs(a13), Math.abs(b13)) && Math.abs(a14 - b14) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["EPSILON"] * Math.max(1.0, Math.abs(a14), Math.abs(b14)) && Math.abs(a15 - b15) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["EPSILON"] * Math.max(1.0, Math.abs(a15), Math.abs(b15));
+  return Math.abs(a0 - b0) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["b" /* EPSILON */] * Math.max(1.0, Math.abs(a0), Math.abs(b0)) && Math.abs(a1 - b1) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["b" /* EPSILON */] * Math.max(1.0, Math.abs(a1), Math.abs(b1)) && Math.abs(a2 - b2) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["b" /* EPSILON */] * Math.max(1.0, Math.abs(a2), Math.abs(b2)) && Math.abs(a3 - b3) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["b" /* EPSILON */] * Math.max(1.0, Math.abs(a3), Math.abs(b3)) && Math.abs(a4 - b4) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["b" /* EPSILON */] * Math.max(1.0, Math.abs(a4), Math.abs(b4)) && Math.abs(a5 - b5) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["b" /* EPSILON */] * Math.max(1.0, Math.abs(a5), Math.abs(b5)) && Math.abs(a6 - b6) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["b" /* EPSILON */] * Math.max(1.0, Math.abs(a6), Math.abs(b6)) && Math.abs(a7 - b7) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["b" /* EPSILON */] * Math.max(1.0, Math.abs(a7), Math.abs(b7)) && Math.abs(a8 - b8) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["b" /* EPSILON */] * Math.max(1.0, Math.abs(a8), Math.abs(b8)) && Math.abs(a9 - b9) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["b" /* EPSILON */] * Math.max(1.0, Math.abs(a9), Math.abs(b9)) && Math.abs(a10 - b10) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["b" /* EPSILON */] * Math.max(1.0, Math.abs(a10), Math.abs(b10)) && Math.abs(a11 - b11) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["b" /* EPSILON */] * Math.max(1.0, Math.abs(a11), Math.abs(b11)) && Math.abs(a12 - b12) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["b" /* EPSILON */] * Math.max(1.0, Math.abs(a12), Math.abs(b12)) && Math.abs(a13 - b13) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["b" /* EPSILON */] * Math.max(1.0, Math.abs(a13), Math.abs(b13)) && Math.abs(a14 - b14) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["b" /* EPSILON */] * Math.max(1.0, Math.abs(a14), Math.abs(b14)) && Math.abs(a15 - b15) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["b" /* EPSILON */] * Math.max(1.0, Math.abs(a15), Math.abs(b15));
 }
 
 /**
@@ -6251,43 +6250,42 @@ var sub = subtract;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (immutable) */ __webpack_exports__["create"] = create;
-/* harmony export (immutable) */ __webpack_exports__["identity"] = identity;
-/* harmony export (immutable) */ __webpack_exports__["setAxisAngle"] = setAxisAngle;
-/* harmony export (immutable) */ __webpack_exports__["getAxisAngle"] = getAxisAngle;
-/* harmony export (immutable) */ __webpack_exports__["multiply"] = multiply;
-/* harmony export (immutable) */ __webpack_exports__["rotateX"] = rotateX;
-/* harmony export (immutable) */ __webpack_exports__["rotateY"] = rotateY;
-/* harmony export (immutable) */ __webpack_exports__["rotateZ"] = rotateZ;
-/* harmony export (immutable) */ __webpack_exports__["calculateW"] = calculateW;
-/* harmony export (immutable) */ __webpack_exports__["slerp"] = slerp;
-/* harmony export (immutable) */ __webpack_exports__["random"] = random;
-/* harmony export (immutable) */ __webpack_exports__["invert"] = invert;
-/* harmony export (immutable) */ __webpack_exports__["conjugate"] = conjugate;
-/* harmony export (immutable) */ __webpack_exports__["fromMat3"] = fromMat3;
-/* harmony export (immutable) */ __webpack_exports__["fromEuler"] = fromEuler;
-/* harmony export (immutable) */ __webpack_exports__["str"] = str;
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "clone", function() { return clone; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fromValues", function() { return fromValues; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "copy", function() { return copy; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "set", function() { return set; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "add", function() { return add; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "mul", function() { return mul; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "scale", function() { return scale; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "dot", function() { return dot; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "lerp", function() { return lerp; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "length", function() { return length; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "len", function() { return len; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "squaredLength", function() { return squaredLength; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "sqrLen", function() { return sqrLen; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "normalize", function() { return normalize; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "exactEquals", function() { return exactEquals; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "equals", function() { return equals; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rotationTo", function() { return rotationTo; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "sqlerp", function() { return sqlerp; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "setAxes", function() { return setAxes; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__common_js__ = __webpack_require__(3);
+/* harmony export (immutable) */ __webpack_exports__["b"] = create;
+/* unused harmony export identity */
+/* unused harmony export setAxisAngle */
+/* unused harmony export getAxisAngle */
+/* unused harmony export multiply */
+/* harmony export (immutable) */ __webpack_exports__["e"] = rotateX;
+/* harmony export (immutable) */ __webpack_exports__["f"] = rotateY;
+/* harmony export (immutable) */ __webpack_exports__["g"] = rotateZ;
+/* unused harmony export calculateW */
+/* unused harmony export slerp */
+/* unused harmony export random */
+/* unused harmony export invert */
+/* unused harmony export conjugate */
+/* unused harmony export fromMat3 */
+/* unused harmony export fromEuler */
+/* unused harmony export str */
+/* unused harmony export clone */
+/* unused harmony export fromValues */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return copy; });
+/* unused harmony export set */
+/* unused harmony export add */
+/* unused harmony export mul */
+/* unused harmony export scale */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return dot; });
+/* unused harmony export lerp */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return length; });
+/* unused harmony export len */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return squaredLength; });
+/* unused harmony export sqrLen */
+/* unused harmony export normalize */
+/* unused harmony export exactEquals */
+/* unused harmony export equals */
+/* unused harmony export rotationTo */
+/* unused harmony export sqlerp */
+/* unused harmony export setAxes */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__common_js__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mat3_js__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__vec3_js__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__vec4_js__ = __webpack_require__(11);
@@ -6307,8 +6305,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
  * @returns {quat} a new quaternion
  */
 function create() {
-  var out = new __WEBPACK_IMPORTED_MODULE_0__common_js__["ARRAY_TYPE"](4);
-  if (__WEBPACK_IMPORTED_MODULE_0__common_js__["ARRAY_TYPE"] != Float32Array) {
+  var out = new __WEBPACK_IMPORTED_MODULE_0__common_js__["a" /* ARRAY_TYPE */](4);
+  if (__WEBPACK_IMPORTED_MODULE_0__common_js__["a" /* ARRAY_TYPE */] != Float32Array) {
     out[0] = 0;
     out[1] = 0;
     out[2] = 0;
@@ -6366,7 +6364,7 @@ function setAxisAngle(out, axis, rad) {
 function getAxisAngle(out_axis, q) {
   var rad = Math.acos(q[3]) * 2.0;
   var s = Math.sin(rad / 2.0);
-  if (s > __WEBPACK_IMPORTED_MODULE_0__common_js__["EPSILON"]) {
+  if (s > __WEBPACK_IMPORTED_MODULE_0__common_js__["b" /* EPSILON */]) {
     out_axis[0] = q[0] / s;
     out_axis[1] = q[1] / s;
     out_axis[2] = q[2] / s;
@@ -6538,7 +6536,7 @@ function slerp(out, a, b, t) {
     bw = -bw;
   }
   // calculate coefficients
-  if (1.0 - cosom > __WEBPACK_IMPORTED_MODULE_0__common_js__["EPSILON"]) {
+  if (1.0 - cosom > __WEBPACK_IMPORTED_MODULE_0__common_js__["b" /* EPSILON */]) {
     // standard case (slerp)
     omega = Math.acos(cosom);
     sinom = Math.sin(omega);
@@ -6568,9 +6566,9 @@ function slerp(out, a, b, t) {
 function random(out) {
   // Implementation of http://planning.cs.uiuc.edu/node198.html
   // TODO: Calling random 3 times is probably not the fastest solution
-  var u1 = __WEBPACK_IMPORTED_MODULE_0__common_js__["RANDOM"]();
-  var u2 = __WEBPACK_IMPORTED_MODULE_0__common_js__["RANDOM"]();
-  var u3 = __WEBPACK_IMPORTED_MODULE_0__common_js__["RANDOM"]();
+  var u1 = __WEBPACK_IMPORTED_MODULE_0__common_js__["c" /* RANDOM */]();
+  var u2 = __WEBPACK_IMPORTED_MODULE_0__common_js__["c" /* RANDOM */]();
+  var u3 = __WEBPACK_IMPORTED_MODULE_0__common_js__["c" /* RANDOM */]();
 
   var sqrt1MinusU1 = Math.sqrt(1 - u1);
   var sqrtU1 = Math.sqrt(u1);
@@ -7006,7 +7004,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "len", function() { return len; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "sqrLen", function() { return sqrLen; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "forEach", function() { return forEach; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__common_js__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__common_js__ = __webpack_require__(2);
 
 
 /**
@@ -7020,8 +7018,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
  * @returns {vec3} a new 3D vector
  */
 function create() {
-  var out = new __WEBPACK_IMPORTED_MODULE_0__common_js__["ARRAY_TYPE"](3);
-  if (__WEBPACK_IMPORTED_MODULE_0__common_js__["ARRAY_TYPE"] != Float32Array) {
+  var out = new __WEBPACK_IMPORTED_MODULE_0__common_js__["a" /* ARRAY_TYPE */](3);
+  if (__WEBPACK_IMPORTED_MODULE_0__common_js__["a" /* ARRAY_TYPE */] != Float32Array) {
     out[0] = 0;
     out[1] = 0;
     out[2] = 0;
@@ -7036,7 +7034,7 @@ function create() {
  * @returns {vec3} a new 3D vector
  */
 function clone(a) {
-  var out = new __WEBPACK_IMPORTED_MODULE_0__common_js__["ARRAY_TYPE"](3);
+  var out = new __WEBPACK_IMPORTED_MODULE_0__common_js__["a" /* ARRAY_TYPE */](3);
   out[0] = a[0];
   out[1] = a[1];
   out[2] = a[2];
@@ -7065,7 +7063,7 @@ function length(a) {
  * @returns {vec3} a new 3D vector
  */
 function fromValues(x, y, z) {
-  var out = new __WEBPACK_IMPORTED_MODULE_0__common_js__["ARRAY_TYPE"](3);
+  var out = new __WEBPACK_IMPORTED_MODULE_0__common_js__["a" /* ARRAY_TYPE */](3);
   out[0] = x;
   out[1] = y;
   out[2] = z;
@@ -7470,8 +7468,8 @@ function bezier(out, a, b, c, d, t) {
 function random(out, scale) {
   scale = scale || 1.0;
 
-  var r = __WEBPACK_IMPORTED_MODULE_0__common_js__["RANDOM"]() * 2.0 * Math.PI;
-  var z = __WEBPACK_IMPORTED_MODULE_0__common_js__["RANDOM"]() * 2.0 - 1.0;
+  var r = __WEBPACK_IMPORTED_MODULE_0__common_js__["c" /* RANDOM */]() * 2.0 * Math.PI;
+  var z = __WEBPACK_IMPORTED_MODULE_0__common_js__["c" /* RANDOM */]() * 2.0 - 1.0;
   var zScale = Math.sqrt(1.0 - z * z) * scale;
 
   out[0] = Math.cos(r) * zScale;
@@ -7708,7 +7706,7 @@ function equals(a, b) {
   var b0 = b[0],
       b1 = b[1],
       b2 = b[2];
-  return Math.abs(a0 - b0) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["EPSILON"] * Math.max(1.0, Math.abs(a0), Math.abs(b0)) && Math.abs(a1 - b1) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["EPSILON"] * Math.max(1.0, Math.abs(a1), Math.abs(b1)) && Math.abs(a2 - b2) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["EPSILON"] * Math.max(1.0, Math.abs(a2), Math.abs(b2));
+  return Math.abs(a0 - b0) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["b" /* EPSILON */] * Math.max(1.0, Math.abs(a0), Math.abs(b0)) && Math.abs(a1 - b1) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["b" /* EPSILON */] * Math.max(1.0, Math.abs(a1), Math.abs(b1)) && Math.abs(a2 - b2) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["b" /* EPSILON */] * Math.max(1.0, Math.abs(a2), Math.abs(b2));
 }
 
 /**
@@ -7840,7 +7838,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "len", function() { return len; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "sqrLen", function() { return sqrLen; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "forEach", function() { return forEach; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__common_js__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__common_js__ = __webpack_require__(2);
 
 
 /**
@@ -7854,8 +7852,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
  * @returns {vec4} a new 4D vector
  */
 function create() {
-  var out = new __WEBPACK_IMPORTED_MODULE_0__common_js__["ARRAY_TYPE"](4);
-  if (__WEBPACK_IMPORTED_MODULE_0__common_js__["ARRAY_TYPE"] != Float32Array) {
+  var out = new __WEBPACK_IMPORTED_MODULE_0__common_js__["a" /* ARRAY_TYPE */](4);
+  if (__WEBPACK_IMPORTED_MODULE_0__common_js__["a" /* ARRAY_TYPE */] != Float32Array) {
     out[0] = 0;
     out[1] = 0;
     out[2] = 0;
@@ -7871,7 +7869,7 @@ function create() {
  * @returns {vec4} a new 4D vector
  */
 function clone(a) {
-  var out = new __WEBPACK_IMPORTED_MODULE_0__common_js__["ARRAY_TYPE"](4);
+  var out = new __WEBPACK_IMPORTED_MODULE_0__common_js__["a" /* ARRAY_TYPE */](4);
   out[0] = a[0];
   out[1] = a[1];
   out[2] = a[2];
@@ -7889,7 +7887,7 @@ function clone(a) {
  * @returns {vec4} a new 4D vector
  */
 function fromValues(x, y, z, w) {
-  var out = new __WEBPACK_IMPORTED_MODULE_0__common_js__["ARRAY_TYPE"](4);
+  var out = new __WEBPACK_IMPORTED_MODULE_0__common_js__["a" /* ARRAY_TYPE */](4);
   out[0] = x;
   out[1] = y;
   out[2] = z;
@@ -8263,13 +8261,13 @@ function random(out, scale) {
   var v1, v2, v3, v4;
   var s1, s2;
   do {
-    v1 = __WEBPACK_IMPORTED_MODULE_0__common_js__["RANDOM"]() * 2 - 1;
-    v2 = __WEBPACK_IMPORTED_MODULE_0__common_js__["RANDOM"]() * 2 - 1;
+    v1 = __WEBPACK_IMPORTED_MODULE_0__common_js__["c" /* RANDOM */]() * 2 - 1;
+    v2 = __WEBPACK_IMPORTED_MODULE_0__common_js__["c" /* RANDOM */]() * 2 - 1;
     s1 = v1 * v1 + v2 * v2;
   } while (s1 >= 1);
   do {
-    v3 = __WEBPACK_IMPORTED_MODULE_0__common_js__["RANDOM"]() * 2 - 1;
-    v4 = __WEBPACK_IMPORTED_MODULE_0__common_js__["RANDOM"]() * 2 - 1;
+    v3 = __WEBPACK_IMPORTED_MODULE_0__common_js__["c" /* RANDOM */]() * 2 - 1;
+    v4 = __WEBPACK_IMPORTED_MODULE_0__common_js__["c" /* RANDOM */]() * 2 - 1;
     s2 = v3 * v3 + v4 * v4;
   } while (s2 >= 1);
 
@@ -8369,7 +8367,7 @@ function equals(a, b) {
       b1 = b[1],
       b2 = b[2],
       b3 = b[3];
-  return Math.abs(a0 - b0) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["EPSILON"] * Math.max(1.0, Math.abs(a0), Math.abs(b0)) && Math.abs(a1 - b1) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["EPSILON"] * Math.max(1.0, Math.abs(a1), Math.abs(b1)) && Math.abs(a2 - b2) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["EPSILON"] * Math.max(1.0, Math.abs(a2), Math.abs(b2)) && Math.abs(a3 - b3) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["EPSILON"] * Math.max(1.0, Math.abs(a3), Math.abs(b3));
+  return Math.abs(a0 - b0) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["b" /* EPSILON */] * Math.max(1.0, Math.abs(a0), Math.abs(b0)) && Math.abs(a1 - b1) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["b" /* EPSILON */] * Math.max(1.0, Math.abs(a1), Math.abs(b1)) && Math.abs(a2 - b2) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["b" /* EPSILON */] * Math.max(1.0, Math.abs(a2), Math.abs(b2)) && Math.abs(a3 - b3) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["b" /* EPSILON */] * Math.max(1.0, Math.abs(a3), Math.abs(b3));
 }
 
 /**
@@ -8791,7 +8789,7 @@ exports.SoundLoader = SoundLoader;
 
 module.exports = createFilteredVector
 
-var cubicHermite = __webpack_require__(51)
+var cubicHermite = __webpack_require__(48)
 var bsearch = __webpack_require__(16)
 
 function clamp(lo, hi, x) {
@@ -9466,7 +9464,7 @@ function determinant(a) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__geometry_Cube__ = __webpack_require__(89);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__geometry_Cube__ = __webpack_require__(81);
 
 class Building {
     constructor(startX, startY, startZ, width, height, length) {
@@ -9556,36 +9554,29 @@ class Building {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_gl_matrix__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_gl_matrix__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_howler__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_howler___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_howler__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_howler_sound_controller__ = __webpack_require__(31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_howler_sound_controller___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_howler_sound_controller__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_stats_js__ = __webpack_require__(33);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_stats_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_stats_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_dat_gui__ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_dat_gui___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_dat_gui__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__geometry_Square__ = __webpack_require__(37);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__geometry_Leaf__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__geometry_Mario__ = __webpack_require__(39);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__geometry_Pipes__ = __webpack_require__(40);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__geometry_Ground__ = __webpack_require__(41);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__geometry_Box__ = __webpack_require__(42);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__geometry_Question__ = __webpack_require__(43);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__geometry_LSystemMesh__ = __webpack_require__(44);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__rendering_gl_OpenGLRenderer__ = __webpack_require__(45);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__Camera__ = __webpack_require__(46);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__globals__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__ = __webpack_require__(80);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__LSystem__ = __webpack_require__(81);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__Turtle__ = __webpack_require__(84);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__geometry_ScreenQuad__ = __webpack_require__(86);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__geometry_Plane__ = __webpack_require__(87);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__City__ = __webpack_require__(88);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__Town__ = __webpack_require__(90);
-
-
-
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__geometry_Square__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__geometry_Leaf__ = __webpack_require__(35);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__geometry_Mario__ = __webpack_require__(36);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__geometry_Pipes__ = __webpack_require__(37);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__geometry_Ground__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__geometry_Box__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__geometry_Question__ = __webpack_require__(40);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__geometry_LSystemMesh__ = __webpack_require__(41);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__rendering_gl_OpenGLRenderer__ = __webpack_require__(42);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__Camera__ = __webpack_require__(43);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__globals__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__ = __webpack_require__(77);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__geometry_ScreenQuad__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__geometry_Plane__ = __webpack_require__(79);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__City__ = __webpack_require__(80);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__Town__ = __webpack_require__(82);
 
 
 
@@ -9621,6 +9612,8 @@ let mario;
 let pipes;
 let ground;
 let question;
+let brain;
+let robot;
 let box;
 let plantMesh;
 let screenQuad;
@@ -9636,21 +9629,24 @@ var elapsed;
 let planePos;
 let plane;
 let loader;
+let camera2;
 function loadScene() {
-    leaf = new __WEBPACK_IMPORTED_MODULE_6__geometry_Leaf__["a" /* default */]();
-    mario = new __WEBPACK_IMPORTED_MODULE_7__geometry_Mario__["a" /* default */]();
-    pipes = new __WEBPACK_IMPORTED_MODULE_8__geometry_Pipes__["a" /* default */]();
-    question = new __WEBPACK_IMPORTED_MODULE_11__geometry_Question__["a" /* default */]();
-    box = new __WEBPACK_IMPORTED_MODULE_10__geometry_Box__["a" /* default */]();
-    ground = new __WEBPACK_IMPORTED_MODULE_9__geometry_Ground__["a" /* default */]();
-    plantMesh = new __WEBPACK_IMPORTED_MODULE_12__geometry_LSystemMesh__["a" /* default */]();
-    screenQuad = new __WEBPACK_IMPORTED_MODULE_19__geometry_ScreenQuad__["a" /* default */]();
+    leaf = new __WEBPACK_IMPORTED_MODULE_5__geometry_Leaf__["a" /* default */]();
+    mario = new __WEBPACK_IMPORTED_MODULE_6__geometry_Mario__["a" /* default */]();
+    pipes = new __WEBPACK_IMPORTED_MODULE_7__geometry_Pipes__["a" /* default */]();
+    question = new __WEBPACK_IMPORTED_MODULE_10__geometry_Question__["a" /* default */]();
+    brain = new __WEBPACK_IMPORTED_MODULE_10__geometry_Question__["a" /* default */]();
+    robot = new __WEBPACK_IMPORTED_MODULE_10__geometry_Question__["a" /* default */]();
+    box = new __WEBPACK_IMPORTED_MODULE_9__geometry_Box__["a" /* default */]();
+    ground = new __WEBPACK_IMPORTED_MODULE_8__geometry_Ground__["a" /* default */]();
+    plantMesh = new __WEBPACK_IMPORTED_MODULE_11__geometry_LSystemMesh__["a" /* default */]();
+    screenQuad = new __WEBPACK_IMPORTED_MODULE_16__geometry_ScreenQuad__["a" /* default */]();
     screenQuad.create();
-    back = new __WEBPACK_IMPORTED_MODULE_5__geometry_Square__["a" /* default */]();
+    back = new __WEBPACK_IMPORTED_MODULE_4__geometry_Square__["a" /* default */]();
     back.create();
-    plane = new __WEBPACK_IMPORTED_MODULE_20__geometry_Plane__["a" /* default */](__WEBPACK_IMPORTED_MODULE_0_gl_matrix__["f" /* vec3 */].fromValues(0, 0, 0), __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["e" /* vec2 */].fromValues(1000, 1000), 20);
+    plane = new __WEBPACK_IMPORTED_MODULE_17__geometry_Plane__["a" /* default */](__WEBPACK_IMPORTED_MODULE_0_gl_matrix__["d" /* vec3 */].fromValues(0, 0, 0), __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["c" /* vec2 */].fromValues(2000, 2000), 20);
     plane.create();
-    planePos = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["e" /* vec2 */].fromValues(0, 120);
+    planePos = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["c" /* vec2 */].fromValues(0, 120);
     // Get load manager via method
     //   loader = controller.getLoader();
     //
@@ -9658,26 +9654,14 @@ function loadScene() {
     //     src: ['darkside.mp3']
     // });
     //
-    city = new __WEBPACK_IMPORTED_MODULE_21__City__["a" /* default */]();
-    town = new __WEBPACK_IMPORTED_MODULE_22__Town__["a" /* default */]();
+    city = new __WEBPACK_IMPORTED_MODULE_18__City__["a" /* default */]();
+    town = new __WEBPACK_IMPORTED_MODULE_19__Town__["a" /* default */]();
     darkside = new __WEBPACK_IMPORTED_MODULE_1_howler__["Howl"]({
         src: ['darkside.mp3'],
         html5: false
     });
     //var loader : Date  = new Date();
     //var loadtime : number = new Date().valueOf() - loader.valueOf();
-    for (var i = 0; i < city.buildings.length; i++) {
-        var curr_building = city.buildings[i].stack;
-        for (var j = 0; j < curr_building.length; j++) {
-            curr_building[j].create();
-        }
-    }
-    for (var i = 0; i < town.buildings.length; i++) {
-        var curr_building = town.buildings[i].stack;
-        for (var j = 0; j < curr_building.length; j++) {
-            curr_building[j].create();
-        }
-    }
 }
 //funtion to load OBJ ... thank u, cis 460 half edge
 function loadOBJ(mesh, objFile, callback) {
@@ -9744,18 +9728,7 @@ function loadOBJ(mesh, objFile, callback) {
     callback(finalIndex, finalPos, finalNor);
 }
 function update() {
-    plantMesh.destroy();
-    plantMesh.clear();
-    let startChar = 'A';
-    let plantLSystem = new __WEBPACK_IMPORTED_MODULE_17__LSystem__["a" /* default */](startChar, plantMesh);
-    for (var i = 0; i < controls.Iterations; i++) {
-        plantLSystem.computeLSystem();
-    }
     //create the Leaf and plant system
-    let turtle = new __WEBPACK_IMPORTED_MODULE_18__Turtle__["a" /* default */](controls.LeafSize, plantMesh, __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["f" /* vec3 */].fromValues(0, 0, 0), __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["d" /* quat */].create(), 0, 1);
-    plantLSystem.addRules(leaf, mario, plantMesh, turtle);
-    plantLSystem.drawLSystem();
-    plantMesh.create();
 }
 function main() {
     // Initial display for framerate
@@ -9764,27 +9737,10 @@ function main() {
     stats.domElement.style.position = 'absolute';
     stats.domElement.style.left = '0px';
     stats.domElement.style.top = '0px';
-    document.body.appendChild(stats.domElement);
+    //uncomment for the fps
+    //  document.body.appendChild(stats.domElement);
     // Add controls to the gui
-    const gui = new __WEBPACK_IMPORTED_MODULE_4_dat_gui__["GUI"]();
-    gui.add(controls, 'Update');
-    gui.add(controls, 'LeafSize', 0.5, 1.5);
-    gui.add(controls, 'Iterations', 0, 4).step(1);
-    var colorPicker = gui.addColor(controls, 'Piranha Color');
-    var colorPicker2 = gui.addColor(controls, 'Tube Color');
-    var colorPicker3 = gui.addColor(controls, 'Leaf Color');
-    colorPicker.onChange(function (value) {
-        mario.setColor(__WEBPACK_IMPORTED_MODULE_0_gl_matrix__["f" /* vec3 */].fromValues(value[0] / 255.0, value[1] / 255.0, value[2] / 255.0));
-        mario.resetColors();
-    });
-    colorPicker2.onChange(function (value) {
-        pipes.setColor(__WEBPACK_IMPORTED_MODULE_0_gl_matrix__["f" /* vec3 */].fromValues(value[0] / 255.0, value[1] / 255.0, value[2] / 255.0));
-        pipes.resetColors();
-    });
-    colorPicker3.onChange(function (value) {
-        leaf.setColor(__WEBPACK_IMPORTED_MODULE_0_gl_matrix__["f" /* vec3 */].fromValues(value[0] / 255.0, value[1] / 255.0, value[2] / 255.0));
-        leaf.resetColors();
-    });
+    //const gui = new DAT.GUI();
     // get canvas and webgl context
     const canvas = document.getElementById('canvas');
     const gl = canvas.getContext('webgl2');
@@ -9793,7 +9749,7 @@ function main() {
     }
     // `setGL` is a function imported above which sets the value of `gl` in the `globals.ts` module.
     // Later, we can import `gl` from `globals.ts` to access it
-    Object(__WEBPACK_IMPORTED_MODULE_15__globals__["b" /* setGL */])(gl);
+    Object(__WEBPACK_IMPORTED_MODULE_14__globals__["b" /* setGL */])(gl);
     // Initial call to load scene
     loadScene();
     console.log(darkside.state());
@@ -9809,134 +9765,138 @@ function main() {
     // }
     // }
     //elapsed = new Date().valueOf() - start.valueOf();
-    const camera = new __WEBPACK_IMPORTED_MODULE_14__Camera__["a" /* default */](__WEBPACK_IMPORTED_MODULE_0_gl_matrix__["f" /* vec3 */].fromValues(0, 20, 5), __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["f" /* vec3 */].fromValues(0, 0, -20));
-    const renderer = new __WEBPACK_IMPORTED_MODULE_13__rendering_gl_OpenGLRenderer__["a" /* default */](canvas);
+    const camera = new __WEBPACK_IMPORTED_MODULE_13__Camera__["a" /* default */](__WEBPACK_IMPORTED_MODULE_0_gl_matrix__["d" /* vec3 */].fromValues(0, 5, 5), __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["d" /* vec3 */].fromValues(0, 0, -20));
+    //car front
+    camera2 = new __WEBPACK_IMPORTED_MODULE_13__Camera__["a" /* default */](__WEBPACK_IMPORTED_MODULE_0_gl_matrix__["d" /* vec3 */].fromValues(-6, 0.5, 1.2), __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["d" /* vec3 */].fromValues(0, 0, 0));
+    //car side
+    const camera3 = new __WEBPACK_IMPORTED_MODULE_13__Camera__["a" /* default */](__WEBPACK_IMPORTED_MODULE_0_gl_matrix__["d" /* vec3 */].fromValues(-3.5, 1, -1), __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["d" /* vec3 */].fromValues(0, 0, 0));
+    const renderer = new __WEBPACK_IMPORTED_MODULE_12__rendering_gl_OpenGLRenderer__["a" /* default */](canvas);
     //THISSSSSSSSSSSSSS
-    //renderer.setClearColor(0.3, 0.81, 0.92, 1);
+    renderer.setClearColor(0.0, 0.0, 0.0, 1.0);
     gl.enable(gl.DEPTH_TEST);
-    const lambert = new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["b" /* default */]([
-        new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["a" /* Shader */](gl.VERTEX_SHADER, __webpack_require__(91)),
-        new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["a" /* Shader */](gl.FRAGMENT_SHADER, __webpack_require__(92)),
+    const lambert = new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["b" /* default */]([
+        new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["a" /* Shader */](gl.VERTEX_SHADER, __webpack_require__(83)),
+        new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["a" /* Shader */](gl.FRAGMENT_SHADER, __webpack_require__(84)),
     ]);
-    const instancedShader = new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["b" /* default */]([
-        new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["a" /* Shader */](gl.VERTEX_SHADER, __webpack_require__(93)),
-        new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["a" /* Shader */](gl.FRAGMENT_SHADER, __webpack_require__(94)),
+    const instancedShader = new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["b" /* default */]([
+        new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["a" /* Shader */](gl.VERTEX_SHADER, __webpack_require__(85)),
+        new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["a" /* Shader */](gl.FRAGMENT_SHADER, __webpack_require__(86)),
     ]);
-    const flat = new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["b" /* default */]([
-        new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["a" /* Shader */](gl.VERTEX_SHADER, __webpack_require__(95)),
-        new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["a" /* Shader */](gl.FRAGMENT_SHADER, __webpack_require__(96)),
+    const flat = new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["b" /* default */]([
+        new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["a" /* Shader */](gl.VERTEX_SHADER, __webpack_require__(87)),
+        new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["a" /* Shader */](gl.FRAGMENT_SHADER, __webpack_require__(88)),
     ]);
-    const floor = new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["b" /* default */]([
-        new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["a" /* Shader */](gl.VERTEX_SHADER, __webpack_require__(97)),
-        new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["a" /* Shader */](gl.FRAGMENT_SHADER, __webpack_require__(98)),
+    const floor = new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["b" /* default */]([
+        new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["a" /* Shader */](gl.VERTEX_SHADER, __webpack_require__(89)),
+        new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["a" /* Shader */](gl.FRAGMENT_SHADER, __webpack_require__(90)),
     ]);
-    const boxShader = new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["b" /* default */]([
-        new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["a" /* Shader */](gl.VERTEX_SHADER, __webpack_require__(99)),
-        new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["a" /* Shader */](gl.FRAGMENT_SHADER, __webpack_require__(100)),
+    const boxShader = new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["b" /* default */]([
+        new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["a" /* Shader */](gl.VERTEX_SHADER, __webpack_require__(91)),
+        new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["a" /* Shader */](gl.FRAGMENT_SHADER, __webpack_require__(92)),
     ]);
-    const tealShader = new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["b" /* default */]([
-        new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["a" /* Shader */](gl.VERTEX_SHADER, __webpack_require__(101)),
-        new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["a" /* Shader */](gl.FRAGMENT_SHADER, __webpack_require__(102)),
+    const tealShader = new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["b" /* default */]([
+        new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["a" /* Shader */](gl.VERTEX_SHADER, __webpack_require__(93)),
+        new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["a" /* Shader */](gl.FRAGMENT_SHADER, __webpack_require__(94)),
     ]);
-    const dark1 = new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["b" /* default */]([
-        new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["a" /* Shader */](gl.VERTEX_SHADER, __webpack_require__(103)),
-        new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["a" /* Shader */](gl.FRAGMENT_SHADER, __webpack_require__(104)),
+    const dark1 = new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["b" /* default */]([
+        new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["a" /* Shader */](gl.VERTEX_SHADER, __webpack_require__(95)),
+        new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["a" /* Shader */](gl.FRAGMENT_SHADER, __webpack_require__(96)),
     ]);
-    const dark2 = new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["b" /* default */]([
-        new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["a" /* Shader */](gl.VERTEX_SHADER, __webpack_require__(105)),
-        new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["a" /* Shader */](gl.FRAGMENT_SHADER, __webpack_require__(106)),
+    const dark2 = new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["b" /* default */]([
+        new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["a" /* Shader */](gl.VERTEX_SHADER, __webpack_require__(97)),
+        new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["a" /* Shader */](gl.FRAGMENT_SHADER, __webpack_require__(98)),
     ]);
-    const dark3 = new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["b" /* default */]([
-        new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["a" /* Shader */](gl.VERTEX_SHADER, __webpack_require__(107)),
-        new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["a" /* Shader */](gl.FRAGMENT_SHADER, __webpack_require__(108)),
+    const dark3 = new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["b" /* default */]([
+        new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["a" /* Shader */](gl.VERTEX_SHADER, __webpack_require__(99)),
+        new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["a" /* Shader */](gl.FRAGMENT_SHADER, __webpack_require__(100)),
     ]);
-    const dark4 = new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["b" /* default */]([
-        new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["a" /* Shader */](gl.VERTEX_SHADER, __webpack_require__(109)),
-        new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["a" /* Shader */](gl.FRAGMENT_SHADER, __webpack_require__(110)),
+    const dark4 = new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["b" /* default */]([
+        new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["a" /* Shader */](gl.VERTEX_SHADER, __webpack_require__(101)),
+        new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["a" /* Shader */](gl.FRAGMENT_SHADER, __webpack_require__(102)),
     ]);
-    const dark5 = new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["b" /* default */]([
-        new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["a" /* Shader */](gl.VERTEX_SHADER, __webpack_require__(111)),
-        new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["a" /* Shader */](gl.FRAGMENT_SHADER, __webpack_require__(112)),
+    const dark5 = new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["b" /* default */]([
+        new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["a" /* Shader */](gl.VERTEX_SHADER, __webpack_require__(103)),
+        new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["a" /* Shader */](gl.FRAGMENT_SHADER, __webpack_require__(104)),
     ]);
-    const dark6 = new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["b" /* default */]([
-        new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["a" /* Shader */](gl.VERTEX_SHADER, __webpack_require__(113)),
-        new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["a" /* Shader */](gl.FRAGMENT_SHADER, __webpack_require__(114)),
+    const dark6 = new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["b" /* default */]([
+        new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["a" /* Shader */](gl.VERTEX_SHADER, __webpack_require__(105)),
+        new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["a" /* Shader */](gl.FRAGMENT_SHADER, __webpack_require__(106)),
     ]);
-    const dark7 = new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["b" /* default */]([
-        new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["a" /* Shader */](gl.VERTEX_SHADER, __webpack_require__(115)),
-        new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["a" /* Shader */](gl.FRAGMENT_SHADER, __webpack_require__(116)),
+    const dark7 = new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["b" /* default */]([
+        new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["a" /* Shader */](gl.VERTEX_SHADER, __webpack_require__(107)),
+        new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["a" /* Shader */](gl.FRAGMENT_SHADER, __webpack_require__(108)),
     ]);
-    const dark8 = new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["b" /* default */]([
-        new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["a" /* Shader */](gl.VERTEX_SHADER, __webpack_require__(117)),
-        new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["a" /* Shader */](gl.FRAGMENT_SHADER, __webpack_require__(118)),
+    const dark8 = new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["b" /* default */]([
+        new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["a" /* Shader */](gl.VERTEX_SHADER, __webpack_require__(109)),
+        new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["a" /* Shader */](gl.FRAGMENT_SHADER, __webpack_require__(110)),
     ]);
-    const dark9 = new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["b" /* default */]([
-        new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["a" /* Shader */](gl.VERTEX_SHADER, __webpack_require__(119)),
-        new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["a" /* Shader */](gl.FRAGMENT_SHADER, __webpack_require__(120)),
+    const dark9 = new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["b" /* default */]([
+        new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["a" /* Shader */](gl.VERTEX_SHADER, __webpack_require__(111)),
+        new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["a" /* Shader */](gl.FRAGMENT_SHADER, __webpack_require__(112)),
     ]);
-    const dark10 = new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["b" /* default */]([
-        new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["a" /* Shader */](gl.VERTEX_SHADER, __webpack_require__(121)),
-        new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["a" /* Shader */](gl.FRAGMENT_SHADER, __webpack_require__(122)),
+    const dark10 = new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["b" /* default */]([
+        new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["a" /* Shader */](gl.VERTEX_SHADER, __webpack_require__(113)),
+        new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["a" /* Shader */](gl.FRAGMENT_SHADER, __webpack_require__(114)),
     ]);
-    const dark11 = new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["b" /* default */]([
-        new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["a" /* Shader */](gl.VERTEX_SHADER, __webpack_require__(123)),
-        new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["a" /* Shader */](gl.FRAGMENT_SHADER, __webpack_require__(124)),
+    const dark11 = new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["b" /* default */]([
+        new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["a" /* Shader */](gl.VERTEX_SHADER, __webpack_require__(115)),
+        new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["a" /* Shader */](gl.FRAGMENT_SHADER, __webpack_require__(116)),
     ]);
-    const dark12 = new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["b" /* default */]([
-        new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["a" /* Shader */](gl.VERTEX_SHADER, __webpack_require__(125)),
-        new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["a" /* Shader */](gl.FRAGMENT_SHADER, __webpack_require__(126)),
+    const dark12 = new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["b" /* default */]([
+        new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["a" /* Shader */](gl.VERTEX_SHADER, __webpack_require__(117)),
+        new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["a" /* Shader */](gl.FRAGMENT_SHADER, __webpack_require__(118)),
     ]);
-    const dark13 = new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["b" /* default */]([
-        new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["a" /* Shader */](gl.VERTEX_SHADER, __webpack_require__(127)),
-        new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["a" /* Shader */](gl.FRAGMENT_SHADER, __webpack_require__(128)),
+    const dark13 = new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["b" /* default */]([
+        new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["a" /* Shader */](gl.VERTEX_SHADER, __webpack_require__(119)),
+        new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["a" /* Shader */](gl.FRAGMENT_SHADER, __webpack_require__(120)),
     ]);
-    const dark14 = new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["b" /* default */]([
-        new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["a" /* Shader */](gl.VERTEX_SHADER, __webpack_require__(129)),
-        new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["a" /* Shader */](gl.FRAGMENT_SHADER, __webpack_require__(130)),
+    const dark14 = new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["b" /* default */]([
+        new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["a" /* Shader */](gl.VERTEX_SHADER, __webpack_require__(121)),
+        new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["a" /* Shader */](gl.FRAGMENT_SHADER, __webpack_require__(122)),
     ]);
-    const dark15 = new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["b" /* default */]([
-        new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["a" /* Shader */](gl.VERTEX_SHADER, __webpack_require__(131)),
-        new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["a" /* Shader */](gl.FRAGMENT_SHADER, __webpack_require__(132)),
+    const dark15 = new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["b" /* default */]([
+        new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["a" /* Shader */](gl.VERTEX_SHADER, __webpack_require__(123)),
+        new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["a" /* Shader */](gl.FRAGMENT_SHADER, __webpack_require__(124)),
     ]);
-    const dark16 = new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["b" /* default */]([
-        new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["a" /* Shader */](gl.VERTEX_SHADER, __webpack_require__(133)),
-        new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["a" /* Shader */](gl.FRAGMENT_SHADER, __webpack_require__(134)),
+    const dark16 = new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["b" /* default */]([
+        new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["a" /* Shader */](gl.VERTEX_SHADER, __webpack_require__(125)),
+        new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["a" /* Shader */](gl.FRAGMENT_SHADER, __webpack_require__(126)),
     ]);
-    const dark17 = new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["b" /* default */]([
-        new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["a" /* Shader */](gl.VERTEX_SHADER, __webpack_require__(135)),
-        new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["a" /* Shader */](gl.FRAGMENT_SHADER, __webpack_require__(136)),
+    const dark17 = new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["b" /* default */]([
+        new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["a" /* Shader */](gl.VERTEX_SHADER, __webpack_require__(127)),
+        new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["a" /* Shader */](gl.FRAGMENT_SHADER, __webpack_require__(128)),
     ]);
-    const dark18 = new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["b" /* default */]([
-        new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["a" /* Shader */](gl.VERTEX_SHADER, __webpack_require__(137)),
-        new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["a" /* Shader */](gl.FRAGMENT_SHADER, __webpack_require__(138)),
+    const dark18 = new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["b" /* default */]([
+        new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["a" /* Shader */](gl.VERTEX_SHADER, __webpack_require__(129)),
+        new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["a" /* Shader */](gl.FRAGMENT_SHADER, __webpack_require__(130)),
     ]);
-    const dark19 = new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["b" /* default */]([
-        new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["a" /* Shader */](gl.VERTEX_SHADER, __webpack_require__(139)),
-        new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["a" /* Shader */](gl.FRAGMENT_SHADER, __webpack_require__(140)),
+    const dark19 = new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["b" /* default */]([
+        new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["a" /* Shader */](gl.VERTEX_SHADER, __webpack_require__(131)),
+        new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["a" /* Shader */](gl.FRAGMENT_SHADER, __webpack_require__(132)),
     ]);
-    const dark20 = new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["b" /* default */]([
-        new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["a" /* Shader */](gl.VERTEX_SHADER, __webpack_require__(141)),
-        new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["a" /* Shader */](gl.FRAGMENT_SHADER, __webpack_require__(142)),
+    const dark20 = new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["b" /* default */]([
+        new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["a" /* Shader */](gl.VERTEX_SHADER, __webpack_require__(133)),
+        new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["a" /* Shader */](gl.FRAGMENT_SHADER, __webpack_require__(134)),
     ]);
-    const dark21 = new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["b" /* default */]([
-        new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["a" /* Shader */](gl.VERTEX_SHADER, __webpack_require__(143)),
-        new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["a" /* Shader */](gl.FRAGMENT_SHADER, __webpack_require__(144)),
+    const dark21 = new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["b" /* default */]([
+        new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["a" /* Shader */](gl.VERTEX_SHADER, __webpack_require__(135)),
+        new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["a" /* Shader */](gl.FRAGMENT_SHADER, __webpack_require__(136)),
     ]);
-    const dark22 = new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["b" /* default */]([
-        new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["a" /* Shader */](gl.VERTEX_SHADER, __webpack_require__(145)),
-        new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["a" /* Shader */](gl.FRAGMENT_SHADER, __webpack_require__(146)),
+    const dark22 = new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["b" /* default */]([
+        new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["a" /* Shader */](gl.VERTEX_SHADER, __webpack_require__(137)),
+        new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["a" /* Shader */](gl.FRAGMENT_SHADER, __webpack_require__(138)),
     ]);
-    const dark23 = new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["b" /* default */]([
-        new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["a" /* Shader */](gl.VERTEX_SHADER, __webpack_require__(147)),
-        new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["a" /* Shader */](gl.FRAGMENT_SHADER, __webpack_require__(148)),
+    const dark23 = new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["b" /* default */]([
+        new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["a" /* Shader */](gl.VERTEX_SHADER, __webpack_require__(139)),
+        new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["a" /* Shader */](gl.FRAGMENT_SHADER, __webpack_require__(140)),
     ]);
-    const dark24 = new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["b" /* default */]([
-        new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["a" /* Shader */](gl.VERTEX_SHADER, __webpack_require__(149)),
-        new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["a" /* Shader */](gl.FRAGMENT_SHADER, __webpack_require__(150)),
+    const dark24 = new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["b" /* default */]([
+        new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["a" /* Shader */](gl.VERTEX_SHADER, __webpack_require__(141)),
+        new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["a" /* Shader */](gl.FRAGMENT_SHADER, __webpack_require__(142)),
     ]);
-    const dark25 = new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["b" /* default */]([
-        new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["a" /* Shader */](gl.VERTEX_SHADER, __webpack_require__(151)),
-        new __WEBPACK_IMPORTED_MODULE_16__rendering_gl_ShaderProgram__["a" /* Shader */](gl.FRAGMENT_SHADER, __webpack_require__(152)),
+    const dark25 = new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["b" /* default */]([
+        new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["a" /* Shader */](gl.VERTEX_SHADER, __webpack_require__(143)),
+        new __WEBPACK_IMPORTED_MODULE_15__rendering_gl_ShaderProgram__["a" /* Shader */](gl.FRAGMENT_SHADER, __webpack_require__(144)),
     ]);
     function leafCallback(indices, positions, normals) {
         leaf.indices = Uint32Array.from(indices);
@@ -9955,6 +9915,12 @@ function main() {
         pipes.positions = Float32Array.from(positions);
         pipes.normals = Float32Array.from(normals);
         pipes.create();
+    }
+    function robotCallback(indices, positions, normals) {
+        robot.indices = Uint32Array.from(indices);
+        robot.positions = Float32Array.from(positions);
+        robot.normals = Float32Array.from(normals);
+        robot.create();
     }
     function groundCallback(indices, positions, normals) {
         ground.indices = Uint32Array.from(indices);
@@ -9992,11 +9958,13 @@ function main() {
         };
         rawFile.send(null);
     }
-    let leafFilename = "./leaf.obj";
-    parseOBJ(leafFilename, leafCallback);
+    let brainFileName = "./brain.obj";
+    parseOBJ(brainFileName, leafCallback);
+    let robotFileName = "./robot.obj";
+    parseOBJ(robotFileName, robotCallback);
     let marioFilename = "./bite.obj";
     parseOBJ(marioFilename, marioCallback);
-    let tubeFile = "./tubes.obj";
+    let tubeFile = "./car.obj";
     parseOBJ(tubeFile, pipesCallback);
     let groundFile = "./ground2.obj";
     parseOBJ(groundFile, groundCallback);
@@ -10008,95 +9976,115 @@ function main() {
     // This function will be called every frame
     function tick() {
         camera.update();
+        camera2.update();
+        camera3.update();
         stats.begin();
         gl.viewport(0, 0, window.innerWidth, window.innerHeight);
         renderer.clear();
         pipes.create();
+        robot.create();
         //  renderer.render(camera, flat, [screenQuad]);
-        // renderer.render(camera, lambert, [
-        //   plantMesh,
-        //   pipes
-        // ]);
+        //  renderer.render(camera, lambert, elapsed, [
+        //     brain,
+        // //   pipes
+        //  ]);
         elapsed = new Date().valueOf() - start.valueOf();
         if (elapsed <= 2000) {
-            renderer.render(camera, dark1, [screenQuad]);
+            renderer.render(camera, dark1, elapsed, [screenQuad]);
         }
-        if (elapsed > 2000 && elapsed <= 11000) {
-            renderer.render(camera, dark2, [screenQuad]);
+        if (elapsed > 2000 && elapsed <= 11500) {
+            renderer.render(camera, dark2, elapsed, [screenQuad]);
         }
-        if (elapsed > 11000 && elapsed <= 21500) {
-            let velocity = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["e" /* vec2 */].fromValues(0, 0);
-            velocity[1] += 0.1 - Math.abs(Math.cos(elapsed / 1000));
-            velocity[0] += 0.075 + Math.sin(elapsed / 1000);
-            let newPos = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["e" /* vec2 */].fromValues(0, 0);
-            __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["e" /* vec2 */].add(newPos, velocity, planePos);
-            dark3.setPlanePos(newPos);
-            planePos = newPos;
-            renderer.render(camera, dark3, [plane]);
-            renderer.render(camera, dark2, [screenQuad]);
+        if (elapsed > 11500 && elapsed <= 21500) {
+            renderer.render(camera, dark20, elapsed, [screenQuad]);
         }
         if (elapsed > 21500 && elapsed <= 41000) {
-            renderer.render(camera, dark4, [screenQuad]);
+            renderer.render(camera, dark21, elapsed, [screenQuad]);
         }
         if (elapsed > 41000 && elapsed <= 49500) {
-            renderer.render(camera, dark5, [screenQuad]);
+            let velocity = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["c" /* vec2 */].fromValues(0, 0);
+            //velocity[1] += -0.05 - Math.abs(Math.cos(10.471 * elapsed / 5000));
+            velocity[0] += 0.9 + Math.sin(0.471 * elapsed / 5000);
+            let newPos = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["c" /* vec2 */].fromValues(0, 0);
+            __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["c" /* vec2 */].add(newPos, velocity, planePos);
+            dark5.setPlanePos(newPos);
+            planePos = newPos;
+            renderer.render(camera, dark5, elapsed, [plane]);
         }
         if (elapsed > 49500 && elapsed <= 60000) {
-            renderer.render(camera, dark6, [screenQuad]);
+            renderer.render(camera, dark6, elapsed, [screenQuad]);
         }
         if (elapsed > 60000 && elapsed <= 70000) {
-            renderer.render(camera, dark7, [screenQuad]);
+            renderer.render(camera, dark7, elapsed, [screenQuad]);
         }
         if (elapsed > 70000 && elapsed <= 79000) {
-            renderer.render(camera, dark8, [screenQuad]);
+            renderer.render(camera, dark8, elapsed, [screenQuad]);
         }
         if (elapsed > 79000 && elapsed <= 89000) {
-            renderer.render(camera, dark9, [screenQuad]);
+            renderer.render(camera, dark9, elapsed, [screenQuad]);
         }
         if (elapsed > 89000 && elapsed <= 98000) {
-            renderer.render(camera, dark10, [screenQuad]);
+            renderer.render(camera, dark10, elapsed, [screenQuad]);
         }
         if (elapsed > 98000 && elapsed <= 108000) {
-            renderer.render(camera, dark11, [screenQuad]);
+            renderer.render(camera, dark11, elapsed, [screenQuad]);
         }
-        if (elapsed > 108000 && elapsed <= 116000) {
-            renderer.render(camera, dark12, [screenQuad]);
+        if (elapsed > 108000 && elapsed <= 117000) {
+            renderer.render(camera, dark12, elapsed, [screenQuad]);
         }
-        if (elapsed > 116000 && elapsed <= 127000) {
-            renderer.render(camera, dark13, [screenQuad]);
+        if (elapsed > 117000 && elapsed <= 127000) {
+            renderer.render(camera, dark13, elapsed, [screenQuad]);
         }
         if (elapsed > 127000 && elapsed <= 137000) {
-            renderer.render(camera, dark14, [screenQuad]);
+            renderer.render(camera, dark14, elapsed, [screenQuad]);
         }
         if (elapsed > 137000 && elapsed <= 146000) {
-            renderer.render(camera, dark15, [screenQuad]);
+            renderer.render(camera, dark15, elapsed, [screenQuad]);
         }
-        if (elapsed > 146000 && elapsed <= 152000) {
-            renderer.render(camera, dark16, [screenQuad]);
+        if (elapsed > 146000 && elapsed <= 151000) {
+            renderer.render(camera, dark16, elapsed, [screenQuad]);
         }
-        if (elapsed > 152000 && elapsed <= 161000) {
-            renderer.render(camera, dark17, [screenQuad]);
+        if (elapsed > 151000 && elapsed <= 161000) {
+            let velocity = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["c" /* vec2 */].fromValues(10, 0);
+            velocity[0] += (1.9 + Math.abs(Math.sin(10.471 * elapsed / 1000)));
+            let newPos = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["c" /* vec2 */].fromValues(0, 0);
+            __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["c" /* vec2 */].sub(newPos, planePos, velocity);
+            dark17.setPlanePos(newPos);
+            planePos = newPos;
+            renderer.render(camera2, dark17, elapsed, [plane]);
+            renderer.render(camera, dark16, elapsed, [screenQuad]);
+            renderer.render(camera2, lambert, elapsed, [pipes]);
         }
-        if (elapsed > 161000 && elapsed <= 171000) {
-            renderer.render(camera, dark18, [screenQuad]);
+        if (elapsed > 161000 && elapsed <= 170500) {
+            let velocity = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["c" /* vec2 */].fromValues(0, 0);
+            velocity[1] += -0.05 - Math.abs(Math.cos(10.471 * elapsed / 5000));
+            velocity[0] += 0.5 + Math.sin(10.471 * elapsed / 5000);
+            let newPos = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["c" /* vec2 */].fromValues(0, 0);
+            __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["c" /* vec2 */].add(newPos, velocity, planePos);
+            dark3.setPlanePos(newPos);
+            planePos = newPos;
+            renderer.render(camera, dark3, elapsed, [plane]);
+            renderer.render(camera, dark4, elapsed, [screenQuad]);
         }
-        if (elapsed > 171000 && elapsed <= 180000) {
-            renderer.render(camera, dark19, [screenQuad]);
+        if (elapsed > 170500 && elapsed <= 180000) {
+            renderer.render(camera, dark16, elapsed, [screenQuad]);
+            renderer.render(camera3, lambert, elapsed, [pipes]);
         }
         if (elapsed > 180000 && elapsed <= 190000) {
-            renderer.render(camera, dark20, [screenQuad]);
+            renderer.render(camera, dark9, elapsed, [screenQuad]);
+            renderer.render(camera2, dark18, elapsed, [robot]);
         }
         if (elapsed > 190000 && elapsed <= 199000) {
-            renderer.render(camera, dark21, [screenQuad]);
+            renderer.render(camera, dark21, elapsed, [screenQuad]);
         }
         if (elapsed > 199000 && elapsed <= 209000) {
-            renderer.render(camera, dark22, [screenQuad]);
+            renderer.render(camera, dark22, elapsed, [screenQuad]);
         }
         if (elapsed > 209000 && elapsed <= 218000) {
-            renderer.render(camera, dark23, [screenQuad]);
+            renderer.render(camera, dark23, elapsed, [screenQuad]);
         }
-        if (elapsed > 218000 && elapsed <= 227000) {
-            renderer.render(camera, dark24, [screenQuad]);
+        if (elapsed > 218000 && elapsed <= 223000) {
+            renderer.render(camera, dark24, elapsed, [screenQuad]);
         }
         //renderer.render(camera, floor, [ground]);
         stats.end();
@@ -10107,6 +10095,10 @@ function main() {
         renderer.setSize(window.innerWidth, window.innerHeight);
         camera.setAspectRatio(window.innerWidth / window.innerHeight);
         camera.updateProjectionMatrix();
+        camera2.setAspectRatio(window.innerWidth / window.innerHeight);
+        camera2.updateProjectionMatrix();
+        camera3.setAspectRatio(window.innerWidth / window.innerHeight);
+        camera3.updateProjectionMatrix();
         boxShader.setDimensions(window.innerWidth, window.innerHeight);
         tealShader.setDimensions(window.innerWidth, window.innerHeight);
     }, false);
@@ -10120,9 +10112,36 @@ function main() {
     }, false);
     renderer.setSize(window.innerWidth, window.innerHeight);
     camera.setAspectRatio(window.innerWidth / window.innerHeight);
+    camera2.setAspectRatio(window.innerWidth / window.innerHeight);
+    camera3.setAspectRatio(window.innerWidth / window.innerHeight);
     boxShader.setDimensions(window.innerWidth, window.innerHeight);
     tealShader.setDimensions(window.innerWidth, window.innerHeight);
+    dark1.setDimensions(window.innerWidth, window.innerHeight);
+    dark2.setDimensions(window.innerWidth, window.innerHeight);
+    dark3.setDimensions(window.innerWidth, window.innerHeight);
+    dark4.setDimensions(window.innerWidth, window.innerHeight);
+    dark5.setDimensions(window.innerWidth, window.innerHeight);
+    dark6.setDimensions(window.innerWidth, window.innerHeight);
+    dark7.setDimensions(window.innerWidth, window.innerHeight);
+    dark8.setDimensions(window.innerWidth, window.innerHeight);
+    dark9.setDimensions(window.innerWidth, window.innerHeight);
+    dark10.setDimensions(window.innerWidth, window.innerHeight);
+    dark11.setDimensions(window.innerWidth, window.innerHeight);
+    dark12.setDimensions(window.innerWidth, window.innerHeight);
+    dark13.setDimensions(window.innerWidth, window.innerHeight);
+    dark14.setDimensions(window.innerWidth, window.innerHeight);
+    dark15.setDimensions(window.innerWidth, window.innerHeight);
+    dark16.setDimensions(window.innerWidth, window.innerHeight);
+    dark17.setDimensions(window.innerWidth, window.innerHeight);
+    dark18.setDimensions(window.innerWidth, window.innerHeight);
+    dark20.setDimensions(window.innerWidth, window.innerHeight);
+    dark21.setDimensions(window.innerWidth, window.innerHeight);
+    dark22.setDimensions(window.innerWidth, window.innerHeight);
+    dark23.setDimensions(window.innerWidth, window.innerHeight);
+    dark24.setDimensions(window.innerWidth, window.innerHeight);
     camera.updateProjectionMatrix();
+    camera2.updateProjectionMatrix();
+    camera3.updateProjectionMatrix();
     // Start the render loop
     tick();
 }
@@ -10160,7 +10179,7 @@ main();
 /* unused harmony export multiplyScalarAndAdd */
 /* unused harmony export mul */
 /* unused harmony export sub */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__common_js__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__common_js__ = __webpack_require__(2);
 
 
 /**
@@ -10174,8 +10193,8 @@ main();
  * @returns {mat2} a new 2x2 matrix
  */
 function create() {
-  var out = new __WEBPACK_IMPORTED_MODULE_0__common_js__["ARRAY_TYPE"](4);
-  if (__WEBPACK_IMPORTED_MODULE_0__common_js__["ARRAY_TYPE"] != Float32Array) {
+  var out = new __WEBPACK_IMPORTED_MODULE_0__common_js__["a" /* ARRAY_TYPE */](4);
+  if (__WEBPACK_IMPORTED_MODULE_0__common_js__["a" /* ARRAY_TYPE */] != Float32Array) {
     out[1] = 0;
     out[2] = 0;
   }
@@ -10191,7 +10210,7 @@ function create() {
  * @returns {mat2} a new 2x2 matrix
  */
 function clone(a) {
-  var out = new __WEBPACK_IMPORTED_MODULE_0__common_js__["ARRAY_TYPE"](4);
+  var out = new __WEBPACK_IMPORTED_MODULE_0__common_js__["a" /* ARRAY_TYPE */](4);
   out[0] = a[0];
   out[1] = a[1];
   out[2] = a[2];
@@ -10238,7 +10257,7 @@ function identity(out) {
  * @returns {mat2} out A new 2x2 matrix
  */
 function fromValues(m00, m01, m10, m11) {
-  var out = new __WEBPACK_IMPORTED_MODULE_0__common_js__["ARRAY_TYPE"](4);
+  var out = new __WEBPACK_IMPORTED_MODULE_0__common_js__["a" /* ARRAY_TYPE */](4);
   out[0] = m00;
   out[1] = m01;
   out[2] = m10;
@@ -10548,7 +10567,7 @@ function equals(a, b) {
       b1 = b[1],
       b2 = b[2],
       b3 = b[3];
-  return Math.abs(a0 - b0) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["EPSILON"] * Math.max(1.0, Math.abs(a0), Math.abs(b0)) && Math.abs(a1 - b1) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["EPSILON"] * Math.max(1.0, Math.abs(a1), Math.abs(b1)) && Math.abs(a2 - b2) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["EPSILON"] * Math.max(1.0, Math.abs(a2), Math.abs(b2)) && Math.abs(a3 - b3) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["EPSILON"] * Math.max(1.0, Math.abs(a3), Math.abs(b3));
+  return Math.abs(a0 - b0) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["b" /* EPSILON */] * Math.max(1.0, Math.abs(a0), Math.abs(b0)) && Math.abs(a1 - b1) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["b" /* EPSILON */] * Math.max(1.0, Math.abs(a1), Math.abs(b1)) && Math.abs(a2 - b2) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["b" /* EPSILON */] * Math.max(1.0, Math.abs(a2), Math.abs(b2)) && Math.abs(a3 - b3) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["b" /* EPSILON */] * Math.max(1.0, Math.abs(a3), Math.abs(b3));
 }
 
 /**
@@ -10626,7 +10645,7 @@ var sub = subtract;
 /* unused harmony export equals */
 /* unused harmony export mul */
 /* unused harmony export sub */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__common_js__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__common_js__ = __webpack_require__(2);
 
 
 /**
@@ -10654,8 +10673,8 @@ var sub = subtract;
  * @returns {mat2d} a new 2x3 matrix
  */
 function create() {
-  var out = new __WEBPACK_IMPORTED_MODULE_0__common_js__["ARRAY_TYPE"](6);
-  if (__WEBPACK_IMPORTED_MODULE_0__common_js__["ARRAY_TYPE"] != Float32Array) {
+  var out = new __WEBPACK_IMPORTED_MODULE_0__common_js__["a" /* ARRAY_TYPE */](6);
+  if (__WEBPACK_IMPORTED_MODULE_0__common_js__["a" /* ARRAY_TYPE */] != Float32Array) {
     out[1] = 0;
     out[2] = 0;
     out[4] = 0;
@@ -10673,7 +10692,7 @@ function create() {
  * @returns {mat2d} a new 2x3 matrix
  */
 function clone(a) {
-  var out = new __WEBPACK_IMPORTED_MODULE_0__common_js__["ARRAY_TYPE"](6);
+  var out = new __WEBPACK_IMPORTED_MODULE_0__common_js__["a" /* ARRAY_TYPE */](6);
   out[0] = a[0];
   out[1] = a[1];
   out[2] = a[2];
@@ -10728,7 +10747,7 @@ function identity(out) {
  * @returns {mat2d} A new mat2d
  */
 function fromValues(a, b, c, d, tx, ty) {
-  var out = new __WEBPACK_IMPORTED_MODULE_0__common_js__["ARRAY_TYPE"](6);
+  var out = new __WEBPACK_IMPORTED_MODULE_0__common_js__["a" /* ARRAY_TYPE */](6);
   out[0] = a;
   out[1] = b;
   out[2] = c;
@@ -11097,7 +11116,7 @@ function equals(a, b) {
       b3 = b[3],
       b4 = b[4],
       b5 = b[5];
-  return Math.abs(a0 - b0) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["EPSILON"] * Math.max(1.0, Math.abs(a0), Math.abs(b0)) && Math.abs(a1 - b1) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["EPSILON"] * Math.max(1.0, Math.abs(a1), Math.abs(b1)) && Math.abs(a2 - b2) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["EPSILON"] * Math.max(1.0, Math.abs(a2), Math.abs(b2)) && Math.abs(a3 - b3) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["EPSILON"] * Math.max(1.0, Math.abs(a3), Math.abs(b3)) && Math.abs(a4 - b4) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["EPSILON"] * Math.max(1.0, Math.abs(a4), Math.abs(b4)) && Math.abs(a5 - b5) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["EPSILON"] * Math.max(1.0, Math.abs(a5), Math.abs(b5));
+  return Math.abs(a0 - b0) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["b" /* EPSILON */] * Math.max(1.0, Math.abs(a0), Math.abs(b0)) && Math.abs(a1 - b1) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["b" /* EPSILON */] * Math.max(1.0, Math.abs(a1), Math.abs(b1)) && Math.abs(a2 - b2) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["b" /* EPSILON */] * Math.max(1.0, Math.abs(a2), Math.abs(b2)) && Math.abs(a3 - b3) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["b" /* EPSILON */] * Math.max(1.0, Math.abs(a3), Math.abs(b3)) && Math.abs(a4 - b4) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["b" /* EPSILON */] * Math.max(1.0, Math.abs(a4), Math.abs(b4)) && Math.abs(a5 - b5) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["b" /* EPSILON */] * Math.max(1.0, Math.abs(a5), Math.abs(b5));
 }
 
 /**
@@ -11156,7 +11175,7 @@ var sub = subtract;
 /* unused harmony export str */
 /* unused harmony export exactEquals */
 /* unused harmony export equals */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__common_js__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__common_js__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__quat_js__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__mat4_js__ = __webpack_require__(8);
 
@@ -11177,8 +11196,8 @@ var sub = subtract;
  * @returns {quat2} a new dual quaternion [real -> rotation, dual -> translation]
  */
 function create() {
-  var dq = new __WEBPACK_IMPORTED_MODULE_0__common_js__["ARRAY_TYPE"](8);
-  if (__WEBPACK_IMPORTED_MODULE_0__common_js__["ARRAY_TYPE"] != Float32Array) {
+  var dq = new __WEBPACK_IMPORTED_MODULE_0__common_js__["a" /* ARRAY_TYPE */](8);
+  if (__WEBPACK_IMPORTED_MODULE_0__common_js__["a" /* ARRAY_TYPE */] != Float32Array) {
     dq[0] = 0;
     dq[1] = 0;
     dq[2] = 0;
@@ -11199,7 +11218,7 @@ function create() {
  * @function
  */
 function clone(a) {
-  var dq = new __WEBPACK_IMPORTED_MODULE_0__common_js__["ARRAY_TYPE"](8);
+  var dq = new __WEBPACK_IMPORTED_MODULE_0__common_js__["a" /* ARRAY_TYPE */](8);
   dq[0] = a[0];
   dq[1] = a[1];
   dq[2] = a[2];
@@ -11226,7 +11245,7 @@ function clone(a) {
  * @function
  */
 function fromValues(x1, y1, z1, w1, x2, y2, z2, w2) {
-  var dq = new __WEBPACK_IMPORTED_MODULE_0__common_js__["ARRAY_TYPE"](8);
+  var dq = new __WEBPACK_IMPORTED_MODULE_0__common_js__["a" /* ARRAY_TYPE */](8);
   dq[0] = x1;
   dq[1] = y1;
   dq[2] = z1;
@@ -11252,7 +11271,7 @@ function fromValues(x1, y1, z1, w1, x2, y2, z2, w2) {
  * @function
  */
 function fromRotationTranslationValues(x1, y1, z1, w1, x2, y2, z2) {
-  var dq = new __WEBPACK_IMPORTED_MODULE_0__common_js__["ARRAY_TYPE"](8);
+  var dq = new __WEBPACK_IMPORTED_MODULE_0__common_js__["a" /* ARRAY_TYPE */](8);
   dq[0] = x1;
   dq[1] = y1;
   dq[2] = z1;
@@ -11345,9 +11364,9 @@ function fromRotation(out, q) {
  */
 function fromMat4(out, a) {
   //TODO Optimize this
-  var outer = __WEBPACK_IMPORTED_MODULE_1__quat_js__["create"]();
+  var outer = __WEBPACK_IMPORTED_MODULE_1__quat_js__["b" /* create */]();
   __WEBPACK_IMPORTED_MODULE_2__mat4_js__["getRotation"](outer, a);
-  var t = new __WEBPACK_IMPORTED_MODULE_0__common_js__["ARRAY_TYPE"](3);
+  var t = new __WEBPACK_IMPORTED_MODULE_0__common_js__["a" /* ARRAY_TYPE */](3);
   __WEBPACK_IMPORTED_MODULE_2__mat4_js__["getTranslation"](t, a);
   fromRotationTranslation(out, outer, t);
   return out;
@@ -11425,7 +11444,7 @@ function set(out, x1, y1, z1, w1, x2, y2, z2, w2) {
  * @param  {quat2} a Dual Quaternion
  * @return {quat} real part
  */
-var getReal = __WEBPACK_IMPORTED_MODULE_1__quat_js__["copy"];
+var getReal = __WEBPACK_IMPORTED_MODULE_1__quat_js__["a" /* copy */];
 
 /**
  * Gets the dual part of a dual quat
@@ -11449,7 +11468,7 @@ function getDual(out, a) {
  * @returns {quat2} out
  * @function
  */
-var setReal = __WEBPACK_IMPORTED_MODULE_1__quat_js__["copy"];
+var setReal = __WEBPACK_IMPORTED_MODULE_1__quat_js__["a" /* copy */];
 
 /**
  * Set the dual component of a dual quat to the given quaternion
@@ -11540,7 +11559,7 @@ function rotateX(out, a, rad) {
       ay1 = ay * bw + aw * by + az * bx - ax * bz,
       az1 = az * bw + aw * bz + ax * by - ay * bx,
       aw1 = aw * bw - ax * bx - ay * by - az * bz;
-  __WEBPACK_IMPORTED_MODULE_1__quat_js__["rotateX"](out, a, rad);
+  __WEBPACK_IMPORTED_MODULE_1__quat_js__["e" /* rotateX */](out, a, rad);
   bx = out[0];
   by = out[1];
   bz = out[2];
@@ -11573,7 +11592,7 @@ function rotateY(out, a, rad) {
       ay1 = ay * bw + aw * by + az * bx - ax * bz,
       az1 = az * bw + aw * bz + ax * by - ay * bx,
       aw1 = aw * bw - ax * bx - ay * by - az * bz;
-  __WEBPACK_IMPORTED_MODULE_1__quat_js__["rotateY"](out, a, rad);
+  __WEBPACK_IMPORTED_MODULE_1__quat_js__["f" /* rotateY */](out, a, rad);
   bx = out[0];
   by = out[1];
   bz = out[2];
@@ -11606,7 +11625,7 @@ function rotateZ(out, a, rad) {
       ay1 = ay * bw + aw * by + az * bx - ax * bz,
       az1 = az * bw + aw * bz + ax * by - ay * bx,
       aw1 = aw * bw - ax * bx - ay * by - az * bz;
-  __WEBPACK_IMPORTED_MODULE_1__quat_js__["rotateZ"](out, a, rad);
+  __WEBPACK_IMPORTED_MODULE_1__quat_js__["g" /* rotateZ */](out, a, rad);
   bx = out[0];
   by = out[1];
   bz = out[2];
@@ -11695,7 +11714,7 @@ function rotateByQuatPrepend(out, q, a) {
  */
 function rotateAroundAxis(out, a, axis, rad) {
   //Special case for rad = 0
-  if (Math.abs(rad) < __WEBPACK_IMPORTED_MODULE_0__common_js__["EPSILON"]) {
+  if (Math.abs(rad) < __WEBPACK_IMPORTED_MODULE_0__common_js__["b" /* EPSILON */]) {
     return copy(out, a);
   }
   var axisLength = Math.sqrt(axis[0] * axis[0] + axis[1] * axis[1] + axis[2] * axis[2]);
@@ -11820,7 +11839,7 @@ function scale(out, a, b) {
  * @returns {Number} dot product of a and b
  * @function
  */
-var dot = __WEBPACK_IMPORTED_MODULE_1__quat_js__["dot"];
+var dot = __WEBPACK_IMPORTED_MODULE_1__quat_js__["c" /* dot */];
 
 /**
  * Performs a linear interpolation between two dual quats's
@@ -11895,7 +11914,7 @@ function conjugate(out, a) {
  * @returns {Number} length of a
  * @function
  */
-var length = __WEBPACK_IMPORTED_MODULE_1__quat_js__["length"];
+var length = __WEBPACK_IMPORTED_MODULE_1__quat_js__["d" /* length */];
 
 /**
  * Alias for {@link quat2.length}
@@ -11910,7 +11929,7 @@ var len = length;
  * @returns {Number} squared length of a
  * @function
  */
-var squaredLength = __WEBPACK_IMPORTED_MODULE_1__quat_js__["squaredLength"];
+var squaredLength = __WEBPACK_IMPORTED_MODULE_1__quat_js__["h" /* squaredLength */];
 
 /**
  * Alias for {@link quat2.squaredLength}
@@ -12001,7 +12020,7 @@ function equals(a, b) {
       b5 = b[5],
       b6 = b[6],
       b7 = b[7];
-  return Math.abs(a0 - b0) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["EPSILON"] * Math.max(1.0, Math.abs(a0), Math.abs(b0)) && Math.abs(a1 - b1) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["EPSILON"] * Math.max(1.0, Math.abs(a1), Math.abs(b1)) && Math.abs(a2 - b2) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["EPSILON"] * Math.max(1.0, Math.abs(a2), Math.abs(b2)) && Math.abs(a3 - b3) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["EPSILON"] * Math.max(1.0, Math.abs(a3), Math.abs(b3)) && Math.abs(a4 - b4) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["EPSILON"] * Math.max(1.0, Math.abs(a4), Math.abs(b4)) && Math.abs(a5 - b5) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["EPSILON"] * Math.max(1.0, Math.abs(a5), Math.abs(b5)) && Math.abs(a6 - b6) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["EPSILON"] * Math.max(1.0, Math.abs(a6), Math.abs(b6)) && Math.abs(a7 - b7) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["EPSILON"] * Math.max(1.0, Math.abs(a7), Math.abs(b7));
+  return Math.abs(a0 - b0) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["b" /* EPSILON */] * Math.max(1.0, Math.abs(a0), Math.abs(b0)) && Math.abs(a1 - b1) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["b" /* EPSILON */] * Math.max(1.0, Math.abs(a1), Math.abs(b1)) && Math.abs(a2 - b2) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["b" /* EPSILON */] * Math.max(1.0, Math.abs(a2), Math.abs(b2)) && Math.abs(a3 - b3) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["b" /* EPSILON */] * Math.max(1.0, Math.abs(a3), Math.abs(b3)) && Math.abs(a4 - b4) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["b" /* EPSILON */] * Math.max(1.0, Math.abs(a4), Math.abs(b4)) && Math.abs(a5 - b5) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["b" /* EPSILON */] * Math.max(1.0, Math.abs(a5), Math.abs(b5)) && Math.abs(a6 - b6) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["b" /* EPSILON */] * Math.max(1.0, Math.abs(a6), Math.abs(b6)) && Math.abs(a7 - b7) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["b" /* EPSILON */] * Math.max(1.0, Math.abs(a7), Math.abs(b7));
 }
 
 /***/ }),
@@ -12054,7 +12073,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "sqrDist", function() { return sqrDist; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "sqrLen", function() { return sqrLen; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "forEach", function() { return forEach; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__common_js__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__common_js__ = __webpack_require__(2);
 
 
 /**
@@ -12068,8 +12087,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
  * @returns {vec2} a new 2D vector
  */
 function create() {
-  var out = new __WEBPACK_IMPORTED_MODULE_0__common_js__["ARRAY_TYPE"](2);
-  if (__WEBPACK_IMPORTED_MODULE_0__common_js__["ARRAY_TYPE"] != Float32Array) {
+  var out = new __WEBPACK_IMPORTED_MODULE_0__common_js__["a" /* ARRAY_TYPE */](2);
+  if (__WEBPACK_IMPORTED_MODULE_0__common_js__["a" /* ARRAY_TYPE */] != Float32Array) {
     out[0] = 0;
     out[1] = 0;
   }
@@ -12083,7 +12102,7 @@ function create() {
  * @returns {vec2} a new 2D vector
  */
 function clone(a) {
-  var out = new __WEBPACK_IMPORTED_MODULE_0__common_js__["ARRAY_TYPE"](2);
+  var out = new __WEBPACK_IMPORTED_MODULE_0__common_js__["a" /* ARRAY_TYPE */](2);
   out[0] = a[0];
   out[1] = a[1];
   return out;
@@ -12097,7 +12116,7 @@ function clone(a) {
  * @returns {vec2} a new 2D vector
  */
 function fromValues(x, y) {
-  var out = new __WEBPACK_IMPORTED_MODULE_0__common_js__["ARRAY_TYPE"](2);
+  var out = new __WEBPACK_IMPORTED_MODULE_0__common_js__["a" /* ARRAY_TYPE */](2);
   out[0] = x;
   out[1] = y;
   return out;
@@ -12431,7 +12450,7 @@ function lerp(out, a, b, t) {
  */
 function random(out, scale) {
   scale = scale || 1.0;
-  var r = __WEBPACK_IMPORTED_MODULE_0__common_js__["RANDOM"]() * 2.0 * Math.PI;
+  var r = __WEBPACK_IMPORTED_MODULE_0__common_js__["c" /* RANDOM */]() * 2.0 * Math.PI;
   out[0] = Math.cos(r) * scale;
   out[1] = Math.sin(r) * scale;
   return out;
@@ -12594,7 +12613,7 @@ function equals(a, b) {
       a1 = a[1];
   var b0 = b[0],
       b1 = b[1];
-  return Math.abs(a0 - b0) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["EPSILON"] * Math.max(1.0, Math.abs(a0), Math.abs(b0)) && Math.abs(a1 - b1) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["EPSILON"] * Math.max(1.0, Math.abs(a1), Math.abs(b1));
+  return Math.abs(a0 - b0) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["b" /* EPSILON */] * Math.max(1.0, Math.abs(a0), Math.abs(b0)) && Math.abs(a1 - b1) <= __WEBPACK_IMPORTED_MODULE_0__common_js__["b" /* EPSILON */] * Math.max(1.0, Math.abs(a1), Math.abs(b1));
 }
 
 /**
@@ -13050,4438 +13069,6 @@ if (true) {
 
 /***/ }),
 /* 34 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(35)
-module.exports.color = __webpack_require__(36)
-
-/***/ }),
-/* 35 */
-/***/ (function(module, exports) {
-
-/**
- * dat-gui JavaScript Controller Library
- * http://code.google.com/p/dat-gui
- *
- * Copyright 2011 Data Arts Team, Google Creative Lab
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- */
-
-/** @namespace */
-var dat = module.exports = dat || {};
-
-/** @namespace */
-dat.gui = dat.gui || {};
-
-/** @namespace */
-dat.utils = dat.utils || {};
-
-/** @namespace */
-dat.controllers = dat.controllers || {};
-
-/** @namespace */
-dat.dom = dat.dom || {};
-
-/** @namespace */
-dat.color = dat.color || {};
-
-dat.utils.css = (function () {
-  return {
-    load: function (url, doc) {
-      doc = doc || document;
-      var link = doc.createElement('link');
-      link.type = 'text/css';
-      link.rel = 'stylesheet';
-      link.href = url;
-      doc.getElementsByTagName('head')[0].appendChild(link);
-    },
-    inject: function(css, doc) {
-      doc = doc || document;
-      var injected = document.createElement('style');
-      injected.type = 'text/css';
-      injected.innerHTML = css;
-      doc.getElementsByTagName('head')[0].appendChild(injected);
-    }
-  }
-})();
-
-
-dat.utils.common = (function () {
-  
-  var ARR_EACH = Array.prototype.forEach;
-  var ARR_SLICE = Array.prototype.slice;
-
-  /**
-   * Band-aid methods for things that should be a lot easier in JavaScript.
-   * Implementation and structure inspired by underscore.js
-   * http://documentcloud.github.com/underscore/
-   */
-
-  return { 
-    
-    BREAK: {},
-  
-    extend: function(target) {
-      
-      this.each(ARR_SLICE.call(arguments, 1), function(obj) {
-        
-        for (var key in obj)
-          if (!this.isUndefined(obj[key])) 
-            target[key] = obj[key];
-        
-      }, this);
-      
-      return target;
-      
-    },
-    
-    defaults: function(target) {
-      
-      this.each(ARR_SLICE.call(arguments, 1), function(obj) {
-        
-        for (var key in obj)
-          if (this.isUndefined(target[key])) 
-            target[key] = obj[key];
-        
-      }, this);
-      
-      return target;
-    
-    },
-    
-    compose: function() {
-      var toCall = ARR_SLICE.call(arguments);
-            return function() {
-              var args = ARR_SLICE.call(arguments);
-              for (var i = toCall.length -1; i >= 0; i--) {
-                args = [toCall[i].apply(this, args)];
-              }
-              return args[0];
-            }
-    },
-    
-    each: function(obj, itr, scope) {
-
-      
-      if (ARR_EACH && obj.forEach === ARR_EACH) { 
-        
-        obj.forEach(itr, scope);
-        
-      } else if (obj.length === obj.length + 0) { // Is number but not NaN
-        
-        for (var key = 0, l = obj.length; key < l; key++)
-          if (key in obj && itr.call(scope, obj[key], key) === this.BREAK) 
-            return;
-            
-      } else {
-
-        for (var key in obj) 
-          if (itr.call(scope, obj[key], key) === this.BREAK)
-            return;
-            
-      }
-            
-    },
-    
-    defer: function(fnc) {
-      setTimeout(fnc, 0);
-    },
-    
-    toArray: function(obj) {
-      if (obj.toArray) return obj.toArray();
-      return ARR_SLICE.call(obj);
-    },
-
-    isUndefined: function(obj) {
-      return obj === undefined;
-    },
-    
-    isNull: function(obj) {
-      return obj === null;
-    },
-    
-    isNaN: function(obj) {
-      return obj !== obj;
-    },
-    
-    isArray: Array.isArray || function(obj) {
-      return obj.constructor === Array;
-    },
-    
-    isObject: function(obj) {
-      return obj === Object(obj);
-    },
-    
-    isNumber: function(obj) {
-      return obj === obj+0;
-    },
-    
-    isString: function(obj) {
-      return obj === obj+'';
-    },
-    
-    isBoolean: function(obj) {
-      return obj === false || obj === true;
-    },
-    
-    isFunction: function(obj) {
-      return Object.prototype.toString.call(obj) === '[object Function]';
-    }
-  
-  };
-    
-})();
-
-
-dat.controllers.Controller = (function (common) {
-
-  /**
-   * @class An "abstract" class that represents a given property of an object.
-   *
-   * @param {Object} object The object to be manipulated
-   * @param {string} property The name of the property to be manipulated
-   *
-   * @member dat.controllers
-   */
-  var Controller = function(object, property) {
-
-    this.initialValue = object[property];
-
-    /**
-     * Those who extend this class will put their DOM elements in here.
-     * @type {DOMElement}
-     */
-    this.domElement = document.createElement('div');
-
-    /**
-     * The object to manipulate
-     * @type {Object}
-     */
-    this.object = object;
-
-    /**
-     * The name of the property to manipulate
-     * @type {String}
-     */
-    this.property = property;
-
-    /**
-     * The function to be called on change.
-     * @type {Function}
-     * @ignore
-     */
-    this.__onChange = undefined;
-
-    /**
-     * The function to be called on finishing change.
-     * @type {Function}
-     * @ignore
-     */
-    this.__onFinishChange = undefined;
-
-  };
-
-  common.extend(
-
-      Controller.prototype,
-
-      /** @lends dat.controllers.Controller.prototype */
-      {
-
-        /**
-         * Specify that a function fire every time someone changes the value with
-         * this Controller.
-         *
-         * @param {Function} fnc This function will be called whenever the value
-         * is modified via this Controller.
-         * @returns {dat.controllers.Controller} this
-         */
-        onChange: function(fnc) {
-          this.__onChange = fnc;
-          return this;
-        },
-
-        /**
-         * Specify that a function fire every time someone "finishes" changing
-         * the value wih this Controller. Useful for values that change
-         * incrementally like numbers or strings.
-         *
-         * @param {Function} fnc This function will be called whenever
-         * someone "finishes" changing the value via this Controller.
-         * @returns {dat.controllers.Controller} this
-         */
-        onFinishChange: function(fnc) {
-          this.__onFinishChange = fnc;
-          return this;
-        },
-
-        /**
-         * Change the value of <code>object[property]</code>
-         *
-         * @param {Object} newValue The new value of <code>object[property]</code>
-         */
-        setValue: function(newValue) {
-          this.object[this.property] = newValue;
-          if (this.__onChange) {
-            this.__onChange.call(this, newValue);
-          }
-          this.updateDisplay();
-          return this;
-        },
-
-        /**
-         * Gets the value of <code>object[property]</code>
-         *
-         * @returns {Object} The current value of <code>object[property]</code>
-         */
-        getValue: function() {
-          return this.object[this.property];
-        },
-
-        /**
-         * Refreshes the visual display of a Controller in order to keep sync
-         * with the object's current value.
-         * @returns {dat.controllers.Controller} this
-         */
-        updateDisplay: function() {
-          return this;
-        },
-
-        /**
-         * @returns {Boolean} true if the value has deviated from initialValue
-         */
-        isModified: function() {
-          return this.initialValue !== this.getValue()
-        }
-
-      }
-
-  );
-
-  return Controller;
-
-
-})(dat.utils.common);
-
-
-dat.dom.dom = (function (common) {
-
-  var EVENT_MAP = {
-    'HTMLEvents': ['change'],
-    'MouseEvents': ['click','mousemove','mousedown','mouseup', 'mouseover'],
-    'KeyboardEvents': ['keydown']
-  };
-
-  var EVENT_MAP_INV = {};
-  common.each(EVENT_MAP, function(v, k) {
-    common.each(v, function(e) {
-      EVENT_MAP_INV[e] = k;
-    });
-  });
-
-  var CSS_VALUE_PIXELS = /(\d+(\.\d+)?)px/;
-
-  function cssValueToPixels(val) {
-
-    if (val === '0' || common.isUndefined(val)) return 0;
-
-    var match = val.match(CSS_VALUE_PIXELS);
-
-    if (!common.isNull(match)) {
-      return parseFloat(match[1]);
-    }
-
-    // TODO ...ems? %?
-
-    return 0;
-
-  }
-
-  /**
-   * @namespace
-   * @member dat.dom
-   */
-  var dom = {
-
-    /**
-     * 
-     * @param elem
-     * @param selectable
-     */
-    makeSelectable: function(elem, selectable) {
-
-      if (elem === undefined || elem.style === undefined) return;
-
-      elem.onselectstart = selectable ? function() {
-        return false;
-      } : function() {
-      };
-
-      elem.style.MozUserSelect = selectable ? 'auto' : 'none';
-      elem.style.KhtmlUserSelect = selectable ? 'auto' : 'none';
-      elem.unselectable = selectable ? 'on' : 'off';
-
-    },
-
-    /**
-     *
-     * @param elem
-     * @param horizontal
-     * @param vertical
-     */
-    makeFullscreen: function(elem, horizontal, vertical) {
-
-      if (common.isUndefined(horizontal)) horizontal = true;
-      if (common.isUndefined(vertical)) vertical = true;
-
-      elem.style.position = 'absolute';
-
-      if (horizontal) {
-        elem.style.left = 0;
-        elem.style.right = 0;
-      }
-      if (vertical) {
-        elem.style.top = 0;
-        elem.style.bottom = 0;
-      }
-
-    },
-
-    /**
-     *
-     * @param elem
-     * @param eventType
-     * @param params
-     */
-    fakeEvent: function(elem, eventType, params, aux) {
-      params = params || {};
-      var className = EVENT_MAP_INV[eventType];
-      if (!className) {
-        throw new Error('Event type ' + eventType + ' not supported.');
-      }
-      var evt = document.createEvent(className);
-      switch (className) {
-        case 'MouseEvents':
-          var clientX = params.x || params.clientX || 0;
-          var clientY = params.y || params.clientY || 0;
-          evt.initMouseEvent(eventType, params.bubbles || false,
-              params.cancelable || true, window, params.clickCount || 1,
-              0, //screen X
-              0, //screen Y
-              clientX, //client X
-              clientY, //client Y
-              false, false, false, false, 0, null);
-          break;
-        case 'KeyboardEvents':
-          var init = evt.initKeyboardEvent || evt.initKeyEvent; // webkit || moz
-          common.defaults(params, {
-            cancelable: true,
-            ctrlKey: false,
-            altKey: false,
-            shiftKey: false,
-            metaKey: false,
-            keyCode: undefined,
-            charCode: undefined
-          });
-          init(eventType, params.bubbles || false,
-              params.cancelable, window,
-              params.ctrlKey, params.altKey,
-              params.shiftKey, params.metaKey,
-              params.keyCode, params.charCode);
-          break;
-        default:
-          evt.initEvent(eventType, params.bubbles || false,
-              params.cancelable || true);
-          break;
-      }
-      common.defaults(evt, aux);
-      elem.dispatchEvent(evt);
-    },
-
-    /**
-     *
-     * @param elem
-     * @param event
-     * @param func
-     * @param bool
-     */
-    bind: function(elem, event, func, bool) {
-      bool = bool || false;
-      if (elem.addEventListener)
-        elem.addEventListener(event, func, bool);
-      else if (elem.attachEvent)
-        elem.attachEvent('on' + event, func);
-      return dom;
-    },
-
-    /**
-     *
-     * @param elem
-     * @param event
-     * @param func
-     * @param bool
-     */
-    unbind: function(elem, event, func, bool) {
-      bool = bool || false;
-      if (elem.removeEventListener)
-        elem.removeEventListener(event, func, bool);
-      else if (elem.detachEvent)
-        elem.detachEvent('on' + event, func);
-      return dom;
-    },
-
-    /**
-     *
-     * @param elem
-     * @param className
-     */
-    addClass: function(elem, className) {
-      if (elem.className === undefined) {
-        elem.className = className;
-      } else if (elem.className !== className) {
-        var classes = elem.className.split(/ +/);
-        if (classes.indexOf(className) == -1) {
-          classes.push(className);
-          elem.className = classes.join(' ').replace(/^\s+/, '').replace(/\s+$/, '');
-        }
-      }
-      return dom;
-    },
-
-    /**
-     *
-     * @param elem
-     * @param className
-     */
-    removeClass: function(elem, className) {
-      if (className) {
-        if (elem.className === undefined) {
-          // elem.className = className;
-        } else if (elem.className === className) {
-          elem.removeAttribute('class');
-        } else {
-          var classes = elem.className.split(/ +/);
-          var index = classes.indexOf(className);
-          if (index != -1) {
-            classes.splice(index, 1);
-            elem.className = classes.join(' ');
-          }
-        }
-      } else {
-        elem.className = undefined;
-      }
-      return dom;
-    },
-
-    hasClass: function(elem, className) {
-      return new RegExp('(?:^|\\s+)' + className + '(?:\\s+|$)').test(elem.className) || false;
-    },
-
-    /**
-     *
-     * @param elem
-     */
-    getWidth: function(elem) {
-
-      var style = getComputedStyle(elem);
-
-      return cssValueToPixels(style['border-left-width']) +
-          cssValueToPixels(style['border-right-width']) +
-          cssValueToPixels(style['padding-left']) +
-          cssValueToPixels(style['padding-right']) +
-          cssValueToPixels(style['width']);
-    },
-
-    /**
-     *
-     * @param elem
-     */
-    getHeight: function(elem) {
-
-      var style = getComputedStyle(elem);
-
-      return cssValueToPixels(style['border-top-width']) +
-          cssValueToPixels(style['border-bottom-width']) +
-          cssValueToPixels(style['padding-top']) +
-          cssValueToPixels(style['padding-bottom']) +
-          cssValueToPixels(style['height']);
-    },
-
-    /**
-     *
-     * @param elem
-     */
-    getOffset: function(elem) {
-      var offset = {left: 0, top:0};
-      if (elem.offsetParent) {
-        do {
-          offset.left += elem.offsetLeft;
-          offset.top += elem.offsetTop;
-        } while (elem = elem.offsetParent);
-      }
-      return offset;
-    },
-
-    // http://stackoverflow.com/posts/2684561/revisions
-    /**
-     * 
-     * @param elem
-     */
-    isActive: function(elem) {
-      return elem === document.activeElement && ( elem.type || elem.href );
-    }
-
-  };
-
-  return dom;
-
-})(dat.utils.common);
-
-
-dat.controllers.OptionController = (function (Controller, dom, common) {
-
-  /**
-   * @class Provides a select input to alter the property of an object, using a
-   * list of accepted values.
-   *
-   * @extends dat.controllers.Controller
-   *
-   * @param {Object} object The object to be manipulated
-   * @param {string} property The name of the property to be manipulated
-   * @param {Object|string[]} options A map of labels to acceptable values, or
-   * a list of acceptable string values.
-   *
-   * @member dat.controllers
-   */
-  var OptionController = function(object, property, options) {
-
-    OptionController.superclass.call(this, object, property);
-
-    var _this = this;
-
-    /**
-     * The drop down menu
-     * @ignore
-     */
-    this.__select = document.createElement('select');
-
-    if (common.isArray(options)) {
-      var map = {};
-      common.each(options, function(element) {
-        map[element] = element;
-      });
-      options = map;
-    }
-
-    common.each(options, function(value, key) {
-
-      var opt = document.createElement('option');
-      opt.innerHTML = key;
-      opt.setAttribute('value', value);
-      _this.__select.appendChild(opt);
-
-    });
-
-    // Acknowledge original value
-    this.updateDisplay();
-
-    dom.bind(this.__select, 'change', function() {
-      var desiredValue = this.options[this.selectedIndex].value;
-      _this.setValue(desiredValue);
-    });
-
-    this.domElement.appendChild(this.__select);
-
-  };
-
-  OptionController.superclass = Controller;
-
-  common.extend(
-
-      OptionController.prototype,
-      Controller.prototype,
-
-      {
-
-        setValue: function(v) {
-          var toReturn = OptionController.superclass.prototype.setValue.call(this, v);
-          if (this.__onFinishChange) {
-            this.__onFinishChange.call(this, this.getValue());
-          }
-          return toReturn;
-        },
-
-        updateDisplay: function() {
-          this.__select.value = this.getValue();
-          return OptionController.superclass.prototype.updateDisplay.call(this);
-        }
-
-      }
-
-  );
-
-  return OptionController;
-
-})(dat.controllers.Controller,
-dat.dom.dom,
-dat.utils.common);
-
-
-dat.controllers.NumberController = (function (Controller, common) {
-
-  /**
-   * @class Represents a given property of an object that is a number.
-   *
-   * @extends dat.controllers.Controller
-   *
-   * @param {Object} object The object to be manipulated
-   * @param {string} property The name of the property to be manipulated
-   * @param {Object} [params] Optional parameters
-   * @param {Number} [params.min] Minimum allowed value
-   * @param {Number} [params.max] Maximum allowed value
-   * @param {Number} [params.step] Increment by which to change value
-   *
-   * @member dat.controllers
-   */
-  var NumberController = function(object, property, params) {
-
-    NumberController.superclass.call(this, object, property);
-
-    params = params || {};
-
-    this.__min = params.min;
-    this.__max = params.max;
-    this.__step = params.step;
-
-    if (common.isUndefined(this.__step)) {
-
-      if (this.initialValue == 0) {
-        this.__impliedStep = 1; // What are we, psychics?
-      } else {
-        // Hey Doug, check this out.
-        this.__impliedStep = Math.pow(10, Math.floor(Math.log(this.initialValue)/Math.LN10))/10;
-      }
-
-    } else {
-
-      this.__impliedStep = this.__step;
-
-    }
-
-    this.__precision = numDecimals(this.__impliedStep);
-
-
-  };
-
-  NumberController.superclass = Controller;
-
-  common.extend(
-
-      NumberController.prototype,
-      Controller.prototype,
-
-      /** @lends dat.controllers.NumberController.prototype */
-      {
-
-        setValue: function(v) {
-
-          if (this.__min !== undefined && v < this.__min) {
-            v = this.__min;
-          } else if (this.__max !== undefined && v > this.__max) {
-            v = this.__max;
-          }
-
-          if (this.__step !== undefined && v % this.__step != 0) {
-            v = Math.round(v / this.__step) * this.__step;
-          }
-
-          return NumberController.superclass.prototype.setValue.call(this, v);
-
-        },
-
-        /**
-         * Specify a minimum value for <code>object[property]</code>.
-         *
-         * @param {Number} minValue The minimum value for
-         * <code>object[property]</code>
-         * @returns {dat.controllers.NumberController} this
-         */
-        min: function(v) {
-          this.__min = v;
-          return this;
-        },
-
-        /**
-         * Specify a maximum value for <code>object[property]</code>.
-         *
-         * @param {Number} maxValue The maximum value for
-         * <code>object[property]</code>
-         * @returns {dat.controllers.NumberController} this
-         */
-        max: function(v) {
-          this.__max = v;
-          return this;
-        },
-
-        /**
-         * Specify a step value that dat.controllers.NumberController
-         * increments by.
-         *
-         * @param {Number} stepValue The step value for
-         * dat.controllers.NumberController
-         * @default if minimum and maximum specified increment is 1% of the
-         * difference otherwise stepValue is 1
-         * @returns {dat.controllers.NumberController} this
-         */
-        step: function(v) {
-          this.__step = v;
-          return this;
-        }
-
-      }
-
-  );
-
-  function numDecimals(x) {
-    x = x.toString();
-    if (x.indexOf('.') > -1) {
-      return x.length - x.indexOf('.') - 1;
-    } else {
-      return 0;
-    }
-  }
-
-  return NumberController;
-
-})(dat.controllers.Controller,
-dat.utils.common);
-
-
-dat.controllers.NumberControllerBox = (function (NumberController, dom, common) {
-
-  /**
-   * @class Represents a given property of an object that is a number and
-   * provides an input element with which to manipulate it.
-   *
-   * @extends dat.controllers.Controller
-   * @extends dat.controllers.NumberController
-   *
-   * @param {Object} object The object to be manipulated
-   * @param {string} property The name of the property to be manipulated
-   * @param {Object} [params] Optional parameters
-   * @param {Number} [params.min] Minimum allowed value
-   * @param {Number} [params.max] Maximum allowed value
-   * @param {Number} [params.step] Increment by which to change value
-   *
-   * @member dat.controllers
-   */
-  var NumberControllerBox = function(object, property, params) {
-
-    this.__truncationSuspended = false;
-
-    NumberControllerBox.superclass.call(this, object, property, params);
-
-    var _this = this;
-
-    /**
-     * {Number} Previous mouse y position
-     * @ignore
-     */
-    var prev_y;
-
-    this.__input = document.createElement('input');
-    this.__input.setAttribute('type', 'text');
-
-    // Makes it so manually specified values are not truncated.
-
-    dom.bind(this.__input, 'change', onChange);
-    dom.bind(this.__input, 'blur', onBlur);
-    dom.bind(this.__input, 'mousedown', onMouseDown);
-    dom.bind(this.__input, 'keydown', function(e) {
-
-      // When pressing entire, you can be as precise as you want.
-      if (e.keyCode === 13) {
-        _this.__truncationSuspended = true;
-        this.blur();
-        _this.__truncationSuspended = false;
-      }
-
-    });
-
-    function onChange() {
-      var attempted = parseFloat(_this.__input.value);
-      if (!common.isNaN(attempted)) _this.setValue(attempted);
-    }
-
-    function onBlur() {
-      onChange();
-      if (_this.__onFinishChange) {
-        _this.__onFinishChange.call(_this, _this.getValue());
-      }
-    }
-
-    function onMouseDown(e) {
-      dom.bind(window, 'mousemove', onMouseDrag);
-      dom.bind(window, 'mouseup', onMouseUp);
-      prev_y = e.clientY;
-    }
-
-    function onMouseDrag(e) {
-
-      var diff = prev_y - e.clientY;
-      _this.setValue(_this.getValue() + diff * _this.__impliedStep);
-
-      prev_y = e.clientY;
-
-    }
-
-    function onMouseUp() {
-      dom.unbind(window, 'mousemove', onMouseDrag);
-      dom.unbind(window, 'mouseup', onMouseUp);
-    }
-
-    this.updateDisplay();
-
-    this.domElement.appendChild(this.__input);
-
-  };
-
-  NumberControllerBox.superclass = NumberController;
-
-  common.extend(
-
-      NumberControllerBox.prototype,
-      NumberController.prototype,
-
-      {
-
-        updateDisplay: function() {
-
-          this.__input.value = this.__truncationSuspended ? this.getValue() : roundToDecimal(this.getValue(), this.__precision);
-          return NumberControllerBox.superclass.prototype.updateDisplay.call(this);
-        }
-
-      }
-
-  );
-
-  function roundToDecimal(value, decimals) {
-    var tenTo = Math.pow(10, decimals);
-    return Math.round(value * tenTo) / tenTo;
-  }
-
-  return NumberControllerBox;
-
-})(dat.controllers.NumberController,
-dat.dom.dom,
-dat.utils.common);
-
-
-dat.controllers.NumberControllerSlider = (function (NumberController, dom, css, common, styleSheet) {
-
-  /**
-   * @class Represents a given property of an object that is a number, contains
-   * a minimum and maximum, and provides a slider element with which to
-   * manipulate it. It should be noted that the slider element is made up of
-   * <code>&lt;div&gt;</code> tags, <strong>not</strong> the html5
-   * <code>&lt;slider&gt;</code> element.
-   *
-   * @extends dat.controllers.Controller
-   * @extends dat.controllers.NumberController
-   * 
-   * @param {Object} object The object to be manipulated
-   * @param {string} property The name of the property to be manipulated
-   * @param {Number} minValue Minimum allowed value
-   * @param {Number} maxValue Maximum allowed value
-   * @param {Number} stepValue Increment by which to change value
-   *
-   * @member dat.controllers
-   */
-  var NumberControllerSlider = function(object, property, min, max, step) {
-
-    NumberControllerSlider.superclass.call(this, object, property, { min: min, max: max, step: step });
-
-    var _this = this;
-
-    this.__background = document.createElement('div');
-    this.__foreground = document.createElement('div');
-    
-
-
-    dom.bind(this.__background, 'mousedown', onMouseDown);
-    
-    dom.addClass(this.__background, 'slider');
-    dom.addClass(this.__foreground, 'slider-fg');
-
-    function onMouseDown(e) {
-
-      dom.bind(window, 'mousemove', onMouseDrag);
-      dom.bind(window, 'mouseup', onMouseUp);
-
-      onMouseDrag(e);
-    }
-
-    function onMouseDrag(e) {
-
-      e.preventDefault();
-
-      var offset = dom.getOffset(_this.__background);
-      var width = dom.getWidth(_this.__background);
-      
-      _this.setValue(
-        map(e.clientX, offset.left, offset.left + width, _this.__min, _this.__max)
-      );
-
-      return false;
-
-    }
-
-    function onMouseUp() {
-      dom.unbind(window, 'mousemove', onMouseDrag);
-      dom.unbind(window, 'mouseup', onMouseUp);
-      if (_this.__onFinishChange) {
-        _this.__onFinishChange.call(_this, _this.getValue());
-      }
-    }
-
-    this.updateDisplay();
-
-    this.__background.appendChild(this.__foreground);
-    this.domElement.appendChild(this.__background);
-
-  };
-
-  NumberControllerSlider.superclass = NumberController;
-
-  /**
-   * Injects default stylesheet for slider elements.
-   */
-  NumberControllerSlider.useDefaultStyles = function() {
-    css.inject(styleSheet);
-  };
-
-  common.extend(
-
-      NumberControllerSlider.prototype,
-      NumberController.prototype,
-
-      {
-
-        updateDisplay: function() {
-          var pct = (this.getValue() - this.__min)/(this.__max - this.__min);
-          this.__foreground.style.width = pct*100+'%';
-          return NumberControllerSlider.superclass.prototype.updateDisplay.call(this);
-        }
-
-      }
-
-
-
-  );
-
-  function map(v, i1, i2, o1, o2) {
-    return o1 + (o2 - o1) * ((v - i1) / (i2 - i1));
-  }
-
-  return NumberControllerSlider;
-  
-})(dat.controllers.NumberController,
-dat.dom.dom,
-dat.utils.css,
-dat.utils.common,
-".slider {\n  box-shadow: inset 0 2px 4px rgba(0,0,0,0.15);\n  height: 1em;\n  border-radius: 1em;\n  background-color: #eee;\n  padding: 0 0.5em;\n  overflow: hidden;\n}\n\n.slider-fg {\n  padding: 1px 0 2px 0;\n  background-color: #aaa;\n  height: 1em;\n  margin-left: -0.5em;\n  padding-right: 0.5em;\n  border-radius: 1em 0 0 1em;\n}\n\n.slider-fg:after {\n  display: inline-block;\n  border-radius: 1em;\n  background-color: #fff;\n  border:  1px solid #aaa;\n  content: '';\n  float: right;\n  margin-right: -1em;\n  margin-top: -1px;\n  height: 0.9em;\n  width: 0.9em;\n}");
-
-
-dat.controllers.FunctionController = (function (Controller, dom, common) {
-
-  /**
-   * @class Provides a GUI interface to fire a specified method, a property of an object.
-   *
-   * @extends dat.controllers.Controller
-   *
-   * @param {Object} object The object to be manipulated
-   * @param {string} property The name of the property to be manipulated
-   *
-   * @member dat.controllers
-   */
-  var FunctionController = function(object, property, text) {
-
-    FunctionController.superclass.call(this, object, property);
-
-    var _this = this;
-
-    this.__button = document.createElement('div');
-    this.__button.innerHTML = text === undefined ? 'Fire' : text;
-    dom.bind(this.__button, 'click', function(e) {
-      e.preventDefault();
-      _this.fire();
-      return false;
-    });
-
-    dom.addClass(this.__button, 'button');
-
-    this.domElement.appendChild(this.__button);
-
-
-  };
-
-  FunctionController.superclass = Controller;
-
-  common.extend(
-
-      FunctionController.prototype,
-      Controller.prototype,
-      {
-        
-        fire: function() {
-          if (this.__onChange) {
-            this.__onChange.call(this);
-          }
-          if (this.__onFinishChange) {
-            this.__onFinishChange.call(this, this.getValue());
-          }
-          this.getValue().call(this.object);
-        }
-      }
-
-  );
-
-  return FunctionController;
-
-})(dat.controllers.Controller,
-dat.dom.dom,
-dat.utils.common);
-
-
-dat.controllers.BooleanController = (function (Controller, dom, common) {
-
-  /**
-   * @class Provides a checkbox input to alter the boolean property of an object.
-   * @extends dat.controllers.Controller
-   *
-   * @param {Object} object The object to be manipulated
-   * @param {string} property The name of the property to be manipulated
-   *
-   * @member dat.controllers
-   */
-  var BooleanController = function(object, property) {
-
-    BooleanController.superclass.call(this, object, property);
-
-    var _this = this;
-    this.__prev = this.getValue();
-
-    this.__checkbox = document.createElement('input');
-    this.__checkbox.setAttribute('type', 'checkbox');
-
-
-    dom.bind(this.__checkbox, 'change', onChange, false);
-
-    this.domElement.appendChild(this.__checkbox);
-
-    // Match original value
-    this.updateDisplay();
-
-    function onChange() {
-      _this.setValue(!_this.__prev);
-    }
-
-  };
-
-  BooleanController.superclass = Controller;
-
-  common.extend(
-
-      BooleanController.prototype,
-      Controller.prototype,
-
-      {
-
-        setValue: function(v) {
-          var toReturn = BooleanController.superclass.prototype.setValue.call(this, v);
-          if (this.__onFinishChange) {
-            this.__onFinishChange.call(this, this.getValue());
-          }
-          this.__prev = this.getValue();
-          return toReturn;
-        },
-
-        updateDisplay: function() {
-          
-          if (this.getValue() === true) {
-            this.__checkbox.setAttribute('checked', 'checked');
-            this.__checkbox.checked = true;    
-          } else {
-              this.__checkbox.checked = false;
-          }
-
-          return BooleanController.superclass.prototype.updateDisplay.call(this);
-
-        }
-
-
-      }
-
-  );
-
-  return BooleanController;
-
-})(dat.controllers.Controller,
-dat.dom.dom,
-dat.utils.common);
-
-
-dat.color.toString = (function (common) {
-
-  return function(color) {
-
-    if (color.a == 1 || common.isUndefined(color.a)) {
-
-      var s = color.hex.toString(16);
-      while (s.length < 6) {
-        s = '0' + s;
-      }
-
-      return '#' + s;
-
-    } else {
-
-      return 'rgba(' + Math.round(color.r) + ',' + Math.round(color.g) + ',' + Math.round(color.b) + ',' + color.a + ')';
-
-    }
-
-  }
-
-})(dat.utils.common);
-
-
-dat.color.interpret = (function (toString, common) {
-
-  var result, toReturn;
-
-  var interpret = function() {
-
-    toReturn = false;
-
-    var original = arguments.length > 1 ? common.toArray(arguments) : arguments[0];
-
-    common.each(INTERPRETATIONS, function(family) {
-
-      if (family.litmus(original)) {
-
-        common.each(family.conversions, function(conversion, conversionName) {
-
-          result = conversion.read(original);
-
-          if (toReturn === false && result !== false) {
-            toReturn = result;
-            result.conversionName = conversionName;
-            result.conversion = conversion;
-            return common.BREAK;
-
-          }
-
-        });
-
-        return common.BREAK;
-
-      }
-
-    });
-
-    return toReturn;
-
-  };
-
-  var INTERPRETATIONS = [
-
-    // Strings
-    {
-
-      litmus: common.isString,
-
-      conversions: {
-
-        THREE_CHAR_HEX: {
-
-          read: function(original) {
-
-            var test = original.match(/^#([A-F0-9])([A-F0-9])([A-F0-9])$/i);
-            if (test === null) return false;
-
-            return {
-              space: 'HEX',
-              hex: parseInt(
-                  '0x' +
-                      test[1].toString() + test[1].toString() +
-                      test[2].toString() + test[2].toString() +
-                      test[3].toString() + test[3].toString())
-            };
-
-          },
-
-          write: toString
-
-        },
-
-        SIX_CHAR_HEX: {
-
-          read: function(original) {
-
-            var test = original.match(/^#([A-F0-9]{6})$/i);
-            if (test === null) return false;
-
-            return {
-              space: 'HEX',
-              hex: parseInt('0x' + test[1].toString())
-            };
-
-          },
-
-          write: toString
-
-        },
-
-        CSS_RGB: {
-
-          read: function(original) {
-
-            var test = original.match(/^rgb\(\s*(.+)\s*,\s*(.+)\s*,\s*(.+)\s*\)/);
-            if (test === null) return false;
-
-            return {
-              space: 'RGB',
-              r: parseFloat(test[1]),
-              g: parseFloat(test[2]),
-              b: parseFloat(test[3])
-            };
-
-          },
-
-          write: toString
-
-        },
-
-        CSS_RGBA: {
-
-          read: function(original) {
-
-            var test = original.match(/^rgba\(\s*(.+)\s*,\s*(.+)\s*,\s*(.+)\s*\,\s*(.+)\s*\)/);
-            if (test === null) return false;
-
-            return {
-              space: 'RGB',
-              r: parseFloat(test[1]),
-              g: parseFloat(test[2]),
-              b: parseFloat(test[3]),
-              a: parseFloat(test[4])
-            };
-
-          },
-
-          write: toString
-
-        }
-
-      }
-
-    },
-
-    // Numbers
-    {
-
-      litmus: common.isNumber,
-
-      conversions: {
-
-        HEX: {
-          read: function(original) {
-            return {
-              space: 'HEX',
-              hex: original,
-              conversionName: 'HEX'
-            }
-          },
-
-          write: function(color) {
-            return color.hex;
-          }
-        }
-
-      }
-
-    },
-
-    // Arrays
-    {
-
-      litmus: common.isArray,
-
-      conversions: {
-
-        RGB_ARRAY: {
-          read: function(original) {
-            if (original.length != 3) return false;
-            return {
-              space: 'RGB',
-              r: original[0],
-              g: original[1],
-              b: original[2]
-            };
-          },
-
-          write: function(color) {
-            return [color.r, color.g, color.b];
-          }
-
-        },
-
-        RGBA_ARRAY: {
-          read: function(original) {
-            if (original.length != 4) return false;
-            return {
-              space: 'RGB',
-              r: original[0],
-              g: original[1],
-              b: original[2],
-              a: original[3]
-            };
-          },
-
-          write: function(color) {
-            return [color.r, color.g, color.b, color.a];
-          }
-
-        }
-
-      }
-
-    },
-
-    // Objects
-    {
-
-      litmus: common.isObject,
-
-      conversions: {
-
-        RGBA_OBJ: {
-          read: function(original) {
-            if (common.isNumber(original.r) &&
-                common.isNumber(original.g) &&
-                common.isNumber(original.b) &&
-                common.isNumber(original.a)) {
-              return {
-                space: 'RGB',
-                r: original.r,
-                g: original.g,
-                b: original.b,
-                a: original.a
-              }
-            }
-            return false;
-          },
-
-          write: function(color) {
-            return {
-              r: color.r,
-              g: color.g,
-              b: color.b,
-              a: color.a
-            }
-          }
-        },
-
-        RGB_OBJ: {
-          read: function(original) {
-            if (common.isNumber(original.r) &&
-                common.isNumber(original.g) &&
-                common.isNumber(original.b)) {
-              return {
-                space: 'RGB',
-                r: original.r,
-                g: original.g,
-                b: original.b
-              }
-            }
-            return false;
-          },
-
-          write: function(color) {
-            return {
-              r: color.r,
-              g: color.g,
-              b: color.b
-            }
-          }
-        },
-
-        HSVA_OBJ: {
-          read: function(original) {
-            if (common.isNumber(original.h) &&
-                common.isNumber(original.s) &&
-                common.isNumber(original.v) &&
-                common.isNumber(original.a)) {
-              return {
-                space: 'HSV',
-                h: original.h,
-                s: original.s,
-                v: original.v,
-                a: original.a
-              }
-            }
-            return false;
-          },
-
-          write: function(color) {
-            return {
-              h: color.h,
-              s: color.s,
-              v: color.v,
-              a: color.a
-            }
-          }
-        },
-
-        HSV_OBJ: {
-          read: function(original) {
-            if (common.isNumber(original.h) &&
-                common.isNumber(original.s) &&
-                common.isNumber(original.v)) {
-              return {
-                space: 'HSV',
-                h: original.h,
-                s: original.s,
-                v: original.v
-              }
-            }
-            return false;
-          },
-
-          write: function(color) {
-            return {
-              h: color.h,
-              s: color.s,
-              v: color.v
-            }
-          }
-
-        }
-
-      }
-
-    }
-
-
-  ];
-
-  return interpret;
-
-
-})(dat.color.toString,
-dat.utils.common);
-
-
-dat.GUI = dat.gui.GUI = (function (css, saveDialogueContents, styleSheet, controllerFactory, Controller, BooleanController, FunctionController, NumberControllerBox, NumberControllerSlider, OptionController, ColorController, requestAnimationFrame, CenteredDiv, dom, common) {
-
-  css.inject(styleSheet);
-
-  /** Outer-most className for GUI's */
-  var CSS_NAMESPACE = 'dg';
-
-  var HIDE_KEY_CODE = 72;
-
-  /** The only value shared between the JS and SCSS. Use caution. */
-  var CLOSE_BUTTON_HEIGHT = 20;
-
-  var DEFAULT_DEFAULT_PRESET_NAME = 'Default';
-
-  var SUPPORTS_LOCAL_STORAGE = (function() {
-    try {
-      return 'localStorage' in window && window['localStorage'] !== null;
-    } catch (e) {
-      return false;
-    }
-  })();
-
-  var SAVE_DIALOGUE;
-
-  /** Have we yet to create an autoPlace GUI? */
-  var auto_place_virgin = true;
-
-  /** Fixed position div that auto place GUI's go inside */
-  var auto_place_container;
-
-  /** Are we hiding the GUI's ? */
-  var hide = false;
-
-  /** GUI's which should be hidden */
-  var hideable_guis = [];
-
-  /**
-   * A lightweight controller library for JavaScript. It allows you to easily
-   * manipulate variables and fire functions on the fly.
-   * @class
-   *
-   * @member dat.gui
-   *
-   * @param {Object} [params]
-   * @param {String} [params.name] The name of this GUI.
-   * @param {Object} [params.load] JSON object representing the saved state of
-   * this GUI.
-   * @param {Boolean} [params.auto=true]
-   * @param {dat.gui.GUI} [params.parent] The GUI I'm nested in.
-   * @param {Boolean} [params.closed] If true, starts closed
-   */
-  var GUI = function(params) {
-
-    var _this = this;
-
-    /**
-     * Outermost DOM Element
-     * @type DOMElement
-     */
-    this.domElement = document.createElement('div');
-    this.__ul = document.createElement('ul');
-    this.domElement.appendChild(this.__ul);
-
-    dom.addClass(this.domElement, CSS_NAMESPACE);
-
-    /**
-     * Nested GUI's by name
-     * @ignore
-     */
-    this.__folders = {};
-
-    this.__controllers = [];
-
-    /**
-     * List of objects I'm remembering for save, only used in top level GUI
-     * @ignore
-     */
-    this.__rememberedObjects = [];
-
-    /**
-     * Maps the index of remembered objects to a map of controllers, only used
-     * in top level GUI.
-     *
-     * @private
-     * @ignore
-     *
-     * @example
-     * [
-     *  {
-     *    propertyName: Controller,
-     *    anotherPropertyName: Controller
-     *  },
-     *  {
-     *    propertyName: Controller
-     *  }
-     * ]
-     */
-    this.__rememberedObjectIndecesToControllers = [];
-
-    this.__listening = [];
-
-    params = params || {};
-
-    // Default parameters
-    params = common.defaults(params, {
-      autoPlace: true,
-      width: GUI.DEFAULT_WIDTH
-    });
-
-    params = common.defaults(params, {
-      resizable: params.autoPlace,
-      hideable: params.autoPlace
-    });
-
-
-    if (!common.isUndefined(params.load)) {
-
-      // Explicit preset
-      if (params.preset) params.load.preset = params.preset;
-
-    } else {
-
-      params.load = { preset: DEFAULT_DEFAULT_PRESET_NAME };
-
-    }
-
-    if (common.isUndefined(params.parent) && params.hideable) {
-      hideable_guis.push(this);
-    }
-
-    // Only root level GUI's are resizable.
-    params.resizable = common.isUndefined(params.parent) && params.resizable;
-
-
-    if (params.autoPlace && common.isUndefined(params.scrollable)) {
-      params.scrollable = true;
-    }
-//    params.scrollable = common.isUndefined(params.parent) && params.scrollable === true;
-
-    // Not part of params because I don't want people passing this in via
-    // constructor. Should be a 'remembered' value.
-    var use_local_storage =
-        SUPPORTS_LOCAL_STORAGE &&
-            localStorage.getItem(getLocalStorageHash(this, 'isLocal')) === 'true';
-
-    Object.defineProperties(this,
-
-        /** @lends dat.gui.GUI.prototype */
-        {
-
-          /**
-           * The parent <code>GUI</code>
-           * @type dat.gui.GUI
-           */
-          parent: {
-            get: function() {
-              return params.parent;
-            }
-          },
-
-          scrollable: {
-            get: function() {
-              return params.scrollable;
-            }
-          },
-
-          /**
-           * Handles <code>GUI</code>'s element placement for you
-           * @type Boolean
-           */
-          autoPlace: {
-            get: function() {
-              return params.autoPlace;
-            }
-          },
-
-          /**
-           * The identifier for a set of saved values
-           * @type String
-           */
-          preset: {
-
-            get: function() {
-              if (_this.parent) {
-                return _this.getRoot().preset;
-              } else {
-                return params.load.preset;
-              }
-            },
-
-            set: function(v) {
-              if (_this.parent) {
-                _this.getRoot().preset = v;
-              } else {
-                params.load.preset = v;
-              }
-              setPresetSelectIndex(this);
-              _this.revert();
-            }
-
-          },
-
-          /**
-           * The width of <code>GUI</code> element
-           * @type Number
-           */
-          width: {
-            get: function() {
-              return params.width;
-            },
-            set: function(v) {
-              params.width = v;
-              setWidth(_this, v);
-            }
-          },
-
-          /**
-           * The name of <code>GUI</code>. Used for folders. i.e
-           * a folder's name
-           * @type String
-           */
-          name: {
-            get: function() {
-              return params.name;
-            },
-            set: function(v) {
-              // TODO Check for collisions among sibling folders
-              params.name = v;
-              if (title_row_name) {
-                title_row_name.innerHTML = params.name;
-              }
-            }
-          },
-
-          /**
-           * Whether the <code>GUI</code> is collapsed or not
-           * @type Boolean
-           */
-          closed: {
-            get: function() {
-              return params.closed;
-            },
-            set: function(v) {
-              params.closed = v;
-              if (params.closed) {
-                dom.addClass(_this.__ul, GUI.CLASS_CLOSED);
-              } else {
-                dom.removeClass(_this.__ul, GUI.CLASS_CLOSED);
-              }
-              // For browsers that aren't going to respect the CSS transition,
-              // Lets just check our height against the window height right off
-              // the bat.
-              this.onResize();
-
-              if (_this.__closeButton) {
-                _this.__closeButton.innerHTML = v ? GUI.TEXT_OPEN : GUI.TEXT_CLOSED;
-              }
-            }
-          },
-
-          /**
-           * Contains all presets
-           * @type Object
-           */
-          load: {
-            get: function() {
-              return params.load;
-            }
-          },
-
-          /**
-           * Determines whether or not to use <a href="https://developer.mozilla.org/en/DOM/Storage#localStorage">localStorage</a> as the means for
-           * <code>remember</code>ing
-           * @type Boolean
-           */
-          useLocalStorage: {
-
-            get: function() {
-              return use_local_storage;
-            },
-            set: function(bool) {
-              if (SUPPORTS_LOCAL_STORAGE) {
-                use_local_storage = bool;
-                if (bool) {
-                  dom.bind(window, 'unload', saveToLocalStorage);
-                } else {
-                  dom.unbind(window, 'unload', saveToLocalStorage);
-                }
-                localStorage.setItem(getLocalStorageHash(_this, 'isLocal'), bool);
-              }
-            }
-
-          }
-
-        });
-
-    // Are we a root level GUI?
-    if (common.isUndefined(params.parent)) {
-
-      params.closed = false;
-
-      dom.addClass(this.domElement, GUI.CLASS_MAIN);
-      dom.makeSelectable(this.domElement, false);
-
-      // Are we supposed to be loading locally?
-      if (SUPPORTS_LOCAL_STORAGE) {
-
-        if (use_local_storage) {
-
-          _this.useLocalStorage = true;
-
-          var saved_gui = localStorage.getItem(getLocalStorageHash(this, 'gui'));
-
-          if (saved_gui) {
-            params.load = JSON.parse(saved_gui);
-          }
-
-        }
-
-      }
-
-      this.__closeButton = document.createElement('div');
-      this.__closeButton.innerHTML = GUI.TEXT_CLOSED;
-      dom.addClass(this.__closeButton, GUI.CLASS_CLOSE_BUTTON);
-      this.domElement.appendChild(this.__closeButton);
-
-      dom.bind(this.__closeButton, 'click', function() {
-
-        _this.closed = !_this.closed;
-
-
-      });
-
-
-      // Oh, you're a nested GUI!
-    } else {
-
-      if (params.closed === undefined) {
-        params.closed = true;
-      }
-
-      var title_row_name = document.createTextNode(params.name);
-      dom.addClass(title_row_name, 'controller-name');
-
-      var title_row = addRow(_this, title_row_name);
-
-      var on_click_title = function(e) {
-        e.preventDefault();
-        _this.closed = !_this.closed;
-        return false;
-      };
-
-      dom.addClass(this.__ul, GUI.CLASS_CLOSED);
-
-      dom.addClass(title_row, 'title');
-      dom.bind(title_row, 'click', on_click_title);
-
-      if (!params.closed) {
-        this.closed = false;
-      }
-
-    }
-
-    if (params.autoPlace) {
-
-      if (common.isUndefined(params.parent)) {
-
-        if (auto_place_virgin) {
-          auto_place_container = document.createElement('div');
-          dom.addClass(auto_place_container, CSS_NAMESPACE);
-          dom.addClass(auto_place_container, GUI.CLASS_AUTO_PLACE_CONTAINER);
-          document.body.appendChild(auto_place_container);
-          auto_place_virgin = false;
-        }
-
-        // Put it in the dom for you.
-        auto_place_container.appendChild(this.domElement);
-
-        // Apply the auto styles
-        dom.addClass(this.domElement, GUI.CLASS_AUTO_PLACE);
-
-      }
-
-
-      // Make it not elastic.
-      if (!this.parent) setWidth(_this, params.width);
-
-    }
-
-    dom.bind(window, 'resize', function() { _this.onResize() });
-    dom.bind(this.__ul, 'webkitTransitionEnd', function() { _this.onResize(); });
-    dom.bind(this.__ul, 'transitionend', function() { _this.onResize() });
-    dom.bind(this.__ul, 'oTransitionEnd', function() { _this.onResize() });
-    this.onResize();
-
-
-    if (params.resizable) {
-      addResizeHandle(this);
-    }
-
-    function saveToLocalStorage() {
-      localStorage.setItem(getLocalStorageHash(_this, 'gui'), JSON.stringify(_this.getSaveObject()));
-    }
-
-    var root = _this.getRoot();
-    function resetWidth() {
-        var root = _this.getRoot();
-        root.width += 1;
-        common.defer(function() {
-          root.width -= 1;
-        });
-      }
-
-      if (!params.parent) {
-        resetWidth();
-      }
-
-  };
-
-  GUI.toggleHide = function() {
-
-    hide = !hide;
-    common.each(hideable_guis, function(gui) {
-      gui.domElement.style.zIndex = hide ? -999 : 999;
-      gui.domElement.style.opacity = hide ? 0 : 1;
-    });
-  };
-
-  GUI.CLASS_AUTO_PLACE = 'a';
-  GUI.CLASS_AUTO_PLACE_CONTAINER = 'ac';
-  GUI.CLASS_MAIN = 'main';
-  GUI.CLASS_CONTROLLER_ROW = 'cr';
-  GUI.CLASS_TOO_TALL = 'taller-than-window';
-  GUI.CLASS_CLOSED = 'closed';
-  GUI.CLASS_CLOSE_BUTTON = 'close-button';
-  GUI.CLASS_DRAG = 'drag';
-
-  GUI.DEFAULT_WIDTH = 245;
-  GUI.TEXT_CLOSED = 'Close Controls';
-  GUI.TEXT_OPEN = 'Open Controls';
-
-  dom.bind(window, 'keydown', function(e) {
-
-    if (document.activeElement.type !== 'text' &&
-        (e.which === HIDE_KEY_CODE || e.keyCode == HIDE_KEY_CODE)) {
-      GUI.toggleHide();
-    }
-
-  }, false);
-
-  common.extend(
-
-      GUI.prototype,
-
-      /** @lends dat.gui.GUI */
-      {
-
-        /**
-         * @param object
-         * @param property
-         * @returns {dat.controllers.Controller} The new controller that was added.
-         * @instance
-         */
-        add: function(object, property) {
-
-          return add(
-              this,
-              object,
-              property,
-              {
-                factoryArgs: Array.prototype.slice.call(arguments, 2)
-              }
-          );
-
-        },
-
-        /**
-         * @param object
-         * @param property
-         * @returns {dat.controllers.ColorController} The new controller that was added.
-         * @instance
-         */
-        addColor: function(object, property) {
-
-          return add(
-              this,
-              object,
-              property,
-              {
-                color: true
-              }
-          );
-
-        },
-
-        /**
-         * @param controller
-         * @instance
-         */
-        remove: function(controller) {
-
-          // TODO listening?
-          this.__ul.removeChild(controller.__li);
-          this.__controllers.slice(this.__controllers.indexOf(controller), 1);
-          var _this = this;
-          common.defer(function() {
-            _this.onResize();
-          });
-
-        },
-
-        destroy: function() {
-
-          if (this.autoPlace) {
-            auto_place_container.removeChild(this.domElement);
-          }
-
-        },
-
-        /**
-         * @param name
-         * @returns {dat.gui.GUI} The new folder.
-         * @throws {Error} if this GUI already has a folder by the specified
-         * name
-         * @instance
-         */
-        addFolder: function(name) {
-
-          // We have to prevent collisions on names in order to have a key
-          // by which to remember saved values
-          if (this.__folders[name] !== undefined) {
-            throw new Error('You already have a folder in this GUI by the' +
-                ' name "' + name + '"');
-          }
-
-          var new_gui_params = { name: name, parent: this };
-
-          // We need to pass down the autoPlace trait so that we can
-          // attach event listeners to open/close folder actions to
-          // ensure that a scrollbar appears if the window is too short.
-          new_gui_params.autoPlace = this.autoPlace;
-
-          // Do we have saved appearance data for this folder?
-
-          if (this.load && // Anything loaded?
-              this.load.folders && // Was my parent a dead-end?
-              this.load.folders[name]) { // Did daddy remember me?
-
-            // Start me closed if I was closed
-            new_gui_params.closed = this.load.folders[name].closed;
-
-            // Pass down the loaded data
-            new_gui_params.load = this.load.folders[name];
-
-          }
-
-          var gui = new GUI(new_gui_params);
-          this.__folders[name] = gui;
-
-          var li = addRow(this, gui.domElement);
-          dom.addClass(li, 'folder');
-          return gui;
-
-        },
-
-        open: function() {
-          this.closed = false;
-        },
-
-        close: function() {
-          this.closed = true;
-        },
-
-        onResize: function() {
-
-          var root = this.getRoot();
-
-          if (root.scrollable) {
-
-            var top = dom.getOffset(root.__ul).top;
-            var h = 0;
-
-            common.each(root.__ul.childNodes, function(node) {
-              if (! (root.autoPlace && node === root.__save_row))
-                h += dom.getHeight(node);
-            });
-
-            if (window.innerHeight - top - CLOSE_BUTTON_HEIGHT < h) {
-              dom.addClass(root.domElement, GUI.CLASS_TOO_TALL);
-              root.__ul.style.height = window.innerHeight - top - CLOSE_BUTTON_HEIGHT + 'px';
-            } else {
-              dom.removeClass(root.domElement, GUI.CLASS_TOO_TALL);
-              root.__ul.style.height = 'auto';
-            }
-
-          }
-
-          if (root.__resize_handle) {
-            common.defer(function() {
-              root.__resize_handle.style.height = root.__ul.offsetHeight + 'px';
-            });
-          }
-
-          if (root.__closeButton) {
-            root.__closeButton.style.width = root.width + 'px';
-          }
-
-        },
-
-        /**
-         * Mark objects for saving. The order of these objects cannot change as
-         * the GUI grows. When remembering new objects, append them to the end
-         * of the list.
-         *
-         * @param {Object...} objects
-         * @throws {Error} if not called on a top level GUI.
-         * @instance
-         */
-        remember: function() {
-
-          if (common.isUndefined(SAVE_DIALOGUE)) {
-            SAVE_DIALOGUE = new CenteredDiv();
-            SAVE_DIALOGUE.domElement.innerHTML = saveDialogueContents;
-          }
-
-          if (this.parent) {
-            throw new Error("You can only call remember on a top level GUI.");
-          }
-
-          var _this = this;
-
-          common.each(Array.prototype.slice.call(arguments), function(object) {
-            if (_this.__rememberedObjects.length == 0) {
-              addSaveMenu(_this);
-            }
-            if (_this.__rememberedObjects.indexOf(object) == -1) {
-              _this.__rememberedObjects.push(object);
-            }
-          });
-
-          if (this.autoPlace) {
-            // Set save row width
-            setWidth(this, this.width);
-          }
-
-        },
-
-        /**
-         * @returns {dat.gui.GUI} the topmost parent GUI of a nested GUI.
-         * @instance
-         */
-        getRoot: function() {
-          var gui = this;
-          while (gui.parent) {
-            gui = gui.parent;
-          }
-          return gui;
-        },
-
-        /**
-         * @returns {Object} a JSON object representing the current state of
-         * this GUI as well as its remembered properties.
-         * @instance
-         */
-        getSaveObject: function() {
-
-          var toReturn = this.load;
-
-          toReturn.closed = this.closed;
-
-          // Am I remembering any values?
-          if (this.__rememberedObjects.length > 0) {
-
-            toReturn.preset = this.preset;
-
-            if (!toReturn.remembered) {
-              toReturn.remembered = {};
-            }
-
-            toReturn.remembered[this.preset] = getCurrentPreset(this);
-
-          }
-
-          toReturn.folders = {};
-          common.each(this.__folders, function(element, key) {
-            toReturn.folders[key] = element.getSaveObject();
-          });
-
-          return toReturn;
-
-        },
-
-        save: function() {
-
-          if (!this.load.remembered) {
-            this.load.remembered = {};
-          }
-
-          this.load.remembered[this.preset] = getCurrentPreset(this);
-          markPresetModified(this, false);
-
-        },
-
-        saveAs: function(presetName) {
-
-          if (!this.load.remembered) {
-
-            // Retain default values upon first save
-            this.load.remembered = {};
-            this.load.remembered[DEFAULT_DEFAULT_PRESET_NAME] = getCurrentPreset(this, true);
-
-          }
-
-          this.load.remembered[presetName] = getCurrentPreset(this);
-          this.preset = presetName;
-          addPresetOption(this, presetName, true);
-
-        },
-
-        revert: function(gui) {
-
-          common.each(this.__controllers, function(controller) {
-            // Make revert work on Default.
-            if (!this.getRoot().load.remembered) {
-              controller.setValue(controller.initialValue);
-            } else {
-              recallSavedValue(gui || this.getRoot(), controller);
-            }
-          }, this);
-
-          common.each(this.__folders, function(folder) {
-            folder.revert(folder);
-          });
-
-          if (!gui) {
-            markPresetModified(this.getRoot(), false);
-          }
-
-
-        },
-
-        listen: function(controller) {
-
-          var init = this.__listening.length == 0;
-          this.__listening.push(controller);
-          if (init) updateDisplays(this.__listening);
-
-        }
-
-      }
-
-  );
-
-  function add(gui, object, property, params) {
-
-    if (object[property] === undefined) {
-      throw new Error("Object " + object + " has no property \"" + property + "\"");
-    }
-
-    var controller;
-
-    if (params.color) {
-
-      controller = new ColorController(object, property);
-
-    } else {
-
-      var factoryArgs = [object,property].concat(params.factoryArgs);
-      controller = controllerFactory.apply(gui, factoryArgs);
-
-    }
-
-    if (params.before instanceof Controller) {
-      params.before = params.before.__li;
-    }
-
-    recallSavedValue(gui, controller);
-
-    dom.addClass(controller.domElement, 'c');
-
-    var name = document.createElement('span');
-    dom.addClass(name, 'property-name');
-    name.innerHTML = controller.property;
-
-    var container = document.createElement('div');
-    container.appendChild(name);
-    container.appendChild(controller.domElement);
-
-    var li = addRow(gui, container, params.before);
-
-    dom.addClass(li, GUI.CLASS_CONTROLLER_ROW);
-    dom.addClass(li, typeof controller.getValue());
-
-    augmentController(gui, li, controller);
-
-    gui.__controllers.push(controller);
-
-    return controller;
-
-  }
-
-  /**
-   * Add a row to the end of the GUI or before another row.
-   *
-   * @param gui
-   * @param [dom] If specified, inserts the dom content in the new row
-   * @param [liBefore] If specified, places the new row before another row
-   */
-  function addRow(gui, dom, liBefore) {
-    var li = document.createElement('li');
-    if (dom) li.appendChild(dom);
-    if (liBefore) {
-      gui.__ul.insertBefore(li, params.before);
-    } else {
-      gui.__ul.appendChild(li);
-    }
-    gui.onResize();
-    return li;
-  }
-
-  function augmentController(gui, li, controller) {
-
-    controller.__li = li;
-    controller.__gui = gui;
-
-    common.extend(controller, {
-
-      options: function(options) {
-
-        if (arguments.length > 1) {
-          controller.remove();
-
-          return add(
-              gui,
-              controller.object,
-              controller.property,
-              {
-                before: controller.__li.nextElementSibling,
-                factoryArgs: [common.toArray(arguments)]
-              }
-          );
-
-        }
-
-        if (common.isArray(options) || common.isObject(options)) {
-          controller.remove();
-
-          return add(
-              gui,
-              controller.object,
-              controller.property,
-              {
-                before: controller.__li.nextElementSibling,
-                factoryArgs: [options]
-              }
-          );
-
-        }
-
-      },
-
-      name: function(v) {
-        controller.__li.firstElementChild.firstElementChild.innerHTML = v;
-        return controller;
-      },
-
-      listen: function() {
-        controller.__gui.listen(controller);
-        return controller;
-      },
-
-      remove: function() {
-        controller.__gui.remove(controller);
-        return controller;
-      }
-
-    });
-
-    // All sliders should be accompanied by a box.
-    if (controller instanceof NumberControllerSlider) {
-
-      var box = new NumberControllerBox(controller.object, controller.property,
-          { min: controller.__min, max: controller.__max, step: controller.__step });
-
-      common.each(['updateDisplay', 'onChange', 'onFinishChange'], function(method) {
-        var pc = controller[method];
-        var pb = box[method];
-        controller[method] = box[method] = function() {
-          var args = Array.prototype.slice.call(arguments);
-          pc.apply(controller, args);
-          return pb.apply(box, args);
-        }
-      });
-
-      dom.addClass(li, 'has-slider');
-      controller.domElement.insertBefore(box.domElement, controller.domElement.firstElementChild);
-
-    }
-    else if (controller instanceof NumberControllerBox) {
-
-      var r = function(returned) {
-
-        // Have we defined both boundaries?
-        if (common.isNumber(controller.__min) && common.isNumber(controller.__max)) {
-
-          // Well, then lets just replace this with a slider.
-          controller.remove();
-          return add(
-              gui,
-              controller.object,
-              controller.property,
-              {
-                before: controller.__li.nextElementSibling,
-                factoryArgs: [controller.__min, controller.__max, controller.__step]
-              });
-
-        }
-
-        return returned;
-
-      };
-
-      controller.min = common.compose(r, controller.min);
-      controller.max = common.compose(r, controller.max);
-
-    }
-    else if (controller instanceof BooleanController) {
-
-      dom.bind(li, 'click', function() {
-        dom.fakeEvent(controller.__checkbox, 'click');
-      });
-
-      dom.bind(controller.__checkbox, 'click', function(e) {
-        e.stopPropagation(); // Prevents double-toggle
-      })
-
-    }
-    else if (controller instanceof FunctionController) {
-
-      dom.bind(li, 'click', function() {
-        dom.fakeEvent(controller.__button, 'click');
-      });
-
-      dom.bind(li, 'mouseover', function() {
-        dom.addClass(controller.__button, 'hover');
-      });
-
-      dom.bind(li, 'mouseout', function() {
-        dom.removeClass(controller.__button, 'hover');
-      });
-
-    }
-    else if (controller instanceof ColorController) {
-
-      dom.addClass(li, 'color');
-      controller.updateDisplay = common.compose(function(r) {
-        li.style.borderLeftColor = controller.__color.toString();
-        return r;
-      }, controller.updateDisplay);
-
-      controller.updateDisplay();
-
-    }
-
-    controller.setValue = common.compose(function(r) {
-      if (gui.getRoot().__preset_select && controller.isModified()) {
-        markPresetModified(gui.getRoot(), true);
-      }
-      return r;
-    }, controller.setValue);
-
-  }
-
-  function recallSavedValue(gui, controller) {
-
-    // Find the topmost GUI, that's where remembered objects live.
-    var root = gui.getRoot();
-
-    // Does the object we're controlling match anything we've been told to
-    // remember?
-    var matched_index = root.__rememberedObjects.indexOf(controller.object);
-
-    // Why yes, it does!
-    if (matched_index != -1) {
-
-      // Let me fetch a map of controllers for thcommon.isObject.
-      var controller_map =
-          root.__rememberedObjectIndecesToControllers[matched_index];
-
-      // Ohp, I believe this is the first controller we've created for this
-      // object. Lets make the map fresh.
-      if (controller_map === undefined) {
-        controller_map = {};
-        root.__rememberedObjectIndecesToControllers[matched_index] =
-            controller_map;
-      }
-
-      // Keep track of this controller
-      controller_map[controller.property] = controller;
-
-      // Okay, now have we saved any values for this controller?
-      if (root.load && root.load.remembered) {
-
-        var preset_map = root.load.remembered;
-
-        // Which preset are we trying to load?
-        var preset;
-
-        if (preset_map[gui.preset]) {
-
-          preset = preset_map[gui.preset];
-
-        } else if (preset_map[DEFAULT_DEFAULT_PRESET_NAME]) {
-
-          // Uhh, you can have the default instead?
-          preset = preset_map[DEFAULT_DEFAULT_PRESET_NAME];
-
-        } else {
-
-          // Nada.
-
-          return;
-
-        }
-
-
-        // Did the loaded object remember thcommon.isObject?
-        if (preset[matched_index] &&
-
-          // Did we remember this particular property?
-            preset[matched_index][controller.property] !== undefined) {
-
-          // We did remember something for this guy ...
-          var value = preset[matched_index][controller.property];
-
-          // And that's what it is.
-          controller.initialValue = value;
-          controller.setValue(value);
-
-        }
-
-      }
-
-    }
-
-  }
-
-  function getLocalStorageHash(gui, key) {
-    // TODO how does this deal with multiple GUI's?
-    return document.location.href + '.' + key;
-
-  }
-
-  function addSaveMenu(gui) {
-
-    var div = gui.__save_row = document.createElement('li');
-
-    dom.addClass(gui.domElement, 'has-save');
-
-    gui.__ul.insertBefore(div, gui.__ul.firstChild);
-
-    dom.addClass(div, 'save-row');
-
-    var gears = document.createElement('span');
-    gears.innerHTML = '&nbsp;';
-    dom.addClass(gears, 'button gears');
-
-    // TODO replace with FunctionController
-    var button = document.createElement('span');
-    button.innerHTML = 'Save';
-    dom.addClass(button, 'button');
-    dom.addClass(button, 'save');
-
-    var button2 = document.createElement('span');
-    button2.innerHTML = 'New';
-    dom.addClass(button2, 'button');
-    dom.addClass(button2, 'save-as');
-
-    var button3 = document.createElement('span');
-    button3.innerHTML = 'Revert';
-    dom.addClass(button3, 'button');
-    dom.addClass(button3, 'revert');
-
-    var select = gui.__preset_select = document.createElement('select');
-
-    if (gui.load && gui.load.remembered) {
-
-      common.each(gui.load.remembered, function(value, key) {
-        addPresetOption(gui, key, key == gui.preset);
-      });
-
-    } else {
-      addPresetOption(gui, DEFAULT_DEFAULT_PRESET_NAME, false);
-    }
-
-    dom.bind(select, 'change', function() {
-
-
-      for (var index = 0; index < gui.__preset_select.length; index++) {
-        gui.__preset_select[index].innerHTML = gui.__preset_select[index].value;
-      }
-
-      gui.preset = this.value;
-
-    });
-
-    div.appendChild(select);
-    div.appendChild(gears);
-    div.appendChild(button);
-    div.appendChild(button2);
-    div.appendChild(button3);
-
-    if (SUPPORTS_LOCAL_STORAGE) {
-
-      var saveLocally = document.getElementById('dg-save-locally');
-      var explain = document.getElementById('dg-local-explain');
-
-      saveLocally.style.display = 'block';
-
-      var localStorageCheckBox = document.getElementById('dg-local-storage');
-
-      if (localStorage.getItem(getLocalStorageHash(gui, 'isLocal')) === 'true') {
-        localStorageCheckBox.setAttribute('checked', 'checked');
-      }
-
-      function showHideExplain() {
-        explain.style.display = gui.useLocalStorage ? 'block' : 'none';
-      }
-
-      showHideExplain();
-
-      // TODO: Use a boolean controller, fool!
-      dom.bind(localStorageCheckBox, 'change', function() {
-        gui.useLocalStorage = !gui.useLocalStorage;
-        showHideExplain();
-      });
-
-    }
-
-    var newConstructorTextArea = document.getElementById('dg-new-constructor');
-
-    dom.bind(newConstructorTextArea, 'keydown', function(e) {
-      if (e.metaKey && (e.which === 67 || e.keyCode == 67)) {
-        SAVE_DIALOGUE.hide();
-      }
-    });
-
-    dom.bind(gears, 'click', function() {
-      newConstructorTextArea.innerHTML = JSON.stringify(gui.getSaveObject(), undefined, 2);
-      SAVE_DIALOGUE.show();
-      newConstructorTextArea.focus();
-      newConstructorTextArea.select();
-    });
-
-    dom.bind(button, 'click', function() {
-      gui.save();
-    });
-
-    dom.bind(button2, 'click', function() {
-      var presetName = prompt('Enter a new preset name.');
-      if (presetName) gui.saveAs(presetName);
-    });
-
-    dom.bind(button3, 'click', function() {
-      gui.revert();
-    });
-
-//    div.appendChild(button2);
-
-  }
-
-  function addResizeHandle(gui) {
-
-    gui.__resize_handle = document.createElement('div');
-
-    common.extend(gui.__resize_handle.style, {
-
-      width: '6px',
-      marginLeft: '-3px',
-      height: '200px',
-      cursor: 'ew-resize',
-      position: 'absolute'
-//      border: '1px solid blue'
-
-    });
-
-    var pmouseX;
-
-    dom.bind(gui.__resize_handle, 'mousedown', dragStart);
-    dom.bind(gui.__closeButton, 'mousedown', dragStart);
-
-    gui.domElement.insertBefore(gui.__resize_handle, gui.domElement.firstElementChild);
-
-    function dragStart(e) {
-
-      e.preventDefault();
-
-      pmouseX = e.clientX;
-
-      dom.addClass(gui.__closeButton, GUI.CLASS_DRAG);
-      dom.bind(window, 'mousemove', drag);
-      dom.bind(window, 'mouseup', dragStop);
-
-      return false;
-
-    }
-
-    function drag(e) {
-
-      e.preventDefault();
-
-      gui.width += pmouseX - e.clientX;
-      gui.onResize();
-      pmouseX = e.clientX;
-
-      return false;
-
-    }
-
-    function dragStop() {
-
-      dom.removeClass(gui.__closeButton, GUI.CLASS_DRAG);
-      dom.unbind(window, 'mousemove', drag);
-      dom.unbind(window, 'mouseup', dragStop);
-
-    }
-
-  }
-
-  function setWidth(gui, w) {
-    gui.domElement.style.width = w + 'px';
-    // Auto placed save-rows are position fixed, so we have to
-    // set the width manually if we want it to bleed to the edge
-    if (gui.__save_row && gui.autoPlace) {
-      gui.__save_row.style.width = w + 'px';
-    }if (gui.__closeButton) {
-      gui.__closeButton.style.width = w + 'px';
-    }
-  }
-
-  function getCurrentPreset(gui, useInitialValues) {
-
-    var toReturn = {};
-
-    // For each object I'm remembering
-    common.each(gui.__rememberedObjects, function(val, index) {
-
-      var saved_values = {};
-
-      // The controllers I've made for thcommon.isObject by property
-      var controller_map =
-          gui.__rememberedObjectIndecesToControllers[index];
-
-      // Remember each value for each property
-      common.each(controller_map, function(controller, property) {
-        saved_values[property] = useInitialValues ? controller.initialValue : controller.getValue();
-      });
-
-      // Save the values for thcommon.isObject
-      toReturn[index] = saved_values;
-
-    });
-
-    return toReturn;
-
-  }
-
-  function addPresetOption(gui, name, setSelected) {
-    var opt = document.createElement('option');
-    opt.innerHTML = name;
-    opt.value = name;
-    gui.__preset_select.appendChild(opt);
-    if (setSelected) {
-      gui.__preset_select.selectedIndex = gui.__preset_select.length - 1;
-    }
-  }
-
-  function setPresetSelectIndex(gui) {
-    for (var index = 0; index < gui.__preset_select.length; index++) {
-      if (gui.__preset_select[index].value == gui.preset) {
-        gui.__preset_select.selectedIndex = index;
-      }
-    }
-  }
-
-  function markPresetModified(gui, modified) {
-    var opt = gui.__preset_select[gui.__preset_select.selectedIndex];
-//    console.log('mark', modified, opt);
-    if (modified) {
-      opt.innerHTML = opt.value + "*";
-    } else {
-      opt.innerHTML = opt.value;
-    }
-  }
-
-  function updateDisplays(controllerArray) {
-
-
-    if (controllerArray.length != 0) {
-
-      requestAnimationFrame(function() {
-        updateDisplays(controllerArray);
-      });
-
-    }
-
-    common.each(controllerArray, function(c) {
-      c.updateDisplay();
-    });
-
-  }
-
-  return GUI;
-
-})(dat.utils.css,
-"<div id=\"dg-save\" class=\"dg dialogue\">\n\n  Here's the new load parameter for your <code>GUI</code>'s constructor:\n\n  <textarea id=\"dg-new-constructor\"></textarea>\n\n  <div id=\"dg-save-locally\">\n\n    <input id=\"dg-local-storage\" type=\"checkbox\"/> Automatically save\n    values to <code>localStorage</code> on exit.\n\n    <div id=\"dg-local-explain\">The values saved to <code>localStorage</code> will\n      override those passed to <code>dat.GUI</code>'s constructor. This makes it\n      easier to work incrementally, but <code>localStorage</code> is fragile,\n      and your friends may not see the same values you do.\n      \n    </div>\n    \n  </div>\n\n</div>",
-".dg ul{list-style:none;margin:0;padding:0;width:100%;clear:both}.dg.ac{position:fixed;top:0;left:0;right:0;height:0;z-index:0}.dg:not(.ac) .main{overflow:hidden}.dg.main{-webkit-transition:opacity 0.1s linear;-o-transition:opacity 0.1s linear;-moz-transition:opacity 0.1s linear;transition:opacity 0.1s linear}.dg.main.taller-than-window{overflow-y:auto}.dg.main.taller-than-window .close-button{opacity:1;margin-top:-1px;border-top:1px solid #2c2c2c}.dg.main ul.closed .close-button{opacity:1 !important}.dg.main:hover .close-button,.dg.main .close-button.drag{opacity:1}.dg.main .close-button{-webkit-transition:opacity 0.1s linear;-o-transition:opacity 0.1s linear;-moz-transition:opacity 0.1s linear;transition:opacity 0.1s linear;border:0;position:absolute;line-height:19px;height:20px;cursor:pointer;text-align:center;background-color:#000}.dg.main .close-button:hover{background-color:#111}.dg.a{float:right;margin-right:15px;overflow-x:hidden}.dg.a.has-save ul{margin-top:27px}.dg.a.has-save ul.closed{margin-top:0}.dg.a .save-row{position:fixed;top:0;z-index:1002}.dg li{-webkit-transition:height 0.1s ease-out;-o-transition:height 0.1s ease-out;-moz-transition:height 0.1s ease-out;transition:height 0.1s ease-out}.dg li:not(.folder){cursor:auto;height:27px;line-height:27px;overflow:hidden;padding:0 4px 0 5px}.dg li.folder{padding:0;border-left:4px solid rgba(0,0,0,0)}.dg li.title{cursor:pointer;margin-left:-4px}.dg .closed li:not(.title),.dg .closed ul li,.dg .closed ul li > *{height:0;overflow:hidden;border:0}.dg .cr{clear:both;padding-left:3px;height:27px}.dg .property-name{cursor:default;float:left;clear:left;width:40%;overflow:hidden;text-overflow:ellipsis}.dg .c{float:left;width:60%}.dg .c input[type=text]{border:0;margin-top:4px;padding:3px;width:100%;float:right}.dg .has-slider input[type=text]{width:30%;margin-left:0}.dg .slider{float:left;width:66%;margin-left:-5px;margin-right:0;height:19px;margin-top:4px}.dg .slider-fg{height:100%}.dg .c input[type=checkbox]{margin-top:9px}.dg .c select{margin-top:5px}.dg .cr.function,.dg .cr.function .property-name,.dg .cr.function *,.dg .cr.boolean,.dg .cr.boolean *{cursor:pointer}.dg .selector{display:none;position:absolute;margin-left:-9px;margin-top:23px;z-index:10}.dg .c:hover .selector,.dg .selector.drag{display:block}.dg li.save-row{padding:0}.dg li.save-row .button{display:inline-block;padding:0px 6px}.dg.dialogue{background-color:#222;width:460px;padding:15px;font-size:13px;line-height:15px}#dg-new-constructor{padding:10px;color:#222;font-family:Monaco, monospace;font-size:10px;border:0;resize:none;box-shadow:inset 1px 1px 1px #888;word-wrap:break-word;margin:12px 0;display:block;width:440px;overflow-y:scroll;height:100px;position:relative}#dg-local-explain{display:none;font-size:11px;line-height:17px;border-radius:3px;background-color:#333;padding:8px;margin-top:10px}#dg-local-explain code{font-size:10px}#dat-gui-save-locally{display:none}.dg{color:#eee;font:11px 'Lucida Grande', sans-serif;text-shadow:0 -1px 0 #111}.dg.main::-webkit-scrollbar{width:5px;background:#1a1a1a}.dg.main::-webkit-scrollbar-corner{height:0;display:none}.dg.main::-webkit-scrollbar-thumb{border-radius:5px;background:#676767}.dg li:not(.folder){background:#1a1a1a;border-bottom:1px solid #2c2c2c}.dg li.save-row{line-height:25px;background:#dad5cb;border:0}.dg li.save-row select{margin-left:5px;width:108px}.dg li.save-row .button{margin-left:5px;margin-top:1px;border-radius:2px;font-size:9px;line-height:7px;padding:4px 4px 5px 4px;background:#c5bdad;color:#fff;text-shadow:0 1px 0 #b0a58f;box-shadow:0 -1px 0 #b0a58f;cursor:pointer}.dg li.save-row .button.gears{background:#c5bdad url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAANCAYAAAB/9ZQ7AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAQJJREFUeNpiYKAU/P//PwGIC/ApCABiBSAW+I8AClAcgKxQ4T9hoMAEUrxx2QSGN6+egDX+/vWT4e7N82AMYoPAx/evwWoYoSYbACX2s7KxCxzcsezDh3evFoDEBYTEEqycggWAzA9AuUSQQgeYPa9fPv6/YWm/Acx5IPb7ty/fw+QZblw67vDs8R0YHyQhgObx+yAJkBqmG5dPPDh1aPOGR/eugW0G4vlIoTIfyFcA+QekhhHJhPdQxbiAIguMBTQZrPD7108M6roWYDFQiIAAv6Aow/1bFwXgis+f2LUAynwoIaNcz8XNx3Dl7MEJUDGQpx9gtQ8YCueB+D26OECAAQDadt7e46D42QAAAABJRU5ErkJggg==) 2px 1px no-repeat;height:7px;width:8px}.dg li.save-row .button:hover{background-color:#bab19e;box-shadow:0 -1px 0 #b0a58f}.dg li.folder{border-bottom:0}.dg li.title{padding-left:16px;background:#000 url(data:image/gif;base64,R0lGODlhBQAFAJEAAP////Pz8////////yH5BAEAAAIALAAAAAAFAAUAAAIIlI+hKgFxoCgAOw==) 6px 10px no-repeat;cursor:pointer;border-bottom:1px solid rgba(255,255,255,0.2)}.dg .closed li.title{background-image:url(data:image/gif;base64,R0lGODlhBQAFAJEAAP////Pz8////////yH5BAEAAAIALAAAAAAFAAUAAAIIlGIWqMCbWAEAOw==)}.dg .cr.boolean{border-left:3px solid #806787}.dg .cr.function{border-left:3px solid #e61d5f}.dg .cr.number{border-left:3px solid #2fa1d6}.dg .cr.number input[type=text]{color:#2fa1d6}.dg .cr.string{border-left:3px solid #1ed36f}.dg .cr.string input[type=text]{color:#1ed36f}.dg .cr.function:hover,.dg .cr.boolean:hover{background:#111}.dg .c input[type=text]{background:#303030;outline:none}.dg .c input[type=text]:hover{background:#3c3c3c}.dg .c input[type=text]:focus{background:#494949;color:#fff}.dg .c .slider{background:#303030;cursor:ew-resize}.dg .c .slider-fg{background:#2fa1d6}.dg .c .slider:hover{background:#3c3c3c}.dg .c .slider:hover .slider-fg{background:#44abda}\n",
-dat.controllers.factory = (function (OptionController, NumberControllerBox, NumberControllerSlider, StringController, FunctionController, BooleanController, common) {
-
-      return function(object, property) {
-
-        var initialValue = object[property];
-
-        // Providing options?
-        if (common.isArray(arguments[2]) || common.isObject(arguments[2])) {
-          return new OptionController(object, property, arguments[2]);
-        }
-
-        // Providing a map?
-
-        if (common.isNumber(initialValue)) {
-
-          if (common.isNumber(arguments[2]) && common.isNumber(arguments[3])) {
-
-            // Has min and max.
-            return new NumberControllerSlider(object, property, arguments[2], arguments[3]);
-
-          } else {
-
-            return new NumberControllerBox(object, property, { min: arguments[2], max: arguments[3] });
-
-          }
-
-        }
-
-        if (common.isString(initialValue)) {
-          return new StringController(object, property);
-        }
-
-        if (common.isFunction(initialValue)) {
-          return new FunctionController(object, property, '');
-        }
-
-        if (common.isBoolean(initialValue)) {
-          return new BooleanController(object, property);
-        }
-
-      }
-
-    })(dat.controllers.OptionController,
-dat.controllers.NumberControllerBox,
-dat.controllers.NumberControllerSlider,
-dat.controllers.StringController = (function (Controller, dom, common) {
-
-  /**
-   * @class Provides a text input to alter the string property of an object.
-   *
-   * @extends dat.controllers.Controller
-   *
-   * @param {Object} object The object to be manipulated
-   * @param {string} property The name of the property to be manipulated
-   *
-   * @member dat.controllers
-   */
-  var StringController = function(object, property) {
-
-    StringController.superclass.call(this, object, property);
-
-    var _this = this;
-
-    this.__input = document.createElement('input');
-    this.__input.setAttribute('type', 'text');
-
-    dom.bind(this.__input, 'keyup', onChange);
-    dom.bind(this.__input, 'change', onChange);
-    dom.bind(this.__input, 'blur', onBlur);
-    dom.bind(this.__input, 'keydown', function(e) {
-      if (e.keyCode === 13) {
-        this.blur();
-      }
-    });
-    
-
-    function onChange() {
-      _this.setValue(_this.__input.value);
-    }
-
-    function onBlur() {
-      if (_this.__onFinishChange) {
-        _this.__onFinishChange.call(_this, _this.getValue());
-      }
-    }
-
-    this.updateDisplay();
-
-    this.domElement.appendChild(this.__input);
-
-  };
-
-  StringController.superclass = Controller;
-
-  common.extend(
-
-      StringController.prototype,
-      Controller.prototype,
-
-      {
-
-        updateDisplay: function() {
-          // Stops the caret from moving on account of:
-          // keyup -> setValue -> updateDisplay
-          if (!dom.isActive(this.__input)) {
-            this.__input.value = this.getValue();
-          }
-          return StringController.superclass.prototype.updateDisplay.call(this);
-        }
-
-      }
-
-  );
-
-  return StringController;
-
-})(dat.controllers.Controller,
-dat.dom.dom,
-dat.utils.common),
-dat.controllers.FunctionController,
-dat.controllers.BooleanController,
-dat.utils.common),
-dat.controllers.Controller,
-dat.controllers.BooleanController,
-dat.controllers.FunctionController,
-dat.controllers.NumberControllerBox,
-dat.controllers.NumberControllerSlider,
-dat.controllers.OptionController,
-dat.controllers.ColorController = (function (Controller, dom, Color, interpret, common) {
-
-  var ColorController = function(object, property) {
-
-    ColorController.superclass.call(this, object, property);
-
-    this.__color = new Color(this.getValue());
-    this.__temp = new Color(0);
-
-    var _this = this;
-
-    this.domElement = document.createElement('div');
-
-    dom.makeSelectable(this.domElement, false);
-
-    this.__selector = document.createElement('div');
-    this.__selector.className = 'selector';
-
-    this.__saturation_field = document.createElement('div');
-    this.__saturation_field.className = 'saturation-field';
-
-    this.__field_knob = document.createElement('div');
-    this.__field_knob.className = 'field-knob';
-    this.__field_knob_border = '2px solid ';
-
-    this.__hue_knob = document.createElement('div');
-    this.__hue_knob.className = 'hue-knob';
-
-    this.__hue_field = document.createElement('div');
-    this.__hue_field.className = 'hue-field';
-
-    this.__input = document.createElement('input');
-    this.__input.type = 'text';
-    this.__input_textShadow = '0 1px 1px ';
-
-    dom.bind(this.__input, 'keydown', function(e) {
-      if (e.keyCode === 13) { // on enter
-        onBlur.call(this);
-      }
-    });
-
-    dom.bind(this.__input, 'blur', onBlur);
-
-    dom.bind(this.__selector, 'mousedown', function(e) {
-
-      dom
-        .addClass(this, 'drag')
-        .bind(window, 'mouseup', function(e) {
-          dom.removeClass(_this.__selector, 'drag');
-        });
-
-    });
-
-    var value_field = document.createElement('div');
-
-    common.extend(this.__selector.style, {
-      width: '122px',
-      height: '102px',
-      padding: '3px',
-      backgroundColor: '#222',
-      boxShadow: '0px 1px 3px rgba(0,0,0,0.3)'
-    });
-
-    common.extend(this.__field_knob.style, {
-      position: 'absolute',
-      width: '12px',
-      height: '12px',
-      border: this.__field_knob_border + (this.__color.v < .5 ? '#fff' : '#000'),
-      boxShadow: '0px 1px 3px rgba(0,0,0,0.5)',
-      borderRadius: '12px',
-      zIndex: 1
-    });
-    
-    common.extend(this.__hue_knob.style, {
-      position: 'absolute',
-      width: '15px',
-      height: '2px',
-      borderRight: '4px solid #fff',
-      zIndex: 1
-    });
-
-    common.extend(this.__saturation_field.style, {
-      width: '100px',
-      height: '100px',
-      border: '1px solid #555',
-      marginRight: '3px',
-      display: 'inline-block',
-      cursor: 'pointer'
-    });
-
-    common.extend(value_field.style, {
-      width: '100%',
-      height: '100%',
-      background: 'none'
-    });
-    
-    linearGradient(value_field, 'top', 'rgba(0,0,0,0)', '#000');
-
-    common.extend(this.__hue_field.style, {
-      width: '15px',
-      height: '100px',
-      display: 'inline-block',
-      border: '1px solid #555',
-      cursor: 'ns-resize'
-    });
-
-    hueGradient(this.__hue_field);
-
-    common.extend(this.__input.style, {
-      outline: 'none',
-//      width: '120px',
-      textAlign: 'center',
-//      padding: '4px',
-//      marginBottom: '6px',
-      color: '#fff',
-      border: 0,
-      fontWeight: 'bold',
-      textShadow: this.__input_textShadow + 'rgba(0,0,0,0.7)'
-    });
-
-    dom.bind(this.__saturation_field, 'mousedown', fieldDown);
-    dom.bind(this.__field_knob, 'mousedown', fieldDown);
-
-    dom.bind(this.__hue_field, 'mousedown', function(e) {
-      setH(e);
-      dom.bind(window, 'mousemove', setH);
-      dom.bind(window, 'mouseup', unbindH);
-    });
-
-    function fieldDown(e) {
-      setSV(e);
-      // document.body.style.cursor = 'none';
-      dom.bind(window, 'mousemove', setSV);
-      dom.bind(window, 'mouseup', unbindSV);
-    }
-
-    function unbindSV() {
-      dom.unbind(window, 'mousemove', setSV);
-      dom.unbind(window, 'mouseup', unbindSV);
-      // document.body.style.cursor = 'default';
-    }
-
-    function onBlur() {
-      var i = interpret(this.value);
-      if (i !== false) {
-        _this.__color.__state = i;
-        _this.setValue(_this.__color.toOriginal());
-      } else {
-        this.value = _this.__color.toString();
-      }
-    }
-
-    function unbindH() {
-      dom.unbind(window, 'mousemove', setH);
-      dom.unbind(window, 'mouseup', unbindH);
-    }
-
-    this.__saturation_field.appendChild(value_field);
-    this.__selector.appendChild(this.__field_knob);
-    this.__selector.appendChild(this.__saturation_field);
-    this.__selector.appendChild(this.__hue_field);
-    this.__hue_field.appendChild(this.__hue_knob);
-
-    this.domElement.appendChild(this.__input);
-    this.domElement.appendChild(this.__selector);
-
-    this.updateDisplay();
-
-    function setSV(e) {
-
-      e.preventDefault();
-
-      var w = dom.getWidth(_this.__saturation_field);
-      var o = dom.getOffset(_this.__saturation_field);
-      var s = (e.clientX - o.left + document.body.scrollLeft) / w;
-      var v = 1 - (e.clientY - o.top + document.body.scrollTop) / w;
-
-      if (v > 1) v = 1;
-      else if (v < 0) v = 0;
-
-      if (s > 1) s = 1;
-      else if (s < 0) s = 0;
-
-      _this.__color.v = v;
-      _this.__color.s = s;
-
-      _this.setValue(_this.__color.toOriginal());
-
-
-      return false;
-
-    }
-
-    function setH(e) {
-
-      e.preventDefault();
-
-      var s = dom.getHeight(_this.__hue_field);
-      var o = dom.getOffset(_this.__hue_field);
-      var h = 1 - (e.clientY - o.top + document.body.scrollTop) / s;
-
-      if (h > 1) h = 1;
-      else if (h < 0) h = 0;
-
-      _this.__color.h = h * 360;
-
-      _this.setValue(_this.__color.toOriginal());
-
-      return false;
-
-    }
-
-  };
-
-  ColorController.superclass = Controller;
-
-  common.extend(
-
-      ColorController.prototype,
-      Controller.prototype,
-
-      {
-
-        updateDisplay: function() {
-
-          var i = interpret(this.getValue());
-
-          if (i !== false) {
-
-            var mismatch = false;
-
-            // Check for mismatch on the interpreted value.
-
-            common.each(Color.COMPONENTS, function(component) {
-              if (!common.isUndefined(i[component]) &&
-                  !common.isUndefined(this.__color.__state[component]) &&
-                  i[component] !== this.__color.__state[component]) {
-                mismatch = true;
-                return {}; // break
-              }
-            }, this);
-
-            // If nothing diverges, we keep our previous values
-            // for statefulness, otherwise we recalculate fresh
-            if (mismatch) {
-              common.extend(this.__color.__state, i);
-            }
-
-          }
-
-          common.extend(this.__temp.__state, this.__color.__state);
-
-          this.__temp.a = 1;
-
-          var flip = (this.__color.v < .5 || this.__color.s > .5) ? 255 : 0;
-          var _flip = 255 - flip;
-
-          common.extend(this.__field_knob.style, {
-            marginLeft: 100 * this.__color.s - 7 + 'px',
-            marginTop: 100 * (1 - this.__color.v) - 7 + 'px',
-            backgroundColor: this.__temp.toString(),
-            border: this.__field_knob_border + 'rgb(' + flip + ',' + flip + ',' + flip +')'
-          });
-
-          this.__hue_knob.style.marginTop = (1 - this.__color.h / 360) * 100 + 'px'
-
-          this.__temp.s = 1;
-          this.__temp.v = 1;
-
-          linearGradient(this.__saturation_field, 'left', '#fff', this.__temp.toString());
-
-          common.extend(this.__input.style, {
-            backgroundColor: this.__input.value = this.__color.toString(),
-            color: 'rgb(' + flip + ',' + flip + ',' + flip +')',
-            textShadow: this.__input_textShadow + 'rgba(' + _flip + ',' + _flip + ',' + _flip +',.7)'
-          });
-
-        }
-
-      }
-
-  );
-  
-  var vendors = ['-moz-','-o-','-webkit-','-ms-',''];
-  
-  function linearGradient(elem, x, a, b) {
-    elem.style.background = '';
-    common.each(vendors, function(vendor) {
-      elem.style.cssText += 'background: ' + vendor + 'linear-gradient('+x+', '+a+' 0%, ' + b + ' 100%); ';
-    });
-  }
-  
-  function hueGradient(elem) {
-    elem.style.background = '';
-    elem.style.cssText += 'background: -moz-linear-gradient(top,  #ff0000 0%, #ff00ff 17%, #0000ff 34%, #00ffff 50%, #00ff00 67%, #ffff00 84%, #ff0000 100%);'
-    elem.style.cssText += 'background: -webkit-linear-gradient(top,  #ff0000 0%,#ff00ff 17%,#0000ff 34%,#00ffff 50%,#00ff00 67%,#ffff00 84%,#ff0000 100%);'
-    elem.style.cssText += 'background: -o-linear-gradient(top,  #ff0000 0%,#ff00ff 17%,#0000ff 34%,#00ffff 50%,#00ff00 67%,#ffff00 84%,#ff0000 100%);'
-    elem.style.cssText += 'background: -ms-linear-gradient(top,  #ff0000 0%,#ff00ff 17%,#0000ff 34%,#00ffff 50%,#00ff00 67%,#ffff00 84%,#ff0000 100%);'
-    elem.style.cssText += 'background: linear-gradient(top,  #ff0000 0%,#ff00ff 17%,#0000ff 34%,#00ffff 50%,#00ff00 67%,#ffff00 84%,#ff0000 100%);'
-  }
-
-
-  return ColorController;
-
-})(dat.controllers.Controller,
-dat.dom.dom,
-dat.color.Color = (function (interpret, math, toString, common) {
-
-  var Color = function() {
-
-    this.__state = interpret.apply(this, arguments);
-
-    if (this.__state === false) {
-      throw 'Failed to interpret color arguments';
-    }
-
-    this.__state.a = this.__state.a || 1;
-
-
-  };
-
-  Color.COMPONENTS = ['r','g','b','h','s','v','hex','a'];
-
-  common.extend(Color.prototype, {
-
-    toString: function() {
-      return toString(this);
-    },
-
-    toOriginal: function() {
-      return this.__state.conversion.write(this);
-    }
-
-  });
-
-  defineRGBComponent(Color.prototype, 'r', 2);
-  defineRGBComponent(Color.prototype, 'g', 1);
-  defineRGBComponent(Color.prototype, 'b', 0);
-
-  defineHSVComponent(Color.prototype, 'h');
-  defineHSVComponent(Color.prototype, 's');
-  defineHSVComponent(Color.prototype, 'v');
-
-  Object.defineProperty(Color.prototype, 'a', {
-
-    get: function() {
-      return this.__state.a;
-    },
-
-    set: function(v) {
-      this.__state.a = v;
-    }
-
-  });
-
-  Object.defineProperty(Color.prototype, 'hex', {
-
-    get: function() {
-
-      if (!this.__state.space !== 'HEX') {
-        this.__state.hex = math.rgb_to_hex(this.r, this.g, this.b);
-      }
-
-      return this.__state.hex;
-
-    },
-
-    set: function(v) {
-
-      this.__state.space = 'HEX';
-      this.__state.hex = v;
-
-    }
-
-  });
-
-  function defineRGBComponent(target, component, componentHexIndex) {
-
-    Object.defineProperty(target, component, {
-
-      get: function() {
-
-        if (this.__state.space === 'RGB') {
-          return this.__state[component];
-        }
-
-        recalculateRGB(this, component, componentHexIndex);
-
-        return this.__state[component];
-
-      },
-
-      set: function(v) {
-
-        if (this.__state.space !== 'RGB') {
-          recalculateRGB(this, component, componentHexIndex);
-          this.__state.space = 'RGB';
-        }
-
-        this.__state[component] = v;
-
-      }
-
-    });
-
-  }
-
-  function defineHSVComponent(target, component) {
-
-    Object.defineProperty(target, component, {
-
-      get: function() {
-
-        if (this.__state.space === 'HSV')
-          return this.__state[component];
-
-        recalculateHSV(this);
-
-        return this.__state[component];
-
-      },
-
-      set: function(v) {
-
-        if (this.__state.space !== 'HSV') {
-          recalculateHSV(this);
-          this.__state.space = 'HSV';
-        }
-
-        this.__state[component] = v;
-
-      }
-
-    });
-
-  }
-
-  function recalculateRGB(color, component, componentHexIndex) {
-
-    if (color.__state.space === 'HEX') {
-
-      color.__state[component] = math.component_from_hex(color.__state.hex, componentHexIndex);
-
-    } else if (color.__state.space === 'HSV') {
-
-      common.extend(color.__state, math.hsv_to_rgb(color.__state.h, color.__state.s, color.__state.v));
-
-    } else {
-
-      throw 'Corrupted color state';
-
-    }
-
-  }
-
-  function recalculateHSV(color) {
-
-    var result = math.rgb_to_hsv(color.r, color.g, color.b);
-
-    common.extend(color.__state,
-        {
-          s: result.s,
-          v: result.v
-        }
-    );
-
-    if (!common.isNaN(result.h)) {
-      color.__state.h = result.h;
-    } else if (common.isUndefined(color.__state.h)) {
-      color.__state.h = 0;
-    }
-
-  }
-
-  return Color;
-
-})(dat.color.interpret,
-dat.color.math = (function () {
-
-  var tmpComponent;
-
-  return {
-
-    hsv_to_rgb: function(h, s, v) {
-
-      var hi = Math.floor(h / 60) % 6;
-
-      var f = h / 60 - Math.floor(h / 60);
-      var p = v * (1.0 - s);
-      var q = v * (1.0 - (f * s));
-      var t = v * (1.0 - ((1.0 - f) * s));
-      var c = [
-        [v, t, p],
-        [q, v, p],
-        [p, v, t],
-        [p, q, v],
-        [t, p, v],
-        [v, p, q]
-      ][hi];
-
-      return {
-        r: c[0] * 255,
-        g: c[1] * 255,
-        b: c[2] * 255
-      };
-
-    },
-
-    rgb_to_hsv: function(r, g, b) {
-
-      var min = Math.min(r, g, b),
-          max = Math.max(r, g, b),
-          delta = max - min,
-          h, s;
-
-      if (max != 0) {
-        s = delta / max;
-      } else {
-        return {
-          h: NaN,
-          s: 0,
-          v: 0
-        };
-      }
-
-      if (r == max) {
-        h = (g - b) / delta;
-      } else if (g == max) {
-        h = 2 + (b - r) / delta;
-      } else {
-        h = 4 + (r - g) / delta;
-      }
-      h /= 6;
-      if (h < 0) {
-        h += 1;
-      }
-
-      return {
-        h: h * 360,
-        s: s,
-        v: max / 255
-      };
-    },
-
-    rgb_to_hex: function(r, g, b) {
-      var hex = this.hex_with_component(0, 2, r);
-      hex = this.hex_with_component(hex, 1, g);
-      hex = this.hex_with_component(hex, 0, b);
-      return hex;
-    },
-
-    component_from_hex: function(hex, componentIndex) {
-      return (hex >> (componentIndex * 8)) & 0xFF;
-    },
-
-    hex_with_component: function(hex, componentIndex, value) {
-      return value << (tmpComponent = componentIndex * 8) | (hex & ~ (0xFF << tmpComponent));
-    }
-
-  }
-
-})(),
-dat.color.toString,
-dat.utils.common),
-dat.color.interpret,
-dat.utils.common),
-dat.utils.requestAnimationFrame = (function () {
-
-  /**
-   * requirejs version of Paul Irish's RequestAnimationFrame
-   * http://paulirish.com/2011/requestanimationframe-for-smart-animating/
-   */
-
-  return window.webkitRequestAnimationFrame ||
-      window.mozRequestAnimationFrame ||
-      window.oRequestAnimationFrame ||
-      window.msRequestAnimationFrame ||
-      function(callback, element) {
-
-        window.setTimeout(callback, 1000 / 60);
-
-      };
-})(),
-dat.dom.CenteredDiv = (function (dom, common) {
-
-
-  var CenteredDiv = function() {
-
-    this.backgroundElement = document.createElement('div');
-    common.extend(this.backgroundElement.style, {
-      backgroundColor: 'rgba(0,0,0,0.8)',
-      top: 0,
-      left: 0,
-      display: 'none',
-      zIndex: '1000',
-      opacity: 0,
-      WebkitTransition: 'opacity 0.2s linear'
-    });
-
-    dom.makeFullscreen(this.backgroundElement);
-    this.backgroundElement.style.position = 'fixed';
-
-    this.domElement = document.createElement('div');
-    common.extend(this.domElement.style, {
-      position: 'fixed',
-      display: 'none',
-      zIndex: '1001',
-      opacity: 0,
-      WebkitTransition: '-webkit-transform 0.2s ease-out, opacity 0.2s linear'
-    });
-
-
-    document.body.appendChild(this.backgroundElement);
-    document.body.appendChild(this.domElement);
-
-    var _this = this;
-    dom.bind(this.backgroundElement, 'click', function() {
-      _this.hide();
-    });
-
-
-  };
-
-  CenteredDiv.prototype.show = function() {
-
-    var _this = this;
-    
-
-
-    this.backgroundElement.style.display = 'block';
-
-    this.domElement.style.display = 'block';
-    this.domElement.style.opacity = 0;
-//    this.domElement.style.top = '52%';
-    this.domElement.style.webkitTransform = 'scale(1.1)';
-
-    this.layout();
-
-    common.defer(function() {
-      _this.backgroundElement.style.opacity = 1;
-      _this.domElement.style.opacity = 1;
-      _this.domElement.style.webkitTransform = 'scale(1)';
-    });
-
-  };
-
-  CenteredDiv.prototype.hide = function() {
-
-    var _this = this;
-
-    var hide = function() {
-
-      _this.domElement.style.display = 'none';
-      _this.backgroundElement.style.display = 'none';
-
-      dom.unbind(_this.domElement, 'webkitTransitionEnd', hide);
-      dom.unbind(_this.domElement, 'transitionend', hide);
-      dom.unbind(_this.domElement, 'oTransitionEnd', hide);
-
-    };
-
-    dom.bind(this.domElement, 'webkitTransitionEnd', hide);
-    dom.bind(this.domElement, 'transitionend', hide);
-    dom.bind(this.domElement, 'oTransitionEnd', hide);
-
-    this.backgroundElement.style.opacity = 0;
-//    this.domElement.style.top = '48%';
-    this.domElement.style.opacity = 0;
-    this.domElement.style.webkitTransform = 'scale(1.1)';
-
-  };
-
-  CenteredDiv.prototype.layout = function() {
-    this.domElement.style.left = window.innerWidth/2 - dom.getWidth(this.domElement) / 2 + 'px';
-    this.domElement.style.top = window.innerHeight/2 - dom.getHeight(this.domElement) / 2 + 'px';
-  };
-  
-  function lockScroll(e) {
-    console.log(e);
-  }
-
-  return CenteredDiv;
-
-})(dat.dom.dom,
-dat.utils.common),
-dat.dom.dom,
-dat.utils.common);
-
-/***/ }),
-/* 36 */
-/***/ (function(module, exports) {
-
-/**
- * dat-gui JavaScript Controller Library
- * http://code.google.com/p/dat-gui
- *
- * Copyright 2011 Data Arts Team, Google Creative Lab
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- */
-
-/** @namespace */
-var dat = module.exports = dat || {};
-
-/** @namespace */
-dat.color = dat.color || {};
-
-/** @namespace */
-dat.utils = dat.utils || {};
-
-dat.utils.common = (function () {
-  
-  var ARR_EACH = Array.prototype.forEach;
-  var ARR_SLICE = Array.prototype.slice;
-
-  /**
-   * Band-aid methods for things that should be a lot easier in JavaScript.
-   * Implementation and structure inspired by underscore.js
-   * http://documentcloud.github.com/underscore/
-   */
-
-  return { 
-    
-    BREAK: {},
-  
-    extend: function(target) {
-      
-      this.each(ARR_SLICE.call(arguments, 1), function(obj) {
-        
-        for (var key in obj)
-          if (!this.isUndefined(obj[key])) 
-            target[key] = obj[key];
-        
-      }, this);
-      
-      return target;
-      
-    },
-    
-    defaults: function(target) {
-      
-      this.each(ARR_SLICE.call(arguments, 1), function(obj) {
-        
-        for (var key in obj)
-          if (this.isUndefined(target[key])) 
-            target[key] = obj[key];
-        
-      }, this);
-      
-      return target;
-    
-    },
-    
-    compose: function() {
-      var toCall = ARR_SLICE.call(arguments);
-            return function() {
-              var args = ARR_SLICE.call(arguments);
-              for (var i = toCall.length -1; i >= 0; i--) {
-                args = [toCall[i].apply(this, args)];
-              }
-              return args[0];
-            }
-    },
-    
-    each: function(obj, itr, scope) {
-
-      
-      if (ARR_EACH && obj.forEach === ARR_EACH) { 
-        
-        obj.forEach(itr, scope);
-        
-      } else if (obj.length === obj.length + 0) { // Is number but not NaN
-        
-        for (var key = 0, l = obj.length; key < l; key++)
-          if (key in obj && itr.call(scope, obj[key], key) === this.BREAK) 
-            return;
-            
-      } else {
-
-        for (var key in obj) 
-          if (itr.call(scope, obj[key], key) === this.BREAK)
-            return;
-            
-      }
-            
-    },
-    
-    defer: function(fnc) {
-      setTimeout(fnc, 0);
-    },
-    
-    toArray: function(obj) {
-      if (obj.toArray) return obj.toArray();
-      return ARR_SLICE.call(obj);
-    },
-
-    isUndefined: function(obj) {
-      return obj === undefined;
-    },
-    
-    isNull: function(obj) {
-      return obj === null;
-    },
-    
-    isNaN: function(obj) {
-      return obj !== obj;
-    },
-    
-    isArray: Array.isArray || function(obj) {
-      return obj.constructor === Array;
-    },
-    
-    isObject: function(obj) {
-      return obj === Object(obj);
-    },
-    
-    isNumber: function(obj) {
-      return obj === obj+0;
-    },
-    
-    isString: function(obj) {
-      return obj === obj+'';
-    },
-    
-    isBoolean: function(obj) {
-      return obj === false || obj === true;
-    },
-    
-    isFunction: function(obj) {
-      return Object.prototype.toString.call(obj) === '[object Function]';
-    }
-  
-  };
-    
-})();
-
-
-dat.color.toString = (function (common) {
-
-  return function(color) {
-
-    if (color.a == 1 || common.isUndefined(color.a)) {
-
-      var s = color.hex.toString(16);
-      while (s.length < 6) {
-        s = '0' + s;
-      }
-
-      return '#' + s;
-
-    } else {
-
-      return 'rgba(' + Math.round(color.r) + ',' + Math.round(color.g) + ',' + Math.round(color.b) + ',' + color.a + ')';
-
-    }
-
-  }
-
-})(dat.utils.common);
-
-
-dat.Color = dat.color.Color = (function (interpret, math, toString, common) {
-
-  var Color = function() {
-
-    this.__state = interpret.apply(this, arguments);
-
-    if (this.__state === false) {
-      throw 'Failed to interpret color arguments';
-    }
-
-    this.__state.a = this.__state.a || 1;
-
-
-  };
-
-  Color.COMPONENTS = ['r','g','b','h','s','v','hex','a'];
-
-  common.extend(Color.prototype, {
-
-    toString: function() {
-      return toString(this);
-    },
-
-    toOriginal: function() {
-      return this.__state.conversion.write(this);
-    }
-
-  });
-
-  defineRGBComponent(Color.prototype, 'r', 2);
-  defineRGBComponent(Color.prototype, 'g', 1);
-  defineRGBComponent(Color.prototype, 'b', 0);
-
-  defineHSVComponent(Color.prototype, 'h');
-  defineHSVComponent(Color.prototype, 's');
-  defineHSVComponent(Color.prototype, 'v');
-
-  Object.defineProperty(Color.prototype, 'a', {
-
-    get: function() {
-      return this.__state.a;
-    },
-
-    set: function(v) {
-      this.__state.a = v;
-    }
-
-  });
-
-  Object.defineProperty(Color.prototype, 'hex', {
-
-    get: function() {
-
-      if (!this.__state.space !== 'HEX') {
-        this.__state.hex = math.rgb_to_hex(this.r, this.g, this.b);
-      }
-
-      return this.__state.hex;
-
-    },
-
-    set: function(v) {
-
-      this.__state.space = 'HEX';
-      this.__state.hex = v;
-
-    }
-
-  });
-
-  function defineRGBComponent(target, component, componentHexIndex) {
-
-    Object.defineProperty(target, component, {
-
-      get: function() {
-
-        if (this.__state.space === 'RGB') {
-          return this.__state[component];
-        }
-
-        recalculateRGB(this, component, componentHexIndex);
-
-        return this.__state[component];
-
-      },
-
-      set: function(v) {
-
-        if (this.__state.space !== 'RGB') {
-          recalculateRGB(this, component, componentHexIndex);
-          this.__state.space = 'RGB';
-        }
-
-        this.__state[component] = v;
-
-      }
-
-    });
-
-  }
-
-  function defineHSVComponent(target, component) {
-
-    Object.defineProperty(target, component, {
-
-      get: function() {
-
-        if (this.__state.space === 'HSV')
-          return this.__state[component];
-
-        recalculateHSV(this);
-
-        return this.__state[component];
-
-      },
-
-      set: function(v) {
-
-        if (this.__state.space !== 'HSV') {
-          recalculateHSV(this);
-          this.__state.space = 'HSV';
-        }
-
-        this.__state[component] = v;
-
-      }
-
-    });
-
-  }
-
-  function recalculateRGB(color, component, componentHexIndex) {
-
-    if (color.__state.space === 'HEX') {
-
-      color.__state[component] = math.component_from_hex(color.__state.hex, componentHexIndex);
-
-    } else if (color.__state.space === 'HSV') {
-
-      common.extend(color.__state, math.hsv_to_rgb(color.__state.h, color.__state.s, color.__state.v));
-
-    } else {
-
-      throw 'Corrupted color state';
-
-    }
-
-  }
-
-  function recalculateHSV(color) {
-
-    var result = math.rgb_to_hsv(color.r, color.g, color.b);
-
-    common.extend(color.__state,
-        {
-          s: result.s,
-          v: result.v
-        }
-    );
-
-    if (!common.isNaN(result.h)) {
-      color.__state.h = result.h;
-    } else if (common.isUndefined(color.__state.h)) {
-      color.__state.h = 0;
-    }
-
-  }
-
-  return Color;
-
-})(dat.color.interpret = (function (toString, common) {
-
-  var result, toReturn;
-
-  var interpret = function() {
-
-    toReturn = false;
-
-    var original = arguments.length > 1 ? common.toArray(arguments) : arguments[0];
-
-    common.each(INTERPRETATIONS, function(family) {
-
-      if (family.litmus(original)) {
-
-        common.each(family.conversions, function(conversion, conversionName) {
-
-          result = conversion.read(original);
-
-          if (toReturn === false && result !== false) {
-            toReturn = result;
-            result.conversionName = conversionName;
-            result.conversion = conversion;
-            return common.BREAK;
-
-          }
-
-        });
-
-        return common.BREAK;
-
-      }
-
-    });
-
-    return toReturn;
-
-  };
-
-  var INTERPRETATIONS = [
-
-    // Strings
-    {
-
-      litmus: common.isString,
-
-      conversions: {
-
-        THREE_CHAR_HEX: {
-
-          read: function(original) {
-
-            var test = original.match(/^#([A-F0-9])([A-F0-9])([A-F0-9])$/i);
-            if (test === null) return false;
-
-            return {
-              space: 'HEX',
-              hex: parseInt(
-                  '0x' +
-                      test[1].toString() + test[1].toString() +
-                      test[2].toString() + test[2].toString() +
-                      test[3].toString() + test[3].toString())
-            };
-
-          },
-
-          write: toString
-
-        },
-
-        SIX_CHAR_HEX: {
-
-          read: function(original) {
-
-            var test = original.match(/^#([A-F0-9]{6})$/i);
-            if (test === null) return false;
-
-            return {
-              space: 'HEX',
-              hex: parseInt('0x' + test[1].toString())
-            };
-
-          },
-
-          write: toString
-
-        },
-
-        CSS_RGB: {
-
-          read: function(original) {
-
-            var test = original.match(/^rgb\(\s*(.+)\s*,\s*(.+)\s*,\s*(.+)\s*\)/);
-            if (test === null) return false;
-
-            return {
-              space: 'RGB',
-              r: parseFloat(test[1]),
-              g: parseFloat(test[2]),
-              b: parseFloat(test[3])
-            };
-
-          },
-
-          write: toString
-
-        },
-
-        CSS_RGBA: {
-
-          read: function(original) {
-
-            var test = original.match(/^rgba\(\s*(.+)\s*,\s*(.+)\s*,\s*(.+)\s*\,\s*(.+)\s*\)/);
-            if (test === null) return false;
-
-            return {
-              space: 'RGB',
-              r: parseFloat(test[1]),
-              g: parseFloat(test[2]),
-              b: parseFloat(test[3]),
-              a: parseFloat(test[4])
-            };
-
-          },
-
-          write: toString
-
-        }
-
-      }
-
-    },
-
-    // Numbers
-    {
-
-      litmus: common.isNumber,
-
-      conversions: {
-
-        HEX: {
-          read: function(original) {
-            return {
-              space: 'HEX',
-              hex: original,
-              conversionName: 'HEX'
-            }
-          },
-
-          write: function(color) {
-            return color.hex;
-          }
-        }
-
-      }
-
-    },
-
-    // Arrays
-    {
-
-      litmus: common.isArray,
-
-      conversions: {
-
-        RGB_ARRAY: {
-          read: function(original) {
-            if (original.length != 3) return false;
-            return {
-              space: 'RGB',
-              r: original[0],
-              g: original[1],
-              b: original[2]
-            };
-          },
-
-          write: function(color) {
-            return [color.r, color.g, color.b];
-          }
-
-        },
-
-        RGBA_ARRAY: {
-          read: function(original) {
-            if (original.length != 4) return false;
-            return {
-              space: 'RGB',
-              r: original[0],
-              g: original[1],
-              b: original[2],
-              a: original[3]
-            };
-          },
-
-          write: function(color) {
-            return [color.r, color.g, color.b, color.a];
-          }
-
-        }
-
-      }
-
-    },
-
-    // Objects
-    {
-
-      litmus: common.isObject,
-
-      conversions: {
-
-        RGBA_OBJ: {
-          read: function(original) {
-            if (common.isNumber(original.r) &&
-                common.isNumber(original.g) &&
-                common.isNumber(original.b) &&
-                common.isNumber(original.a)) {
-              return {
-                space: 'RGB',
-                r: original.r,
-                g: original.g,
-                b: original.b,
-                a: original.a
-              }
-            }
-            return false;
-          },
-
-          write: function(color) {
-            return {
-              r: color.r,
-              g: color.g,
-              b: color.b,
-              a: color.a
-            }
-          }
-        },
-
-        RGB_OBJ: {
-          read: function(original) {
-            if (common.isNumber(original.r) &&
-                common.isNumber(original.g) &&
-                common.isNumber(original.b)) {
-              return {
-                space: 'RGB',
-                r: original.r,
-                g: original.g,
-                b: original.b
-              }
-            }
-            return false;
-          },
-
-          write: function(color) {
-            return {
-              r: color.r,
-              g: color.g,
-              b: color.b
-            }
-          }
-        },
-
-        HSVA_OBJ: {
-          read: function(original) {
-            if (common.isNumber(original.h) &&
-                common.isNumber(original.s) &&
-                common.isNumber(original.v) &&
-                common.isNumber(original.a)) {
-              return {
-                space: 'HSV',
-                h: original.h,
-                s: original.s,
-                v: original.v,
-                a: original.a
-              }
-            }
-            return false;
-          },
-
-          write: function(color) {
-            return {
-              h: color.h,
-              s: color.s,
-              v: color.v,
-              a: color.a
-            }
-          }
-        },
-
-        HSV_OBJ: {
-          read: function(original) {
-            if (common.isNumber(original.h) &&
-                common.isNumber(original.s) &&
-                common.isNumber(original.v)) {
-              return {
-                space: 'HSV',
-                h: original.h,
-                s: original.s,
-                v: original.v
-              }
-            }
-            return false;
-          },
-
-          write: function(color) {
-            return {
-              h: color.h,
-              s: color.s,
-              v: color.v
-            }
-          }
-
-        }
-
-      }
-
-    }
-
-
-  ];
-
-  return interpret;
-
-
-})(dat.color.toString,
-dat.utils.common),
-dat.color.math = (function () {
-
-  var tmpComponent;
-
-  return {
-
-    hsv_to_rgb: function(h, s, v) {
-
-      var hi = Math.floor(h / 60) % 6;
-
-      var f = h / 60 - Math.floor(h / 60);
-      var p = v * (1.0 - s);
-      var q = v * (1.0 - (f * s));
-      var t = v * (1.0 - ((1.0 - f) * s));
-      var c = [
-        [v, t, p],
-        [q, v, p],
-        [p, v, t],
-        [p, q, v],
-        [t, p, v],
-        [v, p, q]
-      ][hi];
-
-      return {
-        r: c[0] * 255,
-        g: c[1] * 255,
-        b: c[2] * 255
-      };
-
-    },
-
-    rgb_to_hsv: function(r, g, b) {
-
-      var min = Math.min(r, g, b),
-          max = Math.max(r, g, b),
-          delta = max - min,
-          h, s;
-
-      if (max != 0) {
-        s = delta / max;
-      } else {
-        return {
-          h: NaN,
-          s: 0,
-          v: 0
-        };
-      }
-
-      if (r == max) {
-        h = (g - b) / delta;
-      } else if (g == max) {
-        h = 2 + (b - r) / delta;
-      } else {
-        h = 4 + (r - g) / delta;
-      }
-      h /= 6;
-      if (h < 0) {
-        h += 1;
-      }
-
-      return {
-        h: h * 360,
-        s: s,
-        v: max / 255
-      };
-    },
-
-    rgb_to_hex: function(r, g, b) {
-      var hex = this.hex_with_component(0, 2, r);
-      hex = this.hex_with_component(hex, 1, g);
-      hex = this.hex_with_component(hex, 0, b);
-      return hex;
-    },
-
-    component_from_hex: function(hex, componentIndex) {
-      return (hex >> (componentIndex * 8)) & 0xFF;
-    },
-
-    hex_with_component: function(hex, componentIndex, value) {
-      return value << (tmpComponent = componentIndex * 8) | (hex & ~ (0xFF << tmpComponent));
-    }
-
-  }
-
-})(),
-dat.color.toString,
-dat.utils.common);
-
-/***/ }),
-/* 37 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -17525,11 +13112,11 @@ class Square extends __WEBPACK_IMPORTED_MODULE_0__rendering_gl_Drawable__["a" /*
 
 
 /***/ }),
-/* 38 */
+/* 35 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_gl_matrix__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_gl_matrix__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__rendering_gl_Drawable__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__globals__ = __webpack_require__(0);
 
@@ -17538,7 +13125,7 @@ class Square extends __WEBPACK_IMPORTED_MODULE_0__rendering_gl_Drawable__["a" /*
 class Leaf extends __WEBPACK_IMPORTED_MODULE_1__rendering_gl_Drawable__["a" /* default */] {
     constructor() {
         super(); // Call the constructor of the super class. This is required.
-        this.color = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["f" /* vec3 */].fromValues(0.05, 0.93, 0.15);
+        this.color = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["d" /* vec3 */].fromValues(0.05, 0.93, 0.15);
     }
     setColor(newColor) {
         this.color = newColor;
@@ -17582,11 +13169,11 @@ class Leaf extends __WEBPACK_IMPORTED_MODULE_1__rendering_gl_Drawable__["a" /* d
 
 
 /***/ }),
-/* 39 */
+/* 36 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_gl_matrix__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_gl_matrix__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__rendering_gl_Drawable__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__globals__ = __webpack_require__(0);
 
@@ -17595,7 +13182,7 @@ class Leaf extends __WEBPACK_IMPORTED_MODULE_1__rendering_gl_Drawable__["a" /* d
 class Mario extends __WEBPACK_IMPORTED_MODULE_1__rendering_gl_Drawable__["a" /* default */] {
     constructor() {
         super(); // Call the constructor of the super class. This is required.
-        this.color = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["f" /* vec3 */].fromValues(0.95, 0.33, 0.25);
+        this.color = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["d" /* vec3 */].fromValues(0.95, 0.33, 0.25);
     }
     setColor(newColor) {
         this.color = newColor;
@@ -17639,11 +13226,11 @@ class Mario extends __WEBPACK_IMPORTED_MODULE_1__rendering_gl_Drawable__["a" /* 
 
 
 /***/ }),
-/* 40 */
+/* 37 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_gl_matrix__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_gl_matrix__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__rendering_gl_Drawable__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__globals__ = __webpack_require__(0);
 
@@ -17652,7 +13239,7 @@ class Mario extends __WEBPACK_IMPORTED_MODULE_1__rendering_gl_Drawable__["a" /* 
 class Pipes extends __WEBPACK_IMPORTED_MODULE_1__rendering_gl_Drawable__["a" /* default */] {
     constructor() {
         super(); // Call the constructor of the super class. This is required.
-        this.color = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["f" /* vec3 */].fromValues(0.25, 0.73, 0.25);
+        this.color = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["d" /* vec3 */].fromValues(0.25, 0.73, 0.25);
     }
     setColor(newColor) {
         this.color = newColor;
@@ -17696,7 +13283,7 @@ class Pipes extends __WEBPACK_IMPORTED_MODULE_1__rendering_gl_Drawable__["a" /* 
 
 
 /***/ }),
-/* 41 */
+/* 38 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -17737,7 +13324,7 @@ class Ground extends __WEBPACK_IMPORTED_MODULE_0__rendering_gl_Drawable__["a" /*
 
 
 /***/ }),
-/* 42 */
+/* 39 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -17779,7 +13366,7 @@ class Box extends __WEBPACK_IMPORTED_MODULE_0__rendering_gl_Drawable__["a" /* de
 
 
 /***/ }),
-/* 43 */
+/* 40 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -17820,7 +13407,7 @@ class Question extends __WEBPACK_IMPORTED_MODULE_0__rendering_gl_Drawable__["a" 
 
 
 /***/ }),
-/* 44 */
+/* 41 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -17901,11 +13488,11 @@ class LSystem extends __WEBPACK_IMPORTED_MODULE_0__rendering_gl_Drawable__["a" /
 
 
 /***/ }),
-/* 45 */
+/* 42 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_gl_matrix__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_gl_matrix__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__globals__ = __webpack_require__(0);
 
 
@@ -17913,7 +13500,7 @@ class LSystem extends __WEBPACK_IMPORTED_MODULE_0__rendering_gl_Drawable__["a" /
 class OpenGLRenderer {
     constructor(canvas) {
         this.canvas = canvas;
-        this.color = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["g" /* vec4 */].fromValues(0.42, 0.46, 0.14, 1); // default geometry color
+        this.color = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["e" /* vec4 */].fromValues(0.42, 0.46, 0.14, 1); // default geometry color
         this.time = 0;
     }
     setClearColor(r, g, b, a) {
@@ -17924,24 +13511,24 @@ class OpenGLRenderer {
         this.canvas.height = height;
     }
     setGeometryColor(color) {
-        this.color = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["g" /* vec4 */].fromValues(color[0] / 255, color[1] / 255, color[2] / 255, 1);
+        this.color = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["e" /* vec4 */].fromValues(color[0] / 255, color[1] / 255, color[2] / 255, 1);
     }
     clear() {
         __WEBPACK_IMPORTED_MODULE_1__globals__["a" /* gl */].clear(__WEBPACK_IMPORTED_MODULE_1__globals__["a" /* gl */].COLOR_BUFFER_BIT | __WEBPACK_IMPORTED_MODULE_1__globals__["a" /* gl */].DEPTH_BUFFER_BIT);
     }
-    render(camera, prog, drawables) {
-        let model = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["c" /* mat4 */].create();
-        let viewProj = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["c" /* mat4 */].create();
-        let color = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["g" /* vec4 */].fromValues(1, 0, 0, 1);
-        let axes = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["b" /* mat3 */].fromValues(camera.right[0], camera.right[1], camera.right[2], camera.up[0], camera.up[1], camera.up[2], camera.forward[0], camera.forward[1], camera.forward[2]);
-        __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["c" /* mat4 */].identity(model);
-        __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["c" /* mat4 */].multiply(viewProj, camera.projectionMatrix, camera.viewMatrix);
+    render(camera, prog, elapsed, drawables) {
+        let model = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["b" /* mat4 */].create();
+        let viewProj = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["b" /* mat4 */].create();
+        let color = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["e" /* vec4 */].fromValues(1, 0, 0, 1);
+        let axes = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["a" /* mat3 */].fromValues(camera.right[0], camera.right[1], camera.right[2], camera.up[0], camera.up[1], camera.up[2], camera.forward[0], camera.forward[1], camera.forward[2]);
+        __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["b" /* mat4 */].identity(model);
+        __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["b" /* mat4 */].multiply(viewProj, camera.projectionMatrix, camera.viewMatrix);
         prog.setModelMatrix(model);
         prog.setViewProjMatrix(viewProj);
         prog.setCameraAxes(axes);
         prog.setGeometryColor(this.color);
-        prog.setTime(this.time);
-        this.time++;
+        prog.setTime(elapsed);
+        //this.time++;
         for (let drawable of drawables) {
             prog.draw(drawable);
         }
@@ -17952,63 +13539,63 @@ class OpenGLRenderer {
 
 
 /***/ }),
-/* 46 */
+/* 43 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_gl_matrix__ = __webpack_require__(2);
-var CameraControls = __webpack_require__(47);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_gl_matrix__ = __webpack_require__(3);
+var CameraControls = __webpack_require__(44);
 
 class Camera {
     constructor(position, target) {
-        this.projectionMatrix = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["c" /* mat4 */].create();
-        this.viewMatrix = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["c" /* mat4 */].create();
+        this.projectionMatrix = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["b" /* mat4 */].create();
+        this.viewMatrix = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["b" /* mat4 */].create();
         this.fovy = 45;
         this.aspectRatio = 1;
         this.near = 0.1;
         this.far = 1000;
-        this.position = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["f" /* vec3 */].create();
-        this.direction = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["f" /* vec3 */].create();
-        this.target = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["f" /* vec3 */].create();
-        this.up = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["f" /* vec3 */].create();
-        this.right = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["f" /* vec3 */].create();
-        this.forward = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["f" /* vec3 */].create();
+        this.position = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["d" /* vec3 */].create();
+        this.direction = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["d" /* vec3 */].create();
+        this.target = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["d" /* vec3 */].create();
+        this.up = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["d" /* vec3 */].create();
+        this.right = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["d" /* vec3 */].create();
+        this.forward = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["d" /* vec3 */].create();
         const canvas = document.getElementById('canvas');
         this.controls = CameraControls(canvas, {
             eye: position,
             center: target,
         });
-        this.controls.up = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["f" /* vec3 */].fromValues(0, 100, 0);
-        __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["f" /* vec3 */].add(this.target, this.position, this.direction);
-        __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["c" /* mat4 */].lookAt(this.viewMatrix, this.controls.eye, this.controls.center, this.controls.up);
+        this.controls.up = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["d" /* vec3 */].fromValues(0, 100, 0);
+        __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["d" /* vec3 */].add(this.target, this.position, this.direction);
+        __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["b" /* mat4 */].lookAt(this.viewMatrix, this.controls.eye, this.controls.center, this.controls.up);
         this.position = this.controls.eye;
         this.up = this.controls.up;
-        __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["f" /* vec3 */].subtract(this.forward, this.target, this.position);
-        __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["f" /* vec3 */].normalize(this.forward, this.forward);
-        __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["f" /* vec3 */].cross(this.right, this.forward, this.up);
-        __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["f" /* vec3 */].normalize(this.right, this.right);
+        __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["d" /* vec3 */].subtract(this.forward, this.target, this.position);
+        __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["d" /* vec3 */].normalize(this.forward, this.forward);
+        __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["d" /* vec3 */].cross(this.right, this.forward, this.up);
+        __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["d" /* vec3 */].normalize(this.right, this.right);
     }
     setAspectRatio(aspectRatio) {
         this.aspectRatio = aspectRatio;
     }
     updateProjectionMatrix() {
-        __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["c" /* mat4 */].perspective(this.projectionMatrix, this.fovy, this.aspectRatio, this.near, this.far);
+        __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["b" /* mat4 */].perspective(this.projectionMatrix, this.fovy, this.aspectRatio, this.near, this.far);
     }
     update() {
         this.controls.tick();
-        __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["f" /* vec3 */].add(this.target, this.position, this.direction);
-        this.position = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["f" /* vec3 */].fromValues(this.controls.eye[0], this.controls.eye[1], this.controls.eye[2]);
-        this.target = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["f" /* vec3 */].fromValues(this.controls.center[0], this.controls.center[1], this.controls.center[2]);
-        __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["c" /* mat4 */].lookAt(this.viewMatrix, this.controls.eye, this.controls.center, this.controls.up);
+        __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["d" /* vec3 */].add(this.target, this.position, this.direction);
+        this.position = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["d" /* vec3 */].fromValues(this.controls.eye[0], this.controls.eye[1], this.controls.eye[2]);
+        this.target = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["d" /* vec3 */].fromValues(this.controls.center[0], this.controls.center[1], this.controls.center[2]);
+        __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["b" /* mat4 */].lookAt(this.viewMatrix, this.controls.eye, this.controls.center, this.controls.up);
         this.position = this.controls.eye;
-        this.up = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["f" /* vec3 */].fromValues(this.controls.up[0], this.controls.up[1], this.controls.up[2]);
-        __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["f" /* vec3 */].normalize(this.up, this.up);
-        __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["f" /* vec3 */].subtract(this.forward, this.target, this.position);
-        __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["f" /* vec3 */].normalize(this.forward, this.forward);
-        __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["f" /* vec3 */].cross(this.right, this.forward, this.up);
-        __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["f" /* vec3 */].normalize(this.right, this.right);
-        __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["f" /* vec3 */].cross(this.up, this.right, this.forward);
-        __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["f" /* vec3 */].normalize(this.up, this.up);
+        this.up = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["d" /* vec3 */].fromValues(this.controls.up[0], this.controls.up[1], this.controls.up[2]);
+        __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["d" /* vec3 */].normalize(this.up, this.up);
+        __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["d" /* vec3 */].subtract(this.forward, this.target, this.position);
+        __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["d" /* vec3 */].normalize(this.forward, this.forward);
+        __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["d" /* vec3 */].cross(this.right, this.forward, this.up);
+        __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["d" /* vec3 */].normalize(this.right, this.right);
+        __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["d" /* vec3 */].cross(this.up, this.right, this.forward);
+        __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["d" /* vec3 */].normalize(this.up, this.up);
     }
 }
 ;
@@ -18016,7 +13603,7 @@ class Camera {
 
 
 /***/ }),
-/* 47 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18024,12 +13611,12 @@ class Camera {
 
 module.exports = createCamera
 
-var now         = __webpack_require__(48)
-var createView  = __webpack_require__(49)
-var mouseChange = __webpack_require__(72)
-var mouseWheel  = __webpack_require__(74)
-var mouseOffset = __webpack_require__(77)
-var hasPassive  = __webpack_require__(78)
+var now         = __webpack_require__(45)
+var createView  = __webpack_require__(46)
+var mouseChange = __webpack_require__(69)
+var mouseWheel  = __webpack_require__(71)
+var mouseOffset = __webpack_require__(74)
+var hasPassive  = __webpack_require__(75)
 
 function createCamera(element, options) {
   element = element || document.body
@@ -18259,7 +13846,7 @@ function createCamera(element, options) {
 
 
 /***/ }),
-/* 48 */
+/* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {module.exports =
@@ -18273,7 +13860,7 @@ function createCamera(element, options) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(12)))
 
 /***/ }),
-/* 49 */
+/* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18281,9 +13868,9 @@ function createCamera(element, options) {
 
 module.exports = createViewController
 
-var createTurntable = __webpack_require__(50)
-var createOrbit     = __webpack_require__(53)
-var createMatrix    = __webpack_require__(56)
+var createTurntable = __webpack_require__(47)
+var createOrbit     = __webpack_require__(50)
+var createMatrix    = __webpack_require__(53)
 
 function ViewController(controllers, mode) {
   this._controllerNames = Object.keys(controllers)
@@ -18401,7 +13988,7 @@ function createViewController(options) {
 }
 
 /***/ }),
-/* 50 */
+/* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18411,7 +13998,7 @@ module.exports = createTurntableController
 
 var filterVector = __webpack_require__(15)
 var invert44     = __webpack_require__(4)
-var rotateM      = __webpack_require__(52)
+var rotateM      = __webpack_require__(49)
 var cross        = __webpack_require__(17)
 var normalize3   = __webpack_require__(6)
 var dot3         = __webpack_require__(18)
@@ -18979,7 +14566,7 @@ function createTurntableController(options) {
 }
 
 /***/ }),
-/* 51 */
+/* 48 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19024,7 +14611,7 @@ module.exports = cubicHermite
 module.exports.derivative = dcubicHermite
 
 /***/ }),
-/* 52 */
+/* 49 */
 /***/ (function(module, exports) {
 
 module.exports = rotate;
@@ -19093,7 +14680,7 @@ function rotate(out, a, rad, axis) {
 };
 
 /***/ }),
-/* 53 */
+/* 50 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19103,9 +14690,9 @@ module.exports = createOrbitController
 
 var filterVector  = __webpack_require__(15)
 var lookAt        = __webpack_require__(19)
-var mat4FromQuat  = __webpack_require__(54)
+var mat4FromQuat  = __webpack_require__(51)
 var invert44      = __webpack_require__(4)
-var quatFromFrame = __webpack_require__(55)
+var quatFromFrame = __webpack_require__(52)
 
 function len3(x,y,z) {
   return Math.sqrt(Math.pow(x,2) + Math.pow(y,2) + Math.pow(z,2))
@@ -19492,7 +15079,7 @@ function createOrbitController(options) {
 }
 
 /***/ }),
-/* 54 */
+/* 51 */
 /***/ (function(module, exports) {
 
 module.exports = fromQuat;
@@ -19544,7 +15131,7 @@ function fromQuat(out, q) {
 };
 
 /***/ }),
-/* 55 */
+/* 52 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19591,18 +15178,18 @@ function quatFromFrame(
 }
 
 /***/ }),
-/* 56 */
+/* 53 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 var bsearch   = __webpack_require__(16)
-var m4interp  = __webpack_require__(57)
+var m4interp  = __webpack_require__(54)
 var invert44  = __webpack_require__(4)
-var rotateX   = __webpack_require__(69)
-var rotateY   = __webpack_require__(70)
-var rotateZ   = __webpack_require__(71)
+var rotateX   = __webpack_require__(66)
+var rotateY   = __webpack_require__(67)
+var rotateZ   = __webpack_require__(68)
 var lookAt    = __webpack_require__(19)
 var translate = __webpack_require__(21)
 var scale     = __webpack_require__(23)
@@ -19796,15 +15383,15 @@ function createMatrixCameraController(options) {
 
 
 /***/ }),
-/* 57 */
+/* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var lerp = __webpack_require__(58)
+var lerp = __webpack_require__(55)
 
-var recompose = __webpack_require__(59)
-var decompose = __webpack_require__(62)
+var recompose = __webpack_require__(56)
+var decompose = __webpack_require__(59)
 var determinant = __webpack_require__(24)
-var slerp = __webpack_require__(67)
+var slerp = __webpack_require__(64)
 
 var state0 = state()
 var state1 = state()
@@ -19853,7 +15440,7 @@ function vec4() {
 }
 
 /***/ }),
-/* 58 */
+/* 55 */
 /***/ (function(module, exports) {
 
 module.exports = lerp;
@@ -19878,7 +15465,7 @@ function lerp(out, a, b, t) {
 }
 
 /***/ }),
-/* 59 */
+/* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -19895,10 +15482,10 @@ From: http://www.w3.org/TR/css3-transforms/#recomposing-to-a-3d-matrix
 var mat4 = {
     identity: __webpack_require__(20),
     translate: __webpack_require__(21),
-    multiply: __webpack_require__(60),
+    multiply: __webpack_require__(57),
     create: __webpack_require__(22),
     scale: __webpack_require__(23),
-    fromRotationTranslation: __webpack_require__(61)
+    fromRotationTranslation: __webpack_require__(58)
 }
 
 var rotationMatrix = mat4.create()
@@ -19943,7 +15530,7 @@ module.exports = function recomposeMat4(matrix, translation, scale, skew, perspe
 }
 
 /***/ }),
-/* 60 */
+/* 57 */
 /***/ (function(module, exports) {
 
 module.exports = multiply;
@@ -19990,7 +15577,7 @@ function multiply(out, a, b) {
 };
 
 /***/ }),
-/* 61 */
+/* 58 */
 /***/ (function(module, exports) {
 
 module.exports = fromRotationTranslation;
@@ -20048,7 +15635,7 @@ function fromRotationTranslation(out, q, v) {
 };
 
 /***/ }),
-/* 62 */
+/* 59 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*jshint unused:true*/
@@ -20068,15 +15655,15 @@ https://github.com/ChromiumWebApps/chromium/blob/master/ui/gfx/transform_util.cc
 http://www.w3.org/TR/css3-transforms/#decomposing-a-3d-matrix
 */
 
-var normalize = __webpack_require__(63)
+var normalize = __webpack_require__(60)
 
 var create = __webpack_require__(22)
-var clone = __webpack_require__(64)
+var clone = __webpack_require__(61)
 var determinant = __webpack_require__(24)
 var invert = __webpack_require__(4)
-var transpose = __webpack_require__(65)
+var transpose = __webpack_require__(62)
 var vec3 = {
-    length: __webpack_require__(66),
+    length: __webpack_require__(63),
     normalize: __webpack_require__(6),
     dot: __webpack_require__(18),
     cross: __webpack_require__(17)
@@ -20232,7 +15819,7 @@ function combine(out, a, b, scale1, scale2) {
 }
 
 /***/ }),
-/* 63 */
+/* 60 */
 /***/ (function(module, exports) {
 
 module.exports = function normalize(out, mat) {
@@ -20247,7 +15834,7 @@ module.exports = function normalize(out, mat) {
 }
 
 /***/ }),
-/* 64 */
+/* 61 */
 /***/ (function(module, exports) {
 
 module.exports = clone;
@@ -20280,7 +15867,7 @@ function clone(a) {
 };
 
 /***/ }),
-/* 65 */
+/* 62 */
 /***/ (function(module, exports) {
 
 module.exports = transpose;
@@ -20334,7 +15921,7 @@ function transpose(out, a) {
 };
 
 /***/ }),
-/* 66 */
+/* 63 */
 /***/ (function(module, exports) {
 
 module.exports = length;
@@ -20353,13 +15940,13 @@ function length(a) {
 }
 
 /***/ }),
-/* 67 */
+/* 64 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(68)
+module.exports = __webpack_require__(65)
 
 /***/ }),
-/* 68 */
+/* 65 */
 /***/ (function(module, exports) {
 
 module.exports = slerp
@@ -20416,7 +16003,7 @@ function slerp (out, a, b, t) {
 
 
 /***/ }),
-/* 69 */
+/* 66 */
 /***/ (function(module, exports) {
 
 module.exports = rotateX;
@@ -20465,7 +16052,7 @@ function rotateX(out, a, rad) {
 };
 
 /***/ }),
-/* 70 */
+/* 67 */
 /***/ (function(module, exports) {
 
 module.exports = rotateY;
@@ -20514,7 +16101,7 @@ function rotateY(out, a, rad) {
 };
 
 /***/ }),
-/* 71 */
+/* 68 */
 /***/ (function(module, exports) {
 
 module.exports = rotateZ;
@@ -20563,7 +16150,7 @@ function rotateZ(out, a, rad) {
 };
 
 /***/ }),
-/* 72 */
+/* 69 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20571,7 +16158,7 @@ function rotateZ(out, a, rad) {
 
 module.exports = mouseListen
 
-var mouse = __webpack_require__(73)
+var mouse = __webpack_require__(70)
 
 function mouseListen (element, callback) {
   if (!callback) {
@@ -20775,7 +16362,7 @@ function mouseListen (element, callback) {
 
 
 /***/ }),
-/* 73 */
+/* 70 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20842,13 +16429,13 @@ exports.y = mouseRelativeY
 
 
 /***/ }),
-/* 74 */
+/* 71 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var toPX = __webpack_require__(75)
+var toPX = __webpack_require__(72)
 
 module.exports = mouseWheelListen
 
@@ -20889,13 +16476,13 @@ function mouseWheelListen(element, callback, noScroll) {
 
 
 /***/ }),
-/* 75 */
+/* 72 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var parseUnit = __webpack_require__(76)
+var parseUnit = __webpack_require__(73)
 
 module.exports = toPX
 
@@ -20970,7 +16557,7 @@ function toPX(str, element) {
 
 
 /***/ }),
-/* 76 */
+/* 73 */
 /***/ (function(module, exports) {
 
 module.exports = function parseUnit(str, out) {
@@ -20985,7 +16572,7 @@ module.exports = function parseUnit(str, out) {
 }
 
 /***/ }),
-/* 77 */
+/* 74 */
 /***/ (function(module, exports) {
 
 var rootPosition = { left: 0, top: 0 }
@@ -21016,13 +16603,13 @@ function getBoundingClientOffset (element) {
 
 
 /***/ }),
-/* 78 */
+/* 75 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var isBrowser = __webpack_require__(79)
+var isBrowser = __webpack_require__(76)
 
 function detect() {
 	var supported = false
@@ -21047,17 +16634,17 @@ module.exports = isBrowser && detect()
 
 
 /***/ }),
-/* 79 */
+/* 76 */
 /***/ (function(module, exports) {
 
 module.exports = true;
 
 /***/ }),
-/* 80 */
+/* 77 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_gl_matrix__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_gl_matrix__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__globals__ = __webpack_require__(0);
 
 
@@ -21131,9 +16718,9 @@ class ShaderProgram {
             __WEBPACK_IMPORTED_MODULE_1__globals__["a" /* gl */].uniformMatrix4fv(this.unifModel, false, model);
         }
         if (this.unifModelInvTr !== -1) {
-            let modelinvtr = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["c" /* mat4 */].create();
-            __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["c" /* mat4 */].transpose(modelinvtr, model);
-            __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["c" /* mat4 */].invert(modelinvtr, modelinvtr);
+            let modelinvtr = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["b" /* mat4 */].create();
+            __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["b" /* mat4 */].transpose(modelinvtr, model);
+            __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["b" /* mat4 */].invert(modelinvtr, modelinvtr);
             __WEBPACK_IMPORTED_MODULE_1__globals__["a" /* gl */].uniformMatrix4fv(this.unifModelInvTr, false, modelinvtr);
         }
     }
@@ -21224,443 +16811,7 @@ class ShaderProgram {
 
 
 /***/ }),
-/* 81 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ExpansionRules__ = __webpack_require__(82);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__DrawRules__ = __webpack_require__(83);
-
-
-class LSystem {
-    constructor(startChar, startMesh) {
-        this.stringArray = [];
-        this.expRules = new __WEBPACK_IMPORTED_MODULE_0__ExpansionRules__["a" /* default */]();
-        this.drawRules = new __WEBPACK_IMPORTED_MODULE_1__DrawRules__["a" /* default */]();
-        this.stringArray.push(startChar);
-        let exp = [
-            ['[', '[', 1.0],
-            [']', ']', 1.0],
-            ['B', 'BBBB', 0.20],
-            ['B', 'B[AA]BB', 0.65],
-            ['B', 'B', 0.15],
-            ['A', 'B[A]A', 0.4],
-            ['A', 'BA', 0.1],
-            ['A', 'B[A][A]A', 0.5]
-        ];
-        for (var i = 0; i < exp.length; i++) {
-            this.createERule(exp[i]);
-        }
-    }
-    createERule(rule) {
-        this.expRules.createExpRule(rule[0], rule[1], rule[2]);
-    }
-    createDRule(rule) {
-        this.drawRules.addDrawRule(rule[0], rule[1], rule[2]);
-    }
-    addRules(leafMesh, marioMesh, plantMesh, turtle) {
-        var pir = function () { turtle.drawPiranha(leafMesh, marioMesh, plantMesh); };
-        var leaflet = function () { turtle.drawLeaf(leafMesh, plantMesh); };
-        var rando = function () { turtle.drawWildcard(leafMesh, plantMesh); };
-        var rotZ = function () { turtle.minusZ(leafMesh, plantMesh); };
-        var rotNegZ = function () { turtle.plusZ(leafMesh, plantMesh); };
-        var rotX = function () { turtle.minusX(leafMesh, plantMesh); };
-        var rotNegX = function () { turtle.plusX(leafMesh, plantMesh); };
-        var left = function () { turtle.minusXYZ(leafMesh, plantMesh); };
-        var right = function () { turtle.plusXYZ(leafMesh, plantMesh); };
-        let draw = [['A', 1, pir],
-            ['B', 1, leaflet],
-            ['[', 0.50, rotZ],
-            [']', 0.50, rotNegZ],
-            ['[', 0.10, rotX],
-            [']', 0.10, rotNegX],
-            ['[', 0.40, left],
-            [']', 0.40, right]
-        ];
-        for (var i = 0; i < draw.length; i++) {
-            this.createDRule(draw[i]);
-        }
-    }
-    getString() {
-        return this.stringArray.join('');
-    }
-    pushString(arr, exp, j) {
-        var char = exp.charAt(j);
-        let succ = this.expRules.getExpansion(char);
-        arr.push(succ);
-    }
-    computeLSystem() {
-        var toExpand = [];
-        for (var i = 0; i < this.stringArray.length; i++) {
-            var startString = this.stringArray[i];
-            for (var j = 0; j < startString.length; j++) {
-                this.pushString(toExpand, startString, j);
-            }
-        }
-        this.stringArray = toExpand;
-    }
-    drawLSystem() {
-        for (var i = 0; i < this.stringArray.length; i++) {
-            var startString = this.stringArray[i];
-            for (var j = 0; j < startString.length; j++) {
-                var char = startString.charAt(j);
-                let drawFunc = this.drawRules.getDrawRule(char);
-                drawFunc();
-            }
-        }
-    }
-}
-/* harmony default export */ __webpack_exports__["a"] = (LSystem);
-
-
-/***/ }),
-/* 82 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-class ExpansionRules {
-    constructor() {
-        this.expMap = new Map();
-    }
-    setStartChar() {
-        var charProbMap = this.expMap.get(this.axiomCharacteracter);
-        charProbMap.set(this.prb, this.repString);
-    }
-    // ADD AN EXP RULE YIKE
-    createExpRule(axiomCharacter, str, probability) {
-        var charProbMap = new Map();
-        if (!this.expMap.has(axiomCharacter)) {
-            charProbMap.set(probability, str);
-            this.expMap.set(axiomCharacter, charProbMap);
-        }
-        else {
-            this.axiomCharacteracter = axiomCharacter;
-            this.repString = str;
-            this.prb = probability;
-            this.setStartChar();
-        }
-    }
-    sumProbability(axiomCharacter) {
-        var rand = Math.random();
-        var cumulativeProb = 0.0;
-        var expanded;
-        var charProbMap = this.expMap.get(axiomCharacter);
-        for (const prob of charProbMap.keys()) {
-            var isRand = rand > cumulativeProb;
-            var validRand = rand <= prob + cumulativeProb;
-            if (isRand && validRand) {
-                expanded = charProbMap.get(prob);
-            }
-            cumulativeProb = cumulativeProb + prob;
-        }
-        return expanded;
-    }
-    //function to get the fully expanded LSystem
-    getExpansion(axiomCharacter) {
-        var hasChar = this.expMap.has(axiomCharacter);
-        if (!hasChar) {
-            return '';
-        }
-        var finalString = this.sumProbability(axiomCharacter);
-        return finalString;
-    }
-}
-/* harmony default export */ __webpack_exports__["a"] = (ExpansionRules);
-
-
-/***/ }),
-/* 83 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-class DrawRules {
-    constructor() {
-        this.drawRulesMap = new Map();
-    }
-    createMap(probability, drawFunction, char) {
-        var probToFunctionMap = new Map();
-        probToFunctionMap.set(probability, drawFunction);
-        this.drawRulesMap.set(char, probToFunctionMap);
-    }
-    //computing the draw rule almost the same as the exp rule
-    computeDrawRule() {
-        var probToFunctionMap = this.drawRulesMap.get(this.currentChar);
-        var rand = Math.random();
-        var drawRule;
-        var cumulativeProb = 0.0;
-        for (const prob of probToFunctionMap.keys()) {
-            var isRandom = rand > cumulativeProb;
-            var isValid = rand <= cumulativeProb + prob;
-            if (isRandom && isValid) {
-                drawRule = probToFunctionMap.get(prob);
-            }
-            cumulativeProb = cumulativeProb + prob;
-        }
-        return drawRule;
-    }
-    addDrawRule(char, prob, drawFunc) {
-        var hasChar = this.drawRulesMap.has(char);
-        if (hasChar) {
-            this.drawRulesMap.get(char).set(prob, drawFunc);
-        }
-        else {
-            this.createMap(prob, drawFunc, char);
-        }
-    }
-    getDrawRule(char) {
-        if (this.drawRulesMap.has(char)) {
-            this.currentChar = char;
-            var drawRule = this.computeDrawRule();
-            return drawRule;
-        }
-        else {
-            return function () { };
-        }
-    }
-}
-/* harmony default export */ __webpack_exports__["a"] = (DrawRules);
-
-
-/***/ }),
-/* 84 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_gl_matrix__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__TurtleState__ = __webpack_require__(85);
-
-
-class Turtle {
-    constructor(scale, startMesh, startPos, startOrientation, startDepth, startScale) {
-        this.scale = scale;
-        this.rotation = 1.0;
-        this.plantMesh = startMesh;
-        this.turtleStack = [];
-        this.turtle = new __WEBPACK_IMPORTED_MODULE_1__TurtleState__["a" /* default */](startPos, startOrientation, startDepth, startScale);
-    }
-    //turn our plant by some random values
-    //want to keep plant generally growing in the upwards y
-    //so y has less variability
-    // lets *get* *that* *sun*
-    randomRotate() {
-        let r = this.rotation;
-        this.turtle.rotX(r * (Math.random() - 0.5) * 40);
-        this.turtle.rotY(r * (Math.random() - 0.5) * 15);
-        this.turtle.rotZ(r * (Math.random() - 0.5) * 40);
-    }
-    heightRotate() {
-        let r = this.rotation;
-        this.turtle.rotY(r * (Math.random() - 0.5) * 60);
-    }
-    scaleLeaves() {
-        let s = (Math.random() * 0.25) + 0.85;
-        if (this.turtle.scale >= 0.2) {
-            this.turtle.scaleTurtle(this.scale * s * 0.8);
-        }
-    }
-    addVBOData(plant, pos, nor, col) {
-        plant.addPos(pos[0]);
-        plant.addPos(pos[1]);
-        plant.addPos(pos[2]);
-        plant.addPos(pos[3]);
-        plant.addNor(nor[0]);
-        plant.addNor(nor[1]);
-        plant.addNor(nor[2]);
-        plant.addNor(nor[3]);
-        plant.addCol(col[0]);
-        plant.addCol(col[1]);
-        plant.addCol(col[2]);
-        plant.addCol(col[3]);
-    }
-    translateTurtle() {
-        var trans = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["g" /* vec4 */].fromValues(0, 1, 0, 1);
-        trans = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["g" /* vec4 */].scale(trans, trans, this.turtle.scale);
-        trans = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["g" /* vec4 */].transformQuat(trans, trans, this.turtle.orient);
-        var t1 = trans[0];
-        var t2 = trans[1];
-        var t3 = trans[2];
-        let upShiftVec3 = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["f" /* vec3 */].fromValues(t1, t2, t3);
-        this.turtle.transTurtle(upShiftVec3);
-    }
-    drawLeaf(leafMesh, plantMesh) {
-        if (this.turtle.iter > 0) {
-            this.randomRotate();
-        }
-        else {
-            this.heightRotate();
-        }
-        this.scaleLeaves();
-        let transformMat = this.turtle.transMat();
-        let invTransMat = this.turtle.invTransTransMat();
-        let leafPos = leafMesh.positions;
-        let leafNor = leafMesh.normals;
-        let leafCol = leafMesh.colors;
-        for (var i = 0; i < leafPos.length; i += 4) {
-            var a = i;
-            var b = i + 1;
-            var c = i + 2;
-            var d = i + 3;
-            var pos = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["g" /* vec4 */].fromValues(leafPos[a], leafPos[b], leafPos[c], leafPos[d]);
-            pos = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["g" /* vec4 */].transformMat4(pos, pos, transformMat);
-            var nor = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["g" /* vec4 */].fromValues(leafNor[a], leafNor[b], leafNor[c], leafNor[d]);
-            nor = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["g" /* vec4 */].transformMat4(nor, nor, invTransMat);
-            var col = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["g" /* vec4 */].fromValues(leafCol[a], leafCol[b], leafCol[c], leafCol[d]);
-            this.addVBOData(plantMesh, pos, nor, col);
-        }
-        let offset = plantMesh.getMaxIndex() + 1;
-        let leafIdx = leafMesh.indices;
-        for (var i = 0; i < leafIdx.length; i++) {
-            plantMesh.addIndex(leafIdx[i] + offset);
-        }
-        this.translateTurtle();
-        this.turtle.iter++;
-    }
-    drawPiranha(leafMesh, marioMesh, plantMesh) {
-        this.drawLeaf(leafMesh, plantMesh);
-        var upShift = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["g" /* vec4 */].fromValues(0, 0.05, 0, 1);
-        upShift = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["g" /* vec4 */].scale(upShift, upShift, this.turtle.scale);
-        upShift = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["g" /* vec4 */].transformQuat(upShift, upShift, this.turtle.orient);
-        let upShiftVec3 = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["f" /* vec3 */].fromValues(upShift[0], upShift[1], upShift[2]);
-        this.turtle.transTurtle(upShiftVec3);
-        let transformMat = this.turtle.transMat();
-        let invTransMat = this.turtle.invTransTransMat();
-        let marioPos = marioMesh.positions;
-        let marioNor = marioMesh.normals;
-        let marioCol = marioMesh.colors;
-        for (var i = 0; i < marioPos.length; i += 4) {
-            var a = i;
-            var b = i + 1;
-            var c = i + 2;
-            var d = i + 3;
-            var pos = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["g" /* vec4 */].fromValues(marioPos[a], marioPos[b], marioPos[c], marioPos[d]);
-            pos = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["g" /* vec4 */].transformMat4(pos, pos, transformMat);
-            var nor = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["g" /* vec4 */].fromValues(marioNor[a], marioNor[b], marioNor[c], marioNor[d]);
-            nor = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["g" /* vec4 */].transformMat4(nor, nor, invTransMat);
-            var col = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["g" /* vec4 */].fromValues(marioCol[a], marioCol[b], marioCol[c], marioCol[d]);
-            this.addVBOData(plantMesh, pos, nor, col);
-        }
-        let offset = plantMesh.getMaxIndex() + 1;
-        let marioIndices = marioMesh.indices;
-        for (var i = 0; i < marioIndices.length; i++) {
-            plantMesh.addIndex(marioIndices[i] + offset);
-        }
-        this.turtle.iter++;
-    }
-    rotator(code) {
-        this.turtleStack.push(this.turtle);
-        let p = this.turtle.pos;
-        let o = this.turtle.orient;
-        let d = this.turtle.iter;
-        let s = this.turtle.scale;
-        let pos = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["f" /* vec3 */].fromValues(p[0], p[1], p[2]);
-        let orient = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["d" /* quat */].fromValues(o[0], o[1], o[2], o[3]);
-        let iter = d + 1;
-        let scale = s;
-        var newTurtle = new __WEBPACK_IMPORTED_MODULE_1__TurtleState__["a" /* default */](pos, orient, iter, scale);
-        if (code == 0) {
-            newTurtle.rotZ(25);
-        }
-        else if (code == 1) {
-            newTurtle.rotZ(-15);
-            newTurtle.rotY(-5);
-            newTurtle.rotX(-10);
-        }
-        else if (code == 2) {
-            newTurtle.rotX(Math.random() * 10.0);
-        }
-        else if (code == 3) {
-            newTurtle.rotX(Math.random() * -7.0);
-        }
-        this.turtle = newTurtle;
-    }
-    minusZ(leafMesh, plantMesh) {
-        this.rotator(0);
-    }
-    plusZ(leafMesh, plantMesh) {
-        this.turtle = this.turtleStack.pop();
-        this.turtle.rotZ(-15 - (Math.random() * 5.0));
-    }
-    minusXYZ(leafMesh, plantMesh) {
-        this.rotator(1);
-    }
-    plusX(leafMesh, plantMesh) {
-        this.rotator(2);
-    }
-    minusX(leafMesh, plantMesh) {
-        this.rotator(3);
-    }
-    drawWildcard(leafMesh, plantMesh) {
-        this.turtle = this.turtleStack.pop();
-        this.turtle.rotX(Math.random() - 0.5);
-    }
-    plusXYZ(leafMesh, plantMesh) {
-        this.turtle = this.turtleStack.pop();
-        this.turtle.rotZ(15);
-        this.turtle.rotY(5);
-        this.turtle.rotX(10);
-    }
-}
-/* harmony default export */ __webpack_exports__["a"] = (Turtle);
-
-
-/***/ }),
-/* 85 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_gl_matrix__ = __webpack_require__(2);
-
-class TurtleState {
-    constructor(startPos, startOrientation, startIter, startScale) {
-        this.pos = startPos;
-        this.orient = startOrientation;
-        this.iter = startIter;
-        this.scale = startScale;
-    }
-    rotZ(angle) {
-        var o = this.orient;
-        var rad = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["a" /* glMatrix */].toRadian(angle);
-        this.orient = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["d" /* quat */].rotateZ(o, o, rad);
-    }
-    rotX(angle) {
-        var o = this.orient;
-        var rad = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["a" /* glMatrix */].toRadian(angle);
-        this.orient = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["d" /* quat */].rotateX(o, o, rad);
-    }
-    rotY(angle) {
-        var o = this.orient;
-        var rad = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["a" /* glMatrix */].toRadian(angle);
-        this.orient = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["d" /* quat */].rotateY(o, o, rad);
-    }
-    transTurtle(translate) {
-        var p = this.pos;
-        this.pos = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["f" /* vec3 */].add(p, p, translate);
-    }
-    scaleTurtle(scale) {
-        this.scale *= scale;
-    }
-    transMat() {
-        var p = this.pos;
-        var s = this.scale;
-        var o = this.orient;
-        var translateMat = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["c" /* mat4 */].fromRotationTranslationScale(__WEBPACK_IMPORTED_MODULE_0_gl_matrix__["c" /* mat4 */].create(), o, p, __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["f" /* vec3 */].fromValues(s, s, s));
-        return translateMat;
-    }
-    invTransTransMat() {
-        var p = this.pos;
-        var s = this.scale;
-        var o = this.orient;
-        var translateMat = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["c" /* mat4 */].fromRotationTranslationScale(__WEBPACK_IMPORTED_MODULE_0_gl_matrix__["c" /* mat4 */].create(), o, p, __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["f" /* vec3 */].fromValues(s, s, s));
-        translateMat = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["c" /* mat4 */].invert(translateMat, translateMat);
-        translateMat = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["c" /* mat4 */].transpose(translateMat, translateMat);
-        return translateMat;
-    }
-}
-/* harmony default export */ __webpack_exports__["a"] = (TurtleState);
-
-
-/***/ }),
-/* 86 */
+/* 78 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -21695,11 +16846,11 @@ class ScreenQuad extends __WEBPACK_IMPORTED_MODULE_0__rendering_gl_Drawable__["a
 
 
 /***/ }),
-/* 87 */
+/* 79 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_gl_matrix__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_gl_matrix__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__rendering_gl_Drawable__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__globals__ = __webpack_require__(0);
 
@@ -21708,7 +16859,7 @@ class ScreenQuad extends __WEBPACK_IMPORTED_MODULE_0__rendering_gl_Drawable__["a
 class Plane extends __WEBPACK_IMPORTED_MODULE_1__rendering_gl_Drawable__["a" /* default */] {
     constructor(center, scale, subdivs) {
         super(); // Call the constructor of the super class. This is required.
-        this.center = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["f" /* vec3 */].fromValues(center[0], center[1], center[2]);
+        this.center = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["d" /* vec3 */].fromValues(center[0], center[1], center[2]);
         this.scale = scale;
         this.subdivs = subdivs + subdivs % 2; // Ensures the number is even, rounds up.
     }
@@ -21762,7 +16913,7 @@ class Plane extends __WEBPACK_IMPORTED_MODULE_1__rendering_gl_Drawable__["a" /* 
 
 
 /***/ }),
-/* 88 */
+/* 80 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -21816,7 +16967,7 @@ class City {
 
 
 /***/ }),
-/* 89 */
+/* 81 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -21926,7 +17077,7 @@ class Cube extends __WEBPACK_IMPORTED_MODULE_0__rendering_gl_Drawable__["a" /* d
 
 
 /***/ }),
-/* 90 */
+/* 82 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -21996,28 +17147,76 @@ class Town {
 
 
 /***/ }),
-/* 91 */
+/* 83 */
 /***/ (function(module, exports) {
 
-module.exports = "#version 300 es\r\n\r\nuniform mat4 u_Model;\r\nuniform mat4 u_ModelInvTr;\r\nuniform mat4 u_ViewProj;\r\nin vec4 vs_Pos;\r\nin vec4 vs_Nor;\r\nin vec4 vs_Col;\r\nout vec4 fs_Nor;\r\nout vec4 fs_LightVec;\r\nout vec4 fs_Col;\r\n\r\nout vec4 fs_Pos;\r\nuniform float u_Time;\r\n\r\nconst vec4 lightPos = vec4(5, 5, 3, 1);\r\n\r\n\r\nvoid main()\r\n{\r\n    fs_Col = vs_Col;\r\n\r\n    mat3 invTranspose = mat3(u_ModelInvTr);\r\n    fs_Nor = vec4(invTranspose * vec3(vs_Nor), 0);\r\n    vec4 modelposition = u_Model * vs_Pos;\r\n    fs_LightVec = lightPos - modelposition;\r\n\r\n    gl_Position = u_ViewProj * modelposition;\r\n}\r\n"
+module.exports = "#version 300 es\r\n\r\nuniform mat4 u_Model;\r\nuniform mat4 u_ModelInvTr;\r\nuniform mat4 u_ViewProj;\r\nin vec4 vs_Pos;\r\nin vec4 vs_Nor;\r\nin vec4 vs_Col;\r\nout vec4 fs_Nor;\r\nout vec4 fs_LightVec;\r\nout vec4 fs_Col;\r\n\r\nout vec4 fs_Pos;\r\nuniform float u_Time;\r\n\r\nconst vec4 lightPos = vec4(5, 5, 3, 1);\r\n\r\n\r\nvoid main()\r\n{\r\n    fs_Col = vs_Col;\r\n\r\n    mat3 invTranspose = mat3(u_ModelInvTr);\r\n    fs_Nor = vec4(invTranspose * vec3(vs_Nor), 0);\r\n    vec4 modelposition = u_Model * vs_Pos;\r\n\r\n    modelposition.y += 0.05 * sin(u_Time / 1000.0 * 10.46);\r\n    modelposition.x += 0.5 * sin(u_Time / 1000.0 * 5.23);\r\n    fs_LightVec = lightPos - modelposition;\r\n\r\n    gl_Position = u_ViewProj * modelposition;\r\n}\r\n"
 
 /***/ }),
-/* 92 */
+/* 84 */
 /***/ (function(module, exports) {
 
-module.exports = "#version 300 es\r\n\r\nprecision highp float;\r\n\r\nuniform vec4 u_Color;\r\n\r\n\r\nin vec4 fs_Nor;\r\nin vec4 fs_LightVec;\r\nin vec4 fs_Col;\r\n\r\nuniform float u_Time;\r\n\r\n\r\nout vec4 out_Col;\r\n\r\nvoid main()\r\n{\r\n\r\n        vec4 diffuseColor = vec4(0.0, 1.0, 1.0, 1.0);\r\n\r\n\r\n        float diffuseTerm = dot(normalize(fs_Nor), normalize(fs_LightVec));\r\n\r\n        diffuseTerm = clamp(diffuseTerm, 0.0, 1.0);\r\n\r\n        float ambientTerm = 0.3;\r\n        float lightIntensity = diffuseTerm + ambientTerm;\r\n\r\n\r\n        out_Col = vec4(diffuseColor.rgb * lightIntensity, diffuseColor.a);\r\n}\r\n"
+module.exports = "#version 300 es\r\n\r\nprecision highp float;\r\n\r\nuniform vec4 u_Color;\r\n\r\n\r\nin vec4 fs_Nor;\r\nin vec4 fs_LightVec;\r\nin vec4 fs_Col;\r\n\r\nuniform float u_Time;\r\n\r\n\r\nout vec4 out_Col;\r\n\r\nvoid main()\r\n{\r\n\r\n        vec4 diffuseColor = vec4(0.0, 0.0, 1.0, 1.0);\r\n\r\n\r\n        float diffuseTerm = dot(normalize(fs_Nor), normalize(fs_LightVec));\r\n\r\n        diffuseTerm = clamp(diffuseTerm, 0.0, 1.0);\r\n\r\n        float ambientTerm = 0.3;\r\n        float lightIntensity = diffuseTerm + ambientTerm;\r\n\r\n\r\n        out_Col = vec4(diffuseColor.rgb * lightIntensity, diffuseColor.a);\r\n        out_Col = diffuseColor + fs_Nor * 1.2;\r\n        if (out_Col.g > 0.3 && out_Col.b < 0.85){\r\n          out_Col = vec4(1.0, 0.0, 1.0, 1.0);\r\n        }\r\n\r\n        if (mod(u_Time, 10.0) == 0.0){\r\n          out_Col = vec4(1.0, 0.0, 1.0, 1.0);\r\n        }\r\n        if (mod(u_Time, 15.0) == 0.0){\r\n          out_Col = vec4(0.0, 1.0, 1.0, 1.0);\r\n        }\r\n}\r\n"
 
 /***/ }),
-/* 93 */
+/* 85 */
 /***/ (function(module, exports) {
 
 module.exports = "#version 300 es\r\n\r\nuniform mat4 u_ViewProj;\r\nuniform float u_Time;\r\n\r\nuniform mat3 u_CameraAxes; // Used for rendering particles as billboards (quads that are always looking at the camera)\r\n// gl_Position = center + vs_Pos.x * camRight + vs_Pos.y * camUp;\r\n\r\nin vec4 vs_Pos; // Non-instanced; each particle is the same quad drawn in a different place\r\nin vec4 vs_Nor; // Non-instanced, and presently unused\r\nin vec4 vs_Col; // An instanced rendering attribute; each particle instance has a different color\r\nin vec3 vs_Translate; // Another instance rendering attribute used to position each quad instance in the scene\r\nin vec2 vs_UV; // Non-instanced, and presently unused in main(). Feel free to use it for your meshes.\r\n\r\nout vec4 fs_Col;\r\nout vec4 fs_Pos;\r\n\r\nvoid main()\r\n{\r\n    fs_Col = vs_Col;\r\n    fs_Pos = vs_Pos;\r\n\r\n    vec3 offset = vs_Translate;\r\n    offset.z = (sin((u_Time + offset.x) * 3.14159 * 0.1) + cos((u_Time + offset.y) * 3.14159 * 0.1)) * 1.5;\r\n\r\n    vec3 billboardPos = offset + vs_Pos.x * u_CameraAxes[0] + vs_Pos.y * u_CameraAxes[1];\r\n\r\n    gl_Position = u_ViewProj * vec4(billboardPos, 1.0);\r\n}\r\n"
 
 /***/ }),
-/* 94 */
+/* 86 */
 /***/ (function(module, exports) {
 
 module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\nin vec4 fs_Col;\r\nin vec4 fs_Pos;\r\n\r\nout vec4 out_Col;\r\n\r\nvoid main()\r\n{\r\n    float dist = 1.0 - (length(fs_Pos.xyz) * 2.0);\r\n    out_Col = vec4(dist) * fs_Col;\r\n}\r\n"
+
+/***/ }),
+/* 87 */
+/***/ (function(module, exports) {
+
+module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\n// The vertex shader used to render the background of the scene\r\n\r\nin vec4 vs_Pos;\r\nout vec2 fs_Pos;\r\n\r\nvoid main() {\r\n  fs_Pos = vs_Pos.xy;\r\n  gl_Position = vs_Pos;\r\n}\r\n"
+
+/***/ }),
+/* 88 */
+/***/ (function(module, exports) {
+
+module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\n\r\nuniform vec2 u_Dimensions;\r\nuniform float u_Time;\r\n\r\nin vec2 fs_Pos;\r\nout vec4 out_Col;\r\n\r\nfloat noise(vec2 p) {\r\n\treturn fract(sin(dot(p.xy ,vec2(12.9898,78.233))) * 456367.5453);\r\n}\r\n\r\n//SOURCE INSPIRATION http://glslsandbox.com/e#22429.6\r\n\r\n\r\nvoid main() {\r\n  //out_Col = vec4(0.2, 0.9, fs_Pos.y * 4.0, 0.5);\r\n  vec2 uv = (fs_Pos);\r\n  float intensity = 0.8;\r\n\r\n    //Create the stacked layers\r\n\r\n    //so what this is doing is creating offset layers\r\n    //and the height of each section follows a cosin curve\r\n    //ok sweet\r\n\tfor (float inc = 1.0; inc < 25.0; inc++) {\r\n\r\n\t\tfloat fi = inc;\r\n\r\n\t\tfloat s = floor(5.0*(uv.x)/fi + 50.0*fi + u_Time / 1000.0);\r\n\r\n        float yLimit = noise(vec2(s));\r\n        yLimit *= fi/95.0;\r\n        yLimit -= 0.04*fi;\r\n        yLimit += 0.125 * cos(uv.x*5.0 + u_Time / 1000.0 + fi/9.0);\r\n       \tyLimit += 0.8;\r\n\r\n\t\tif (uv.y < yLimit) {\r\n\t\t\tintensity = inc/10.0;\r\n\t\t}\r\n\t}\r\n\r\n  float col1 = mix(intensity * uv.x * 0.8 + 0.5, 0.0, 01.1);\r\n\r\n\t//Set the final color\r\n\tout_Col = vec4(vec3(col1, intensity*uv.y * 0.9 + 0.5, 0.3), 1.0 );\r\n\r\n\r\n\r\n\r\n\r\n}\r\n"
+
+/***/ }),
+/* 89 */
+/***/ (function(module, exports) {
+
+module.exports = "#version 300 es\r\n\r\nuniform mat4 u_Model;\r\n\r\nuniform mat4 u_ModelInvTr;\r\nuniform mat4 u_ViewProj;\r\nin vec4 vs_Pos;\r\nin vec4 vs_Nor;\r\nin vec4 vs_Col;\r\nout vec4 fs_Nor;\r\nout vec4 fs_LightVec;\r\nout vec4 fs_Col;\r\nout vec4 fs_Pos;\r\nuniform float u_Time;\r\nconst vec4 lightPos = vec4(5, 5, 3, 1);\r\n\r\n  float Noise(float x, float y){\r\n    return (fract(sin(dot(vec2(x, y), vec2(12.9898, 4.1414))) * 43758.5453));\r\n  }\r\n\r\n  float interpNoise2D(float x, float y){\r\n\r\n    float intX = floor(x);\r\n    float fractX = fract(x);\r\n    float intY = floor(y);\r\n    float fractY = fract(y);\r\n\r\n    float v1 = Noise(intX, intY);\r\n    float v2 = Noise(intX + 1.0, intY);\r\n    float v3 = Noise(intX, intY + 1.0);\r\n    float v4 = Noise(intX + 1.0, intY + 1.0);\r\n\r\n    float i1 = mix(v1, v2, fractX);\r\n    float i2 = mix(v3, v4, fractX);\r\n\r\n    return mix(i1, i2, fractY);\r\n\r\n\r\n  }\r\nfloat fbm(float x, float y){\r\n\r\n      float total = 0.f;\r\n      float peristence = 0.5f;\r\n      float octaves = 8.f;\r\n\r\n      for(float i = 0.f; i < octaves; i++){\r\n          float freq = pow(2.f, i);\r\n          float amp = pow(peristence, i);\r\n          total += interpNoise2D((x * freq), (y * freq)) * amp;\r\n      }\r\n\r\n      return total;\r\n\r\n  }\r\n\r\nvoid main()\r\n{\r\n    fs_Col = vs_Col;\r\n    mat3 invTranspose = mat3(u_ModelInvTr);\r\n    fs_Nor = vec4(invTranspose * vec3(vs_Nor), 0);\r\n\r\n    vec4 modelposition = u_Model * vs_Pos;\r\n  //  modelposition.y += fbm(vs_Pos.x / 32.0, vs_Pos.z / 32.0) * abs(sin(u_Time / 1000.0));\r\n\r\n  if (modelposition.y < -0.1){\r\n    modelposition.y = -0.15;\r\n    fs_Pos.y = -0.15;\r\n  }\r\n\r\n    fs_Pos.x = modelposition.x;\r\n    fs_Pos.z = modelposition.z;\r\n\r\n    fs_LightVec = lightPos - modelposition;\r\n\r\n    gl_Position = u_ViewProj * modelposition;\r\n}\r\n"
+
+/***/ }),
+/* 90 */
+/***/ (function(module, exports) {
+
+module.exports = "#version 300 es\r\n\r\n\r\nprecision highp float;\r\n\r\nuniform vec4 u_Color;\r\n\r\n\r\nin vec4 fs_Nor;\r\nin vec4 fs_LightVec;\r\nin vec4 fs_Col;\r\n\r\nuniform float u_Time;\r\n\r\nin vec4 fs_Pos;\r\n\r\n\r\nout vec4 out_Col;\r\n\r\n\r\nfloat checker(vec2 uv, float repeats)\r\n{\r\n  float cx = floor(repeats * uv.x);\r\n  float cy = floor(repeats * uv.y);\r\n  float result = mod(cx + cy, 2.0);\r\n  return sign(result);\r\n}\r\n\r\nvoid main()\r\n{\r\n\r\n\r\n        vec4 lightPos = vec4(8.0 * sin(u_Time / 1000.0), fs_LightVec.y, 14.0, 1.0);\r\n\r\n        vec4 lightPos2 = vec4(fs_LightVec.x, sin(u_Time/ 10000.0), 14.0, 1.0);\r\n\r\n        vec4 diffuseColor = vec4(0.2, 0.45, 0.35, 1.0);\r\n        vec4 diffuseColor2 = vec4(0.2, 0.75, 0.15, 1.0);\r\n\r\n\r\n        diffuseColor = (diffuseColor + diffuseColor2) / 2.0;\r\n\r\n\r\n        if (fs_Pos.y < 0.0){\r\n          diffuseColor = vec4(0.2, 0.25, 0.5, 1.0);\r\n        }\r\n        float diffuseTerm = dot(normalize(fs_Nor), normalize(lightPos));\r\n        float diffuseTerm2 = dot(normalize(fs_Nor), normalize(lightPos2));\r\n        diffuseTerm = (diffuseTerm + diffuseTerm2) / 2.0;\r\n        diffuseTerm = clamp(diffuseTerm, 0.0, 1.0);\r\n\r\n        float ambientTerm = 0.3;\r\n\r\n        float lightIntensity = diffuseTerm + ambientTerm;\r\n        out_Col = vec4(diffuseColor.rgb * lightIntensity, diffuseColor.a);\r\n\r\n        vec2 uv = vec2(fs_Pos.x, fs_Pos.z);\r\n        float c = mix(1.0, 0.0, checker(uv, 1.0));\r\n        //out_Col = vec4(c, 0.9, 0.7, 1.0);\r\n\r\n\r\n        // if (fs_Pos.x > 0.0 && fs_Pos.x < 1.0 && fs_Pos.z > 0.0 && fs_Pos.z < 25.0){\r\n        //   out_Col = out_Col = vec4(1.0, 0.0, 0.37, 1.0);\r\n        // }\r\n\r\n          out_Col = vec4(diffuseColor.rgb * lightIntensity, diffuseColor.a);\r\n\r\n\r\n\r\n\r\n\r\n\r\n}\r\n"
+
+/***/ }),
+/* 91 */
+/***/ (function(module, exports) {
+
+module.exports = "#version 300 es\r\n\r\n\r\n\r\nuniform mat4 u_Model;\r\n\r\nuniform mat4 u_ModelInvTr;\r\n\r\nuniform mat4 u_ViewProj;\r\n\r\nin vec4 vs_Pos;\r\n\r\nin vec4 vs_Nor;\r\n\r\nin vec4 vs_Col;\r\n\r\nout vec4 fs_Nor;\r\nout vec4 fs_LightVec;\r\nout vec4 fs_Col;\r\n\r\nout vec4 fs_Pos;\r\nuniform float u_Time;\r\n\r\n\r\nconst vec4 lightPos = vec4(5, 5, 3, 1);\r\n\r\n\r\nvoid main()\r\n{\r\n    fs_Col = vs_Col;\r\n\r\n    mat3 invTranspose = mat3(u_ModelInvTr);\r\n    fs_Nor = vec4(invTranspose * vec3(vs_Nor), 0);\r\n\r\n\r\n    vec4 modelposition = u_Model * vs_Pos;\r\n\r\n  //modelposition.y += sin((u_Time + vs_Pos.x) / 500.0);\r\n\r\n    fs_LightVec = lightPos - modelposition;\r\n\r\n    gl_Position = u_ViewProj * modelposition;\r\n\r\n    fs_Pos = modelposition;\r\n}\r\n"
+
+/***/ }),
+/* 92 */
+/***/ (function(module, exports) {
+
+module.exports = "#version 300 es\r\n\r\n\r\nprecision highp float;\r\n\r\nuniform vec4 u_Color;\r\n\r\n\r\nin vec4 fs_Nor;\r\nin vec4 fs_LightVec;\r\nin vec4 fs_Col;\r\n\r\nuniform float u_Time;\r\nuniform vec2 u_Dimensions;\r\n\r\nin vec4 fs_Pos;\r\n\r\n\r\nout vec4 out_Col;\r\n\r\n\r\nfloat checker(vec2 uv, float repeats)\r\n{\r\n  float cx = floor(repeats * uv.x);\r\n  float cy = floor(repeats * uv.y);\r\n  float result = mod(cx + cy, 2.0);\r\n  return sign(result);\r\n}\r\n\r\n\r\n\r\nvec4 rainbow(){\r\n  float l = 120.0;\r\n\r\n  float aa = gl_FragCoord.x;\r\n  float bb = gl_FragCoord.y;\r\n  vec2 fragCoord = vec2(aa, bb);\r\n\r\n  float aspect = u_Dimensions.x / u_Dimensions.y;\r\n\r\n  float a = gl_FragCoord.x;\r\n  float b = gl_FragCoord.y;\r\n\r\n  float sx = (2.f * a/u_Dimensions.x) - 1.f;\r\n  float sy = 1.f - (2.f * b/u_Dimensions.y);\r\n\r\n\r\n///source - PSYCHADELIX on shadertoy\r\nvec2 uv = fragCoord.xy / u_Dimensions.xy;\r\n\tvec2 pos = (uv.xy-0.5);\r\n\tvec2 cir = ((pos.xy*pos.xy+sin(uv.x*18.0+u_Time / 10000.0)/25.0*sin(uv.y*7.0+u_Time / 10000.0 *1.5)/1.0)+uv.x*sin(u_Time / 10000.0)/16.0+uv.y*sin(u_Time / 10000.0 *1.2)/16.0);\r\n\tfloat circles = (sqrt(abs(cir.x+cir.y*0.5)*25.0)*5.0);\r\n\tvec4 fragColor = vec4(sin(circles*1.25+2.0),abs(sin(circles*1.0-1.0)-sin(circles)),abs(sin(circles)*1.0),1.0);\r\n  return fragColor;\r\n\r\n}\r\n\r\nvoid main()\r\n{\r\n  vec4 diffuseColor = vec4(0.6, 0.3, 0.2, 1.0);\r\n  float diffuseTerm = dot(normalize(fs_Nor), normalize(fs_LightVec));\r\n  diffuseTerm = clamp(diffuseTerm, 0.0, 1.0);\r\n\r\n  float ambientTerm = 0.3;\r\n\r\n  float lightIntensity = diffuseTerm + ambientTerm;\r\n  out_Col = vec4(diffuseColor.rgb * lightIntensity, diffuseColor.a);\r\n\r\n\r\n        if(fs_Pos.y < 0.0){\r\n          out_Col = vec4(0.0, 0.2, 1.0, 1.0);\r\n        }\r\n\r\n\r\n        if (fs_Pos.x < 0.0){\r\n          out_Col = vec4(0.0, 0.4, 1.0, 1.0);\r\n        }\r\n\r\n        if (fs_Pos.x > 0.9){\r\n          out_Col = vec4(0.0, 0.9, 1.0, 1.0);\r\n        }\r\n\r\n\r\n        vec2 uv = vec2(fs_Pos.x, fs_Pos.y);\r\n        float c = mix(1.0, 0.0, checker(uv, 1.0));\r\n        out_Col = vec4(c, c, c, 1.0);\r\n\r\n        if (c == 1.0){\r\n          vec4 rain = rainbow();\r\n          out_Col = vec4(rain.rgb * lightIntensity, diffuseColor.a);\r\n        }\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n}\r\n"
+
+/***/ }),
+/* 93 */
+/***/ (function(module, exports) {
+
+module.exports = "#version 300 es\r\n\r\n\r\n\r\nuniform mat4 u_Model;\r\n\r\nuniform mat4 u_ModelInvTr;\r\n\r\nuniform mat4 u_ViewProj;\r\n\r\nin vec4 vs_Pos;\r\n\r\nin vec4 vs_Nor;\r\n\r\nin vec4 vs_Col;\r\n\r\nout vec4 fs_Nor;\r\nout vec4 fs_LightVec;\r\nout vec4 fs_Col;\r\n\r\nout vec4 fs_Pos;\r\nuniform float u_Time;\r\n\r\n\r\nconst vec4 lightPos = vec4(5, 5, 3, 1);\r\n\r\n\r\nvoid main()\r\n{\r\n    fs_Col = vs_Col;\r\n\r\n    mat3 invTranspose = mat3(u_ModelInvTr);\r\n    fs_Nor = vec4(invTranspose * vec3(vs_Nor), 0);\r\n\r\n\r\n    vec4 modelposition = u_Model * vs_Pos;\r\n\r\n  //modelposition.y += sin((u_Time + vs_Pos.x) / 500.0);\r\n\r\n    fs_LightVec = lightPos - modelposition;\r\n\r\n    gl_Position = u_ViewProj * modelposition;\r\n\r\n    fs_Pos = modelposition;\r\n}\r\n"
+
+/***/ }),
+/* 94 */
+/***/ (function(module, exports) {
+
+module.exports = "#version 300 es\r\n\r\n\r\nprecision highp float;\r\n\r\nuniform vec4 u_Color;\r\n\r\n\r\nin vec4 fs_Nor;\r\nin vec4 fs_LightVec;\r\nin vec4 fs_Col;\r\n\r\nuniform float u_Time;\r\nuniform vec2 u_Dimensions;\r\n\r\nin vec4 fs_Pos;\r\n\r\n\r\nout vec4 out_Col;\r\n\r\n\r\nfloat checker(vec2 uv, float repeats)\r\n{\r\n  float cx = floor(repeats * uv.x);\r\n  float cy = floor(repeats * uv.y);\r\n  float result = mod(cx + cy, 2.0);\r\n  return sign(result);\r\n}\r\n\r\n\r\n\r\nvec4 rainbow(){\r\n  float l = 120.0;\r\n\r\n  float aa = gl_FragCoord.x;\r\n  float bb = gl_FragCoord.y;\r\n  vec2 fragCoord = vec2(aa, bb);\r\n\r\n  float aspect = u_Dimensions.x / u_Dimensions.y;\r\n\r\n  float a = gl_FragCoord.x;\r\n  float b = gl_FragCoord.y;\r\n\r\n  float sx = (2.f * a/u_Dimensions.x) - 1.f;\r\n  float sy = 1.f - (2.f * b/u_Dimensions.y);\r\n\r\n\r\n  vec2 uv = fragCoord.xy / u_Dimensions.xy;\r\n    uv = (uv.xy-0.5);\r\n\r\n\r\n  float z = u_Time / 10000.0;\r\n\r\n\r\n\r\n    // multiple and twist uv\r\n    uv *= sin(length(uv) * 2.0) * 7.0;\r\n\r\n    // calculate morphing central blobs\r\n    float val1 = length(uv);\r\n    val1 = 1.0 - fract(length(uv + sin(u_Time / 10000.0 + uv.x) * cos(u_Time / 10000.0 + uv.y) ));\r\n\r\n    // calculate rotating radial wave pattern\r\n    float val2 = length(uv * 0.1) *\r\n        cos( pow(sin(u_Time / 10000.0 + atan(uv.y, uv.x) * 10.0) + uv.x * length(uv * 0.1), 2.0 ));\r\n\r\n\t// combine values\r\n    float val = mix(val1, val2, sin(atan(uv.y, uv.x) * 10.0) );\r\n\r\n    // colors\r\n    float r = pow(val, 5.0) * 3.0;\r\n    float g = val + 0.18;\r\n    float bl = val;\r\n    return vec4(r, g, bl, 1);\r\n\r\n}\r\n\r\nvoid main()\r\n{\r\n        vec4 diffuseColor = vec4(0.0, 0.1, 0.2, 1.0);\r\n        float diffuseTerm = dot(normalize(fs_Nor), normalize(fs_LightVec));\r\n        diffuseTerm = clamp(diffuseTerm, 0.0, 1.0);\r\n\r\n        float ambientTerm = 0.3;\r\n\r\n        float lightIntensity = diffuseTerm + ambientTerm;\r\n        out_Col = vec4(diffuseColor.rgb * lightIntensity, diffuseColor.a);\r\n\r\n        if(fs_Pos.y < 0.0){\r\n          out_Col = vec4(0.0, 0.2, 1.0, 1.0);\r\n        }\r\n\r\n\r\n        if (fs_Pos.x < 0.0){\r\n          out_Col = vec4(0.0, 0.4, 1.0, 1.0);\r\n        }\r\n\r\n        if (fs_Pos.x > 0.9){\r\n          out_Col = vec4(0.0, 0.9, 1.0, 1.0);\r\n        }\r\n\r\n\r\n        vec2 uv = vec2(fs_Pos.x, fs_Pos.z);\r\n        float c = mix(1.0, 0.0, checker(uv, 1.0));\r\n        out_Col = vec4(c, c, c, 1.0);\r\n        out_Col = vec4(diffuseColor.rgb * lightIntensity, diffuseColor.a);\r\n\r\n        if (c == 1.0){\r\n          vec4 rain = rainbow();\r\n          out_Col = vec4(rain.rgb * lightIntensity, diffuseColor.a);\r\n        }\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n}\r\n"
 
 /***/ }),
 /* 95 */
@@ -22029,55 +17228,55 @@ module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\n// The vertex
 /* 96 */
 /***/ (function(module, exports) {
 
-module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\n\r\nuniform vec2 u_Dimensions;\r\nuniform float u_Time;\r\n\r\nin vec2 fs_Pos;\r\nout vec4 out_Col;\r\n\r\nfloat noise(vec2 p) {\r\n\treturn fract(sin(dot(p.xy ,vec2(12.9898,78.233))) * 456367.5453);\r\n}\r\n\r\n//SOURCE INSPIRATION http://glslsandbox.com/e#22429.6\r\n\r\n\r\nvoid main() {\r\n  //out_Col = vec4(0.2, 0.9, fs_Pos.y * 4.0, 0.5);\r\n  vec2 uv = (fs_Pos);\r\n  float intensity = 0.8;\r\n\r\n    //Create the stacked layers\r\n\r\n    //so what this is doing is creating offset layers\r\n    //and the height of each section follows a cosin curve\r\n    //ok sweet\r\n\tfor (float inc = 1.0; inc < 25.0; inc++) {\r\n\r\n\t\tfloat fi = inc;\r\n\r\n\t\tfloat s = floor(5.0*(uv.x)/fi + 50.0*fi + u_Time / 1000.0);\r\n\r\n        float yLimit = noise(vec2(s));\r\n        yLimit *= fi/95.0;\r\n        yLimit -= 0.04*fi;\r\n        yLimit += 0.125 * cos(uv.x*5.0 + u_Time / 1000.0 + fi/9.0);\r\n       \tyLimit += 0.8;\r\n\r\n\t\tif (uv.y < yLimit) {\r\n\t\t\tintensity = inc/10.0;\r\n\t\t}\r\n\t}\r\n\r\n  float col1 = mix(intensity * uv.x * 0.8 + 0.5, 0.0, 01.1);\r\n\r\n\t//Set the final color\r\n\tout_Col = vec4(vec3(col1, intensity*uv.y * 0.9 + 0.5, 0.3), 1.0 );\r\n\r\n\r\n\r\n\r\n\r\n}\r\n"
+module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\n\r\nuniform vec2 u_Dimensions;\r\nuniform float u_Time;\r\n\r\nin vec2 fs_Pos;\r\nout vec4 out_Col;\r\n\r\n//SOURCE INSPIRATION http://glslsandbox.com/e#22429.6\r\n\r\nfloat segment(vec2 uv)\r\n{\r\n    uv = abs(uv);\r\n\treturn (1.0-smoothstep(0.07,0.10,uv.x))\r\n         * (1.0-smoothstep(0.46,0.49,uv.y+uv.x))\r\n         * (1.25 - length(uv*vec2(3.8,1.3)));\r\n}\r\n\r\nfloat sevenSegment(vec2 uv,int num)\r\n{\r\n\tfloat seg= 0.0;\r\n\r\n    if (num>=2 && num!=7 || num==-2)\r\n        seg = max(seg,segment(uv.yx));\r\n\r\n    if (num==0 ||\r\n            (uv.y<0.?((num==2)==(uv.x<0.) || num==6 || num==8):\r\n            (uv.x>0.?(num!=5 && num!=6):(num>=4 && num!=7) )))\r\n        seg = max(seg,segment(abs(uv)-0.5));\r\n\r\n    if (num>=0 && num!=1 && num!=4 && (num!=7 || uv.y>0.))\r\n        seg = max(seg,segment(vec2(abs(uv.y)-1.0,uv.x)));\r\n\r\n\treturn seg;\r\n}\r\n\r\nfloat showNum(vec2 uv,float nr, bool zeroTrim)\r\n{\r\n    if (uv.x>-3.0 && uv.x<0.0)\r\n    {\r\n        float digit = floor(-uv.x / 1.5);\r\n\t\tnr /= pow(10.,digit);\r\n        nr = mod(floor(nr+0.000001),10.0);\r\n        if (nr==0.0 && zeroTrim && digit!=0.0)\r\n            return 0.;\r\n\t\treturn sevenSegment(uv+vec2( 0.75 + digit*1.5,0.0),int(nr));\r\n    }\r\n\treturn 0.;\r\n}\r\n\r\nfloat dots(vec2 uv)\r\n{\r\n\tuv.y = abs(uv.y)-0.5;\r\n\tfloat l = length(uv);\r\n\treturn (1.0-smoothstep(0.11,0.13,l)) * (1.0-l*2.0);\r\n}\r\n\r\n\r\nvoid main() {\r\n\r\n\r\n\tvec2 uv = (gl_FragCoord.xy-0.5*u_Dimensions.xy) / u_Dimensions.x;\r\n\r\n\t    uv *= 11.0;\r\n\t    uv.x -= 5.+uv.y*.07;\r\n\r\n\t    if (uv.x<-7.0 || uv.x>-3.0 || abs(uv.y)>1.2) {\r\n\t        out_Col = vec4(0.0, 0.0, 0.0, 1.0);\r\n\t    \treturn;\r\n\t    }\r\n\r\n\t    float p = floor(abs(uv.x/3.5));\r\n\t    uv.x = mod(uv.x,3.5)-3.5;\r\n\r\n\t\tfloat seg = 0.0;\r\n\t    if (uv.x>-3.)\r\n\t\t\tif (u_Time < 600.0){\r\n\t\t\t\tseg = showNum(uv,mod(4.0, 5.0),p==2.0);\r\n\t\t\t} else if (u_Time < 1200.0){\r\n\t\t\t\tseg = showNum(uv,mod(3.0, 5.0),p==2.0);\r\n\t\t\t} else if (u_Time < 1800.0){\r\n\t\t\t\tseg = showNum(uv,mod(2.0, 5.0),p==2.0);\r\n\t\t\t} else if (u_Time < 2400.0){\r\n\t\t\t\tseg = showNum(uv,mod(1.0, 5.0),p==2.0);\r\n\t\t\t}\r\n\r\n\t    else\r\n\t    {\r\n\t        uv.x += 3.25;\r\n\t\t\tseg = dots(uv);\r\n\t    }\r\n\r\n\r\n\t\t\tout_Col = vec4(seg * sin(u_Time * 10.46 / 1000.0),seg * cos(u_Time * 10.46 / 1000.0),seg,1.);\r\n\r\n\r\n}\r\n"
 
 /***/ }),
 /* 97 */
 /***/ (function(module, exports) {
 
-module.exports = "#version 300 es\r\n\r\nuniform mat4 u_Model;\r\n\r\nuniform mat4 u_ModelInvTr;\r\nuniform mat4 u_ViewProj;\r\nin vec4 vs_Pos;\r\nin vec4 vs_Nor;\r\nin vec4 vs_Col;\r\nout vec4 fs_Nor;\r\nout vec4 fs_LightVec;\r\nout vec4 fs_Col;\r\nout vec4 fs_Pos;\r\nuniform float u_Time;\r\nconst vec4 lightPos = vec4(5, 5, 3, 1);\r\n\r\n  float Noise(float x, float y){\r\n    return (fract(sin(dot(vec2(x, y), vec2(12.9898, 4.1414))) * 43758.5453));\r\n  }\r\n\r\n  float interpNoise2D(float x, float y){\r\n\r\n    float intX = floor(x);\r\n    float fractX = fract(x);\r\n    float intY = floor(y);\r\n    float fractY = fract(y);\r\n\r\n    float v1 = Noise(intX, intY);\r\n    float v2 = Noise(intX + 1.0, intY);\r\n    float v3 = Noise(intX, intY + 1.0);\r\n    float v4 = Noise(intX + 1.0, intY + 1.0);\r\n\r\n    float i1 = mix(v1, v2, fractX);\r\n    float i2 = mix(v3, v4, fractX);\r\n\r\n    return mix(i1, i2, fractY);\r\n\r\n\r\n  }\r\nfloat fbm(float x, float y){\r\n\r\n      float total = 0.f;\r\n      float peristence = 0.5f;\r\n      float octaves = 8.f;\r\n\r\n      for(float i = 0.f; i < octaves; i++){\r\n          float freq = pow(2.f, i);\r\n          float amp = pow(peristence, i);\r\n          total += interpNoise2D((x * freq), (y * freq)) * amp;\r\n      }\r\n\r\n      return total;\r\n\r\n  }\r\n\r\nvoid main()\r\n{\r\n    fs_Col = vs_Col;\r\n    mat3 invTranspose = mat3(u_ModelInvTr);\r\n    fs_Nor = vec4(invTranspose * vec3(vs_Nor), 0);\r\n\r\n    vec4 modelposition = u_Model * vs_Pos;\r\n  //  modelposition.y += fbm(vs_Pos.x / 32.0, vs_Pos.z / 32.0) * abs(sin(u_Time / 1000.0));\r\n\r\n  if (modelposition.y < -0.1){\r\n    modelposition.y = -0.15;\r\n    fs_Pos.y = -0.15;\r\n  }\r\n\r\n    fs_Pos.x = modelposition.x;\r\n    fs_Pos.z = modelposition.z;\r\n\r\n    fs_LightVec = lightPos - modelposition;\r\n\r\n    gl_Position = u_ViewProj * modelposition;\r\n}\r\n"
+module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\n// The vertex shader used to render the background of the scene\r\n\r\nin vec4 vs_Pos;\r\nout vec2 fs_Pos;\r\n\r\nvoid main() {\r\n  fs_Pos = vs_Pos.xy;\r\n  gl_Position = vs_Pos;\r\n}\r\n"
 
 /***/ }),
 /* 98 */
 /***/ (function(module, exports) {
 
-module.exports = "#version 300 es\r\n\r\n\r\nprecision highp float;\r\n\r\nuniform vec4 u_Color;\r\n\r\n\r\nin vec4 fs_Nor;\r\nin vec4 fs_LightVec;\r\nin vec4 fs_Col;\r\n\r\nuniform float u_Time;\r\n\r\nin vec4 fs_Pos;\r\n\r\n\r\nout vec4 out_Col;\r\n\r\n\r\nfloat checker(vec2 uv, float repeats)\r\n{\r\n  float cx = floor(repeats * uv.x);\r\n  float cy = floor(repeats * uv.y);\r\n  float result = mod(cx + cy, 2.0);\r\n  return sign(result);\r\n}\r\n\r\nvoid main()\r\n{\r\n\r\n\r\n        vec4 lightPos = vec4(8.0 * sin(u_Time / 1000.0), fs_LightVec.y, 14.0, 1.0);\r\n\r\n        vec4 lightPos2 = vec4(fs_LightVec.x, sin(u_Time/ 10000.0), 14.0, 1.0);\r\n\r\n        vec4 diffuseColor = vec4(0.2, 0.45, 0.35, 1.0);\r\n        vec4 diffuseColor2 = vec4(0.2, 0.75, 0.15, 1.0);\r\n\r\n\r\n        diffuseColor = (diffuseColor + diffuseColor2) / 2.0;\r\n\r\n\r\n        if (fs_Pos.y < 0.0){\r\n          diffuseColor = vec4(0.2, 0.25, 0.5, 1.0);\r\n        }\r\n        float diffuseTerm = dot(normalize(fs_Nor), normalize(lightPos));\r\n        float diffuseTerm2 = dot(normalize(fs_Nor), normalize(lightPos2));\r\n        diffuseTerm = (diffuseTerm + diffuseTerm2) / 2.0;\r\n        diffuseTerm = clamp(diffuseTerm, 0.0, 1.0);\r\n\r\n        float ambientTerm = 0.3;\r\n\r\n        float lightIntensity = diffuseTerm + ambientTerm;\r\n        out_Col = vec4(diffuseColor.rgb * lightIntensity, diffuseColor.a);\r\n\r\n        vec2 uv = vec2(fs_Pos.x, fs_Pos.z);\r\n        float c = mix(1.0, 0.0, checker(uv, 1.0));\r\n        //out_Col = vec4(c, 0.9, 0.7, 1.0);\r\n\r\n\r\n        // if (fs_Pos.x > 0.0 && fs_Pos.x < 1.0 && fs_Pos.z > 0.0 && fs_Pos.z < 25.0){\r\n        //   out_Col = out_Col = vec4(1.0, 0.0, 0.37, 1.0);\r\n        // }\r\n\r\n          out_Col = vec4(diffuseColor.rgb * lightIntensity, diffuseColor.a);\r\n\r\n\r\n\r\n\r\n\r\n\r\n}\r\n"
+module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\n\r\nuniform vec2 u_Dimensions;\r\nuniform float u_Time;\r\n\r\nin vec2 fs_Pos;\r\nout vec4 out_Col;\r\n\r\nfloat noise(vec2 p) {\r\n\treturn fract(sin(dot(p.xy ,vec2(12.9898,78.233))) * 456367.5453);\r\n}\r\n\r\n//SOURCE INSPIRATION http://glslsandbox.com/e#22429.6\r\n\r\n\r\nvoid main() {\r\n//  out_Col = vec4(0.2, 0.9, fs_Pos.y * 4.0, 0.5);\r\n  //vec2 uv = (fs_Pos);\r\n  //float intensity = 0.8;\r\n\r\n\t// //-----------stuffs\r\n\t//\r\n\t float t = u_Time;\r\n \t\tvec3 c;\r\n\t float l = 0.0;\r\n\t float  z = t / 10000.0;\r\n   vec2 r = u_Dimensions;\r\n\t for(float i=0.0 ; i<3.0; i++) {\r\n\t \t vec2 uv;\r\n\t \t vec2 p = gl_FragCoord.xy/r;\r\n\t \t uv=p;\r\n\t \t p-=0.5;\r\n\t \t p.x*= r.x / r.y;\r\n\t \t z+=0.07;\r\n\t \t l=length(p);\r\n \t\tuv+=p/l*(sin( z)+1.0)*abs(sin(l*9.0-z*2.0)) * sin(5.236* u_Time / 1000.0);\r\n\t \tif(i > -0.1 && i < 0.1){\r\n\t\t\tc.x = 0.01/length(abs(mod(uv,1.0)-0.5));\r\n\t\t}\r\n\t\tif(i > 0.9 && i < 1.1){\r\n\t\t\tc.y = 0.01/length(abs(mod(uv,1.0)-0.5));\r\n\t\t}\r\n\t\tif(i > 1.9 && i < 2.1){\r\n\t\t\tc.z = 0.01/length(abs(mod(uv,1.0)-0.5));\r\n\t\t}\r\n\r\n\t}\r\n\r\n    vec4 white = vec4(0.89, 0.196, 0.518, 1.0);\r\n\r\n    out_Col=vec4(c/l,t);\r\n    vec4 blue = vec4(0.169, 0.729, 0.937, 1.0);\r\n\r\n     if (c.x + c.y + c.z > 0.2){\r\n\r\n       blue = vec4(0.169, 0.729, 0.9378, 1.0);\r\n       out_Col = mix(blue, white, sin(5.236 * (u_Time / 1000.0) ));\r\n    }\r\n\t//\r\n     if (c.x + c.y + c.z > 0.3){\r\n\r\n        vec4 green = vec4(0.169, 0.729, 0.937, 1.0);\r\n        vec4 orange = vec4(0.698,0.227, 0.827, 1.0);\r\n       out_Col = mix(green, orange, cos( 5.236 * u_Time/ 1000.0 ));\r\n    }\r\n\r\n\t//-------\r\n\r\n//out_Col = vec4(1.0, 1.0, 0.0, 1.0);\r\n    //Create the stacked layers\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n}\r\n"
 
 /***/ }),
 /* 99 */
 /***/ (function(module, exports) {
 
-module.exports = "#version 300 es\r\n\r\n\r\n\r\nuniform mat4 u_Model;\r\n\r\nuniform mat4 u_ModelInvTr;\r\n\r\nuniform mat4 u_ViewProj;\r\n\r\nin vec4 vs_Pos;\r\n\r\nin vec4 vs_Nor;\r\n\r\nin vec4 vs_Col;\r\n\r\nout vec4 fs_Nor;\r\nout vec4 fs_LightVec;\r\nout vec4 fs_Col;\r\n\r\nout vec4 fs_Pos;\r\nuniform float u_Time;\r\n\r\n\r\nconst vec4 lightPos = vec4(5, 5, 3, 1);\r\n\r\n\r\nvoid main()\r\n{\r\n    fs_Col = vs_Col;\r\n\r\n    mat3 invTranspose = mat3(u_ModelInvTr);\r\n    fs_Nor = vec4(invTranspose * vec3(vs_Nor), 0);\r\n\r\n\r\n    vec4 modelposition = u_Model * vs_Pos;\r\n\r\n  //modelposition.y += sin((u_Time + vs_Pos.x) / 500.0);\r\n\r\n    fs_LightVec = lightPos - modelposition;\r\n\r\n    gl_Position = u_ViewProj * modelposition;\r\n\r\n    fs_Pos = modelposition;\r\n}\r\n"
+module.exports = "#version 300 es\r\n\r\n\r\nuniform mat4 u_Model;\r\nuniform mat4 u_ModelInvTr;\r\nuniform mat4 u_ViewProj;\r\nuniform vec2 u_PlanePos; // Our location in the virtual world displayed by the plane\r\n\r\nin vec4 vs_Pos;\r\nin vec4 vs_Nor;\r\nin vec4 vs_Col;\r\n\r\n\r\nout vec3 fs_Pos;\r\nout vec4 fs_Nor;\r\nout vec4 fs_Col;\r\n\r\nout float fs_Sine;\r\n\r\nfloat random1( vec2 p , vec2 seed) {\r\n  return fract(sin(dot(p + seed, vec2(127.1, 311.7))) * 43758.5453);\r\n}\r\n\r\nfloat random1( vec3 p , vec3 seed) {\r\n  return fract(sin(dot(p + seed, vec3(987.654, 123.456, 531.975))) * 85734.3545);\r\n}\r\n\r\nvec2 random2(vec2 p , vec2 seed) {\r\n  return fract(sin(vec2(dot(p + seed, vec2(311.7, 127.1)), dot(p + seed, vec2(269.5, 183.3)))) * 85734.3545);\r\n}\r\n\r\nfloat Noise(int x, int y){\r\n    return (fract(sin(dot(vec2(x, y), vec2(12.9898, 4.1414))) * 43758.5453));\r\n}\r\n\r\n\r\n//Noise interpolation 2D function\r\nfloat interpNoise2D(float x, float y){\r\n\r\n    int intX =  int(x);\r\n    float fractX = fract(x);\r\n    int intY = int(y);\r\n    float fractY = fract(y);\r\n\r\n    float v1 = Noise(intX, intY);\r\n    float v2 = Noise(intX + 1, intY);\r\n    float v3 = Noise(intX, intY + 1);\r\n    float v4 = Noise(intX + 1, intY + 1);\r\n\r\n    float i1 = mix(v1, v2, fractX);\r\n    float i2 = mix(v3, v4, fractX);\r\n\r\n    return mix(i1, i2, fractY);\r\n\r\n}\r\n\r\n//Steppe-like FBM pattern\r\nfloat steppeFbm(float x, float y){\r\n\r\n    float total = 0.f;\r\n    float peristence = 0.5f;\r\n    float octaves = 8.f;\r\n\r\n    for(float i = 0.f; i < octaves; i++){\r\n        float freq = pow(2.f, i);\r\n        float amp = pow(peristence, i);\r\n        total += interpNoise2D((x * freq) / 128.f, (y * freq) / 128.f) * amp;\r\n    }\r\n\r\n    return total;\r\n\r\n}\r\n\r\n// FBM function for 2D input\r\nfloat fbm(float x, float y){\r\n\r\n    float total = 0.f;\r\n    float peristence = 0.5f;\r\n    float octaves = 1.f;\r\n\r\n    for(float i = 0.f; i < octaves; i++){\r\n        float freq = pow(2.f, i);\r\n        float amp = pow(peristence, i);\r\n        total += interpNoise2D((x * freq), (y * freq)) * amp;\r\n    }\r\n\r\n    return total;\r\n\r\n}\r\n\r\n//interpolation functions\r\nfloat linear_interpolate(float a, float b, float t){\r\n  return a * (1.f - t) + b * t;\r\n}\r\n\r\nfloat cosine_interpolation(float a, float b, float t){\r\n  float cos_t = (1.f - cos(t * 3.14)) * 0.5f;\r\n  return linear_interpolate(a, b, cos_t);\r\n}\r\n\r\n\r\n//Function for DR SEUSS portion of environment\r\nvoid seuss(){\r\n\r\n\r\n  fs_Pos = vs_Pos.xyz;\r\n  float rand = random1(vec2(vs_Pos.x + u_PlanePos.x, vs_Pos.z + u_PlanePos.y) , vec2(1.f, 3.f));\r\n  fs_Sine = (sin((vs_Pos.x + u_PlanePos.x) * 3.14159 * 0.1) + cos((vs_Pos.z + u_PlanePos.y) * 3.14159 * 0.1));\r\n  fs_Sine += (cos((vs_Pos.x + u_PlanePos.x) * 3.14159 * 0.2) + cos((vs_Pos.z + u_PlanePos.y) * 3.14159 *  0.1));\r\n  fs_Sine += 5.0;\r\n\r\n vec4 modelposition = vec4(vs_Pos.x, fs_Sine * (cos(vs_Pos.x + u_PlanePos.x)+sin(.5f * (vs_Pos.z + u_PlanePos.y))*\r\n cos(vs_Pos.z + u_PlanePos.y)) + fbm(vs_Pos.x + u_PlanePos.x, vs_Pos.z + u_PlanePos.y), vs_Pos.z, 1.0);\r\n fs_Sine = fs_Sine * (cos(vs_Pos.x + u_PlanePos.x)+sin(.5f * (vs_Pos.z + u_PlanePos.y))*\r\n cos(vs_Pos.z + u_PlanePos.y));\r\n\r\n\r\n\r\n   fs_Sine = 5.f;\r\n\r\n\r\n  if (modelposition.y > 10.f){\r\n    modelposition.y = 10.f + rand / 5.f;\r\n  }\r\n  if (modelposition.y < -2.f){\r\n    modelposition.y = -2.f - rand;\r\n  }\r\n\r\n    modelposition.y /= 2.1f;\r\n    if (modelposition.y < .5f){\r\n      modelposition.y = 0.2f;\r\n    }\r\n\r\n\r\n\r\n\r\n\r\n  fs_Pos = modelposition.xyz;\r\n  modelposition = u_Model * modelposition;\r\n  gl_Position = u_ViewProj * modelposition;\r\n\r\n}\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nvoid main()\r\n{\r\n\r\n    ///-----OH, THE PLACES YOU'LL GO --- DR SEUSS---\r\n\r\n\r\n\r\n\r\n    seuss();\r\n    //------------ OH THE PLACES YOULL GO ------------------------\r\n\r\n\r\n\r\n}\r\n"
 
 /***/ }),
 /* 100 */
 /***/ (function(module, exports) {
 
-module.exports = "#version 300 es\r\n\r\n\r\nprecision highp float;\r\n\r\nuniform vec4 u_Color;\r\n\r\n\r\nin vec4 fs_Nor;\r\nin vec4 fs_LightVec;\r\nin vec4 fs_Col;\r\n\r\nuniform float u_Time;\r\nuniform vec2 u_Dimensions;\r\n\r\nin vec4 fs_Pos;\r\n\r\n\r\nout vec4 out_Col;\r\n\r\n\r\nfloat checker(vec2 uv, float repeats)\r\n{\r\n  float cx = floor(repeats * uv.x);\r\n  float cy = floor(repeats * uv.y);\r\n  float result = mod(cx + cy, 2.0);\r\n  return sign(result);\r\n}\r\n\r\n\r\n\r\nvec4 rainbow(){\r\n  float l = 120.0;\r\n\r\n  float aa = gl_FragCoord.x;\r\n  float bb = gl_FragCoord.y;\r\n  vec2 fragCoord = vec2(aa, bb);\r\n\r\n  float aspect = u_Dimensions.x / u_Dimensions.y;\r\n\r\n  float a = gl_FragCoord.x;\r\n  float b = gl_FragCoord.y;\r\n\r\n  float sx = (2.f * a/u_Dimensions.x) - 1.f;\r\n  float sy = 1.f - (2.f * b/u_Dimensions.y);\r\n\r\n\r\n///source - PSYCHADELIX on shadertoy\r\nvec2 uv = fragCoord.xy / u_Dimensions.xy;\r\n\tvec2 pos = (uv.xy-0.5);\r\n\tvec2 cir = ((pos.xy*pos.xy+sin(uv.x*18.0+u_Time / 10000.0)/25.0*sin(uv.y*7.0+u_Time / 10000.0 *1.5)/1.0)+uv.x*sin(u_Time / 10000.0)/16.0+uv.y*sin(u_Time / 10000.0 *1.2)/16.0);\r\n\tfloat circles = (sqrt(abs(cir.x+cir.y*0.5)*25.0)*5.0);\r\n\tvec4 fragColor = vec4(sin(circles*1.25+2.0),abs(sin(circles*1.0-1.0)-sin(circles)),abs(sin(circles)*1.0),1.0);\r\n  return fragColor;\r\n\r\n}\r\n\r\nvoid main()\r\n{\r\n  vec4 diffuseColor = vec4(0.6, 0.3, 0.2, 1.0);\r\n  float diffuseTerm = dot(normalize(fs_Nor), normalize(fs_LightVec));\r\n  diffuseTerm = clamp(diffuseTerm, 0.0, 1.0);\r\n\r\n  float ambientTerm = 0.3;\r\n\r\n  float lightIntensity = diffuseTerm + ambientTerm;\r\n  out_Col = vec4(diffuseColor.rgb * lightIntensity, diffuseColor.a);\r\n\r\n\r\n        if(fs_Pos.y < 0.0){\r\n          out_Col = vec4(0.0, 0.2, 1.0, 1.0);\r\n        }\r\n\r\n\r\n        if (fs_Pos.x < 0.0){\r\n          out_Col = vec4(0.0, 0.4, 1.0, 1.0);\r\n        }\r\n\r\n        if (fs_Pos.x > 0.9){\r\n          out_Col = vec4(0.0, 0.9, 1.0, 1.0);\r\n        }\r\n\r\n\r\n        vec2 uv = vec2(fs_Pos.x, fs_Pos.y);\r\n        float c = mix(1.0, 0.0, checker(uv, 1.0));\r\n        out_Col = vec4(c, c, c, 1.0);\r\n\r\n        if (c == 1.0){\r\n          vec4 rain = rainbow();\r\n          out_Col = vec4(rain.rgb * lightIntensity, diffuseColor.a);\r\n        }\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n}\r\n"
+module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\nuniform vec2 u_PlanePos; // Our location in the virtual world displayed by the plane\r\n\r\nin vec3 fs_Pos;\r\nin vec4 fs_Nor;\r\nin vec4 fs_Col;\r\n\r\n\r\n\r\n\r\nin float fs_Sine;\r\n\r\nout vec4 out_Col; // This is the final output color that you will see on your\r\n                  // screen for the pixel that is currently being processed.\r\n\r\n                  float random1( vec2 p , vec2 seed) {\r\n                    return fract(sin(dot(p + seed, vec2(127.1, 311.7))) * 43758.5453);\r\n                  }\r\n\r\n//WORLD IS SPLIT INTO 3 REGIONS. DR SEUSS, BEACH, DESERT MOUNTAINS\r\n\r\nvoid main()\r\n{\r\n\r\n\r\n    vec3 colorA;\r\n    vec3 colorB;\r\n\r\n\r\n\r\n     //-----DR SEUSS ------\r\n   float t = clamp(smoothstep(10.0, 20.0, length(fs_Pos / 2.f)), 0.0, 1.0); // Distance fog\r\n   out_Col = vec4(mix(vec3(0.5 * (fs_Sine + 1.0)), vec3(164.0 / 255.0, 233.0 / 255.0, 1.0), t), 1.0);\r\n   ///water\r\n   if (fs_Pos.y < 0.5f){\r\n     colorA = vec3(0.89, 0.196, 0.518);\r\n     colorB = vec3(0.169, 0.729, 0.937);\r\n     vec3 black = vec3(0.0, 0.0, 0.0);\r\n     out_Col = vec4(mix(colorA, black, t), 01.f);\r\n   }else if (fs_Pos.y < .54f){\r\n     colorA = vec3(0.89, 0.196, 0.518);\r\n     colorB = vec3(0.169, 0.729, 0.937);\r\n     out_Col = vec4(mix(colorA, colorB, t), 01.f);\r\n   } else if (fs_Pos.y < 1.0f) {\r\n     colorA = vec3(0.0, 0.0, 0.0);\r\n     colorB = vec3(0.0, 0.0, 0.0);\r\n     out_Col = vec4(mix(colorA, colorB, t), 01.f);\r\n   } else if (fs_Pos.y < 1.05f){\r\n     colorA = vec3(0.89, 0.196, 0.518);\r\n     colorB = vec3(0.169, 0.729, 0.937);\r\n     out_Col = vec4(mix(colorA, colorB, t), 01.f);\r\n   }\r\n   else if (fs_Pos.y < 1.54f) {\r\n     t = clamp(smoothstep(50.0, 70.0, length(fs_Pos)), 0.0, 1.0);\r\n     colorA = vec3(0.0, 0.0, 0.0);\r\n     colorB = vec3(0.0, 0.0, 0.0);\r\n     out_Col = vec4(mix(colorA, colorB, t), 01.f);\r\n   } else if (fs_Pos.y < 1.6f){\r\n     out_Col = vec4(0.f, 0.f, 0.f, 1.f);\r\n   } else if (fs_Pos.y < 2.0f) {\r\n     colorA = vec3(0.0, 0.0, 0.0);\r\n     colorB = vec3(0.0, 0.0, 0.0);\r\n     out_Col = vec4(mix(colorA, colorB, t), 01.f);\r\n   } else if (fs_Pos.y < 2.05f){\r\n     colorA = vec3(0.89, 0.196, 0.518);\r\n     colorB = vec3(0.169, 0.729, 0.937);\r\n     out_Col = vec4(mix(colorA, colorB, t), 01.f);\r\n   } else if (fs_Pos.y < 2.5f) {\r\n     colorA = vec3(0.0, 0.0, 0.0);\r\n     colorB = vec3(0.0, 0.0, 0.0);\r\n     out_Col = vec4(mix(colorA, colorB, t), 01.f);\r\n   } else if (fs_Pos.y < 2.55f){\r\n     out_Col = vec4(0.f, 0.f, 0.f, 1.f);\r\n   } else if (fs_Pos.y < 3.3f) {\r\n     colorA = vec3(0.0, 0.0, 0.0);\r\n     colorB = vec3(0.0, 0.0, 0.0);\r\n     out_Col = vec4(mix(colorA, colorB, fs_Pos.y / 7.f), 1.f);\r\n   } else if (fs_Pos.y < 3.35f){\r\n     colorA = vec3(0.89, 0.196, 0.518);\r\n     colorB = vec3(0.169, 0.729, 0.937);\r\n     out_Col = vec4(mix(colorA, colorB, t), 01.f);\r\n   } else if (fs_Pos.y < 4.f) {\r\n     colorA = vec3(0.0, 0.0, 0.0);\r\n     colorB = vec3(0.0, 0.0, 0.0);\r\n     out_Col = vec4(mix(colorA, colorB, fs_Pos.y / 7.f), 1.f);\r\n   } else if (fs_Pos.y < 4.05f){\r\n     colorA = vec3(0.89, 0.196, 0.518);\r\n     colorB = vec3(0.169, 0.729, 0.937);\r\n     out_Col = vec4(mix(colorA, colorB, t), 01.f);\r\n   }else if (fs_Pos.y < 4.5f) {\r\n     colorA = vec3(0.0, 0.0, 0.0);\r\n     colorB = vec3(0.0, 0.0, 0.0);\r\n     out_Col = vec4(mix(colorA, colorB, fs_Pos.y / 7.f), 1.f);\r\n   } else if (fs_Pos.y < 4.55f){\r\n     colorA = vec3(0.89, 0.196, 0.518);\r\n     colorB = vec3(0.169, 0.729, 0.937);\r\n     out_Col = vec4(mix(colorA, colorB, t), 01.f);\r\n   } else if (fs_Pos.y < 5.f) {\r\n     colorA = vec3(0.0, 0.0, 0.0);\r\n     colorB = vec3(0.0, 0.0, 0.0);\r\n     out_Col = vec4(mix(colorA, colorB, fs_Pos.y / 7.f), 1.f);\r\n   } else if (fs_Pos.y < 5.05f){\r\n     colorA = vec3(0.89, 0.196, 0.518);\r\n     colorB = vec3(0.169, 0.729, 0.937);\r\n     out_Col = vec4(mix(colorA, colorB, t), 01.f);\r\n   } else if (fs_Pos.y < 5.5f) {\r\n     colorA = vec3(0.0, 0.0, 0.0);\r\n     colorB = vec3(0.0, 0.0, 0.0);\r\n     out_Col = vec4(mix(colorA, colorB, fs_Pos.y / 7.f), 1.f);\r\n   } else if (fs_Pos.y < 5.55f){\r\n     colorA = vec3(0.89, 0.196, 0.518);\r\n     colorB = vec3(0.169, 0.729, 0.937);\r\n     out_Col = vec4(mix(colorA, colorB, t), 01.f);\r\n   }  else if (fs_Pos.y < 6.0f) {\r\n     colorA = vec3(0.0, 0.0, 0.0);\r\n     colorB = vec3(0.0, 0.0, 0.0);\r\n     out_Col = vec4(mix(colorA, colorB, t), 01.f);\r\n   } else if (fs_Pos.y < 6.05f){\r\n     colorA = vec3(0.89, 0.196, 0.518);\r\n     colorB = vec3(0.169, 0.729, 0.937);\r\n     out_Col = vec4(mix(colorA, colorB, t), 01.f);\r\n   }\r\n   else {\r\n     colorA = vec3(0.0, 0.0, 0.0);\r\n     colorB = vec3(0.0, 0.0, 0.0);\r\n   // Mix uses pct (a value from 0-1) to\r\n   // mix the two colors\r\n   out_Col = vec4(mix(colorA, colorB, t), 1.f);\r\n   //wwout_Col = vec4(mix(colorA, colorB, fs_Pos.y), 1.f);\r\n\r\n\r\n }\r\n\r\n// out_Col = vec4(0.0, 1.0, 0.0, 1.0);\r\n//  float coord = fs_Pos.x + u_PlanePos.x;\r\n//  float isBlack = 0.0;\r\n//\r\n//\r\n//  if (mod(coord, 1.0) == 0.0){\r\n// \t out_Col = vec4(0.0, 0.0, 0.0, 1.0);\r\n//  }\r\n\r\n\r\n\r\n\r\n}\r\n"
 
 /***/ }),
 /* 101 */
 /***/ (function(module, exports) {
 
-module.exports = "#version 300 es\r\n\r\n\r\n\r\nuniform mat4 u_Model;\r\n\r\nuniform mat4 u_ModelInvTr;\r\n\r\nuniform mat4 u_ViewProj;\r\n\r\nin vec4 vs_Pos;\r\n\r\nin vec4 vs_Nor;\r\n\r\nin vec4 vs_Col;\r\n\r\nout vec4 fs_Nor;\r\nout vec4 fs_LightVec;\r\nout vec4 fs_Col;\r\n\r\nout vec4 fs_Pos;\r\nuniform float u_Time;\r\n\r\n\r\nconst vec4 lightPos = vec4(5, 5, 3, 1);\r\n\r\n\r\nvoid main()\r\n{\r\n    fs_Col = vs_Col;\r\n\r\n    mat3 invTranspose = mat3(u_ModelInvTr);\r\n    fs_Nor = vec4(invTranspose * vec3(vs_Nor), 0);\r\n\r\n\r\n    vec4 modelposition = u_Model * vs_Pos;\r\n\r\n  //modelposition.y += sin((u_Time + vs_Pos.x) / 500.0);\r\n\r\n    fs_LightVec = lightPos - modelposition;\r\n\r\n    gl_Position = u_ViewProj * modelposition;\r\n\r\n    fs_Pos = modelposition;\r\n}\r\n"
+module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\n// The vertex shader used to render the background of the scene\r\n\r\nin vec4 vs_Pos;\r\nout vec2 fs_Pos;\r\n\r\nvoid main() {\r\n  fs_Pos = vs_Pos.xy;\r\n  gl_Position = vs_Pos;\r\n}\r\n"
 
 /***/ }),
 /* 102 */
 /***/ (function(module, exports) {
 
-module.exports = "#version 300 es\r\n\r\n\r\nprecision highp float;\r\n\r\nuniform vec4 u_Color;\r\n\r\n\r\nin vec4 fs_Nor;\r\nin vec4 fs_LightVec;\r\nin vec4 fs_Col;\r\n\r\nuniform float u_Time;\r\nuniform vec2 u_Dimensions;\r\n\r\nin vec4 fs_Pos;\r\n\r\n\r\nout vec4 out_Col;\r\n\r\n\r\nfloat checker(vec2 uv, float repeats)\r\n{\r\n  float cx = floor(repeats * uv.x);\r\n  float cy = floor(repeats * uv.y);\r\n  float result = mod(cx + cy, 2.0);\r\n  return sign(result);\r\n}\r\n\r\n\r\n\r\nvec4 rainbow(){\r\n  float l = 120.0;\r\n\r\n  float aa = gl_FragCoord.x;\r\n  float bb = gl_FragCoord.y;\r\n  vec2 fragCoord = vec2(aa, bb);\r\n\r\n  float aspect = u_Dimensions.x / u_Dimensions.y;\r\n\r\n  float a = gl_FragCoord.x;\r\n  float b = gl_FragCoord.y;\r\n\r\n  float sx = (2.f * a/u_Dimensions.x) - 1.f;\r\n  float sy = 1.f - (2.f * b/u_Dimensions.y);\r\n\r\n\r\n  vec2 uv = fragCoord.xy / u_Dimensions.xy;\r\n    uv = (uv.xy-0.5);\r\n\r\n\r\n  float z = u_Time / 10000.0;\r\n\r\n\r\n\r\n    // multiple and twist uv\r\n    uv *= sin(length(uv) * 2.0) * 7.0;\r\n\r\n    // calculate morphing central blobs\r\n    float val1 = length(uv);\r\n    val1 = 1.0 - fract(length(uv + sin(u_Time / 10000.0 + uv.x) * cos(u_Time / 10000.0 + uv.y) ));\r\n\r\n    // calculate rotating radial wave pattern\r\n    float val2 = length(uv * 0.1) *\r\n        cos( pow(sin(u_Time / 10000.0 + atan(uv.y, uv.x) * 10.0) + uv.x * length(uv * 0.1), 2.0 ));\r\n\r\n\t// combine values\r\n    float val = mix(val1, val2, sin(atan(uv.y, uv.x) * 10.0) );\r\n\r\n    // colors\r\n    float r = pow(val, 5.0) * 3.0;\r\n    float g = val + 0.18;\r\n    float bl = val;\r\n    return vec4(r, g, bl, 1);\r\n\r\n}\r\n\r\nvoid main()\r\n{\r\n        vec4 diffuseColor = vec4(0.0, 0.1, 0.2, 1.0);\r\n        float diffuseTerm = dot(normalize(fs_Nor), normalize(fs_LightVec));\r\n        diffuseTerm = clamp(diffuseTerm, 0.0, 1.0);\r\n\r\n        float ambientTerm = 0.3;\r\n\r\n        float lightIntensity = diffuseTerm + ambientTerm;\r\n        out_Col = vec4(diffuseColor.rgb * lightIntensity, diffuseColor.a);\r\n\r\n        if(fs_Pos.y < 0.0){\r\n          out_Col = vec4(0.0, 0.2, 1.0, 1.0);\r\n        }\r\n\r\n\r\n        if (fs_Pos.x < 0.0){\r\n          out_Col = vec4(0.0, 0.4, 1.0, 1.0);\r\n        }\r\n\r\n        if (fs_Pos.x > 0.9){\r\n          out_Col = vec4(0.0, 0.9, 1.0, 1.0);\r\n        }\r\n\r\n\r\n        vec2 uv = vec2(fs_Pos.x, fs_Pos.z);\r\n        float c = mix(1.0, 0.0, checker(uv, 1.0));\r\n        out_Col = vec4(c, c, c, 1.0);\r\n        out_Col = vec4(diffuseColor.rgb * lightIntensity, diffuseColor.a);\r\n\r\n        if (c == 1.0){\r\n          vec4 rain = rainbow();\r\n          out_Col = vec4(rain.rgb * lightIntensity, diffuseColor.a);\r\n        }\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n}\r\n"
+module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\n\r\nuniform vec2 u_Dimensions;\r\nuniform float u_Time;\r\n\r\nin vec2 fs_Pos;\r\nout vec4 out_Col;\r\n\r\nfloat viewAngle = 1.0;\r\nfloat speed = 4.0;\r\nfloat rate = 15.0;\r\nfloat baseamp = 0.15;\r\n\r\n//SOURCE INSPIRATION http://glslsandbox.com/e#22429.6\r\n\r\n\r\nvoid main() {\r\n\r\n\tvec2 iResolution = u_Dimensions;\r\n\r\n\tvec2 p = ( gl_FragCoord.xy / u_Dimensions.xy ) * 2.0 - 1.0;\r\n\tp.x *= u_Dimensions.x / u_Dimensions.y;\r\n\r\n\r\n  float x = speed * viewAngle * u_Time / 1000.0 + rate * p.x;\r\n  float base = (1.0 + cos(x * 5.23 + u_Time / 10000.0)) * (1.0 + sin(10.46 * u_Time / 10000.0));\r\n  float z = fract(0.08*x);\r\n  z = max(z, 1.0-z);\r\n  z = pow(z, 20.0);\r\n  float pulse = exp(-1000.0 * z);\r\n  vec4 ecg_color = vec4(0.6, 0.2, 0.9, 1.0);\r\n  vec4 c = (vec4(1.0) - pow(clamp(1.0-abs(p.y-(baseamp * base + pulse -0.8)), 0.0, 1.0), 16.0)) * ecg_color;\r\n    out_Col = c;\r\n    if (out_Col.r > 0.1){\r\n    out_Col.r /= sin(u_Time / 100000.0 * 10.46);\r\n    //out_Col.b /= cos(u_Time / 10000.0 * 10.46);\r\n    }\r\n\r\n\r\n    float test = sin(13.659 * u_Time / 1000.0);\r\n\t//out_Col = vec4(test, 0.3, 0.8 , 1.0);\r\n\r\n\r\n\r\n\r\n\r\n\r\n}\r\n"
 
 /***/ }),
 /* 103 */
 /***/ (function(module, exports) {
 
-module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\n// The vertex shader used to render the background of the scene\r\n\r\nin vec4 vs_Pos;\r\nout vec2 fs_Pos;\r\n\r\nvoid main() {\r\n  fs_Pos = vs_Pos.xy;\r\n  gl_Position = vs_Pos;\r\n}\r\n"
+module.exports = "#version 300 es\r\n\r\n\r\nuniform mat4 u_Model;\r\nuniform mat4 u_ModelInvTr;\r\nuniform mat4 u_ViewProj;\r\nuniform vec2 u_PlanePos; // Our location in the virtual world displayed by the plane\r\n\r\nin vec4 vs_Pos;\r\nin vec4 vs_Nor;\r\nin vec4 vs_Col;\r\n\r\nuniform float u_Time;\r\n\r\n\r\nout vec3 fs_Pos;\r\nout vec4 fs_Nor;\r\nout vec4 fs_Col;\r\n\r\nout float fs_Sine;\r\n\r\nfloat random1( vec2 p , vec2 seed) {\r\n  return fract(sin(dot(p + seed, vec2(127.1, 311.7))) * 43758.5453);\r\n}\r\n\r\nfloat random1( vec3 p , vec3 seed) {\r\n  return fract(sin(dot(p + seed, vec3(987.654, 123.456, 531.975))) * 85734.3545);\r\n}\r\n\r\nvec2 random2(vec2 p , vec2 seed) {\r\n  return fract(sin(vec2(dot(p + seed, vec2(311.7, 127.1)), dot(p + seed, vec2(269.5, 183.3)))) * 85734.3545);\r\n}\r\n\r\nfloat Noise(int x, int y){\r\n    return (fract(sin(dot(vec2(x, y), vec2(12.9898, 4.1414))) * 43758.5453));\r\n}\r\n\r\n\r\n//Noise interpolation 2D function\r\nfloat interpNoise2D(float x, float y){\r\n\r\n    int intX =  int(x);\r\n    float fractX = fract(x);\r\n    int intY = int(y);\r\n    float fractY = fract(y);\r\n\r\n    float v1 = Noise(intX, intY);\r\n    float v2 = Noise(intX + 1, intY);\r\n    float v3 = Noise(intX, intY + 1);\r\n    float v4 = Noise(intX + 1, intY + 1);\r\n\r\n    float i1 = mix(v1, v2, fractX);\r\n    float i2 = mix(v3, v4, fractX);\r\n\r\n    return mix(i1, i2, fractY);\r\n\r\n}\r\n\r\n//Steppe-like FBM pattern\r\nfloat steppeFbm(float x, float y){\r\n\r\n    float total = 0.f;\r\n    float peristence = 0.5f;\r\n    float octaves = 8.f;\r\n\r\n    for(float i = 0.f; i < octaves; i++){\r\n        float freq = pow(2.f, i);\r\n        float amp = pow(peristence, i);\r\n        total += interpNoise2D((x * freq) / 128.f, (y * freq) / 128.f) * amp;\r\n    }\r\n\r\n    return total;\r\n\r\n}\r\n\r\n// FBM function for 2D input\r\nfloat fbm(float x, float y){\r\n\r\n    float total = 0.f;\r\n    float peristence = 0.5f;\r\n    float octaves = 1.f;\r\n\r\n    for(float i = 0.f; i < octaves; i++){\r\n        float freq = pow(2.f, i);\r\n        float amp = pow(peristence, i);\r\n        total += interpNoise2D((x * freq), (y * freq)) * amp;\r\n    }\r\n\r\n    return total;\r\n\r\n}\r\n\r\n//interpolation functions\r\nfloat linear_interpolate(float a, float b, float t){\r\n  return a * (1.f - t) + b * t;\r\n}\r\n\r\nfloat cosine_interpolation(float a, float b, float t){\r\n  float cos_t = (1.f - cos(t * 3.14)) * 0.5f;\r\n  return linear_interpolate(a, b, cos_t);\r\n}\r\n\r\n\r\n//Function for DR SEUSS portion of environment\r\nvoid seuss(){\r\n\r\n\r\n  fs_Pos = vs_Pos.xyz;\r\n  float rand = random1(vec2(vs_Pos.x + u_PlanePos.x, vs_Pos.z + u_PlanePos.y) , vec2(1.f, 3.f));\r\n  fs_Sine = (sin((vs_Pos.x + u_PlanePos.x) * 3.14159 * 0.1) + cos((vs_Pos.z + u_PlanePos.y) * 3.14159 * 0.1));\r\n  fs_Sine += (cos((vs_Pos.x + u_PlanePos.x) * 3.14159 * 0.2) + cos((vs_Pos.z + u_PlanePos.y) * 3.14159 *  0.1));\r\n  fs_Sine += 5.0;\r\n\r\n vec4 modelposition = vec4(vs_Pos.x, fs_Sine * (cos(vs_Pos.x + u_PlanePos.x)+sin(.5f * (vs_Pos.z + u_PlanePos.y))*\r\n cos(vs_Pos.z + u_PlanePos.y)) + fbm(vs_Pos.x + u_PlanePos.x, vs_Pos.z + u_PlanePos.y), vs_Pos.z, 1.0);\r\n fs_Sine = fs_Sine * (cos(vs_Pos.x + u_PlanePos.x)+sin(.5f * (vs_Pos.z + u_PlanePos.y))*\r\n cos(vs_Pos.z + u_PlanePos.y));\r\n\r\n\r\n\r\n   fs_Sine = 5.f;\r\n\r\n\r\n  if (modelposition.y > 10.f){\r\n    modelposition.y = 10.f + rand / 5.f;\r\n  }\r\n  if (modelposition.y < -2.f){\r\n    modelposition.y = -2.f - rand;\r\n  }\r\n\r\n    modelposition.y /= 2.1f;\r\n    if (modelposition.y < .5f){\r\n      modelposition.y = 0.2f;\r\n    }\r\n\r\n\r\n\r\n\r\n\r\n  fs_Pos = modelposition.xyz;\r\n  modelposition = u_Model * modelposition;\r\n  gl_Position = u_ViewProj * modelposition;\r\n\r\n}\r\n\r\n\r\n//function for desert mountains using FBM - vary over time\r\nvoid desert(){\r\n  fs_Pos = vs_Pos.xyz;\r\n  float exp = smoothstep(0.1 ,0.4, abs(vs_Pos.z) + abs(u_PlanePos.y));\r\n  fs_Sine = pow(steppeFbm((abs(vs_Pos.z) + abs(u_PlanePos.y)) * 10.0 * sin(5.236 * u_Time / 10000.0), (abs(vs_Pos.x) + abs(u_PlanePos.x)) * 10.f), 4.5f * exp)\r\n   * cos((5.236 * u_Time / 100000.0 + abs(vs_Pos.z) + abs(u_PlanePos.y)));\r\n\r\n  if (fs_Sine < 0.f){\r\n    fs_Sine = 0.f;\r\n  }\r\n\r\n  vec4 modelposition = vec4(vs_Pos.x, fs_Sine, vs_Pos.z, 1.0);\r\n\r\n  modelposition = u_Model * modelposition;\r\n  gl_Position = u_ViewProj * modelposition;\r\n}\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nvoid main()\r\n{\r\n\r\n    ///-----OH, THE PLACES YOU'LL GO --- DR SEUSS---\r\n\r\n\r\n\r\n\r\n    desert();\r\n    //------------ OH THE PLACES YOULL GO ------------------------\r\n\r\n\r\n\r\n}\r\n"
 
 /***/ }),
 /* 104 */
 /***/ (function(module, exports) {
 
-module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\n\r\nuniform vec2 u_Dimensions;\r\nuniform float u_Time;\r\n\r\nin vec2 fs_Pos;\r\nout vec4 out_Col;\r\n\r\nfloat noise(vec2 p) {\r\n\treturn fract(sin(dot(p.xy ,vec2(12.9898,78.233))) * 456367.5453);\r\n}\r\n\r\n//SOURCE INSPIRATION http://glslsandbox.com/e#22429.6\r\n\r\n\r\nvoid main() {\r\n  //out_Col = vec4(0.2, 0.9, fs_Pos.y * 4.0, 0.5);\r\n  vec2 uv = (fs_Pos);\r\n  float intensity = 0.8;\r\n\r\n    //Create the stacked layers\r\n\r\n    //so what this is doing is creating offset layers\r\n    //and the height of each section follows a cosin curve\r\n    //ok sweet\r\n\tfor (float inc = 1.0; inc < 25.0; inc++) {\r\n\r\n\t\tfloat fi = inc;\r\n\r\n\t\tfloat s = floor(5.0*(uv.x)/fi + 50.0*fi + u_Time / 1000.0);\r\n\r\n        float yLimit = noise(vec2(s));\r\n        yLimit *= fi/95.0;\r\n        yLimit -= 0.04*fi;\r\n        yLimit += 0.125 * cos(uv.x*5.0 + u_Time / 1000.0 + fi/9.0);\r\n       \tyLimit += 0.8;\r\n\r\n\t\tif (uv.y < yLimit) {\r\n\t\t\tintensity = inc/10.0;\r\n\t\t}\r\n\t}\r\n\r\n  float col1 = mix(intensity * uv.x * 0.8 + 0.5, 0.0, 01.1);\r\n\r\n\t//Set the final color\r\n\tout_Col = vec4(vec3(col1, intensity*uv.y * 0.9 + 0.5, 0.3), 1.0 );\r\n\r\n\r\n\r\n\r\n\r\n}\r\n"
+module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\nuniform vec2 u_PlanePos; // Our location in the virtual world displayed by the plane\r\n\r\nin vec3 fs_Pos;\r\nin vec4 fs_Nor;\r\nin vec4 fs_Col;\r\n\r\n\r\n\r\n\r\nin float fs_Sine;\r\n\r\nout vec4 out_Col; // This is the final output color that you will see on your\r\n                  // screen for the pixel that is currently being processed.\r\n\r\n                  float random1( vec2 p , vec2 seed) {\r\n                    return fract(sin(dot(p + seed, vec2(127.1, 311.7))) * 43758.5453);\r\n                  }\r\n\r\n//WORLD IS SPLIT INTO 3 REGIONS. DR SEUSS, BEACH, DESERT MOUNTAINS\r\n\r\nvoid main()\r\n{\r\n\r\n\r\n    vec3 colorA;\r\n    vec3 colorB;\r\n\r\n\r\n\r\n     //-----DR SEUSS ------\r\n   float t = clamp(smoothstep(10.0, 20.0, length(fs_Pos / 2.f)), 0.0, 1.0); // Distance fog\r\n   out_Col = vec4(mix(vec3(0.5 * (fs_Sine + 1.0)), vec3(164.0 / 255.0, 233.0 / 255.0, 1.0), t), 1.0);\r\n\r\n\r\n\t colorA = vec3(0.169, 0.729, 0.937);\r\n colorB = vec3(0.698,0.227, 0.827);\r\n out_Col = vec4(mix(colorA, colorB, fs_Sine / 5.f), 1.f);\r\n\r\n if (fs_Sine < 0.5f){\r\n\t colorA = vec3(0.169, 0.729, 0.937);\r\n\t colorB = vec3(123.f/255.f, 221.f/255.f, 228.f/255.f);\r\n\t out_Col = vec4(mix(colorA, colorB, fs_Sine), 1.f);\r\n\r\n}\r\n\r\n\r\n\r\n\r\n}\r\n"
 
 /***/ }),
 /* 105 */
@@ -22089,19 +17288,19 @@ module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\n// The vertex
 /* 106 */
 /***/ (function(module, exports) {
 
-module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\n\r\nuniform vec2 u_Dimensions;\r\nuniform float u_Time;\r\n\r\nin vec2 fs_Pos;\r\nout vec4 out_Col;\r\n\r\nfloat noise(vec2 p) {\r\n\treturn fract(sin(dot(p.xy ,vec2(12.9898,78.233))) * 456367.5453);\r\n}\r\n\r\n//SOURCE INSPIRATION http://glslsandbox.com/e#22429.6\r\n\r\n\r\nvoid main() {\r\n  //out_Col = vec4(0.2, 0.9, fs_Pos.y * 4.0, 0.5);\r\n  vec2 uv = (fs_Pos);\r\n  float intensity = 0.8;\r\n\r\n    //Create the stacked layers\r\n\r\n    //so what this is doing is creating offset layers\r\n    //and the height of each section follows a cosin curve\r\n    //ok sweet\r\n\tfor (float inc = 1.0; inc < 25.0; inc++) {\r\n\r\n\t\tfloat fi = inc;\r\n\r\n\t\tfloat s = floor(5.0*(uv.x)/fi + 50.0*fi + u_Time / 1000.0);\r\n\r\n        float yLimit = noise(vec2(s));\r\n        yLimit *= fi/95.0;\r\n        yLimit -= 0.04*fi;\r\n        yLimit += 0.125 * cos(uv.x*5.0 + u_Time / 1000.0 + fi/9.0);\r\n       \tyLimit += 0.8;\r\n\r\n\t\tif (uv.y < yLimit) {\r\n\t\t\tintensity = inc/10.0;\r\n\t\t}\r\n\t}\r\n\r\n  float col1 = mix(intensity * uv.x * 0.8 + 0.5, 0.0, 01.1);\r\n\r\n\t//Set the final color\r\n\tout_Col = vec4(vec3(col1, intensity*uv.y * 0.2 + 0.5, 0.7), 1.0 );\r\n\r\n\r\n\r\n\r\n\r\n}\r\n"
+module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\n\r\nuniform vec2 u_Dimensions;\r\nuniform float u_Time;\r\n\r\nin vec2 fs_Pos;\r\nout vec4 out_Col;\r\n\r\n\r\nvec2 random2(vec2 p) {\r\n    return fract(sin(vec2(dot(p,vec2(127.1,381.7)),dot(p,vec2(269.5,183.3))))*43758.5453);\r\n}\r\n\r\nfloat cellular(vec2 p) {\r\n    vec2 i_st = floor(p);\r\n    vec2 f_st = fract(p);\r\n    float m_dist = 3.;\r\n    for (int j=-1; j<=1; j++ ) {\r\n        for (int i=-1; i<=1; i++ ) {\r\n            vec2 neighbor = vec2(float(i),float(j));\r\n            vec2 point = random2(i_st + neighbor);\r\n            point = 0.5 + 0.5*sin(point * u_Time / 1000.0 * 5.23);\r\n            vec2 diff = neighbor + point - f_st;\r\n            float dist = length(diff);\r\n            if( dist < m_dist ) {\r\n                m_dist = dist;\r\n            }\r\n        }\r\n    }\r\n    return m_dist;\r\n}\r\n\r\n\r\n\r\nvoid main() {\r\n\r\n\tvec2 st = gl_FragCoord.xy / u_Dimensions.xy;\r\n\t    st.x *= u_Dimensions.x / u_Dimensions.y;\r\n\r\n\r\n\t    float v = 0.0;\r\n\r\n\t\t\tif (u_Time  > 48000.0 && u_Time <= 52000.0){\r\n\t\t\t\t//vec3 col1 = vec3(0.005,0.855,0.945);\r\n\t\t    //vec3 col2 = vec3(0.811,0.011,0.945);\r\n\t\t\t\tst *= 80.0;\r\n\t\t\t\tv = cellular(st);\r\n\t\t    out_Col = vec4( vec3(v), 1.0);\r\n\t\t\t}\r\n\t\telse if (u_Time  > 52000.0 && u_Time <= 53000.0){\r\n\t\t\t\t//vec3 col1 = vec3(0.005,0.855,0.945);\r\n\t\t    //vec3 col2 = vec3(0.811,0.011,0.945);\r\n\t\t\t\tst *= 60.0;\r\n\t\t\t\tv = cellular(st);\r\n\t\t    out_Col = vec4( vec3(v), 1.0);\r\n\t\t\t}\r\n\r\n\t\t\telse if (u_Time  > 53000.0 && u_Time <= 54000.0){\r\n\t\t\t\t\t//vec3 col1 = vec3(0.005,0.855,0.945);\r\n\t\t\t\t\t//vec3 col2 = vec3(0.811,0.011,0.945);\r\n\t\t\t\t\tst *= 40.0;\r\n\t\t\t\t\tv = cellular(st);\r\n\t\t\t\t\tout_Col = vec4( vec3(v), 1.0);\r\n\t\t\t\t}\r\n\r\n\t\t\telse if (u_Time > 54000.0 && u_Time < 55000.0){\r\n\t\t\t\tst *= 30.0;\r\n\t\t\t\tv = cellular(st);\r\n\t\t\t\tvec3 col1 = vec3(0.005,0.855,0.945);\r\n\t\t    vec3 col2 = vec3(0.811,0.011,0.945);\r\n\t\t    out_Col = vec4(mix(col1, col2, v * 1.05),1.0);\r\n\t\t\t}\r\n\t\t\telse if (u_Time > 55000.0 && u_Time < 56000.0){\r\n\t\t\t\tst *= 20.0;\r\n\t\t\t\tv = cellular(st);\r\n\t\t\t\tvec3 col1 = vec3(0.005,0.855,0.945);\r\n\t\t    vec3 col2 = vec3(0.811,0.011,0.945);\r\n\t\t    out_Col = vec4(mix(col1, col2, v * 1.25),1.0);\r\n\t\t\t}\r\n\t\t\telse if (u_Time > 56000.0 && u_Time < 57500.0){\r\n\t\t\t\tst *= 15.0;\r\n\t\t\t\tv = cellular(st);\r\n        vec3 col1 = vec3(0.005,0.655,0.945);\r\n\t\t    vec3 col2 = vec3(0.811,0.011,0.545);\r\n\t\t    out_Col = vec4(mix(col1, col2, v * 1.7),1.0);\r\n\t\t\t}\r\n\r\n\t\t\telse {\r\n\t\t\t\tst *= 10.0;\r\n\t\t\t\tv = cellular(st);\r\n\t\t\t\tvec3 col1 = vec3(0.005,0.655,0.945);\r\n\t\t    vec3 col2 = vec3(0.811,0.011,0.545);\r\n\t\t    out_Col = vec4(mix(col1, col2, v * 2.305 * sin(u_Time / 1000.0 * 5.23)),1.0);\r\n\t\t\t}\r\n\r\n\r\n}\r\n"
 
 /***/ }),
 /* 107 */
 /***/ (function(module, exports) {
 
-module.exports = "#version 300 es\r\n\r\n\r\nuniform mat4 u_Model;\r\nuniform mat4 u_ModelInvTr;\r\nuniform mat4 u_ViewProj;\r\nuniform vec2 u_PlanePos; // Our location in the virtual world displayed by the plane\r\n\r\nin vec4 vs_Pos;\r\nin vec4 vs_Nor;\r\nin vec4 vs_Col;\r\n\r\n\r\nout vec3 fs_Pos;\r\nout vec4 fs_Nor;\r\nout vec4 fs_Col;\r\n\r\nout float fs_Sine;\r\n\r\nfloat random1( vec2 p , vec2 seed) {\r\n  return fract(sin(dot(p + seed, vec2(127.1, 311.7))) * 43758.5453);\r\n}\r\n\r\nfloat random1( vec3 p , vec3 seed) {\r\n  return fract(sin(dot(p + seed, vec3(987.654, 123.456, 531.975))) * 85734.3545);\r\n}\r\n\r\nvec2 random2(vec2 p , vec2 seed) {\r\n  return fract(sin(vec2(dot(p + seed, vec2(311.7, 127.1)), dot(p + seed, vec2(269.5, 183.3)))) * 85734.3545);\r\n}\r\n\r\nfloat Noise(int x, int y){\r\n    return (fract(sin(dot(vec2(x, y), vec2(12.9898, 4.1414))) * 43758.5453));\r\n}\r\n\r\n\r\n//Noise interpolation 2D function\r\nfloat interpNoise2D(float x, float y){\r\n\r\n    int intX =  int(x);\r\n    float fractX = fract(x);\r\n    int intY = int(y);\r\n    float fractY = fract(y);\r\n\r\n    float v1 = Noise(intX, intY);\r\n    float v2 = Noise(intX + 1, intY);\r\n    float v3 = Noise(intX, intY + 1);\r\n    float v4 = Noise(intX + 1, intY + 1);\r\n\r\n    float i1 = mix(v1, v2, fractX);\r\n    float i2 = mix(v3, v4, fractX);\r\n\r\n    return mix(i1, i2, fractY);\r\n\r\n}\r\n\r\n//Steppe-like FBM pattern\r\nfloat steppeFbm(float x, float y){\r\n\r\n    float total = 0.f;\r\n    float peristence = 0.5f;\r\n    float octaves = 8.f;\r\n\r\n    for(float i = 0.f; i < octaves; i++){\r\n        float freq = pow(2.f, i);\r\n        float amp = pow(peristence, i);\r\n        total += interpNoise2D((x * freq) / 128.f, (y * freq) / 128.f) * amp;\r\n    }\r\n\r\n    return total;\r\n\r\n}\r\n\r\n// FBM function for 2D input\r\nfloat fbm(float x, float y){\r\n\r\n    float total = 0.f;\r\n    float peristence = 0.5f;\r\n    float octaves = 1.f;\r\n\r\n    for(float i = 0.f; i < octaves; i++){\r\n        float freq = pow(2.f, i);\r\n        float amp = pow(peristence, i);\r\n        total += interpNoise2D((x * freq), (y * freq)) * amp;\r\n    }\r\n\r\n    return total;\r\n\r\n}\r\n\r\n//interpolation functions\r\nfloat linear_interpolate(float a, float b, float t){\r\n  return a * (1.f - t) + b * t;\r\n}\r\n\r\nfloat cosine_interpolation(float a, float b, float t){\r\n  float cos_t = (1.f - cos(t * 3.14)) * 0.5f;\r\n  return linear_interpolate(a, b, cos_t);\r\n}\r\n\r\n\r\n//Function for DR SEUSS portion of environment\r\nvoid seuss(){\r\n\r\n\r\n  fs_Pos = vs_Pos.xyz;\r\n  float rand = random1(vec2(vs_Pos.x + u_PlanePos.x, vs_Pos.z + u_PlanePos.y) , vec2(1.f, 3.f));\r\n  fs_Sine = (sin((vs_Pos.x + u_PlanePos.x) * 3.14159 * 0.1) + cos((vs_Pos.z + u_PlanePos.y) * 3.14159 * 0.1));\r\n  fs_Sine += (cos((vs_Pos.x + u_PlanePos.x) * 3.14159 * 0.2) + cos((vs_Pos.z + u_PlanePos.y) * 3.14159 *  0.1));\r\n  fs_Sine += 5.0;\r\n\r\n vec4 modelposition = vec4(vs_Pos.x, fs_Sine * (cos(vs_Pos.x + u_PlanePos.x)+sin(.5f * (vs_Pos.z + u_PlanePos.y))*\r\n cos(vs_Pos.z + u_PlanePos.y)) + fbm(vs_Pos.x + u_PlanePos.x, vs_Pos.z + u_PlanePos.y), vs_Pos.z, 1.0);\r\n fs_Sine = fs_Sine * (cos(vs_Pos.x + u_PlanePos.x)+sin(.5f * (vs_Pos.z + u_PlanePos.y))*\r\n cos(vs_Pos.z + u_PlanePos.y));\r\n\r\n\r\n\r\n   fs_Sine = 5.f;\r\n\r\n\r\n  if (modelposition.y > 10.f){\r\n    modelposition.y = 10.f + rand / 5.f;\r\n  }\r\n  if (modelposition.y < -2.f){\r\n    modelposition.y = -2.f - rand;\r\n  }\r\n\r\n    modelposition.y /= 2.1f;\r\n    if (modelposition.y < .5f){\r\n      modelposition.y = 0.2f;\r\n    }\r\n\r\n\r\n\r\n\r\n\r\n  fs_Pos = modelposition.xyz;\r\n  modelposition = u_Model * modelposition;\r\n  gl_Position = u_ViewProj * modelposition;\r\n\r\n}\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nvoid main()\r\n{\r\n\r\n    ///-----OH, THE PLACES YOU'LL GO --- DR SEUSS---\r\n\r\n\r\n\r\n\r\n    seuss();\r\n    //------------ OH THE PLACES YOULL GO ------------------------\r\n\r\n\r\n\r\n}\r\n"
+module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\n// The vertex shader used to render the background of the scene\r\n\r\nin vec4 vs_Pos;\r\nout vec2 fs_Pos;\r\n\r\nvoid main() {\r\n  fs_Pos = vs_Pos.xy;\r\n  gl_Position = vs_Pos;\r\n}\r\n"
 
 /***/ }),
 /* 108 */
 /***/ (function(module, exports) {
 
-module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\nuniform vec2 u_PlanePos; // Our location in the virtual world displayed by the plane\r\n\r\nin vec3 fs_Pos;\r\nin vec4 fs_Nor;\r\nin vec4 fs_Col;\r\n\r\n\r\n\r\n\r\nin float fs_Sine;\r\n\r\nout vec4 out_Col; // This is the final output color that you will see on your\r\n                  // screen for the pixel that is currently being processed.\r\n\r\n                  float random1( vec2 p , vec2 seed) {\r\n                    return fract(sin(dot(p + seed, vec2(127.1, 311.7))) * 43758.5453);\r\n                  }\r\n\r\n//WORLD IS SPLIT INTO 3 REGIONS. DR SEUSS, BEACH, DESERT MOUNTAINS\r\n\r\nvoid main()\r\n{\r\n\r\n\r\n    vec3 colorA;\r\n    vec3 colorB;\r\n\r\n\r\n\r\n     //-----DR SEUSS ------\r\n   float t = clamp(smoothstep(10.0, 20.0, length(fs_Pos / 2.f)), 0.0, 1.0); // Distance fog\r\n   out_Col = vec4(mix(vec3(0.5 * (fs_Sine + 1.0)), vec3(164.0 / 255.0, 233.0 / 255.0, 1.0), t), 1.0);\r\n   ///water\r\n   if (fs_Pos.y < 0.5f){\r\n     colorA = vec3(0.89, 0.196, 0.518);\r\n     colorB = vec3(0.169, 0.729, 0.937);\r\n     out_Col = vec4(mix(colorA, colorB, t), 01.f);\r\n   }else if (fs_Pos.y < .54f){\r\n     colorA = vec3(0.89, 0.196, 0.518);\r\n     colorB = vec3(0.169, 0.729, 0.937);\r\n     out_Col = vec4(mix(colorA, colorB, t), 01.f);\r\n   } else if (fs_Pos.y < 1.0f) {\r\n     colorA = vec3(0.0, 0.0, 0.0);\r\n     colorB = vec3(0.0, 0.0, 0.0);\r\n     out_Col = vec4(mix(colorA, colorB, t), 01.f);\r\n   } else if (fs_Pos.y < 1.05f){\r\n     colorA = vec3(0.89, 0.196, 0.518);\r\n     colorB = vec3(0.169, 0.729, 0.937);\r\n     out_Col = vec4(mix(colorA, colorB, t), 01.f);\r\n   }\r\n   else if (fs_Pos.y < 1.54f) {\r\n     t = clamp(smoothstep(50.0, 70.0, length(fs_Pos)), 0.0, 1.0);\r\n     colorA = vec3(0.0, 0.0, 0.0);\r\n     colorB = vec3(0.0, 0.0, 0.0);\r\n     out_Col = vec4(mix(colorA, colorB, t), 01.f);\r\n   } else if (fs_Pos.y < 1.6f){\r\n     out_Col = vec4(0.f, 0.f, 0.f, 1.f);\r\n   } else if (fs_Pos.y < 2.0f) {\r\n     colorA = vec3(0.0, 0.0, 0.0);\r\n     colorB = vec3(0.0, 0.0, 0.0);\r\n     out_Col = vec4(mix(colorA, colorB, t), 01.f);\r\n   } else if (fs_Pos.y < 2.05f){\r\n     colorA = vec3(0.89, 0.196, 0.518);\r\n     colorB = vec3(0.169, 0.729, 0.937);\r\n     out_Col = vec4(mix(colorA, colorB, t), 01.f);\r\n   } else if (fs_Pos.y < 2.5f) {\r\n     colorA = vec3(0.0, 0.0, 0.0);\r\n     colorB = vec3(0.0, 0.0, 0.0);\r\n     out_Col = vec4(mix(colorA, colorB, t), 01.f);\r\n   } else if (fs_Pos.y < 2.55f){\r\n     out_Col = vec4(0.f, 0.f, 0.f, 1.f);\r\n   } else if (fs_Pos.y < 3.3f) {\r\n     colorA = vec3(0.0, 0.0, 0.0);\r\n     colorB = vec3(0.0, 0.0, 0.0);\r\n     out_Col = vec4(mix(colorA, colorB, fs_Pos.y / 7.f), 1.f);\r\n   } else if (fs_Pos.y < 3.35f){\r\n     colorA = vec3(0.89, 0.196, 0.518);\r\n     colorB = vec3(0.169, 0.729, 0.937);\r\n     out_Col = vec4(mix(colorA, colorB, t), 01.f);\r\n   } else if (fs_Pos.y < 4.f) {\r\n     colorA = vec3(0.0, 0.0, 0.0);\r\n     colorB = vec3(0.0, 0.0, 0.0);\r\n     out_Col = vec4(mix(colorA, colorB, fs_Pos.y / 7.f), 1.f);\r\n   } else if (fs_Pos.y < 4.05f){\r\n     colorA = vec3(0.89, 0.196, 0.518);\r\n     colorB = vec3(0.169, 0.729, 0.937);\r\n     out_Col = vec4(mix(colorA, colorB, t), 01.f);\r\n   }else if (fs_Pos.y < 4.5f) {\r\n     colorA = vec3(0.0, 0.0, 0.0);\r\n     colorB = vec3(0.0, 0.0, 0.0);\r\n     out_Col = vec4(mix(colorA, colorB, fs_Pos.y / 7.f), 1.f);\r\n   } else if (fs_Pos.y < 4.55f){\r\n     colorA = vec3(0.89, 0.196, 0.518);\r\n     colorB = vec3(0.169, 0.729, 0.937);\r\n     out_Col = vec4(mix(colorA, colorB, t), 01.f);\r\n   } else if (fs_Pos.y < 5.f) {\r\n     colorA = vec3(0.0, 0.0, 0.0);\r\n     colorB = vec3(0.0, 0.0, 0.0);\r\n     out_Col = vec4(mix(colorA, colorB, fs_Pos.y / 7.f), 1.f);\r\n   } else if (fs_Pos.y < 5.05f){\r\n     colorA = vec3(0.89, 0.196, 0.518);\r\n     colorB = vec3(0.169, 0.729, 0.937);\r\n     out_Col = vec4(mix(colorA, colorB, t), 01.f);\r\n   } else if (fs_Pos.y < 5.5f) {\r\n     colorA = vec3(0.0, 0.0, 0.0);\r\n     colorB = vec3(0.0, 0.0, 0.0);\r\n     out_Col = vec4(mix(colorA, colorB, fs_Pos.y / 7.f), 1.f);\r\n   } else if (fs_Pos.y < 5.55f){\r\n     colorA = vec3(0.89, 0.196, 0.518);\r\n     colorB = vec3(0.169, 0.729, 0.937);\r\n     out_Col = vec4(mix(colorA, colorB, t), 01.f);\r\n   }  else if (fs_Pos.y < 6.0f) {\r\n     colorA = vec3(0.0, 0.0, 0.0);\r\n     colorB = vec3(0.0, 0.0, 0.0);\r\n     out_Col = vec4(mix(colorA, colorB, t), 01.f);\r\n   } else if (fs_Pos.y < 6.05f){\r\n     colorA = vec3(0.89, 0.196, 0.518);\r\n     colorB = vec3(0.169, 0.729, 0.937);\r\n     out_Col = vec4(mix(colorA, colorB, t), 01.f);\r\n   }\r\n   else {\r\n     colorA = vec3(0.0, 0.0, 0.0);\r\n     colorB = vec3(0.0, 0.0, 0.0);\r\n   // Mix uses pct (a value from 0-1) to\r\n   // mix the two colors\r\n   out_Col = vec4(mix(colorA, colorB, t), 1.f);\r\n   //wwout_Col = vec4(mix(colorA, colorB, fs_Pos.y), 1.f);\r\n\r\n\r\n }\r\n\r\n// out_Col = vec4(0.0, 1.0, 0.0, 1.0);\r\n//  float coord = fs_Pos.x + u_PlanePos.x;\r\n//  float isBlack = 0.0;\r\n//\r\n//\r\n//  if (mod(coord, 1.0) == 0.0){\r\n// \t out_Col = vec4(0.0, 0.0, 0.0, 1.0);\r\n//  }\r\n\r\n\r\n\r\n\r\n}\r\n"
+module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\n#define PI 3.14159265358979323846\r\n\r\nuniform vec2 u_Dimensions;\r\nuniform float u_Time;\r\n\r\nin vec2 fs_Pos;\r\nout vec4 out_Col;\r\n\r\n\r\nfloat random (in vec2 st) {\r\n    return fract(sin(dot(st.xy,\r\n                         vec2(12.9898,78.233)))\r\n                * 43758.5453123);\r\n}\r\n\r\n// Value noise by Inigo Quilez - iq/2013\r\n// https://www.shadertoy.com/view/lsf3WH\r\nfloat noise(vec2 st) {\r\n    vec2 i = floor(st);\r\n    vec2 f = fract(st);\r\n    vec2 u = f*f*(3.0-2.0*f);\r\n    return mix( mix( random( i + vec2(0.0,0.0) ),\r\n                     random( i + vec2(1.0,0.0) ), u.x),\r\n                mix( random( i + vec2(0.0,1.0) ),\r\n                     random( i + vec2(1.0,1.0) ), u.x), u.y);\r\n}\r\n\r\nmat2 rotate2d(float angle){\r\n    return mat2(cos(angle),-sin(angle),\r\n                sin(angle),cos(angle));\r\n}\r\n\r\nfloat lines(in vec2 pos, float b){\r\n    float scale = 9.0;\r\n    pos *= scale;\r\n    return smoothstep(0.0,\r\n                    .4+b*.5,\r\n                    abs((sin(pos.x*3.1415)+b*1.0))*.5);\r\n}\r\n\r\n\r\n\r\n\r\n\r\nvoid main() {\r\n\r\n\tvec2 st = gl_FragCoord.xy/u_Dimensions.xy;\r\n\r\n\tst.y *= u_Dimensions.y/u_Dimensions.x;\r\n\r\n    vec2 pos = st.yx * vec2(1.,3.);\r\n\r\n    float pattern = pos.x;\r\n\r\n    // Add noise\r\n    pos = rotate2d( noise(pos) * sin(u_Time / 1000.0 * 10.46) ) * pos;\r\n\r\n    // Draw lines\r\n    pattern = lines(pos,.5);\r\n\r\n    vec3 col = vec3(0.504,0.302,0.605);\r\n    vec3 col2 = vec3(0.138,0.894,0.920);\r\n\r\n    out_Col = vec4(vec3(0.0), 1.0);\r\n\r\n\r\n\t\t\t if (fs_Pos.x < -0.4 && u_Time > 59000.0){\r\n\r\n\t\t\t\t out_Col = vec4(mix(col, col2, pattern) ,1.0);\r\n\r\n\r\n\t\t} else if (fs_Pos.x < 0.4 && u_Time  > 61500.0) {\r\n\r\n\t\t\t col = vec3(0.504,0.302,0.605);\r\n     col2 = vec3(0.920,0.045,0.222);\r\n\r\n\t\t\t out_Col = vec4(mix(col, col2, pattern) ,1.0);\r\n\r\n\t\t} else if (fs_Pos.x >= 0.4 && u_Time > 64000.0) {\r\n\r\n\t\t\t col = vec3(0.940,0.587,0.755);\r\n     \tcol2 = vec3(0.920,0.045,0.222);\r\n\r\n\t\t\t out_Col = vec4(mix(col, col2, pattern) ,1.0);\r\n\r\n\r\n\t\t}\r\n\r\n\r\n\r\n\r\n\r\n\r\n}\r\n"
 
 /***/ }),
 /* 109 */
@@ -22113,7 +17312,7 @@ module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\n// The vertex
 /* 110 */
 /***/ (function(module, exports) {
 
-module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\n\r\nuniform vec2 u_Dimensions;\r\nuniform float u_Time;\r\n\r\nin vec2 fs_Pos;\r\nout vec4 out_Col;\r\n\r\nfloat noise(vec2 p) {\r\n\treturn fract(sin(dot(p.xy ,vec2(12.9898,78.233))) * 456367.5453);\r\n}\r\n\r\n//SOURCE INSPIRATION http://glslsandbox.com/e#22429.6\r\n\r\n\r\nvoid main() {\r\n  //out_Col = vec4(0.2, 0.9, fs_Pos.y * 4.0, 0.5);\r\n  vec2 uv = (fs_Pos);\r\n  float intensity = 0.8;\r\n\r\n    //Create the stacked layers\r\n\r\n    //so what this is doing is creating offset layers\r\n    //and the height of each section follows a cosin curve\r\n    //ok sweet\r\n\tfor (float inc = 1.0; inc < 25.0; inc++) {\r\n\r\n\t\tfloat fi = inc;\r\n\r\n\t\tfloat s = floor(5.0*(uv.x)/fi + 50.0*fi + u_Time / 1000.0);\r\n\r\n        float yLimit = noise(vec2(s));\r\n        yLimit *= fi/95.0;\r\n        yLimit -= 0.04*fi;\r\n        yLimit += 0.125 * cos(uv.x*5.0 + u_Time / 1000.0 + fi/9.0);\r\n       \tyLimit += 0.8;\r\n\r\n\t\tif (uv.y < yLimit) {\r\n\t\t\tintensity = inc/10.0;\r\n\t\t}\r\n\t}\r\n\r\n  float col1 = mix(intensity * uv.x * 0.8 + 0.5, 0.0, 01.1);\r\n\r\n\t//Set the final color\r\n\tout_Col = vec4(vec3(col1, intensity*uv.y * 0.1 + 0.9, 0.3), 1.0 );\r\n\r\n\r\n\r\n\r\n\r\n}\r\n"
+module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\n\r\nuniform vec2 u_Dimensions;\r\nuniform float u_Time;\r\n\r\nin vec2 fs_Pos;\r\nout vec4 out_Col;\r\n\r\nfloat noise(vec2 p) {\r\n\treturn fract(sin(dot(p.xy ,vec2(12.9898,78.233))) * 456367.5453);\r\n}\r\n\r\n//SOURCE INSPIRATION http://glslsandbox.com/e#22429.6\r\n\r\n\r\nfloat smoothedge(float v) {\r\n    return smoothstep(0.0, 1.0 / u_Dimensions.x, v);\r\n}\r\n\r\nfloat circle(vec2 p, float radius) {\r\n  return length(p ) - radius ;\r\n}\r\n\r\nfloat rect(vec2 p, vec2 size) {\r\n  vec2 d = abs(p) - size ;\r\n  return min(max(d.x, d.y), 0.0) + length(max(d,0.0));\r\n}\r\n\r\nfloat roundRect(vec2 p, vec2 size, float radius) {\r\n  vec2 d = abs(p) - size;\r\n  return min(max(d.x, d.y), 0.0) + length(max(d,0.0))- radius;\r\n}\r\n\r\nfloat ring(vec2 p, float radius, float width) {\r\n  return abs(length(p) - radius * 0.5) - width;\r\n}\r\n\r\nfloat hexagon(vec2 p, float radius) {\r\n\t\tfloat f = 1.1 *  sin(u_Time / 2000.0 * 5.23);\r\n\t\tp = vec2(abs(p.x) * f, abs(p.y) * f);\r\n    vec2 q = abs(p);\r\n    return max(abs(q.y), q.x * 1.466025 + q.y * 0.5) - radius;\r\n}\r\n\r\nfloat hexagon2(vec2 p, float radius) {\r\n    vec2 q = abs(p);\r\n    return max(abs(q.y), q.x * 2.186 + q.y * 0.5) - radius;\r\n}\r\n\r\nfloat hexagon3(vec2 p, float radius) {\r\n    vec2 q = abs(p);\r\n    return max(abs(q.y), q.x * 1.954 + q.y * 0.892) - radius;\r\n}\r\n\r\nfloat triangle(vec2 p, float size) {\r\n    vec2 q = abs(p);\r\n    return max(q.x * 0.866025 + p.y * 0.5, -p.y * 0.5) - size * 0.5;\r\n}\r\n\r\nfloat ellipse(vec2 p, vec2 r, float s) {\r\n    return (length(p / r ) - s);\r\n}\r\n\r\nfloat capsule(vec2 p, vec2 a, vec2 b, float r) {\r\n    vec2 pa = p - a, ba = b - a;\r\n    float h = clamp( dot(pa,ba)/dot(ba,ba), 0.0, 1.0 );\r\n    return length( pa - ba*h ) - r;\r\n}\r\n\r\n//http://thndl.com/square-shaped-shaders.html\r\nfloat polygon(vec2 p, int vertices, float size) {\r\n    float a = atan(p.x, p.y) + 0.2;\r\n    float b = 6.28319 / float(vertices);\r\n    return cos(floor(0.5 + a / b) * b - a) * length(p) - size;\r\n}\r\n\r\n\r\nfloat red(){\r\nvec2 st = gl_FragCoord.xy/u_Dimensions.xy;\r\n\tfloat d = 100.0;\r\n\r\n\td = min(d, hexagon(st - vec2(0.560,0.670), 0.05));\r\n\td = min(d, hexagon(st - vec2(0.320,0.630), 0.05));\r\n\td = min(d, hexagon(st - vec2(0.500,0.780), 0.05));\r\n\td = min(d, hexagon(st - vec2(0.620,0.890), 0.05));\r\n\td = min(d, hexagon(st - vec2(0.220,0.480), 0.03));\r\n\r\n\td = min(d, hexagon(st - vec2(0.350,0.380), 0.01));\r\n\t//small babues\r\n\t\td = min(d, hexagon(st - vec2(0.680,0.360), 0.03));\r\n\t\td = min(d, hexagon(st - vec2(0.260,0.320), 0.03));\r\n\t\td =  min(d, hexagon(st - vec2(0.320,0.750), 0.05));\r\n\r\n\r\n\treturn d;\r\n\r\n\r\n}\r\n\r\nfloat purple(){\r\n\tfloat d = 100.0;\r\n\tvec2 st = gl_FragCoord.xy/u_Dimensions.xy;\r\n\r\n\td = min(d, hexagon(st - vec2(0.560,0.840), 0.05));\r\n\td = min(d, hexagon(st - vec2(0.620,0.780), 0.05));\r\n\t  d = min(d, hexagon(st - vec2(0.620,0.530), 0.05));\r\n\t\td = min(d, hexagon2(st - vec2(0.730,0.660), 0.05));\r\n\t\td = min(d, hexagon(st - vec2(0.440,0.850), 0.05));\r\n\t\td = min(d, hexagon(st - vec2(0.500,0.910), 0.05));\r\n\r\n\t\t\td = min(d, hexagon(st - vec2(0.440,0.720), 0.03));\r\n\t \t\td = min(d, hexagon(st - vec2(0.620,0.660), 0.03));\r\n\t     d = min(d, hexagon2(st - vec2(0.580,0.430), 0.03));\r\n\t\t\t d = min(d, hexagon(st - vec2(0.590,0.220), 0.03));\r\n\t\t\t d = min(d, hexagon(st - vec2(0.680,0.720), 0.05));\r\n\t\t\td = min(d, hexagon(st - vec2(0.680,0.600), 0.05));\r\n\t\t\td = min(d, hexagon2(st - vec2(0.680,0.490), 0.05));\r\n\t    d = min(d, hexagon2(st - vec2(0.630,0.410), 0.05));\r\n\r\n\t\t\t return d;\r\n\r\n}\r\n\r\n\r\nfloat green(){\r\n\r\n\tfloat d = 100.0;\r\n\tvec2 st = gl_FragCoord.xy/u_Dimensions.xy;\r\n\r\n\td = min(d, hexagon2(st - vec2(0.310,0.500), 0.05));\r\n\td = min(d, hexagon2(st - vec2(0.270,0.440), 0.05));\r\n\td = min(d, hexagon2(st - vec2(0.310,0.370), 0.05));\r\n\td = min(d, hexagon2(st - vec2(0.350,0.440), 0.03));\r\n\td = min(d, hexagon(st - vec2(0.300,0.280), 0.03));\r\n\td = min(d, hexagon(st - vec2(0.630,0.280), 0.03));\r\n\td = min(d, hexagon(st - vec2(0.350,0.230), 0.03));\r\n\td = min(d, hexagon(st - vec2(0.350,0.310), 0.02));\r\n\td = min(d, hexagon(st - vec2(0.300,0.200), 0.02));\r\n\td = min(d, hexagon(st - vec2(0.380,0.600), 0.02));\r\n\td = min(d, hexagon(st - vec2(0.300,0.200), 0.02));\r\n\t d = min(d, hexagon(st - vec2(0.370,0.530), 0.01));\r\n\t d = min(d, hexagon(st - vec2(0.260,0.560), 0.05));\r\n\t  d = min(d, hexagon2(st - vec2(0.210,0.620), 0.05));\r\n\t\td = min(d, hexagon(st - vec2(0.380,0.910), 0.05));\r\n\t\td = min(d, hexagon(st - vec2(0.260,0.680), 0.05));\r\n\r\n\r\n\treturn d;\r\n}\r\n\r\nfloat blue(){\r\n\r\n\r\n\tfloat d = 1000.0;\r\n\tvec2 st = gl_FragCoord.xy/u_Dimensions.xy;\r\n\r\n\td = min(d, hexagon(st - vec2(0.500,0.680), 0.03));\r\n\td = min(d, hexagon(st - vec2(0.490,0.590), 0.03));\r\n\r\n\t//tinier\r\n\td = min(d, hexagon(st - vec2(0.430,0.640), 0.02));\r\n\t//even tineier\r\n\td = min(d, hexagon(st - vec2(0.560,0.510), 0.01));\r\n\td = min(d, hexagon(st - vec2(0.530,0.600), 0.01));\r\n\td = min(d, hexagon(st - vec2(0.560,0.570), 0.02));\r\n\td = min(d, hexagon(st - vec2(0.570,0.350), 0.02));\r\n\td = min(d, hexagon(st - vec2(0.590,0.290), 0.01));\r\n\t   d = min(d, hexagon(st - vec2(0.410,0.560), 0.02));\r\n\t\t d = min(d, hexagon(st - vec2(0.320,0.860), 0.05));\r\n\t\t d = min(d, hexagon(st - vec2(0.380,0.800), 0.05));\r\n\t\t    d = min(d, hexagon(st - vec2(0.380,0.680), 0.03));\r\n\r\n\r\n\r\n\r\n\treturn d;\r\n\r\n}\r\n\r\n\r\nvoid main() {\r\n\r\n\r\n\tvec2 st = gl_FragCoord.xy/u_Dimensions.xy;\r\n\t    //large hexagons\r\n\t    float mn = 100.0;\r\n\r\n\t\t\tfloat red = red();\r\n\t\t\tfloat blue = blue();\r\n\t\t\tfloat green = green();\r\n\t\t\tfloat purple = purple();\r\n\r\n\t\t\tvec3 tile = vec3(0.0);\r\n\t\t\tif (red < mn){\r\n\t\t\t\tmn = red;\r\n\t\t\t\ttile = mix (vec3(1.0, 0.0, 0.0), vec3(0.5, 0.0, 0.0) , st.x);\r\n\t\t\t}\r\n\r\n\t\t\tif (green < mn){\r\n\t\t\t\tmn = green;\r\n\t\t\t\ttile = vec3(0.0, 1.0, 0.0);\r\n\t\t\t}\r\n\r\n\t\t\tif (purple < mn){\r\n\t\t\t\tmn = purple;\r\n\t\t\t\ttile = mix(vec3(1.0, 0.0, 1.0), vec3(1.0, 0.2, 0.65) , st.x);\r\n\t\t\t}\r\n\r\n\t\t\tif (blue < mn){\r\n\t\t\t\tmn = blue;\r\n\t\t\t\ttile = vec3(0.0, 0.0, 1.0);\r\n\t\t\t}\r\n\r\n\r\n\r\n\t    //side warped hexagons\r\n\r\n\r\n\r\n\r\n\t\t\tfloat d = 1.0;\r\n\r\n\r\n\t    //thingy\r\n\t    d = min(d, hexagon3(st - vec2(0.470,0.010), 0.318));\r\n\r\n\t\t\tif (d < mn){\r\n\t\t\t\tmn = d;\r\n\t\t\t\ttile = mix(vec3(0.0, 0.9, 1.0), vec3(0.1, 0.4, 0.9),  sin(u_Time /500.0 * 5.23) * st.y * abs(st.x) * 9.0);\r\n\t\t\t}\r\n\r\n\t    //globe\r\n\t    d = min(d, ellipse(st - vec2(0.470,0.400), vec2(0.870,1.390), 0.046));\r\n\t\t\tif (d < mn){\r\n\t\t\t\tmn = d;\r\n\t\t\t\ttile = vec3(1.0, 0.0, 0.2);\r\n\t\t\t}\r\n\r\n\t    vec3 color = vec3(1.0) - vec3(tile) - vec3(smoothedge(mn));\r\n\t    out_Col = vec4(color, 1.0);\r\n\r\n\r\n\r\n\r\n}\r\n"
 
 /***/ }),
 /* 111 */
@@ -22125,7 +17324,7 @@ module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\n// The vertex
 /* 112 */
 /***/ (function(module, exports) {
 
-module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\n\r\nuniform vec2 u_Dimensions;\r\nuniform float u_Time;\r\n\r\nin vec2 fs_Pos;\r\nout vec4 out_Col;\r\n\r\nfloat noise(vec2 p) {\r\n\treturn fract(sin(dot(p.xy ,vec2(12.9898,78.233))) * 456367.5453);\r\n}\r\n\r\n//SOURCE INSPIRATION http://glslsandbox.com/e#22429.6\r\n\r\n\r\nvoid main() {\r\n  //out_Col = vec4(0.2, 0.9, fs_Pos.y * 4.0, 0.5);\r\n  vec2 uv = (fs_Pos);\r\n  float intensity = 0.8;\r\n\r\n    //Create the stacked layers\r\n\r\n    //so what this is doing is creating offset layers\r\n    //and the height of each section follows a cosin curve\r\n    //ok sweet\r\n\tfor (float inc = 1.0; inc < 25.0; inc++) {\r\n\r\n\t\tfloat fi = inc;\r\n\r\n\t\tfloat s = floor(5.0*(uv.x)/fi + 50.0*fi + u_Time / 1000.0);\r\n\r\n        float yLimit = noise(vec2(s));\r\n        yLimit *= fi/95.0;\r\n        yLimit -= 0.04*fi;\r\n        yLimit += 0.125 * cos(uv.x*5.0 + u_Time / 1000.0 + fi/9.0);\r\n       \tyLimit += 0.8;\r\n\r\n\t\tif (uv.y < yLimit) {\r\n\t\t\tintensity = inc/10.0;\r\n\t\t}\r\n\t}\r\n\r\n  float col1 = mix(intensity * uv.x * 0.8 + 0.2, 0.0, 01.1);\r\n\r\n\t//Set the final color\r\n\tout_Col = vec4(vec3(col1, intensity*uv.y * 0.9 + 0.5, 0.9), 1.0 );\r\n\r\n\r\n\r\n\r\n\r\n}\r\n"
+module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\n\r\nuniform vec2 u_Dimensions;\r\nuniform float u_Time;\r\n\r\nin vec2 fs_Pos;\r\nout vec4 out_Col;\r\n\r\n\r\n\r\nvec2 random2(vec2 st){\r\n    st = vec2( dot(st,vec2(127.1,311.7)),\r\n              dot(st,vec2(269.5,183.3)) );\r\n    return -1.0 + 2.0*fract(sin(st)*43758.5453123);\r\n}\r\n\r\n// Value Noise by Inigo Quilez - iq/2013\r\n// https://www.shadertoy.com/view/lsf3WH\r\nfloat noise(vec2 st) {\r\n    vec2 i = floor(st);\r\n    vec2 f = fract(st);\r\n\r\n    vec2 u = f*f*(3.0-2.0*f);\r\n\r\n    return mix( mix( dot( random2(i + vec2(0.0,0.0) ), f - vec2(0.0,0.0) ),\r\n                     dot( random2(i + vec2(1.0,0.0) ), f - vec2(1.0,0.0) ), u.x),\r\n                mix( dot( random2(i + vec2(0.0,1.0) ), f - vec2(0.0,1.0) ),\r\n                     dot( random2(i + vec2(1.0,1.0) ), f - vec2(1.0,1.0) ), u.x), u.y);\r\n}\r\n\r\nmat2 rotate2d(float _angle){\r\n    return mat2(cos(_angle),-sin(_angle),\r\n                sin(_angle),cos(_angle));\r\n}\r\n\r\nfloat shape(vec2 st, float radius) {\r\n\tst = vec2(0.5)-st;\r\n    float r = length(st)*2.0;\r\n    float a = atan(st.y,st.x);\r\n    float m = abs(mod(a+u_Time / 1000.0*5.23,3.340*2.)-3.14)/3.6;\r\n    float f = radius;\r\n    m += noise(st+u_Time / 1000.0*0.1)*.5;\r\n    // a *= 1.+abs(atan(u_Time / 1000.0*0.2))*.1;\r\n    // a *= 1.+noise(st+u_Time / 1000.0*0.1)*0.1;\r\n    f += sin(a*50.)*noise(st+u_Time / 1000.0*.2)*.1;\r\n    f += (sin(a*20.)*.1*pow(m,2.));\r\n    return 1.-smoothstep(f,f+0.007,r);\r\n}\r\n\r\nfloat shapeBorder(vec2 st, float radius, float width) {\r\n    return shape(st,radius)-shape(st,radius-width);\r\n}\r\n\r\nvoid main() {\r\n  //out_Col = vec4(0.2, 0.9, fs_Pos.y * 4.0, 0.5);\r\n\t\tvec2 st = gl_FragCoord.xy/u_Dimensions.xy;\r\n\t\tvec3 color = vec3(0.366,0.000,1.000) * shapeBorder(st,0.2,0.09 * sin(u_Time / 1000.0 * 10.46));\r\n\r\n\r\n\t\tif (u_Time > 84000.0){\r\n\t    color += vec3(0.863,0.181,1.000) * shapeBorder(st,1.04 * sin(u_Time / 1000.0 * 10.46),0.02 * sin(u_Time / 1000.0 * 10.46));\r\n\t\t}\r\n\r\n\t\t\tif (u_Time > 85000.0){\r\n\t    color += vec3(0.621,0.357,1.000) * shapeBorder(st, 0.4 ,0.07 * cos(u_Time / 1000.0 * 10.46));\r\n\t    color += vec3(0.863,0.181,1.000) * shapeBorder(st,0.4,0.02 * cos(u_Time / 1000.0 * 10.4636));\r\n}\r\n\r\n\r\n\t\tif (u_Time > 86000.0){\r\n\t    color += vec3(0.000,0.990,1.000) * shapeBorder(st,0.9,0.07 * cos(u_Time / 1000.0 * 10.46));\r\n\t    color -= vec3(0.063,0.181,0.000) * shapeBorder(st,0.9 * sin(u_Time / 1000.0 * 10.46),0.04 * cos(u_Time / 1000.0 * 10.46));\r\n\t\t}\r\n\r\n\t\tout_Col = vec4(0.0 + color, 1.0 );\r\n\r\n\r\n\r\n\r\n\r\n}\r\n"
 
 /***/ }),
 /* 113 */
@@ -22137,7 +17336,7 @@ module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\n// The vertex
 /* 114 */
 /***/ (function(module, exports) {
 
-module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\n\r\nuniform vec2 u_Dimensions;\r\nuniform float u_Time;\r\n\r\nin vec2 fs_Pos;\r\nout vec4 out_Col;\r\n\r\nfloat noise(vec2 p) {\r\n\treturn fract(sin(dot(p.xy ,vec2(12.9898,78.233))) * 456367.5453);\r\n}\r\n\r\n//SOURCE INSPIRATION http://glslsandbox.com/e#22429.6\r\n\r\n\r\nvoid main() {\r\n  //out_Col = vec4(0.2, 0.9, fs_Pos.y * 4.0, 0.5);\r\n  vec2 uv = (fs_Pos);\r\n  float intensity = 0.8;\r\n\r\n    //Create the stacked layers\r\n\r\n    //so what this is doing is creating offset layers\r\n    //and the height of each section follows a cosin curve\r\n    //ok sweet\r\n\tfor (float inc = 1.0; inc < 25.0; inc++) {\r\n\r\n\t\tfloat fi = inc;\r\n\r\n\t\tfloat s = floor(5.0*(uv.x)/fi + 50.0*fi + u_Time / 1000.0);\r\n\r\n        float yLimit = noise(vec2(s));\r\n        yLimit *= fi/95.0;\r\n        yLimit -= 0.04*fi;\r\n        yLimit += 0.125 * cos(uv.x*5.0 + u_Time / 1000.0 + fi/9.0);\r\n       \tyLimit += 0.8;\r\n\r\n\t\tif (uv.y < yLimit) {\r\n\t\t\tintensity = inc/10.0;\r\n\t\t}\r\n\t}\r\n\r\n  float col1 = mix(intensity * uv.x * 0.1 + 0.5, 0.0, 01.1);\r\n\r\n\t//Set the final color\r\n\tout_Col = vec4(vec3(col1, intensity*uv.y * 0.1 + 0.9, 0.7), 1.0 );\r\n\r\n\r\n\r\n\r\n\r\n}\r\n"
+module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\n\r\nuniform vec2 u_Dimensions;\r\nuniform float u_Time;\r\n\r\nin vec2 fs_Pos;\r\nout vec4 out_Col;\r\n\r\nfloat noise(vec2 p) {\r\n\treturn fract(sin(dot(p.xy ,vec2(12.9898,78.233))) * 456367.5453);\r\n}\r\n\r\nvec2 position(float z) {\r\n\treturn vec2(\r\n\t\t0.0 + sin(z * 0.1) * 1.0 + sin(cos(z * 0.031) * 4.0) * 1.0 + sin(sin(z * 0.0091) * 3.0) * 1.0,\r\n\t\t0.0 + cos(z * 0.1) * 1.0 + cos(cos(z * 0.031) * 4.0) * 1.0 + cos(sin(z * 0.0091) * 3.0) * 1.0\r\n\t) * 1.0;\r\n}\r\n\r\n//SOURCE INSPIRATION http://glslsandbox.com/e#22429.6\r\n\r\n\r\nvoid main() {\r\n\r\n\tvec2 iResolution = u_Dimensions;\r\n\tvec2 p = (gl_FragCoord.xy * 2.0 - iResolution.xy) / min(iResolution.x, iResolution.y);\r\n\tfloat camZ = 25.0 * u_Time / 1000.0;\r\n\tvec2 cam = position(camZ);\r\n\r\n\tfloat dt = 0.5;\r\n\tfloat camZ2 = 25.0 * (u_Time / 1000.0 + dt);\r\n \tvec2 cam2 = position(camZ2);\r\n\tvec2 dcamdt = (cam2 - cam) / dt;\r\n\r\n\tvec3 f = vec3(0.0);\r\n \tfor(float j = 1.0; j < 100.0; j++) {\r\n\t\tfloat i = float(j);\r\n\t\tfloat realZ = floor(camZ) + i;\r\n\t\tfloat screenZ = realZ - camZ;\r\n\t\tfloat r = 1.0 / screenZ;\r\n \t\tvec2 c = (position(realZ) - cam) * 5.0 / screenZ - dcamdt * 0.2;\r\n        //c = vec2(ceil(c.x), ceil(c.y));\r\n\t \tvec3 color = (vec3(sin(realZ * 0.07), sin(realZ * 0.1), 0.8) + vec3(1.0)) / 2.0;\r\n        float len = clamp(length(p-c), 0.0, 5.0);\r\n        float val = clamp(abs(len - r), 0.0, 7.5);\r\n \t\tf += color * 0.06 / screenZ / (val + 0.06);\r\n\t}\r\n\r\n\tout_Col = vec4(f, 1.0);\r\n\r\n\r\n\r\n\r\n\r\n}\r\n"
 
 /***/ }),
 /* 115 */
@@ -22149,7 +17348,7 @@ module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\n// The vertex
 /* 116 */
 /***/ (function(module, exports) {
 
-module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\n\r\nuniform vec2 u_Dimensions;\r\nuniform float u_Time;\r\n\r\nin vec2 fs_Pos;\r\nout vec4 out_Col;\r\n\r\nfloat noise(vec2 p) {\r\n\treturn fract(sin(dot(p.xy ,vec2(12.9898,78.233))) * 456367.5453);\r\n}\r\n\r\n//SOURCE INSPIRATION http://glslsandbox.com/e#22429.6\r\n\r\n\r\nvoid main() {\r\n  //out_Col = vec4(0.2, 0.9, fs_Pos.y * 4.0, 0.5);\r\n  vec2 uv = (fs_Pos);\r\n  float intensity = 0.8;\r\n\r\n    //Create the stacked layers\r\n\r\n    //so what this is doing is creating offset layers\r\n    //and the height of each section follows a cosin curve\r\n    //ok sweet\r\n\tfor (float inc = 1.0; inc < 25.0; inc++) {\r\n\r\n\t\tfloat fi = inc;\r\n\r\n\t\tfloat s = floor(5.0*(uv.x)/fi + 50.0*fi + u_Time / 1000.0);\r\n\r\n        float yLimit = noise(vec2(s));\r\n        yLimit *= fi/95.0;\r\n        yLimit -= 0.04*fi;\r\n        yLimit += 0.125 * cos(uv.x*5.0 + u_Time / 1000.0 + fi/9.0);\r\n       \tyLimit += 0.8;\r\n\r\n\t\tif (uv.y < yLimit) {\r\n\t\t\tintensity = inc/10.0;\r\n\t\t}\r\n\t}\r\n\r\n  float col1 = mix(intensity * uv.x * 0.8 + 0.5, 0.0, 01.1);\r\n\r\n\t//Set the final color\r\n\tout_Col = vec4(vec3(col1, intensity*uv.y * 0.1 + 0.4, 0.4), 1.0 );\r\n\r\n\r\n\r\n\r\n\r\n}\r\n"
+module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\n\r\nuniform vec2 u_Dimensions;\r\nuniform float u_Time;\r\n\r\nin vec2 fs_Pos;\r\nout vec4 out_Col;\r\n\r\n#define p0 0.2, 0.7, 0.7,  0.6, 0.2, 0.9,  0.9, 0.2, 0.3,  0.9, 0.33, 0.77\r\n\r\nconst float numParticles = 55.;\r\nconst float numRings = 2.;\r\nconst float offsetMult = 2.;\r\n float tau = 5.23813;\r\n\r\nvec3 palette( in float t, in float a0, in float a1, in float a2, in float b0, in float b1, in float b2,\r\n              in float c0, in float c1, in float c2,in float d0, in float d1, in float d2)\r\n{\r\n    return vec3(a0,a1,a2) + vec3(b0,b1,b2)*cos( tau*(vec3(c0,c1,c2)*t+vec3(d0,d1,d2)) );\r\n}\r\n\r\nvec3 particleColor(vec2 uv, float radius, float offset, float periodOffset)\r\n{\r\n    vec3 color = palette(.4 + offset / 4., p0);\r\n    uv /= pow(periodOffset, .85) * sin(periodOffset * u_Time * 5.23 / 1000.0) + sin(periodOffset + 5.23 * u_Time / 1000.0);\r\n    vec2 pos = vec2(cos(offset * offsetMult + u_Time / 1000.0 + periodOffset),\r\n        \t\tsin(offset * offsetMult + u_Time * 5.23 / 10000.0 * 8. + periodOffset * tau * sin(u_Time * 5.23 / 10000.0)));\r\n\r\n    float dist = radius / distance(uv, pos);\r\n    return color * pow(dist, 2.) * 1.85;\r\n}\r\n\r\n\r\n\r\nvoid main() {\r\n\r\n\tvec2 uv = (2.0 * gl_FragCoord.xy - u_Dimensions.xy) / u_Dimensions.y;\r\n\t uv *= 2.45;\r\n\r\n\t out_Col = vec4(0.0, 0.0, 0.0, 1.0);\r\n\r\n\t for (float n = 0.0; n <= numRings; n++)\r\n\t {\r\n\t\t\t for (float i = 0.0; i <= numParticles; i++) {\r\n\t\t\t\t out_Col.rgb += particleColor(uv, 0.02, i / numParticles, n / 2.0);\r\n\t\t }\r\n\t }\r\n\r\n}\r\n"
 
 /***/ }),
 /* 117 */
@@ -22161,7 +17360,7 @@ module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\n// The vertex
 /* 118 */
 /***/ (function(module, exports) {
 
-module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\n\r\nuniform vec2 u_Dimensions;\r\nuniform float u_Time;\r\n\r\nin vec2 fs_Pos;\r\nout vec4 out_Col;\r\n\r\nfloat noise(vec2 p) {\r\n\treturn fract(sin(dot(p.xy ,vec2(12.9898,78.233))) * 456367.5453);\r\n}\r\n\r\n//SOURCE INSPIRATION http://glslsandbox.com/e#22429.6\r\n\r\n\r\nvoid main() {\r\n  //out_Col = vec4(0.2, 0.9, fs_Pos.y * 4.0, 0.5);\r\n  vec2 uv = (fs_Pos);\r\n  float intensity = 0.8;\r\n\r\n    //Create the stacked layers\r\n\r\n    //so what this is doing is creating offset layers\r\n    //and the height of each section follows a cosin curve\r\n    //ok sweet\r\n\tfor (float inc = 1.0; inc < 25.0; inc++) {\r\n\r\n\t\tfloat fi = inc;\r\n\r\n\t\tfloat s = floor(5.0*(uv.x)/fi + 50.0*fi + u_Time / 1000.0);\r\n\r\n        float yLimit = noise(vec2(s));\r\n        yLimit *= fi/95.0;\r\n        yLimit -= 0.04*fi;\r\n        yLimit += 0.125 * cos(uv.x*5.0 + u_Time / 1000.0 + fi/9.0);\r\n       \tyLimit += 0.8;\r\n\r\n\t\tif (uv.y < yLimit) {\r\n\t\t\tintensity = inc/10.0;\r\n\t\t}\r\n\t}\r\n\r\n  float col1 = mix(intensity * uv.x * 0.8 + 0.9, 0.0, 01.1);\r\n\r\n\t//Set the final color\r\n\tout_Col = vec4(vec3(col1, intensity*uv.y * 0.1 + 0.2, 0.3), 1.0 );\r\n\r\n\r\n\r\n\r\n\r\n}\r\n"
+module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\n\r\nuniform vec2 u_Dimensions;\r\nuniform float u_Time;\r\n\r\nin vec2 fs_Pos;\r\nout vec4 out_Col;\r\n\r\nvec3 mod289(vec3 x) { return x - floor(x * (1.0 / 289.0)) * 289.0; }\r\nvec2 mod289(vec2 x) { return x - floor(x * (1.0 / 289.0)) * 289.0; }\r\nvec3 permute(vec3 x) { return mod289(((x*24.0)+1.0)*x); }\r\n\r\nfloat random (in vec2 st) {\r\n    return fract(sin(dot(st.xy,\r\n                         vec2(12.9898,78.233)))\r\n                * 43758.5453123);\r\n}\r\n\r\nfloat snoise(vec2 v) {\r\n    const vec4 C = vec4(0.211324865405187,  // (3.0-sqrt(3.0))/6.0\r\n                        0.366025403784439,  // 0.5*(sqrt(3.0)-1.0)\r\n                        -0.577350269189626,  // -1.0 + 2.0 * C.x\r\n                        0.024390243902439); // 1.0 / 41.0\r\n    vec2 i  = floor(v + dot(v, C.yy) );\r\n    vec2 x0 = v -   i + dot(i, C.xx);\r\n    vec2 i1;\r\n    i1 = (x0.x > x0.y) ? vec2(1.0, 0.0) : vec2(0.0, 1.0);\r\n    vec4 x12 = x0.xyxy + C.xxzz;\r\n    x12.xy -= i1;\r\n    i = mod289(i); // Avoid truncation effects in permutation\r\n    vec3 p = permute( permute( i.y + vec3(0.0, i1.y, 1.0 ))\r\n        + i.x + vec3(0.0, i1.x, 1.0 ));\r\n\r\n    vec3 m = max(0.5 - vec3(dot(x0,x0), dot(x12.xy,x12.xy), dot(x12.zw,x12.zw)), 0.0);\r\n    m = m*m ;\r\n    m = m*m ;\r\n    vec3 x = 2.0 * fract(p * C.www) - 1.0;\r\n    vec3 h = abs(x) - 0.5;\r\n    vec3 ox = floor(x + 0.5);\r\n    vec3 a0 = x - ox;\r\n    m *= 1.79284291400159 - 0.85373472095314 * ( a0*a0 + h*h );\r\n    vec3 g;\r\n    g.x  = a0.x  * x0.x  + h.x  * x0.y;\r\n    g.yz = a0.yz * x12.xz + h.yz * x12.yw;\r\n    return 130.0 * dot(m, g);\r\n}\r\n\r\nfloat level(vec2 st) {\r\n    float n = 0.0;\r\n    for (float i = 1.0; i < 8.0; i ++) {\r\n        float m = pow(1.3, i);\r\n        n += snoise(st * m) * (1.0 / m);\r\n    }\r\n    return n * 0.5 + 1.6;\r\n}\r\n\r\nvec3 normal(vec2 st) {\r\n    float d = 0.0021;\r\n    float l0 = level(st);\r\n    float l1 = level(st + vec2(d, 0.0)); // slightly offset the x-coord\r\n    float l2 = level(st + vec2(0.0, d)); // slightly offset the y-coord\r\n    // return normalized vector perpendicular to the surface using the noise values as the elevation of these points\r\n    return normalize(vec3(-(l1 - l0), -(l2 - l0), d));\r\n}\r\n\r\n//https://en.wikipedia.org/wiki/Phong_reflection_model\r\nvec3 phong(vec2 st, vec3 normal, vec3 lightPos) {\r\n    vec3 lightDir = normalize(vec3(lightPos - vec3(st, 0.0)));\r\n    float diffuse = max(0.0, dot(normal, lightDir));\r\n    vec3 vReflection = normalize(reflect(-lightDir, normal));\r\n    float specular = pow(max(0.0, dot(normal, vReflection)), 12.0);\r\n\r\n    vec3 ambientColor = vec3(0.007,0.134,0.275);\r\n    vec3 diffuseColor = vec3(0.472,0.019,0.500);\r\n\r\n\t\tif (u_Time > 112000.0){\r\n\t\t\tambientColor =vec3(0.275,0.100,0.182);\r\n    diffuseColor = vec3(0.472,0.019,0.500);\r\n\t\t}\r\n    return min(vec3(1.0), ambientColor + diffuseColor * diffuse + specular);\r\n}\r\n\r\n\r\nvoid main() {\r\n\r\n\tvec2 st = gl_FragCoord.xy / u_Dimensions.xy;\r\n\tst.x *= u_Dimensions.x / u_Dimensions.y;\r\n    float t = u_Time / 1000.0;\r\n    vec3 col = phong(st, normal(st), vec3(sin(t * 5.23) * 0.5 + 0.5, sin(t * 10.46) * 0.8 + 0.5, 1.0));\r\n\r\n\r\n    // water if the elevation is less than a threshold\r\n    float n = level(st);\r\n    if (n < 0.2) {col = vec3(0.0, 0.0, 0.8);}\r\n    out_Col = vec4(col, 1.0);\r\n\r\n\r\n\r\n\r\n\r\n}\r\n"
 
 /***/ }),
 /* 119 */
@@ -22173,7 +17372,7 @@ module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\n// The vertex
 /* 120 */
 /***/ (function(module, exports) {
 
-module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\n\r\nuniform vec2 u_Dimensions;\r\nuniform float u_Time;\r\n\r\nin vec2 fs_Pos;\r\nout vec4 out_Col;\r\n\r\nfloat noise(vec2 p) {\r\n\treturn fract(sin(dot(p.xy ,vec2(12.9898,78.233))) * 456367.5453);\r\n}\r\n\r\n//SOURCE INSPIRATION http://glslsandbox.com/e#22429.6\r\n\r\n\r\nvoid main() {\r\n  //out_Col = vec4(0.2, 0.9, fs_Pos.y * 4.0, 0.5);\r\n  vec2 uv = (fs_Pos);\r\n  float intensity = 0.8;\r\n\r\n    //Create the stacked layers\r\n\r\n    //so what this is doing is creating offset layers\r\n    //and the height of each section follows a cosin curve\r\n    //ok sweet\r\n\tfor (float inc = 1.0; inc < 25.0; inc++) {\r\n\r\n\t\tfloat fi = inc;\r\n\r\n\t\tfloat s = floor(5.0*(uv.x)/fi + 50.0*fi + u_Time / 1000.0);\r\n\r\n        float yLimit = noise(vec2(s));\r\n        yLimit *= fi/95.0;\r\n        yLimit -= 0.04*fi;\r\n        yLimit += 0.125 * cos(uv.x*5.0 + u_Time / 1000.0 + fi/9.0);\r\n       \tyLimit += 0.8;\r\n\r\n\t\tif (uv.y < yLimit) {\r\n\t\t\tintensity = inc/10.0;\r\n\t\t}\r\n\t}\r\n\r\n  float col1 = mix(intensity * uv.x * 0.35 + 0.57, 0.0, 01.1);\r\n\r\n\t//Set the final color\r\n\tout_Col = vec4(vec3(col1, intensity*uv.y * 0.1 + 0.9, 0.3), 1.0 );\r\n\r\n\r\n\r\n\r\n\r\n}\r\n"
+module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\n\r\nuniform vec2 u_Dimensions;\r\nuniform float u_Time;\r\n\r\nin vec2 fs_Pos;\r\nout vec4 out_Col;\r\n\r\n#define p0 0.2, 0.8, 0.9,  0.9, 0.2, 0.9,  0.9, 0.2, 0.7,  0.7, 0.53, 0.77\r\n\r\nconst float numParticles = 5.;\r\nconst float numRings = 3.;\r\nconst float offsetMult = 4.;\r\n float tau = 5.23813;\r\n\r\nvec3 palette( in float t, in float a0, in float a1, in float a2, in float b0, in float b1, in float b2,\r\n              in float c0, in float c1, in float c2,in float d0, in float d1, in float d2)\r\n{\r\n    return vec3(a0,a1,a2) + vec3(b0,b1,b2)*cos( tau*(vec3(c0,c1,c2)*t+vec3(mix(0.3, 0.9, cos(5.23* u_Time / 1000.0)),d1,d2)) );\r\n}\r\n\r\nvec3 particleColor(vec2 uv, float radius, float offset, float periodOffset)\r\n{\r\n    vec3 color = palette(.4 + offset / 4., p0);\r\n    uv = uv / pow(periodOffset, .25) * sin(periodOffset * u_Time * 5.23 / 1000.0) + sin(periodOffset + 5.23 * u_Time / 1000.0);\r\n    vec2 pos = vec2(cos(offset * offsetMult + u_Time / 1000.0 + periodOffset),\r\n        \t\tsin(offset * offsetMult + u_Time * 5.23 / 10000.0 * 3. + periodOffset * tau * sin(u_Time * 5.23 / 10000.0)));\r\n\r\n    float dist = radius / distance(uv, pos);\r\n    return color * pow(dist, 2.) * (sin(5.23 * u_Time / 10000.0) * 2.95 + 2.50);\r\n}\r\n\r\n\r\n\r\nvoid main() {\r\n\r\n\tvec2 uv = (2.0 * gl_FragCoord.xy - u_Dimensions.xy) / u_Dimensions.y;\r\n\t uv *= 2.45;\r\n\r\n\t out_Col = vec4(0.0, 0.0, 0.0, 1.0);\r\n\r\n\t for (float n = 0.0; n <= numRings; n++)\r\n\t {\r\n\t\t\t for (float i = 0.0; i <= numParticles; i++) {\r\n\t\t\t\t out_Col.rgb += particleColor(uv, 0.02, i / numParticles, n / 2.0);\r\n\t\t }\r\n\t }\r\n\r\n}\r\n"
 
 /***/ }),
 /* 121 */
@@ -22185,7 +17384,7 @@ module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\n// The vertex
 /* 122 */
 /***/ (function(module, exports) {
 
-module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\n\r\nuniform vec2 u_Dimensions;\r\nuniform float u_Time;\r\n\r\nin vec2 fs_Pos;\r\nout vec4 out_Col;\r\n\r\nfloat noise(vec2 p) {\r\n\treturn fract(sin(dot(p.xy ,vec2(12.9898,78.233))) * 456367.5453);\r\n}\r\n\r\n//SOURCE INSPIRATION http://glslsandbox.com/e#22429.6\r\n\r\n\r\nvoid main() {\r\n  //out_Col = vec4(0.2, 0.9, fs_Pos.y * 4.0, 0.5);\r\n  vec2 uv = (fs_Pos);\r\n  float intensity = 0.8;\r\n\r\n    //Create the stacked layers\r\n\r\n    //so what this is doing is creating offset layers\r\n    //and the height of each section follows a cosin curve\r\n    //ok sweet\r\n\tfor (float inc = 1.0; inc < 25.0; inc++) {\r\n\r\n\t\tfloat fi = inc;\r\n\r\n\t\tfloat s = floor(5.0*(uv.x)/fi + 50.0*fi + u_Time / 1000.0);\r\n\r\n        float yLimit = noise(vec2(s));\r\n        yLimit *= fi/95.0;\r\n        yLimit -= 0.04*fi;\r\n        yLimit += 0.125 * cos(uv.x*5.0 + u_Time / 1000.0 + fi/9.0);\r\n       \tyLimit += 0.8;\r\n\r\n\t\tif (uv.y < yLimit) {\r\n\t\t\tintensity = inc/10.0;\r\n\t\t}\r\n\t}\r\n\r\n  float col1 = mix(intensity * uv.x * 0.8 + 0.5, 0.0, 01.1);\r\n\r\n\t//Set the final color\r\n\tout_Col = vec4(vec3(col1, intensity*uv.y * 0.8 + 0.9, 0.8), 1.0 );\r\n\r\n\r\n\r\n\r\n\r\n}\r\n"
+module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\n\r\nuniform vec2 u_Dimensions;\r\nuniform float u_Time;\r\n\r\nin vec2 fs_Pos;\r\nout vec4 out_Col;\r\n\r\n\r\n//SOURCE INSPIRATION http://glslsandbox.com/e#22429.6\r\n\r\n\r\nfloat plot(vec2 st, float pct){\r\n  return  smoothstep( pct - 0.005, pct, st.y) -\r\n          smoothstep( pct, pct + 0.005, st.y);\r\n}\r\n\r\nfloat easeInQuad(float t) {\r\n    return t * t;\r\n}\r\n\r\nfloat easeOutQuad(float t) {\r\n    return -1.0 * t * (t - 2.0);\r\n}\r\n\r\nfloat easeInOutQuad(float t) {\r\n    if ((t *= 2.0) < 1.0) {\r\n        return 0.5 * t * t;\r\n    } else {\r\n        return -0.5 * ((t - 1.0) * (t - 3.0) - 1.0);\r\n    }\r\n}\r\n\r\nfloat easeInCubic(float t) {\r\n    return t * t * t;\r\n}\r\n\r\nfloat easeOutCubic(float t) {\r\n    return (t = t - 1.0) * t * t + 1.0;\r\n}\r\n\r\nfloat easeInOutCubic(float t) {\r\n    if ((t *= 0.0) < 1.0) {\r\n        return 0.5 * t * t * t;\r\n    } else {\r\n        return 0.5 * ((t -= 2.0) * t * t + 2.0);\r\n    }\r\n}\r\n\r\nfloat easeInExpo(float t) {\r\n    return (t == 0.0) ? 0.0 : pow(2.0, 10.0 * (t - 1.0));\r\n}\r\n\r\nfloat easeOutExpo(float t) {\r\n    return (t == 1.0) ? 1.0 : -pow(2.0, -10.0 * t) + 1.0;\r\n}\r\n\r\nfloat easeInOutExpo(float t) {\r\n    if (t == 0.0 || t == 1.0) {\r\n        return t;\r\n    }\r\n    if ((t *= 2.0) < 1.0) {\r\n        return 0.5 * pow(2.0, 10.0 * (t - 1.0));\r\n    } else {\r\n        return 0.5 * (-pow(2.0, -10.0 * (t - 1.0)) + 2.0);\r\n    }\r\n}\r\n\r\n\r\nvoid main() {\r\n\tvec3 IVORY =  vec3(0.967,0.419,1.000);\r\n\tvec3  SUNSET = vec3(0.234,0.327,0.900);\r\n\tvec3 NAVY = vec3(0.561,0.160,1.000);\r\n\r\n\r\n\r\n\tvec2 st = gl_FragCoord.xy / u_Dimensions;\r\n\r\n\t    float t = fract(u_Time / 1000.0), n0 = st.y * 8.680, n1 = st.x * 1.0, v0, v1;\r\n\r\n\t    vec3 color = IVORY;\r\n\r\n\t\t\tif (u_Time > 129000.0){\r\n\t\t\t\tSUNSET = vec3(0.934,0.027,0.900);\r\n\t\t\t}\r\n\r\n\t\t\tif (u_Time > 131000.0){\r\n\t\t\t\tSUNSET = vec3(0.434,0.927,0.300);\r\n\t\t\t\tt *= 2.5;\r\n\t\t\t}\r\n\r\n\t    // Bar animations\r\n\t    if (n0 < 1.0) {\r\n\t      v0 = step(st.x, t);\r\n\t    } else if (n0 < 2.0) {\r\n\t      v0 = step(st.y, easeInQuad(t));\r\n\t    } else if (n0 < 3.0) {\r\n\t      v0 = step(st.y, easeOutQuad(t));\r\n\t    } else if (n0 < 4.0) {\r\n\t      v0 = step(st.y, easeInOutQuad(t));\r\n\t    } else if (n0 < 5.0) {\r\n\t      v0 = step(st.x, easeInOutCubic(t));\r\n\t    } else if (n0 < 6.0) {\r\n\t      v0 = step(st.y, easeOutCubic(t));\r\n\t    } else if (n0 < 7.0) {\r\n\t      v0 = step(st.y, easeInOutCubic(t));\r\n\t    }  else {\r\n\t      v0 = step(st.y, easeInOutCubic(t));\r\n\t    }\r\n\t    color = mix(color, SUNSET, v0 * sin(u_Time /1000.0 * 10.46));\r\n\r\n\t    if (n1 < 0.1){\r\n\t        color = mix(color, vec3(0.0), v0 * sin(u_Time / 1000.0 * 10.46));\r\n\t    }\r\n\t    if (n1 < 0.3 && n1 > 0.2){\r\n\t        color = mix(color, NAVY, v0 * sin(u_Time / 1000.0 * 10.46));\r\n\t    }\r\n\t    if (n1 < 0.5 && n1 > 0.4){\r\n\t        color = mix(color, vec3(0.0), v0 * sin(u_Time / 1000.0 * 10.46));\r\n\t    }\r\n\t    if (n1 < 0.7 && n1 > 0.6){\r\n\t        color = mix(color, NAVY, v0 * sin(u_Time / 1000.0 * 10.46));\r\n\t    }\r\n\t    if (n1 < 0.9 && n1 > 0.8){\r\n\t        color = mix(color, vec3(0.0), v0 * sin(u_Time / 1000.0 * 10.46));\r\n\t    }\r\n\t//Set the final color\r\n\tout_Col = vec4(color, 1.0 );\r\n\r\n\r\n\r\n\r\n\r\n}\r\n"
 
 /***/ }),
 /* 123 */
@@ -22197,7 +17396,7 @@ module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\n// The vertex
 /* 124 */
 /***/ (function(module, exports) {
 
-module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\n\r\nuniform vec2 u_Dimensions;\r\nuniform float u_Time;\r\n\r\nin vec2 fs_Pos;\r\nout vec4 out_Col;\r\n\r\nfloat noise(vec2 p) {\r\n\treturn fract(sin(dot(p.xy ,vec2(12.9898,78.233))) * 456367.5453);\r\n}\r\n\r\n//SOURCE INSPIRATION http://glslsandbox.com/e#22429.6\r\n\r\n\r\nvoid main() {\r\n  //out_Col = vec4(0.2, 0.9, fs_Pos.y * 4.0, 0.5);\r\n  vec2 uv = (fs_Pos);\r\n  float intensity = 0.8;\r\n\r\n    //Create the stacked layers\r\n\r\n    //so what this is doing is creating offset layers\r\n    //and the height of each section follows a cosin curve\r\n    //ok sweet\r\n\tfor (float inc = 1.0; inc < 25.0; inc++) {\r\n\r\n\t\tfloat fi = inc;\r\n\r\n\t\tfloat s = floor(5.0*(uv.x)/fi + 50.0*fi + u_Time / 1000.0);\r\n\r\n        float yLimit = noise(vec2(s));\r\n        yLimit *= fi/95.0;\r\n        yLimit -= 0.04*fi;\r\n        yLimit += 0.125 * cos(uv.x*5.0 + u_Time / 1000.0 + fi/9.0);\r\n       \tyLimit += 0.8;\r\n\r\n\t\tif (uv.y < yLimit) {\r\n\t\t\tintensity = inc/10.0;\r\n\t\t}\r\n\t}\r\n\r\n  float col1 = mix(intensity * uv.x * 0.8 + 0.5, 0.0, 01.1);\r\n\r\n\t//Set the final color\r\n\tout_Col = vec4(vec3(col1, intensity*uv.y * 0.17 + 0.9, 0.5), 1.0 );\r\n\r\n\r\n\r\n\r\n\r\n}\r\n"
+module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\n\r\nuniform vec2 u_Dimensions;\r\nuniform float u_Time;\r\n\r\nin vec2 fs_Pos;\r\nout vec4 out_Col;\r\n\r\nfloat noise(vec2 p) {\r\n\treturn fract(sin(dot(p.xy ,vec2(12.9898,78.233))) * 456367.5453);\r\n}\r\n\r\n//SOURCE INSPIRATION http://glslsandbox.com/e#22429.6\r\n\r\n\r\nvoid main() {\r\n\r\n\r\n//\tvec2 p = ( gl_FragCoord.xy * 5.0 / u_Dimensions.xy);\r\n\t //p *= 0.9;\r\n\t vec2 iResolution = u_Dimensions;\r\n\t vec2 st = gl_FragCoord.xy / u_Dimensions;\r\n \tvec2 p = (gl_FragCoord.xy * 5.0 - iResolution.xy) / min(iResolution.x, iResolution.y);\r\n\r\n\r\n\tvec4 a = vec4(.7,1.9,.322,0) + sin(u_Time /1000.0 * 10.46) + atan(p.y * 6.0, p.x),\r\n         b = a;\r\n\t\t\t\t  b.y+=.4;\r\n    a = cos( sin(p.x)-sin(p.y) +a ),\r\n    b = sin(a*p.x*p.y - p.y   +b );\r\n\r\n    a =  abs(b*b-a*a);\r\n\r\n    vec3 col  = mix(vec3(0.9, 0.2, 0.9), vec3(0.1, 0.6, 0.9), a.y);\r\n    col  = mix(vec3(0.1, 0.8, 0.9), vec3(0.9, 0.15, 0.9), a.x);\r\n\r\n\r\n    out_Col =  1.6 * pow(1.-a+b*a,  37.+a-a);\r\n    out_Col.g = 0.0;\r\n    if (out_Col.b > 0.7){\r\n        out_Col.g += 0.3;\r\n    }\r\n    if (out_Col.r > 0.6){\r\n        out_Col.b += 0.6;\r\n    }\r\n\t\t// if (out_Col.b > 0.7){\r\n\t\t \tout_Col = vec4(out_Col.rgb, 1.0);\r\n\t\t// }\r\n\r\n\t\tif (u_Time >= 139000.0 && st.x < 0.2){\r\n\t\t\tif (out_Col.b > 0.5){\r\n\t        out_Col.b = 0.0;\r\n\t\t\t\t\tout_Col.g = 0.75;\r\n\t    }\r\n\t    if (out_Col.r > 0.4){\r\n\t        out_Col.r = 0.0;\r\n\t\t\t\t\tout_Col.b = 0.8;\r\n\t    }\r\n\r\n\t\t}\r\n\r\n\t\tif (u_Time >= 140500.0 && st.x > 0.75){\r\n\t\t\tif (out_Col.b > 0.5){\r\n\t        out_Col.b = 0.0;\r\n\t\t\t\t\tout_Col.r = 0.75;\r\n\t    }\r\n\t    if (out_Col.g > 0.4){\r\n\t        out_Col.r = 0.0;\r\n\t\t\t\t\tout_Col.g = 0.6;\r\n\t    }\r\n\r\n\t\t}\r\n\r\n\r\n\t//Set the final color\r\n\t//out_Col = vec4(vec3(col1, intensity*uv.y * 0.81 + 0.9, 0.3), 1.0 );\r\n\r\n\r\n\r\n\r\n\r\n}\r\n"
 
 /***/ }),
 /* 125 */
@@ -22209,31 +17408,31 @@ module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\n// The vertex
 /* 126 */
 /***/ (function(module, exports) {
 
-module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\n\r\nuniform vec2 u_Dimensions;\r\nuniform float u_Time;\r\n\r\nin vec2 fs_Pos;\r\nout vec4 out_Col;\r\n\r\nfloat noise(vec2 p) {\r\n\treturn fract(sin(dot(p.xy ,vec2(12.9898,78.233))) * 456367.5453);\r\n}\r\n\r\n//SOURCE INSPIRATION http://glslsandbox.com/e#22429.6\r\n\r\n\r\nvoid main() {\r\n  //out_Col = vec4(0.2, 0.9, fs_Pos.y * 4.0, 0.5);\r\n  vec2 uv = (fs_Pos);\r\n  float intensity = 0.8;\r\n\r\n    //Create the stacked layers\r\n\r\n    //so what this is doing is creating offset layers\r\n    //and the height of each section follows a cosin curve\r\n    //ok sweet\r\n\tfor (float inc = 1.0; inc < 25.0; inc++) {\r\n\r\n\t\tfloat fi = inc;\r\n\r\n\t\tfloat s = floor(5.0*(uv.x)/fi + 50.0*fi + u_Time / 1000.0);\r\n\r\n        float yLimit = noise(vec2(s));\r\n        yLimit *= fi/95.0;\r\n        yLimit -= 0.04*fi;\r\n        yLimit += 0.125 * cos(uv.x*5.0 + u_Time / 1000.0 + fi/9.0);\r\n       \tyLimit += 0.8;\r\n\r\n\t\tif (uv.y < yLimit) {\r\n\t\t\tintensity = inc/10.0;\r\n\t\t}\r\n\t}\r\n\r\n  float col1 = mix(intensity * uv.x * 0.8 + 0.5, 0.0, 01.1);\r\n\r\n\t//Set the final color\r\n\tout_Col = vec4(vec3(col1, intensity*uv.y * 0.81 + 0.59, 0.3), 1.0 );\r\n\r\n\r\n\r\n\r\n\r\n}\r\n"
+module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\n\r\nuniform vec2 u_Dimensions;\r\nuniform float u_Time;\r\n\r\nin vec2 fs_Pos;\r\nout vec4 out_Col;\r\n\r\n\r\n\r\nvec2 random2(vec2 st){\r\n    st = vec2( dot(st,vec2(127.1,311.7)),\r\n              dot(st,vec2(269.5,183.3)) );\r\n    return -1.0 + 2.0*fract(sin(st)*43758.5453123);\r\n}\r\n\r\n// Value Noise by Inigo Quilez - iq/2013\r\n// https://www.shadertoy.com/view/lsf3WH\r\nfloat noise(vec2 st) {\r\n    vec2 i = floor(st);\r\n    vec2 f = fract(st);\r\n\r\n    vec2 u = f*f*(3.0-2.0*f);\r\n\r\n    return mix( mix( dot( random2(i + vec2(0.0,0.0) ), f - vec2(0.0,0.0) ),\r\n                     dot( random2(i + vec2(1.0,0.0) ), f - vec2(1.0,0.0) ), u.x),\r\n                mix( dot( random2(i + vec2(0.0,1.0) ), f - vec2(0.0,1.0) ),\r\n                     dot( random2(i + vec2(1.0,1.0) ), f - vec2(1.0,1.0) ), u.x), u.y);\r\n}\r\n\r\nmat2 rotate2d(float _angle){\r\n    return mat2(cos(_angle),-sin(_angle),\r\n                sin(_angle),cos(_angle));\r\n}\r\n\r\nfloat shape(vec2 st, float radius) {\r\n\tst = vec2(0.5)-st;\r\n    float r = length(st)*2.0;\r\n    float a = atan(st.y,st.x);\r\n    float m = abs(mod(a+u_Time / 1000.0 / 1000.0*5.23,3.340*2.)-3.14)/3.6;\r\n    float f = radius;\r\n    m += noise(st+u_Time / 1000.0 / 1000.0*0.1)*.5;\r\n    // a *= 1.+abs(atan(u_Time / 1000.0 / 1000.0*0.2))*.1;\r\n    // a *= 1.+noise(st+u_Time / 1000.0 / 1000.0*0.1)*0.1;\r\n    f += sin(a*50.)*noise(st+u_Time / 1000.0 / 1000.0*.2)*.1;\r\n    f += (sin(a*20.)*.1*pow(m,2.));\r\n    return 1.-smoothstep(f,f+0.007,r);\r\n}\r\n\r\nfloat shapeBorder(vec2 st, float radius, float width) {\r\n    return shape(st,radius)-shape(st,radius-width);\r\n}\r\n\r\nvoid main() {\r\n  //out_Col = vec4(0.2, 0.9, fs_Pos.y * 4.0, 0.5);\r\n\t\tvec2 st = gl_FragCoord.xy/u_Dimensions.xy;\r\n\t\tvec3 color = vec3(0.366,0.000,1.000) * shapeBorder(st,0.2,0.09 * sin(u_Time / 1000.0 * 10.46));\r\n\r\n\r\n    color += vec3(0.863,0.181,1.000) * shapeBorder(st,1.04 * sin(u_Time / 1000.0 * 10.46),mix(0.02, 0.35, st.y * st.x) * sin(u_Time / 1000.0 * 10.46));\r\n\r\n\t\t\tif (u_Time> 148000.0){\r\n\t\t\t\tcolor += vec3(0.621,0.357,1.000) * shapeBorder(st, 0.4 ,0.07 * cos(u_Time / 1000.0 * 5.236));\r\n\t\t    color += vec3(0.863,0.181,1.000) * shapeBorder(st,mix(0.65, 0.85, st.y * st.x),0.02 * cos(u_Time / 1000.0 * 10.4636));\r\n\t\t    color += vec3(0.821,0.357,1.000) * shapeBorder(st, mix(0.65, 0.85, st.y * st.x) ,0.27 * cos(u_Time / 1000.0 * 5.236));\r\n\t\t    color += vec3(1.000,0.001,0.546) * shapeBorder(st,0.4,0.12 * cos(u_Time / 1000.0 * 10.4636));\r\n\r\n}\r\n\r\n\r\n\r\n\t\tout_Col = vec4(0.0 + color, 1.0 );\r\n\r\n\r\n\r\n\r\n\r\n}\r\n"
 
 /***/ }),
 /* 127 */
 /***/ (function(module, exports) {
 
-module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\n// The vertex shader used to render the background of the scene\r\n\r\nin vec4 vs_Pos;\r\nout vec2 fs_Pos;\r\n\r\nvoid main() {\r\n  fs_Pos = vs_Pos.xy;\r\n  gl_Position = vs_Pos;\r\n}\r\n"
+module.exports = "#version 300 es\r\n\r\n\r\nuniform mat4 u_Model;\r\nuniform mat4 u_ModelInvTr;\r\nuniform mat4 u_ViewProj;\r\nuniform vec2 u_PlanePos; // Our location in the virtual world displayed by the plane\r\n\r\nin vec4 vs_Pos;\r\nin vec4 vs_Nor;\r\nin vec4 vs_Col;\r\n\r\nuniform float u_Time;\r\n\r\n\r\nout vec3 fs_Pos;\r\nout vec4 fs_Nor;\r\nout vec4 fs_Col;\r\n\r\nout float fs_Sine;\r\n\r\nfloat random1( vec2 p , vec2 seed) {\r\n  return fract(sin(dot(p + seed, vec2(127.1, 311.7))) * 43758.5453);\r\n}\r\n\r\nfloat random1( vec3 p , vec3 seed) {\r\n  return fract(sin(dot(p + seed, vec3(987.654, 123.456, 531.975))) * 85734.3545);\r\n}\r\n\r\nvec2 random2(vec2 p , vec2 seed) {\r\n  return fract(sin(vec2(dot(p + seed, vec2(311.7, 127.1)), dot(p + seed, vec2(269.5, 183.3)))) * 85734.3545);\r\n}\r\n\r\nfloat Noise(int x, int y){\r\n    return (fract(sin(dot(vec2(x, y), vec2(12.9898, 4.1414))) * 43758.5453));\r\n}\r\n\r\n\r\n//Noise interpolation 2D function\r\nfloat interpNoise2D(float x, float y){\r\n\r\n    int intX =  int(x);\r\n    float fractX = fract(x);\r\n    int intY = int(y);\r\n    float fractY = fract(y);\r\n\r\n    float v1 = Noise(intX, intY);\r\n    float v2 = Noise(intX + 1, intY);\r\n    float v3 = Noise(intX, intY + 1);\r\n    float v4 = Noise(intX + 1, intY + 1);\r\n\r\n    float i1 = mix(v1, v2, fractX);\r\n    float i2 = mix(v3, v4, fractX);\r\n\r\n    return mix(i1, i2, fractY);\r\n\r\n}\r\n\r\n//Steppe-like FBM pattern\r\nfloat steppeFbm(float x, float y){\r\n\r\n    float total = 0.f;\r\n    float peristence = 0.5f;\r\n    float octaves = 8.f;\r\n\r\n    for(float i = 0.f; i < octaves; i++){\r\n        float freq = pow(2.f, i);\r\n        float amp = pow(peristence, i);\r\n        total += interpNoise2D((x * freq) / 128.f, (y * freq) / 128.f) * amp;\r\n    }\r\n\r\n    return total;\r\n\r\n}\r\n\r\n// FBM function for 2D input\r\nfloat fbm(float x, float y){\r\n\r\n    float total = 0.f;\r\n    float peristence = 0.5f;\r\n    float octaves = 1.f;\r\n\r\n    for(float i = 0.f; i < octaves; i++){\r\n        float freq = pow(2.f, i);\r\n        float amp = pow(peristence, i);\r\n        total += interpNoise2D((x * freq), (y * freq)) * amp;\r\n    }\r\n\r\n    return total;\r\n\r\n}\r\n\r\n//interpolation functions\r\nfloat linear_interpolate(float a, float b, float t){\r\n  return a * (1.f - t) + b * t;\r\n}\r\n\r\nfloat cosine_interpolation(float a, float b, float t){\r\n  float cos_t = (1.f - cos(t * 3.14)) * 0.5f;\r\n  return linear_interpolate(a, b, cos_t);\r\n}\r\n\r\n\r\n//Function for DR SEUSS portion of environment\r\nvoid seuss(){\r\n\r\n\r\n  fs_Pos = vs_Pos.xyz;\r\n  float rand = random1(vec2(vs_Pos.x + u_PlanePos.x, vs_Pos.z + u_PlanePos.y) , vec2(1.f, 3.f));\r\n  fs_Sine = (sin((vs_Pos.x + u_PlanePos.x) * 3.14159 * 0.1) + cos((vs_Pos.z + u_PlanePos.y) * 3.14159 * 0.1));\r\n  fs_Sine += (cos((vs_Pos.x + u_PlanePos.x) * 3.14159 * 0.2) + cos((vs_Pos.z + u_PlanePos.y) * 3.14159 *  0.1));\r\n  fs_Sine += 5.0;\r\n\r\n vec4 modelposition = vec4(vs_Pos.x, fs_Sine * (cos(vs_Pos.x + u_PlanePos.x)+sin(.5f * (vs_Pos.z + u_PlanePos.y))*\r\n cos(vs_Pos.z + u_PlanePos.y)) + fbm(vs_Pos.x + u_PlanePos.x, vs_Pos.z + u_PlanePos.y), vs_Pos.z, 1.0);\r\n fs_Sine = fs_Sine * (cos(vs_Pos.x + u_PlanePos.x)+sin(.5f * (vs_Pos.z + u_PlanePos.y))*\r\n cos(vs_Pos.z + u_PlanePos.y));\r\n\r\n\r\n\r\n   fs_Sine = 5.f;\r\n\r\n\r\n  if (modelposition.y > 10.f){\r\n    modelposition.y = 10.f + rand / 5.f;\r\n  }\r\n  if (modelposition.y < -2.f){\r\n    modelposition.y = -2.f - rand;\r\n  }\r\n\r\n    modelposition.y /= 2.1f;\r\n    if (modelposition.y < .5f){\r\n      modelposition.y = 0.2f;\r\n    }\r\n\r\n\r\n\r\n\r\n\r\n  fs_Pos = modelposition.xyz;\r\n  modelposition = u_Model * modelposition;\r\n  gl_Position = u_ViewProj * modelposition;\r\n\r\n}\r\n\r\n\r\n//function for desert mountains using FBM - vary over time\r\nvoid desert(){\r\n  fs_Pos = vs_Pos.xyz;\r\n\r\n  float exp = smoothstep(0.1 ,0.4, abs(vs_Pos.z) + abs(u_PlanePos.y));\r\n  fs_Sine = pow(steppeFbm((abs(vs_Pos.z) + abs(u_PlanePos.y)) * 5.0 , (abs(vs_Pos.x) + abs(u_PlanePos.x) - 100.0) * 5.0), 3.5f * exp)\r\n   * cos((abs(vs_Pos.z) + abs(u_PlanePos.y)));\r\n\r\n  if (fs_Sine < 0.f){\r\n    fs_Sine = 0.f;\r\n  }\r\n\r\n  if(abs(fs_Pos.z) < 12.0){\r\n  \tfs_Sine = 0.15;\r\n  }\r\n\r\n  vec4 modelposition = vec4(vs_Pos.x, fs_Sine, vs_Pos.z, 1.0);\r\n\r\n  modelposition = u_Model * modelposition;\r\n  gl_Position = u_ViewProj * modelposition;\r\n}\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nvoid main()\r\n{\r\n\r\n\r\n\r\n\r\n\r\n    desert();\r\n\r\n\r\n\r\n\r\n}\r\n"
 
 /***/ }),
 /* 128 */
 /***/ (function(module, exports) {
 
-module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\n\r\nuniform vec2 u_Dimensions;\r\nuniform float u_Time;\r\n\r\nin vec2 fs_Pos;\r\nout vec4 out_Col;\r\n\r\nfloat noise(vec2 p) {\r\n\treturn fract(sin(dot(p.xy ,vec2(12.9898,78.233))) * 456367.5453);\r\n}\r\n\r\n//SOURCE INSPIRATION http://glslsandbox.com/e#22429.6\r\n\r\n\r\nvoid main() {\r\n  //out_Col = vec4(0.2, 0.9, fs_Pos.y * 4.0, 0.5);\r\n  vec2 uv = (fs_Pos);\r\n  float intensity = 0.8;\r\n\r\n    //Create the stacked layers\r\n\r\n    //so what this is doing is creating offset layers\r\n    //and the height of each section follows a cosin curve\r\n    //ok sweet\r\n\tfor (float inc = 1.0; inc < 25.0; inc++) {\r\n\r\n\t\tfloat fi = inc;\r\n\r\n\t\tfloat s = floor(5.0*(uv.x)/fi + 50.0*fi + u_Time / 1000.0);\r\n\r\n        float yLimit = noise(vec2(s));\r\n        yLimit *= fi/95.0;\r\n        yLimit -= 0.04*fi;\r\n        yLimit += 0.125 * cos(uv.x*5.0 + u_Time / 1000.0 + fi/9.0);\r\n       \tyLimit += 0.8;\r\n\r\n\t\tif (uv.y < yLimit) {\r\n\t\t\tintensity = inc/10.0;\r\n\t\t}\r\n\t}\r\n\r\n  float col1 = mix(intensity * uv.x * 0.3 + 0.5, 0.0, 01.1);\r\n\r\n\t//Set the final color\r\n\tout_Col = vec4(vec3(col1, intensity*uv.y * 0.31 + 0.9, 0.23), 1.0 );\r\n\r\n\r\n\r\n\r\n\r\n}\r\n"
+module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\nuniform vec2 u_PlanePos; // Our location in the virtual world displayed by the plane\r\n\r\nin vec3 fs_Pos;\r\nin vec4 fs_Nor;\r\nin vec4 fs_Col;\r\n\r\n\r\n\r\n\r\nin float fs_Sine;\r\n\r\nout vec4 out_Col; // This is the final output color that you will see on your\r\n                  // screen for the pixel that is currently being processed.\r\n\r\n                  float random1( vec2 p , vec2 seed) {\r\n                    return fract(sin(dot(p + seed, vec2(127.1, 311.7))) * 43758.5453);\r\n                  }\r\n\r\n//WORLD IS SPLIT INTO 3 REGIONS. DR SEUSS, BEACH, DESERT MOUNTAINS\r\n\r\nvoid main()\r\n{\r\n\r\n\r\n    vec3 colorA;\r\n    vec3 colorB;\r\n\r\n\r\n\r\n     //-----DR SEUSS ------\r\n   float t = clamp(smoothstep(10.0, 20.0, length(fs_Pos / 2.f)), 0.0, 1.0); // Distance fog\r\n   out_Col = vec4(mix(vec3(0.5 * (fs_Sine + 1.0)), vec3(164.0 / 255.0, 233.0 / 255.0, 1.0), t), 1.0);\r\n\r\n\r\n\t colorA = vec3(0.169, 0.729, 0.937);\r\n colorB = vec3(0.698,0.227, 0.827);\r\n out_Col = vec4(mix(colorB, colorA, fs_Sine / 5.f), 1.f);\r\n\r\n if (fs_Sine < 0.5f){\r\n\t colorA = vec3(0.169, 0.729, 0.937);\r\n\t colorB = vec3(123.f/255.f, 221.f/255.f, 228.f/255.f);\r\n\t out_Col = vec4(mix(colorB, colorA, fs_Sine / 10.0), 1.f);\r\n\r\n}\r\n\r\n\r\n\r\n\r\n\r\n\r\n}\r\n"
 
 /***/ }),
 /* 129 */
 /***/ (function(module, exports) {
 
-module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\n// The vertex shader used to render the background of the scene\r\n\r\nin vec4 vs_Pos;\r\nout vec2 fs_Pos;\r\n\r\nvoid main() {\r\n  fs_Pos = vs_Pos.xy;\r\n  gl_Position = vs_Pos;\r\n}\r\n"
+module.exports = "#version 300 es\r\n\r\nuniform mat4 u_Model;\r\nuniform mat4 u_ModelInvTr;\r\nuniform mat4 u_ViewProj;\r\nin vec4 vs_Pos;\r\nin vec4 vs_Nor;\r\nin vec4 vs_Col;\r\nout vec4 fs_Nor;\r\nout vec4 fs_LightVec;\r\nout vec4 fs_Col;\r\n\r\nout vec4 fs_Pos;\r\nuniform float u_Time;\r\n\r\nconst vec4 lightPos = vec4(5, 5, 3, 1);\r\n\r\nfloat easeInOutCubic(float t) {\r\n    if ((t *= 2.0) < 1.0) {\r\n        return 0.5 * t * t * t;\r\n    } else {\r\n        return 0.5 * ((t -= 2.0) * t * t + 2.0);\r\n    }\r\n}\r\n\r\n\r\nvoid main()\r\n{\r\n    fs_Col = vs_Col;\r\n\r\n    mat3 invTranspose = mat3(u_ModelInvTr);\r\n    fs_Nor = vec4(invTranspose * vec3(vs_Nor), 0);\r\n    vec4 modelposition = u_Model * vs_Pos;\r\n\r\n  //   mat2 rot;\r\n  // rot[0][0] =cos(radians(-45.0 * u_Time / 1000.f));\r\n  // rot[0][1] =sin(radians(-45.0 * u_Time / 1000.f));\r\n  // rot[1][0] =-sin(radians(-45.0 * u_Time / 1000.f));\r\n  // rot[1][1] =cos(radians(-45.0 * u_Time / 1000.f));\r\n  // modelposition.xz *= rot;\r\n  // modelposition.yz *= rot;\r\n\r\n  float st = (sin(u_Time * 10.46/ 10000.0));\r\n\tfloat ct = easeInOutCubic(cos(u_Time * 10.46 / 10000.0));\r\n\tvec4 new_pos;\r\n\r\n\tnew_pos.x = modelposition.x*ct - modelposition.z*st;\r\n\tnew_pos.z = modelposition.x*st + modelposition.z*ct;\r\n\r\n\tnew_pos.y = modelposition.y;\r\n\tnew_pos.w = modelposition.w;\r\n\r\n    //modelposition.y += 0.05 * sin(u_Time / 1000.0 * 10.46);\r\n    // modelposition.x += 0.5 * sin(u_Time / 1000.0 * 10.46);\r\n    //\r\n     if (modelposition.y <= 0.5){\r\n       new_pos.y *= 0.2 * sin(u_Time / 1000.0 * 5.23);\r\n     }\r\n    fs_LightVec = lightPos - new_pos;\r\n\r\n    gl_Position = u_ViewProj * new_pos;\r\n}\r\n"
 
 /***/ }),
 /* 130 */
 /***/ (function(module, exports) {
 
-module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\n\r\nuniform vec2 u_Dimensions;\r\nuniform float u_Time;\r\n\r\nin vec2 fs_Pos;\r\nout vec4 out_Col;\r\n\r\nfloat noise(vec2 p) {\r\n\treturn fract(sin(dot(p.xy ,vec2(12.9898,78.233))) * 456367.5453);\r\n}\r\n\r\n//SOURCE INSPIRATION http://glslsandbox.com/e#22429.6\r\n\r\n\r\nvoid main() {\r\n  //out_Col = vec4(0.2, 0.9, fs_Pos.y * 4.0, 0.5);\r\n  vec2 uv = (fs_Pos);\r\n  float intensity = 0.8;\r\n\r\n    //Create the stacked layers\r\n\r\n    //so what this is doing is creating offset layers\r\n    //and the height of each section follows a cosin curve\r\n    //ok sweet\r\n\tfor (float inc = 1.0; inc < 25.0; inc++) {\r\n\r\n\t\tfloat fi = inc;\r\n\r\n\t\tfloat s = floor(5.0*(uv.x)/fi + 50.0*fi + u_Time / 1000.0);\r\n\r\n        float yLimit = noise(vec2(s));\r\n        yLimit *= fi/95.0;\r\n        yLimit -= 0.04*fi;\r\n        yLimit += 0.125 * cos(uv.x*5.0 + u_Time / 1000.0 + fi/9.0);\r\n       \tyLimit += 0.8;\r\n\r\n\t\tif (uv.y < yLimit) {\r\n\t\t\tintensity = inc/10.0;\r\n\t\t}\r\n\t}\r\n\r\n  float col1 = mix(intensity * uv.x * 0.8 + 0.9, 0.0, 01.1);\r\n\r\n\t//Set the final color\r\n\tout_Col = vec4(vec3(col1, intensity*uv.y * 0.6 + 0.9, 0.3), 1.0 );\r\n\r\n\r\n\r\n\r\n\r\n}\r\n"
+module.exports = "#version 300 es\r\n\r\nprecision highp float;\r\n\r\nuniform vec4 u_Color;\r\n\r\n\r\nin vec4 fs_Nor;\r\nin vec4 fs_LightVec;\r\nin vec4 fs_Col;\r\n\r\nuniform float u_Time;\r\n\r\n\r\nout vec4 out_Col;\r\n\r\nvoid main()\r\n{\r\n\r\n        vec4 diffuseColor = vec4(0.0, 0.0, 1.0, 1.0);\r\n\r\n\r\n        float diffuseTerm = dot(normalize(fs_Nor), normalize(fs_LightVec));\r\n\r\n        diffuseTerm = clamp(diffuseTerm, 0.0, 1.0);\r\n\r\n        float ambientTerm = 0.3;\r\n        float lightIntensity = diffuseTerm + ambientTerm;\r\n\r\n\r\n        out_Col = vec4(diffuseColor.rgb * lightIntensity, diffuseColor.a);\r\n        out_Col = diffuseColor + fs_Nor * 1.2;\r\n        if (out_Col.g > 0.3 && out_Col.b < 0.85){\r\n          out_Col = vec4(1.0, 0.0, 1.0, 1.0);\r\n        }\r\n\r\n        if (mod(u_Time, 10.0) == 0.0){\r\n          out_Col = vec4(1.0, 0.0, 1.0, 1.0);\r\n        }\r\n        if (mod(u_Time, 15.0) == 0.0){\r\n          out_Col = vec4(0.0, 1.0, 1.0, 1.0);\r\n        }\r\n}\r\n"
 
 /***/ }),
 /* 131 */
@@ -22245,7 +17444,7 @@ module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\n// The vertex
 /* 132 */
 /***/ (function(module, exports) {
 
-module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\n\r\nuniform vec2 u_Dimensions;\r\nuniform float u_Time;\r\n\r\nin vec2 fs_Pos;\r\nout vec4 out_Col;\r\n\r\nfloat noise(vec2 p) {\r\n\treturn fract(sin(dot(p.xy ,vec2(12.9898,78.233))) * 456367.5453);\r\n}\r\n\r\n//SOURCE INSPIRATION http://glslsandbox.com/e#22429.6\r\n\r\n\r\nvoid main() {\r\n  //out_Col = vec4(0.2, 0.9, fs_Pos.y * 4.0, 0.5);\r\n  vec2 uv = (fs_Pos);\r\n  float intensity = 0.8;\r\n\r\n    //Create the stacked layers\r\n\r\n    //so what this is doing is creating offset layers\r\n    //and the height of each section follows a cosin curve\r\n    //ok sweet\r\n\tfor (float inc = 1.0; inc < 25.0; inc++) {\r\n\r\n\t\tfloat fi = inc;\r\n\r\n\t\tfloat s = floor(5.0*(uv.x)/fi + 50.0*fi + u_Time / 1000.0);\r\n\r\n        float yLimit = noise(vec2(s));\r\n        yLimit *= fi/95.0;\r\n        yLimit -= 0.04*fi;\r\n        yLimit += 0.125 * cos(uv.x*5.0 + u_Time / 1000.0 + fi/9.0);\r\n       \tyLimit += 0.8;\r\n\r\n\t\tif (uv.y < yLimit) {\r\n\t\t\tintensity = inc/10.0;\r\n\t\t}\r\n\t}\r\n\r\n  float col1 = mix(intensity * uv.x * 0.85 + 0.5, 0.0, 01.1);\r\n\r\n\t//Set the final color\r\n\tout_Col = vec4(vec3(col1, intensity*uv.y * 0.81 + 0.9, 0.3), 1.0 );\r\n\r\n\r\n\r\n\r\n\r\n}\r\n"
+module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\n\r\nuniform vec2 u_Dimensions;\r\nuniform float u_Time;\r\n\r\nin vec2 fs_Pos;\r\nout vec4 out_Col;\r\n\r\nfloat noise(vec2 p) {\r\n\treturn fract(sin(dot(p.xy ,vec2(12.9898,78.233))) * 456367.5453);\r\n}\r\n\r\n//SOURCE INSPIRATION http://glslsandbox.com/e#22429.6\r\n\r\n\r\nvoid main() {\r\n  //out_Col = vec4(0.2, 0.9, fs_Pos.y * 4.0, 0.5);\r\n  vec2 uv = (fs_Pos);\r\n  float intensity = 0.8;\r\n\r\n    //Create the stacked layers\r\n\r\n    //so what this is doing is creating offset layers\r\n    //and the height of each section follows a cosin curve\r\n    //ok sweet\r\n\tfor (float inc = 1.0; inc < 25.0; inc++) {\r\n\r\n\t\tfloat fi = inc;\r\n\r\n\t\tfloat s = floor(5.0*(uv.x)/fi + 50.0*fi + u_Time / 1000.0);\r\n\r\n        float yLimit = noise(vec2(s));\r\n        yLimit *= fi/95.0;\r\n        yLimit -= 0.04*fi;\r\n        yLimit += 0.125 * cos(uv.x*5.0 + u_Time / 1000.0 + fi/9.0);\r\n       \tyLimit += 0.8;\r\n\r\n\t\tif (uv.y < yLimit) {\r\n\t\t\tintensity = inc/10.0;\r\n\t\t}\r\n\t}\r\n\r\n  float col1 = mix(intensity * uv.x * 0.8 + 0.5, 0.0, 01.1);\r\n\r\n\t//Set the final color\r\n\tout_Col = vec4(vec3(col1, intensity*uv.y * 0.8 + 0.9, 0.7), 1.0 );\r\n\r\n\r\n\r\n\r\n\r\n}\r\n"
 
 /***/ }),
 /* 133 */
@@ -22257,7 +17456,7 @@ module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\n// The vertex
 /* 134 */
 /***/ (function(module, exports) {
 
-module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\n\r\nuniform vec2 u_Dimensions;\r\nuniform float u_Time;\r\n\r\nin vec2 fs_Pos;\r\nout vec4 out_Col;\r\n\r\nfloat noise(vec2 p) {\r\n\treturn fract(sin(dot(p.xy ,vec2(12.9898,78.233))) * 456367.5453);\r\n}\r\n\r\n//SOURCE INSPIRATION http://glslsandbox.com/e#22429.6\r\n\r\n\r\nvoid main() {\r\n  //out_Col = vec4(0.2, 0.9, fs_Pos.y * 4.0, 0.5);\r\n  vec2 uv = (fs_Pos);\r\n  float intensity = 0.8;\r\n\r\n    //Create the stacked layers\r\n\r\n    //so what this is doing is creating offset layers\r\n    //and the height of each section follows a cosin curve\r\n    //ok sweet\r\n\tfor (float inc = 1.0; inc < 25.0; inc++) {\r\n\r\n\t\tfloat fi = inc;\r\n\r\n\t\tfloat s = floor(5.0*(uv.x)/fi + 50.0*fi + u_Time / 1000.0);\r\n\r\n        float yLimit = noise(vec2(s));\r\n        yLimit *= fi/95.0;\r\n        yLimit -= 0.04*fi;\r\n        yLimit += 0.125 * cos(uv.x*5.0 + u_Time / 1000.0 + fi/9.0);\r\n       \tyLimit += 0.8;\r\n\r\n\t\tif (uv.y < yLimit) {\r\n\t\t\tintensity = inc/10.0;\r\n\t\t}\r\n\t}\r\n\r\n  float col1 = mix(intensity * uv.x * 0.8 + 0.5, 0.0, 01.1);\r\n\r\n\t//Set the final color\r\n\tout_Col = vec4(vec3(col1, intensity*uv.y * 0.17 + 0.9, 0.35), 1.0 );\r\n\r\n\r\n\r\n\r\n\r\n}\r\n"
+module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\n\r\nuniform vec2 u_Dimensions;\r\nuniform float u_Time;\r\n\r\nin vec2 fs_Pos;\r\nout vec4 out_Col;\r\n\r\nfloat smoothedge(float v) {\r\n    return smoothstep(0.0, 1.0 / u_Dimensions.x, v);\r\n}\r\n\r\nfloat circle(vec2 p, float radius) {\r\n  return length(p) - radius;\r\n}\r\n\r\nfloat rect(vec2 p, vec2 size) {\r\n  vec2 d = abs(p) - size;\r\n  return min(max(d.x, d.y), 0.0) + length(max(d,0.0));\r\n}\r\n\r\nfloat roundRect(vec2 p, vec2 size, float radius) {\r\n  vec2 d = abs(p) - size;\r\n  return min(max(d.x, d.y), 0.0) + length(max(d,0.0))- radius;\r\n}\r\n\r\nfloat ring(vec2 p, float radius, float width) {\r\n  return abs(length(p) - radius * 0.5) - width;\r\n}\r\n\r\nfloat hexagon(vec2 p, float radius) {\r\n    vec2 q = abs(p);\r\n    return max(abs(q.y), q.x * 0.866025 + q.y * 0.5) - radius;\r\n}\r\n\r\nfloat triangle(vec2 p, float size) {\r\n    vec2 q = abs(p);\r\n    return max(q.x * 0.866025 + p.y * 0.5, -p.y * 0.5) - size * 0.5;\r\n}\r\n\r\nfloat ellipse(vec2 p, vec2 r, float s) {\r\n    return (length(p / r) - s);\r\n}\r\n\r\nfloat capsule(vec2 p, vec2 a, vec2 b, float r) {\r\n    vec2 pa = p - a, ba = b - a;\r\n    float h = clamp( dot(pa,ba)/dot(ba,ba), 0.0, 1.0 );\r\n    return length( pa - ba*h ) - r;\r\n}\r\n\r\n//http://thndl.com/square-shaped-shaders.html\r\nfloat polygon(vec2 p, int vertices, float size) {\r\n    float a = atan(p.x, p.y) + 0.2;\r\n    float b = 6.28319 / float(vertices);\r\n    return cos(floor(0.5 + a / b) * b - a) * length(p) - size;\r\n}\r\n\r\nfloat ground(){\r\n    vec2 st = gl_FragCoord.xy/u_Dimensions.xy;\r\n    float d = 1.0;\r\n    d = min(d, rect(st - vec2(0.5, 0.15), vec2(0.9, 0.20)));\r\n    return d;\r\n}\r\n\r\nfloat fork(){\r\n    vec2 st = gl_FragCoord.xy/u_Dimensions.xy;\r\n    float d = 1.0;\r\n\r\n    d = min(d, rect(st - vec2(0.170,0.450), vec2(0.005, 0.20)));\r\n    d = min(d, rect(st - vec2(0.160,0.650), vec2(0.055, 0.005)));\r\n    d = min(d, rect(st - vec2(0.210,0.725), vec2(0.005, 0.08)));\r\n    d = min(d, rect(st - vec2(0.110,0.750), vec2(0.005, 0.10)));\r\n\r\n    //thingy 2\r\n\r\n    d = min(d, rect(st - vec2(0.380,0.450), vec2(0.005, 0.120)));\r\n    d = min(d, rect(st - vec2(0.370,0.570), vec2(0.045, 0.005)));\r\n    d = min(d, rect(st - vec2(0.410,0.630), vec2(0.005, 0.06)));\r\n    d = min(d, rect(st - vec2(0.330,0.67), vec2(0.005, 0.10)));\r\n\r\n    //thingy 3\r\n\r\n    d = min(d, rect(st - vec2(0.610,0.4370), vec2(0.005, 0.230)));\r\n    d = min(d, rect(st - vec2(0.600,0.670), vec2(0.045, 0.005)));\r\n    d = min(d, rect(st - vec2(0.640,0.730), vec2(0.005, 0.06)));\r\n    d = min(d, rect(st - vec2(0.560,0.750), vec2(0.005, 0.08)));\r\n\r\n    //thingy 4\r\n    d = min(d, rect(st - vec2(0.850,0.360), vec2(0.005, 0.230)));\r\n    d = min(d, rect(st - vec2(0.840,0.590), vec2(0.085, 0.008)));\r\n    d = min(d, rect(st - vec2(0.920,0.790), vec2(0.005, 0.2)));\r\n    d = min(d, rect(st - vec2(0.760,0.730), vec2(0.005, 0.14)));\r\n\r\n    //thingy 5\r\n    d = min(d, rect(st - vec2(0.250,0.470), vec2(0.003, 0.070)));\r\n    d = min(d, rect(st - vec2(0.2450,0.540), vec2(0.035, 0.003)));\r\n    d = min(d, rect(st - vec2(0.2150,0.5800), vec2(0.005, 0.04)));\r\n    d = min(d, rect(st - vec2(0.275,0.620), vec2(0.005, 0.08)));\r\n    return d;\r\n}\r\n\r\nfloat shadow(){\r\n\r\n    float d = 1.0;\r\n    vec2 st = gl_FragCoord.xy/u_Dimensions.xy;\r\n\r\n    d = min(d, capsule(st - vec2(0.135,0.485), vec2(-0.380 + cos(u_Time / 1000.0),-0.390), vec2(0.030,-0.240), 0.01));\r\n    d = min(d, capsule(st - vec2(0.570,0.450), vec2(-0.290 + cos(u_Time / 1000.0),-0.450), vec2(0.030,-0.240), 0.01));\r\n    d = min(d, capsule(st - vec2(0.820,0.380), vec2(-0.260 + cos(u_Time / 1000.0),-0.470), vec2(0.030,-0.240), 0.01));\r\n    d = min(d, capsule(st - vec2(0.350,0.580), vec2(-0.190 + cos(u_Time / 1000.0),-0.330), vec2(0.030,-0.240), 0.01));\r\n\r\n\r\n    return d;\r\n}\r\n\r\n//SOURCE INSPIRATION http://glslsandbox.com/e#22429.6\r\n\r\n\r\nvoid main() {\r\n\tvec2 st = gl_FragCoord.xy/u_Dimensions.xy;\r\n\r\n\t    float d = 1.0;\r\n\t    float ground = ground();\r\n\t    float shadow = shadow();\r\n\t    float fork = fork();\r\n\t    vec3 color;\r\n\r\n\t    float c = 0.0;\r\n\r\n\t    if (ground < d){\r\n\t        //d = ground;\r\n\t        c = ground;\r\n\t        //color = vec3((vec3(1.000,0.828,0.809) - smoothedge(d)));\r\n\t    }\r\n\r\n\t    if (fork <= d){\r\n\t        d = fork;\r\n\t        c = fork;\r\n\t        color = vec3((vec3(0.472,0.478,0.560) - smoothedge(d)));\r\n\t        color = mix(color, vec3(0.0), st.x / 100.0);\r\n\t    }\r\n\r\n\t    if (shadow <= d){\r\n\t        d = shadow;\r\n\t        c = shadow;\r\n\t        color = vec3((vec3(0.182,0.198,0.285) - smoothedge(d)));\r\n\t    }\r\n\r\n\r\n\t    if (color.r < 0.01 && color.g < 0.01 && st.y > 0.4){\r\n\t        d = 1.0;\r\n\t        color = vec3((mix( vec3(1.000,0.705,0.037), vec3(1.000,0.735,0.184),  cos(st.x * 10.460 * u_Time / 1000.0) / 1.676)));\r\n\r\n\t\t\t\t\tif (cos(u_Time / 1000.0 * 5.23) <= 0.00){\r\n\r\n\t\t\t\t\t\tcolor = vec3(1.0, 0.4, 1.0);\r\n\t\t\t\t\t}\r\n\t    }\r\n\t    if (color.r < 0.01 && color.g < 0.01 && st.y <= 0.4){\r\n\t        d = 1.0;\r\n\t        color = vec3((vec3(1.000, 1.0, 1.0)));\r\n\t    }\r\n\r\n\t    if (st.x > 0.076 && st.x < 0.25 && st.y > 0.86 && st.y < 0.98){\r\n\r\n\t        color = vec3((vec3(1.000, 1.0, 1.0)));\r\n\r\n\t    }\r\n\r\n\t//Set the final color\r\n\tout_Col = vec4(color, 1.0);\r\n\r\n\r\n\r\n\r\n\r\n}\r\n"
 
 /***/ }),
 /* 135 */
@@ -22269,7 +17468,7 @@ module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\n// The vertex
 /* 136 */
 /***/ (function(module, exports) {
 
-module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\n\r\nuniform vec2 u_Dimensions;\r\nuniform float u_Time;\r\n\r\nin vec2 fs_Pos;\r\nout vec4 out_Col;\r\n\r\nfloat noise(vec2 p) {\r\n\treturn fract(sin(dot(p.xy ,vec2(12.9898,78.233))) * 456367.5453);\r\n}\r\n\r\n//SOURCE INSPIRATION http://glslsandbox.com/e#22429.6\r\n\r\n\r\nvoid main() {\r\n  //out_Col = vec4(0.2, 0.9, fs_Pos.y * 4.0, 0.5);\r\n  vec2 uv = (fs_Pos);\r\n  float intensity = 0.8;\r\n\r\n    //Create the stacked layers\r\n\r\n    //so what this is doing is creating offset layers\r\n    //and the height of each section follows a cosin curve\r\n    //ok sweet\r\n\tfor (float inc = 1.0; inc < 25.0; inc++) {\r\n\r\n\t\tfloat fi = inc;\r\n\r\n\t\tfloat s = floor(5.0*(uv.x)/fi + 50.0*fi + u_Time / 1000.0);\r\n\r\n        float yLimit = noise(vec2(s));\r\n        yLimit *= fi/95.0;\r\n        yLimit -= 0.04*fi;\r\n        yLimit += 0.125 * cos(uv.x*5.0 + u_Time / 1000.0 + fi/9.0);\r\n       \tyLimit += 0.8;\r\n\r\n\t\tif (uv.y < yLimit) {\r\n\t\t\tintensity = inc/10.0;\r\n\t\t}\r\n\t}\r\n\r\n  float col1 = mix(intensity * uv.x * 0.8 + 0.5, 0.0, 01.1);\r\n\r\n\t//Set the final color\r\n\tout_Col = vec4(vec3(col1, intensity*uv.y * 0.51 + 0.9, 0.3), 1.0 );\r\n\r\n\r\n\r\n\r\n\r\n}\r\n"
+module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\n\r\nuniform vec2 u_Dimensions;\r\nuniform float u_Time;\r\n\r\nin vec2 fs_Pos;\r\nout vec4 out_Col;\r\n\r\n#define p0 0.9, 0.2, 0.9,  0.9, 0.2, 0.9,  0.9, 0.2, 0.7,  0.7, 0.53, 0.77\r\n\r\nconst float numParticles = 7.;\r\nconst float numRings = 6.;\r\nconst float offsetMult = 0.1;\r\n float tau = 3.23813;\r\n\r\nvec3 palette( in float t, in float a0, in float a1, in float a2, in float b0, in float b1, in float b2,\r\n              in float c0, in float c1, in float c2,in float d0, in float d1, in float d2)\r\n{\r\n\tif (u_Time >= 190000.0){\r\n\t\t  return vec3(0.2, 0.9, 0.2) + vec3(0.3, 0.9, 0.7)*cos(2.3*(vec3(0.8, 0.9, 0.7)*t+vec3(mix(0.1, 0.8, cos(5.23* u_Time / 10000.0)),0.8,0.89)) );\r\n\t}\r\n    return vec3(0.2, 0.2, 0.9) + vec3(0.9, 0.2, 0.7)*cos(2.3*(vec3(0.8, 0.9, 0.7)*t+vec3(mix(0.1, 0.3, sin(5.23* u_Time / 100000.0)),0.4,0.89)) );\r\n}\r\n\r\nvec3 particleColor(vec2 uv, float radius, float offset, float periodOffset)\r\n{\r\n    vec3 color = palette(.4 + offset / 4., p0);\r\n    uv = uv / pow(periodOffset, .75) * abs(sin(periodOffset * u_Time * 5.23 / 10000.0))+ abs(sin(periodOffset + 5.23 * u_Time / 10000.0));\r\n    vec2 pos = vec2(abs(cos(offset * offsetMult + u_Time / 1000.0 + periodOffset)),\r\n        \t\tabs(sin(offset * offsetMult + u_Time * 10.46 / 10000.0 * 6.0 + periodOffset * tau * sin(u_Time * 10.46 / 10000.0))));\r\n\r\n    float dist = radius / distance(uv, pos);\r\n    return color * pow(dist, 1.4) * (sin(5.23 * u_Time / 10000.0) * 8.95 + 2.50);\r\n}\r\n\r\n\r\n\r\nvoid main() {\r\n\r\n\tvec2 uv = (2.0 * gl_FragCoord.xy - u_Dimensions.xy) / u_Dimensions.y;\r\n\t uv *= 2.45;\r\n\r\n\t out_Col = vec4(0.0, 0.0, 0.0, 1.0);\r\n\r\n\t for (float n = 0.0; n <= numRings; n++)\r\n\t {\r\n\t\t\t for (float i = 0.0; i <= numParticles; i++) {\r\n\t\t\t\t out_Col.rgb += particleColor(uv, 0.02, i / numParticles, n / 2.0);\r\n\t\t }\r\n\t }\r\n\r\n}\r\n"
 
 /***/ }),
 /* 137 */
@@ -22281,7 +17480,7 @@ module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\n// The vertex
 /* 138 */
 /***/ (function(module, exports) {
 
-module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\n\r\nuniform vec2 u_Dimensions;\r\nuniform float u_Time;\r\n\r\nin vec2 fs_Pos;\r\nout vec4 out_Col;\r\n\r\nfloat noise(vec2 p) {\r\n\treturn fract(sin(dot(p.xy ,vec2(12.9898,78.233))) * 456367.5453);\r\n}\r\n\r\n//SOURCE INSPIRATION http://glslsandbox.com/e#22429.6\r\n\r\n\r\nvoid main() {\r\n  //out_Col = vec4(0.2, 0.9, fs_Pos.y * 4.0, 0.5);\r\n  vec2 uv = (fs_Pos);\r\n  float intensity = 0.8;\r\n\r\n    //Create the stacked layers\r\n\r\n    //so what this is doing is creating offset layers\r\n    //and the height of each section follows a cosin curve\r\n    //ok sweet\r\n\tfor (float inc = 1.0; inc < 25.0; inc++) {\r\n\r\n\t\tfloat fi = inc;\r\n\r\n\t\tfloat s = floor(5.0*(uv.x)/fi + 50.0*fi + u_Time / 1000.0);\r\n\r\n        float yLimit = noise(vec2(s));\r\n        yLimit *= fi/95.0;\r\n        yLimit -= 0.04*fi;\r\n        yLimit += 0.125 * cos(uv.x*5.0 + u_Time / 1000.0 + fi/9.0);\r\n       \tyLimit += 0.8;\r\n\r\n\t\tif (uv.y < yLimit) {\r\n\t\t\tintensity = inc/10.0;\r\n\t\t}\r\n\t}\r\n\r\n  float col1 = mix(intensity * uv.x * 0.2 + 0.3, 0.0, 01.1);\r\n\r\n\t//Set the final color\r\n\tout_Col = vec4(vec3(col1, intensity*uv.y * 0.9 + 0.9, 0.3), 1.0 );\r\n\r\n\r\n\r\n\r\n\r\n}\r\n"
+module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\n\r\nuniform vec2 u_Dimensions;\r\nuniform float u_Time;\r\n\r\nin vec2 fs_Pos;\r\nout vec4 out_Col;\r\n\r\nmat2 rotate2d(float angle){\r\n    return mat2(cos(angle),-sin(angle),sin(angle),sin(angle));\r\n}\r\n//SOURCE INSPIRATION http://glslsandbox.com/e#22429.6\r\n\r\n\r\nvoid main() {\r\n\r\n\tvec2 uv = gl_FragCoord.xy / u_Dimensions.xy;\r\n\r\n\r\n\tfloat bg = (cos(uv.x * 100.0 * sin(u_Time / 1000.0 * 5.23)) + sin((uv.y))) * 0.2;\r\n\r\n\tvec2 p = uv/2.38*cos(10.46 * u_Time / 1000.0)/ u_Time / 1000.0 - bg/0.1;\r\n    vec2 v = rotate2d(u_Time / 1000.0 + 5.0) * uv/0.1;\r\n    p *= vec2(v.x , v.y);\r\n    vec2 p2 = uv*2.0 - 1.0;\r\n\r\n    vec2 p3 = uv*2.0 - 1.0;\r\n\r\n\r\n\t\tp *= 65.0;\r\n    p2 *= 15.0;\r\n    p3 *= 25.0;\r\n\tvec2 sfunc = vec2(p.x, p.y);\r\n    vec2 sfunc2 = vec2(p2.x, p2.x);\r\n    vec2 sfunc3 = vec2(p3.x, p3.y);\r\n\t\tsfunc.y /= 0.4;\r\n    sfunc2.y /= 0.1;\r\n    sfunc3.y /= 0.2;\r\n    p *= vec2(v.x, v.y);\r\n    p3 *= vec2(v.x, v.y);\r\n\r\n\tvec3 c = vec3(abs(sfunc.y * abs(sin(u_Time / 1000.0 * 5.23))));\r\n    vec3 c2 = vec3(abs(sfunc2.y * sin(u_Time / 1000.0 * 5.23)));\r\n    vec3 c3 = vec3(abs(sfunc3.y* abs(cos(u_Time / 1000.0 * 5.23))));\r\n\tc = pow(c, vec3(-0.9));\r\n    c2 = pow(c2, vec3(-0.5));\r\n    c3 = pow(c3, vec3(-0.7));\r\n\tc *= vec3(0.9,0.25,1.0);\r\n    c2 *= vec3(0.3,0.85,1.0);\r\n    c3 *= vec3(0.7,0.15,1.0);\r\n\r\n\tout_Col = vec4( c2 + c3,1.0);\r\nif (u_Time > 204000.0){\r\n\tout_Col = vec4( c + c2 + c3,1.0);\r\n}\r\n\r\n\r\n\r\n\r\n}\r\n"
 
 /***/ }),
 /* 139 */
@@ -22293,7 +17492,7 @@ module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\n// The vertex
 /* 140 */
 /***/ (function(module, exports) {
 
-module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\n\r\nuniform vec2 u_Dimensions;\r\nuniform float u_Time;\r\n\r\nin vec2 fs_Pos;\r\nout vec4 out_Col;\r\n\r\nfloat noise(vec2 p) {\r\n\treturn fract(sin(dot(p.xy ,vec2(12.9898,78.233))) * 456367.5453);\r\n}\r\n\r\n//SOURCE INSPIRATION http://glslsandbox.com/e#22429.6\r\n\r\n\r\nvoid main() {\r\n  //out_Col = vec4(0.2, 0.9, fs_Pos.y * 4.0, 0.5);\r\n  vec2 uv = (fs_Pos);\r\n  float intensity = 0.8;\r\n\r\n    //Create the stacked layers\r\n\r\n    //so what this is doing is creating offset layers\r\n    //and the height of each section follows a cosin curve\r\n    //ok sweet\r\n\tfor (float inc = 1.0; inc < 25.0; inc++) {\r\n\r\n\t\tfloat fi = inc;\r\n\r\n\t\tfloat s = floor(5.0*(uv.x)/fi + 50.0*fi + u_Time / 1000.0);\r\n\r\n        float yLimit = noise(vec2(s));\r\n        yLimit *= fi/95.0;\r\n        yLimit -= 0.04*fi;\r\n        yLimit += 0.125 * cos(uv.x*5.0 + u_Time / 1000.0 + fi/9.0);\r\n       \tyLimit += 0.8;\r\n\r\n\t\tif (uv.y < yLimit) {\r\n\t\t\tintensity = inc/10.0;\r\n\t\t}\r\n\t}\r\n\r\n  float col1 = mix(intensity * uv.x * 0.8 + 0.5, 0.0, 01.1);\r\n\r\n\t//Set the final color\r\n\tout_Col = vec4(vec3(col1, intensity*uv.y * 0.8 + 0.9, 0.7), 1.0 );\r\n\r\n\r\n\r\n\r\n\r\n}\r\n"
+module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\nuniform vec3 u_Eye, u_Ref, u_Up;\r\nuniform vec2 u_Dimensions;\r\nuniform float u_Time;\r\n\r\nin vec2 fs_Pos;\r\nout vec4 out_Col;\r\n\r\nfloat noise(vec2 p) {\r\n\treturn fract(sin(dot(p.xy ,vec2(12.9898,78.233))) * 456367.5453);\r\n}\r\n\r\n//SOURCE INSPIRATION http://glslsandbox.com/e#22429.6\r\n\r\n\r\nvoid main() {\r\n  //out_Col = vec4(0.2, 0.9, fs_Pos.y * 4.0, 0.5);\r\n  vec2 uv = (fs_Pos);\r\n  float intensity = 0.0;\r\n\tvec2 iResolution = u_Dimensions;\r\n\tvec2 st = gl_FragCoord.xy / u_Dimensions;\r\n\r\n    //Create the stacked layers\r\n\r\n    //so what this is doing is creating offset layers\r\n    //and the height of each section follows a cosin curve\r\n    //ok sweet\r\n\tfor (float inc = 1.0; inc < 45.0; inc++) {\r\n\r\n\t\tfloat fi = inc;\r\n\r\n\t\tfloat s = floor(60.0*(uv.x)/fi + 60.0*fi + u_Time / 1000.0 * 5.23);\r\n\r\n        float yLimit = noise(vec2(s));\r\n        yLimit *= fi/65.0;\r\n        yLimit -= 0.07*fi;\r\n        yLimit += 0.125 * cos(uv.x* 10.46 + u_Time / 1000.0 + fi/9.0);\r\n       \tyLimit += 0.8;\r\n\r\n\t\tif (uv.y < yLimit) {\r\n\t\t\tintensity = inc/03.0;\r\n\t\t}\r\n\t}\r\n\r\n  float col1 = mix(intensity * uv.x * 0.9 + 0.5, 0.8, 01.1);\r\n//u_Time > 211000.0 &&\r\n\tif (u_Time > 211000.0 && st.y > 0.7){\r\n\t\t\tout_Col = vec4(vec3(col1, intensity*uv.y * 0.9 + 0.6, 0.9), 1.0 );\r\n\t\t\treturn;\r\n\t}\r\n\t//u_Time > 213000.0 &&\r\n\telse if ( u_Time > 213000.0 && st.y < 0.35){\r\n\t\t\tout_Col = vec4(vec3(col1, intensity*uv.y * 0.2 + 0.8, 0.2), 1.0 );\r\n\t\t\treturn;\r\n\t}\r\n\r\n\t//Set the final color\r\n\tout_Col = vec4(vec3(col1, intensity*uv.y * 0.9 + 0.5, 0.8), 1.0 );\r\n\r\n\r\n\r\n\r\n\r\n}\r\n"
 
 /***/ }),
 /* 141 */
@@ -22305,7 +17504,7 @@ module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\n// The vertex
 /* 142 */
 /***/ (function(module, exports) {
 
-module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\n\r\nuniform vec2 u_Dimensions;\r\nuniform float u_Time;\r\n\r\nin vec2 fs_Pos;\r\nout vec4 out_Col;\r\n\r\nfloat noise(vec2 p) {\r\n\treturn fract(sin(dot(p.xy ,vec2(12.9898,78.233))) * 456367.5453);\r\n}\r\n\r\n//SOURCE INSPIRATION http://glslsandbox.com/e#22429.6\r\n\r\n\r\nvoid main() {\r\n  //out_Col = vec4(0.2, 0.9, fs_Pos.y * 4.0, 0.5);\r\n  vec2 uv = (fs_Pos);\r\n  float intensity = 0.8;\r\n\r\n    //Create the stacked layers\r\n\r\n    //so what this is doing is creating offset layers\r\n    //and the height of each section follows a cosin curve\r\n    //ok sweet\r\n\tfor (float inc = 1.0; inc < 25.0; inc++) {\r\n\r\n\t\tfloat fi = inc;\r\n\r\n\t\tfloat s = floor(5.0*(uv.x)/fi + 50.0*fi + u_Time / 1000.0);\r\n\r\n        float yLimit = noise(vec2(s));\r\n        yLimit *= fi/95.0;\r\n        yLimit -= 0.04*fi;\r\n        yLimit += 0.125 * cos(uv.x*5.0 + u_Time / 1000.0 + fi/9.0);\r\n       \tyLimit += 0.8;\r\n\r\n\t\tif (uv.y < yLimit) {\r\n\t\t\tintensity = inc/10.0;\r\n\t\t}\r\n\t}\r\n\r\n  float col1 = mix(intensity * uv.x * 0.8 + 0.2, 0.0, 01.1);\r\n\r\n\t//Set the final color\r\n\tout_Col = vec4(vec3(col1, intensity*uv.y * 0.65 + 0.9, 0.3), 1.0 );\r\n\r\n\r\n\r\n\r\n\r\n}\r\n"
+module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\n\r\nuniform vec2 u_Dimensions;\r\nuniform float u_Time;\r\n\r\nin vec2 fs_Pos;\r\nout vec4 out_Col;\r\n\r\nmat2 rotate2d(float angle){\r\n    return mat2(cos(angle),-sin(angle),sin(angle),sin(angle));\r\n}\r\n//SOURCE INSPIRATION http://glslsandbox.com/e#22429.6\r\n\r\n\r\nvoid main() {\r\n\r\n\tvec2 uv = gl_FragCoord.xy / u_Dimensions.xy;\r\n\r\n\tfloat bg = (cos(uv.x * 1000.0 * sin(u_Time / 1000.0 * 5.23)) + sin((uv.x))) * 0.8;\r\n\tvec2 p = uv/2.38*cos(10.46 * u_Time / 1000.0)/ u_Time / 1000.0 - bg/0.1;\r\n    vec2 v = rotate2d(u_Time / 1000.0 + 5.0) * uv/0.1;\r\n    p *= vec2(v.x , v.y);\r\n    vec2 p2 = uv*2.0 - 1.0;\r\n    vec2 p3 = uv*2.0 - 1.0;\r\n\r\n\r\n\t\tp *= 65.0;\r\n    p2 *= 15.0;\r\n    p3 *= 25.0;\r\n\tvec2 sfunc = vec2(p.x, p.y);\r\n    vec2 sfunc2 = vec2(p2.x, p2.x);\r\n    vec2 sfunc3 = vec2(p3.x, p3.y);\r\n\t\tsfunc.y /= 0.7;\r\n    sfunc2.y /= 0.02;\r\n    sfunc3.y /= 0.6;\r\n    p *= vec2(v.x, v.y);\r\n    p3 *= vec2(v.x, v.y);\r\n\r\n\tvec3 c = vec3(abs((sfunc.y) * abs(sin(u_Time / 1000.0 * 5.23))));\r\n    vec3 c2 = vec3(abs(sfunc2.y * sin(u_Time / 1000.0 * 5.23)));\r\n    vec3 c3 = vec3(abs(sfunc3.y* abs(cos(u_Time / 1000.0 * 5.23))));\r\n\tc = pow(c, vec3(-0.9));\r\n    c2 = pow(c2, vec3(-0.5));\r\n    c3 = pow(c3, vec3(-0.7));\r\n\t\tc *= vec3(0.9,0.25,1.0);\r\n    c2 *= vec3(0.3, sin(u_Time / 1000.0 * 0.95),1.0);\r\n    c3 *= vec3(0.7,0.15,1.0);\r\n\r\n\t\tif (sin(u_Time / 1000.0 * 5.23) < 0.0){\r\n\t\tout_Col = vec4(c2 + c3,1.0);\r\n\t\treturn;\r\n\t\t}\r\n\r\n\r\n\tout_Col = vec4(c + c2 + c3,1.0);\r\n\r\n\r\n\r\n\r\n\r\n}\r\n"
 
 /***/ }),
 /* 143 */
@@ -22315,54 +17514,6 @@ module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\n// The vertex
 
 /***/ }),
 /* 144 */
-/***/ (function(module, exports) {
-
-module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\n\r\nuniform vec2 u_Dimensions;\r\nuniform float u_Time;\r\n\r\nin vec2 fs_Pos;\r\nout vec4 out_Col;\r\n\r\nfloat noise(vec2 p) {\r\n\treturn fract(sin(dot(p.xy ,vec2(12.9898,78.233))) * 456367.5453);\r\n}\r\n\r\n//SOURCE INSPIRATION http://glslsandbox.com/e#22429.6\r\n\r\n\r\nvoid main() {\r\n  //out_Col = vec4(0.2, 0.9, fs_Pos.y * 4.0, 0.5);\r\n  vec2 uv = (fs_Pos);\r\n  float intensity = 0.8;\r\n\r\n    //Create the stacked layers\r\n\r\n    //so what this is doing is creating offset layers\r\n    //and the height of each section follows a cosin curve\r\n    //ok sweet\r\n\tfor (float inc = 1.0; inc < 25.0; inc++) {\r\n\r\n\t\tfloat fi = inc;\r\n\r\n\t\tfloat s = floor(5.0*(uv.x)/fi + 50.0*fi + u_Time / 1000.0);\r\n\r\n        float yLimit = noise(vec2(s));\r\n        yLimit *= fi/95.0;\r\n        yLimit -= 0.04*fi;\r\n        yLimit += 0.125 * cos(uv.x*5.0 + u_Time / 1000.0 + fi/9.0);\r\n       \tyLimit += 0.8;\r\n\r\n\t\tif (uv.y < yLimit) {\r\n\t\t\tintensity = inc/10.0;\r\n\t\t}\r\n\t}\r\n\r\n  float col1 = mix(intensity * uv.x * 0.8 + 0.4, 0.0, 01.1);\r\n\r\n\t//Set the final color\r\n\tout_Col = vec4(vec3(col1, intensity*uv.y * 0.81 + 0.9, 0.3), 1.0 );\r\n\r\n\r\n\r\n\r\n\r\n}\r\n"
-
-/***/ }),
-/* 145 */
-/***/ (function(module, exports) {
-
-module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\n// The vertex shader used to render the background of the scene\r\n\r\nin vec4 vs_Pos;\r\nout vec2 fs_Pos;\r\n\r\nvoid main() {\r\n  fs_Pos = vs_Pos.xy;\r\n  gl_Position = vs_Pos;\r\n}\r\n"
-
-/***/ }),
-/* 146 */
-/***/ (function(module, exports) {
-
-module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\n\r\nuniform vec2 u_Dimensions;\r\nuniform float u_Time;\r\n\r\nin vec2 fs_Pos;\r\nout vec4 out_Col;\r\n\r\nfloat noise(vec2 p) {\r\n\treturn fract(sin(dot(p.xy ,vec2(12.9898,78.233))) * 456367.5453);\r\n}\r\n\r\n//SOURCE INSPIRATION http://glslsandbox.com/e#22429.6\r\n\r\n\r\nvoid main() {\r\n  //out_Col = vec4(0.2, 0.9, fs_Pos.y * 4.0, 0.5);\r\n  vec2 uv = (fs_Pos);\r\n  float intensity = 0.8;\r\n\r\n    //Create the stacked layers\r\n\r\n    //so what this is doing is creating offset layers\r\n    //and the height of each section follows a cosin curve\r\n    //ok sweet\r\n\tfor (float inc = 1.0; inc < 25.0; inc++) {\r\n\r\n\t\tfloat fi = inc;\r\n\r\n\t\tfloat s = floor(5.0*(uv.x)/fi + 50.0*fi + u_Time / 1000.0);\r\n\r\n        float yLimit = noise(vec2(s));\r\n        yLimit *= fi/95.0;\r\n        yLimit -= 0.04*fi;\r\n        yLimit += 0.125 * cos(uv.x*5.0 + u_Time / 1000.0 + fi/9.0);\r\n       \tyLimit += 0.8;\r\n\r\n\t\tif (uv.y < yLimit) {\r\n\t\t\tintensity = inc/10.0;\r\n\t\t}\r\n\t}\r\n\r\n  float col1 = mix(intensity * uv.x * 0.3 + 0.5, 0.0, 01.1);\r\n\r\n\t//Set the final color\r\n\tout_Col = vec4(vec3(col1, intensity*uv.y * 0.1 + 0.3, 0.3), 1.0 );\r\n\r\n\r\n\r\n\r\n\r\n}\r\n"
-
-/***/ }),
-/* 147 */
-/***/ (function(module, exports) {
-
-module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\n// The vertex shader used to render the background of the scene\r\n\r\nin vec4 vs_Pos;\r\nout vec2 fs_Pos;\r\n\r\nvoid main() {\r\n  fs_Pos = vs_Pos.xy;\r\n  gl_Position = vs_Pos;\r\n}\r\n"
-
-/***/ }),
-/* 148 */
-/***/ (function(module, exports) {
-
-module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\n\r\nuniform vec2 u_Dimensions;\r\nuniform float u_Time;\r\n\r\nin vec2 fs_Pos;\r\nout vec4 out_Col;\r\n\r\nfloat noise(vec2 p) {\r\n\treturn fract(sin(dot(p.xy ,vec2(12.9898,78.233))) * 456367.5453);\r\n}\r\n\r\n//SOURCE INSPIRATION http://glslsandbox.com/e#22429.6\r\n\r\n\r\nvoid main() {\r\n  //out_Col = vec4(0.2, 0.9, fs_Pos.y * 4.0, 0.5);\r\n  vec2 uv = (fs_Pos);\r\n  float intensity = 0.8;\r\n\r\n    //Create the stacked layers\r\n\r\n    //so what this is doing is creating offset layers\r\n    //and the height of each section follows a cosin curve\r\n    //ok sweet\r\n\tfor (float inc = 1.0; inc < 25.0; inc++) {\r\n\r\n\t\tfloat fi = inc;\r\n\r\n\t\tfloat s = floor(5.0*(uv.x)/fi + 50.0*fi + u_Time / 1000.0);\r\n\r\n        float yLimit = noise(vec2(s));\r\n        yLimit *= fi/95.0;\r\n        yLimit -= 0.04*fi;\r\n        yLimit += 0.125 * cos(uv.x*5.0 + u_Time / 1000.0 + fi/9.0);\r\n       \tyLimit += 0.8;\r\n\r\n\t\tif (uv.y < yLimit) {\r\n\t\t\tintensity = inc/10.0;\r\n\t\t}\r\n\t}\r\n\r\n  float col1 = mix(intensity * uv.x * 0.2 + 0.5, 0.0, 01.1);\r\n\r\n\t//Set the final color\r\n\tout_Col = vec4(vec3(col1, intensity*uv.y * 0.1 + 0.3, 0.3), 1.0 );\r\n\r\n\r\n\r\n\r\n\r\n}\r\n"
-
-/***/ }),
-/* 149 */
-/***/ (function(module, exports) {
-
-module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\n// The vertex shader used to render the background of the scene\r\n\r\nin vec4 vs_Pos;\r\nout vec2 fs_Pos;\r\n\r\nvoid main() {\r\n  fs_Pos = vs_Pos.xy;\r\n  gl_Position = vs_Pos;\r\n}\r\n"
-
-/***/ }),
-/* 150 */
-/***/ (function(module, exports) {
-
-module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\n\r\nuniform vec2 u_Dimensions;\r\nuniform float u_Time;\r\n\r\nin vec2 fs_Pos;\r\nout vec4 out_Col;\r\n\r\nfloat noise(vec2 p) {\r\n\treturn fract(sin(dot(p.xy ,vec2(12.9898,78.233))) * 456367.5453);\r\n}\r\n\r\n//SOURCE INSPIRATION http://glslsandbox.com/e#22429.6\r\n\r\n\r\nvoid main() {\r\n  //out_Col = vec4(0.2, 0.9, fs_Pos.y * 4.0, 0.5);\r\n  vec2 uv = (fs_Pos);\r\n  float intensity = 0.8;\r\n\r\n    //Create the stacked layers\r\n\r\n    //so what this is doing is creating offset layers\r\n    //and the height of each section follows a cosin curve\r\n    //ok sweet\r\n\tfor (float inc = 1.0; inc < 25.0; inc++) {\r\n\r\n\t\tfloat fi = inc;\r\n\r\n\t\tfloat s = floor(5.0*(uv.x)/fi + 50.0*fi + u_Time / 1000.0);\r\n\r\n        float yLimit = noise(vec2(s));\r\n        yLimit *= fi/95.0;\r\n        yLimit -= 0.04*fi;\r\n        yLimit += 0.125 * cos(uv.x*5.0 + u_Time / 1000.0 + fi/9.0);\r\n       \tyLimit += 0.8;\r\n\r\n\t\tif (uv.y < yLimit) {\r\n\t\t\tintensity = inc/10.0;\r\n\t\t}\r\n\t}\r\n\r\n  float col1 = mix(intensity * uv.x * 0.08 + 0.5, 0.0, 01.1);\r\n\r\n\t//Set the final color\r\n\tout_Col = vec4(vec3(col1, intensity*uv.y * 0.51 + 0.9, 0.3), 1.0 );\r\n\r\n\r\n\r\n\r\n\r\n}\r\n"
-
-/***/ }),
-/* 151 */
-/***/ (function(module, exports) {
-
-module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\n// The vertex shader used to render the background of the scene\r\n\r\nin vec4 vs_Pos;\r\nout vec2 fs_Pos;\r\n\r\nvoid main() {\r\n  fs_Pos = vs_Pos.xy;\r\n  gl_Position = vs_Pos;\r\n}\r\n"
-
-/***/ }),
-/* 152 */
 /***/ (function(module, exports) {
 
 module.exports = "#version 300 es\r\nprecision highp float;\r\n\r\n\r\nuniform vec2 u_Dimensions;\r\nuniform float u_Time;\r\n\r\nin vec2 fs_Pos;\r\nout vec4 out_Col;\r\n\r\nfloat noise(vec2 p) {\r\n\treturn fract(sin(dot(p.xy ,vec2(12.9898,78.233))) * 456367.5453);\r\n}\r\n\r\n//SOURCE INSPIRATION http://glslsandbox.com/e#22429.6\r\n\r\n\r\nvoid main() {\r\n  //out_Col = vec4(0.2, 0.9, fs_Pos.y * 4.0, 0.5);\r\n  vec2 uv = (fs_Pos);\r\n  float intensity = 0.8;\r\n\r\n    //Create the stacked layers\r\n\r\n    //so what this is doing is creating offset layers\r\n    //and the height of each section follows a cosin curve\r\n    //ok sweet\r\n\tfor (float inc = 1.0; inc < 25.0; inc++) {\r\n\r\n\t\tfloat fi = inc;\r\n\r\n\t\tfloat s = floor(5.0*(uv.x)/fi + 50.0*fi + u_Time / 1000.0);\r\n\r\n        float yLimit = noise(vec2(s));\r\n        yLimit *= fi/95.0;\r\n        yLimit -= 0.04*fi;\r\n        yLimit += 0.125 * cos(uv.x*5.0 + u_Time / 1000.0 + fi/9.0);\r\n       \tyLimit += 0.8;\r\n\r\n\t\tif (uv.y < yLimit) {\r\n\t\t\tintensity = inc/10.0;\r\n\t\t}\r\n\t}\r\n\r\n  float col1 = mix(intensity * uv.x * 0.8 + 0.5, 0.0, 01.1);\r\n\r\n\t//Set the final color\r\n\tout_Col = vec4(vec3(col1, intensity*uv.y * 0.1 + 0.29, 0.83), 1.0 );\r\n\r\n\r\n\r\n\r\n\r\n}\r\n"
