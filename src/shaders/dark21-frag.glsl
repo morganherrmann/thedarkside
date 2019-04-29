@@ -21,7 +21,7 @@ vec3 palette( in float t, in float a0, in float a1, in float a2, in float b0, in
 	if (u_Time >= 190000.0){
 		  return vec3(0.2, 0.9, 0.2) + vec3(0.3, 0.9, 0.7)*cos(2.3*(vec3(0.8, 0.9, 0.7)*t+vec3(mix(0.1, 0.8, cos(5.23* u_Time / 10000.0)),0.8,0.89)) );
 	}
-    return vec3(a0,a1,a2) + vec3(b0,b1,b2)*cos( tau*(vec3(c0,c1,c2)*t+vec3(mix(0.3, 0.9, cos(5.23* u_Time / 1000.0)),d1,d2)) );
+    return vec3(0.2, 0.2, 0.9) + vec3(0.9, 0.2, 0.7)*cos(2.3*(vec3(0.8, 0.9, 0.7)*t+vec3(mix(0.1, 0.3, sin(5.23* u_Time / 100000.0)),0.4,0.89)) );
 }
 
 vec3 particleColor(vec2 uv, float radius, float offset, float periodOffset)
