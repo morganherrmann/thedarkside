@@ -37,5 +37,15 @@ In order to handle the music portion, I implemented the following:
 1) Used Howler.js, an API for playing music with typescript, installed as an NPM package.
 2) Upon pressing some key, the music is triggered to call its play() method.
 3) At the moment the music begins to play, a new Date is created.  The milliseconds since the start are recorded as ELAPSED TIME, and this value is used to determine which scene to render.
-4)
+4) I went through the specific piece of music, and mapped out specific time intervals for each scene/shader in seconds.
+5) The elapsed time is actually passed to the shaders, replacing u_Time.
+
+CHALLENGES : Getting the music and elapsed time to line up without delay took quite some time.  Timing with javascript/typescript is especially difficult because of the asynchronous nature of the language.
+
+### Shader Timing
+
+The Basics : If you play through the demo, you will notice that the graphics move perfectly on the beat of the music.  I achieved this by computing various cubic, sin, cosine, etc, functions whose periods were equal to the elapsed time of a single beat.  
+
+In this case, the music is approximately 100 BPM, so each beat is approximately 0.6 seconds.
+For example, solving sin(ax +b) for a period of 0.6 seconds gives us a coefficient of a multiple of 5.23.  I applied this concept across various functions to achieve the pulsating imagery.
 
