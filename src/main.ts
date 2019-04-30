@@ -57,6 +57,8 @@ let box : Box;
 let plantMesh: LSystemMesh;
 let screenQuad: ScreenQuad;
 
+let canGo : number;
+
 let controller = HowlerSoundController;
 
 let cube: Cube;
@@ -96,6 +98,8 @@ function loadScene() {
   screenQuad.create();
   back = new Square();
   back.create();
+
+  canGo = 0;
 
 
 
@@ -551,15 +555,13 @@ const dark25 = new ShaderProgram([
     robot.create();
 
 
-
-  //  renderer.render(camera, flat, [screenQuad]);
-    //  renderer.render(camera, lambert, elapsed, [
-    //     brain,
-    // //   pipes
-    //  ]);
-
     elapsed = new Date().valueOf() - start.valueOf();
 
+if (canGo == 0){
+  renderer.render(camera, dark1, 0, [screenQuad]);
+}
+
+else {
     if (elapsed <= 2000){
     renderer.render(camera, dark1, elapsed, [screenQuad]);
   }
@@ -591,7 +593,7 @@ if (elapsed > 49500 && elapsed <= 60000){
 renderer.render(camera, dark6,elapsed, [screenQuad]);
 }
 if (elapsed > 60000 && elapsed <= 70000){
-renderer.render(camera, dark7,elapsed, [screenQuad]);
+ renderer.render(camera, dark7,elapsed, [screenQuad]);
 }
 if (elapsed > 70000 && elapsed <= 79000){
 renderer.render(camera, dark8,elapsed, [screenQuad]);
@@ -682,6 +684,13 @@ if (elapsed > 218000 && elapsed <= 223000){
 renderer.render(camera, dark24, elapsed,[screenQuad]);
 }
 
+//should start us over
+if (elapsed > 225000){
+canGo = 0;
+}
+
+}
+
 
 
 
@@ -712,6 +721,7 @@ renderer.render(camera, dark24, elapsed,[screenQuad]);
       case 'w':
       darkside.play();
       start = new Date();
+      canGo = 1;
       break;
 
     }
