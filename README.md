@@ -89,5 +89,15 @@ The closest to the albums visuals, and computes the exponential falloff from a s
 ![](gif8.gif)
 ![](dark.PNG)
 
+#### CITED SHADERS
+There were 2 shaders I'm citing from shadertoy that I either used as a groundwork or modified for this project.
+1) Digital Clock - https://www.shadertoy.com/view/MdfGzf
+![](clock2.PNG) ![](clock.PNG)
+I used this red, analog clock as a basis for my metronome/countdown at the start. Instead of computing the elapsed time, I simply hard set the starting time with 2 digits only, and set the value to decrement every 0.6 seconds (the period of a beat in this song). That's how we get the 4...3...2...1! I also set the colors to pulsate with matching purple and blue as opposed to red.
+
+2) Disco Tunnel - https://www.shadertoy.com/view/XstfzB
+![](tunnel2.PNG) ![](tunnel.PNG)
+
+The original tunnel presented was extremely sharp, fast moving, and super twisty, with a rainbow color palette.  Using this as a basis, I altered the color palette to time with the music, modified the curves to time with the song, and made the overall appearance hazier, and slowed down the movement.
 
 
