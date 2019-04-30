@@ -9617,6 +9617,7 @@ let robot;
 let box;
 let plantMesh;
 let screenQuad;
+let canGo;
 let controller = __WEBPACK_IMPORTED_MODULE_2_howler_sound_controller__["HowlerSoundController"];
 let cube;
 let city;
@@ -9644,6 +9645,7 @@ function loadScene() {
     screenQuad.create();
     back = new __WEBPACK_IMPORTED_MODULE_4__geometry_Square__["a" /* default */]();
     back.create();
+    canGo = 0;
     plane = new __WEBPACK_IMPORTED_MODULE_17__geometry_Plane__["a" /* default */](__WEBPACK_IMPORTED_MODULE_0_gl_matrix__["d" /* vec3 */].fromValues(0, 0, 0), __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["c" /* vec2 */].fromValues(2000, 2000), 20);
     plane.create();
     planePos = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["c" /* vec2 */].fromValues(0, 120);
@@ -9983,108 +9985,112 @@ function main() {
         renderer.clear();
         pipes.create();
         robot.create();
-        //  renderer.render(camera, flat, [screenQuad]);
-        //  renderer.render(camera, lambert, elapsed, [
-        //     brain,
-        // //   pipes
-        //  ]);
         elapsed = new Date().valueOf() - start.valueOf();
-        if (elapsed <= 2000) {
-            renderer.render(camera, dark1, elapsed, [screenQuad]);
+        if (canGo == 0) {
+            renderer.render(camera, dark1, 0, [screenQuad]);
         }
-        if (elapsed > 2000 && elapsed <= 11500) {
-            renderer.render(camera, dark2, elapsed, [screenQuad]);
-        }
-        if (elapsed > 11500 && elapsed <= 21500) {
-            renderer.render(camera, dark20, elapsed, [screenQuad]);
-        }
-        if (elapsed > 21500 && elapsed <= 41000) {
-            renderer.render(camera, dark21, elapsed, [screenQuad]);
-        }
-        if (elapsed > 41000 && elapsed <= 49500) {
-            let velocity = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["c" /* vec2 */].fromValues(0, 0);
-            //velocity[1] += -0.05 - Math.abs(Math.cos(10.471 * elapsed / 5000));
-            velocity[0] += 0.9 + Math.sin(0.471 * elapsed / 5000);
-            let newPos = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["c" /* vec2 */].fromValues(0, 0);
-            __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["c" /* vec2 */].add(newPos, velocity, planePos);
-            dark5.setPlanePos(newPos);
-            planePos = newPos;
-            renderer.render(camera, dark5, elapsed, [plane]);
-        }
-        if (elapsed > 49500 && elapsed <= 60000) {
-            renderer.render(camera, dark6, elapsed, [screenQuad]);
-        }
-        if (elapsed > 60000 && elapsed <= 70000) {
-            renderer.render(camera, dark7, elapsed, [screenQuad]);
-        }
-        if (elapsed > 70000 && elapsed <= 79000) {
-            renderer.render(camera, dark8, elapsed, [screenQuad]);
-        }
-        if (elapsed > 79000 && elapsed <= 89000) {
-            renderer.render(camera, dark9, elapsed, [screenQuad]);
-        }
-        if (elapsed > 89000 && elapsed <= 98000) {
-            renderer.render(camera, dark10, elapsed, [screenQuad]);
-        }
-        if (elapsed > 98000 && elapsed <= 108000) {
-            renderer.render(camera, dark11, elapsed, [screenQuad]);
-        }
-        if (elapsed > 108000 && elapsed <= 117000) {
-            renderer.render(camera, dark12, elapsed, [screenQuad]);
-        }
-        if (elapsed > 117000 && elapsed <= 127000) {
-            renderer.render(camera, dark13, elapsed, [screenQuad]);
-        }
-        if (elapsed > 127000 && elapsed <= 137000) {
-            renderer.render(camera, dark14, elapsed, [screenQuad]);
-        }
-        if (elapsed > 137000 && elapsed <= 146000) {
-            renderer.render(camera, dark15, elapsed, [screenQuad]);
-        }
-        if (elapsed > 146000 && elapsed <= 151000) {
-            renderer.render(camera, dark16, elapsed, [screenQuad]);
-        }
-        if (elapsed > 151000 && elapsed <= 161000) {
-            let velocity = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["c" /* vec2 */].fromValues(10, 0);
-            velocity[0] += (1.9 + Math.abs(Math.sin(10.471 * elapsed / 1000)));
-            let newPos = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["c" /* vec2 */].fromValues(0, 0);
-            __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["c" /* vec2 */].sub(newPos, planePos, velocity);
-            dark17.setPlanePos(newPos);
-            planePos = newPos;
-            renderer.render(camera2, dark17, elapsed, [plane]);
-            renderer.render(camera, dark16, elapsed, [screenQuad]);
-            renderer.render(camera2, lambert, elapsed, [pipes]);
-        }
-        if (elapsed > 161000 && elapsed <= 170500) {
-            let velocity = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["c" /* vec2 */].fromValues(0, 0);
-            velocity[1] += -0.05 - Math.abs(Math.cos(10.471 * elapsed / 5000));
-            velocity[0] += 0.5 + Math.sin(10.471 * elapsed / 5000);
-            let newPos = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["c" /* vec2 */].fromValues(0, 0);
-            __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["c" /* vec2 */].add(newPos, velocity, planePos);
-            dark3.setPlanePos(newPos);
-            planePos = newPos;
-            renderer.render(camera, dark3, elapsed, [plane]);
-            renderer.render(camera, dark4, elapsed, [screenQuad]);
-        }
-        if (elapsed > 170500 && elapsed <= 180000) {
-            renderer.render(camera, dark16, elapsed, [screenQuad]);
-            renderer.render(camera3, lambert, elapsed, [pipes]);
-        }
-        if (elapsed > 180000 && elapsed <= 190000) {
-            renderer.render(camera, dark9, elapsed, [screenQuad]);
-            renderer.render(camera2, dark18, elapsed, [robot]);
-        }
-        if (elapsed > 190000 && elapsed <= 199000) {
-            renderer.render(camera, dark21, elapsed, [screenQuad]);
-        }
-        if (elapsed > 199000 && elapsed <= 209000) {
-            renderer.render(camera, dark22, elapsed, [screenQuad]);
-        }
-        if (elapsed > 209000 && elapsed <= 218000) {
-            renderer.render(camera, dark23, elapsed, [screenQuad]);
-        }
-        if (elapsed > 218000 && elapsed <= 223000) {
-            renderer.render(camera, dark24, elapsed, [screenQuad]);
+        else {
+            if (elapsed <= 2000) {
+                renderer.render(camera, dark1, elapsed, [screenQuad]);
+            }
+            if (elapsed > 2000 && elapsed <= 11500) {
+                renderer.render(camera, dark2, elapsed, [screenQuad]);
+            }
+            if (elapsed > 11500 && elapsed <= 21500) {
+                renderer.render(camera, dark20, elapsed, [screenQuad]);
+            }
+            if (elapsed > 21500 && elapsed <= 41000) {
+                renderer.render(camera, dark21, elapsed, [screenQuad]);
+            }
+            if (elapsed > 41000 && elapsed <= 49500) {
+                let velocity = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["c" /* vec2 */].fromValues(0, 0);
+                //velocity[1] += -0.05 - Math.abs(Math.cos(10.471 * elapsed / 5000));
+                velocity[0] += 0.9 + Math.sin(0.471 * elapsed / 5000);
+                let newPos = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["c" /* vec2 */].fromValues(0, 0);
+                __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["c" /* vec2 */].add(newPos, velocity, planePos);
+                dark5.setPlanePos(newPos);
+                planePos = newPos;
+                renderer.render(camera, dark5, elapsed, [plane]);
+            }
+            if (elapsed > 49500 && elapsed <= 60000) {
+                renderer.render(camera, dark6, elapsed, [screenQuad]);
+            }
+            if (elapsed > 60000 && elapsed <= 70000) {
+                renderer.render(camera, dark7, elapsed, [screenQuad]);
+            }
+            if (elapsed > 70000 && elapsed <= 79000) {
+                renderer.render(camera, dark8, elapsed, [screenQuad]);
+            }
+            if (elapsed > 79000 && elapsed <= 89000) {
+                renderer.render(camera, dark9, elapsed, [screenQuad]);
+            }
+            if (elapsed > 89000 && elapsed <= 98000) {
+                renderer.render(camera, dark10, elapsed, [screenQuad]);
+            }
+            if (elapsed > 98000 && elapsed <= 108000) {
+                renderer.render(camera, dark11, elapsed, [screenQuad]);
+            }
+            if (elapsed > 108000 && elapsed <= 117000) {
+                renderer.render(camera, dark12, elapsed, [screenQuad]);
+            }
+            if (elapsed > 117000 && elapsed <= 127000) {
+                renderer.render(camera, dark13, elapsed, [screenQuad]);
+            }
+            if (elapsed > 127000 && elapsed <= 137000) {
+                renderer.render(camera, dark14, elapsed, [screenQuad]);
+            }
+            if (elapsed > 137000 && elapsed <= 146000) {
+                renderer.render(camera, dark15, elapsed, [screenQuad]);
+            }
+            if (elapsed > 146000 && elapsed <= 151000) {
+                renderer.render(camera, dark16, elapsed, [screenQuad]);
+            }
+            if (elapsed > 151000 && elapsed <= 161000) {
+                let velocity = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["c" /* vec2 */].fromValues(10, 0);
+                velocity[0] += (1.9 + Math.abs(Math.sin(10.471 * elapsed / 1000)));
+                let newPos = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["c" /* vec2 */].fromValues(0, 0);
+                __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["c" /* vec2 */].sub(newPos, planePos, velocity);
+                dark17.setPlanePos(newPos);
+                planePos = newPos;
+                renderer.render(camera2, dark17, elapsed, [plane]);
+                renderer.render(camera, dark16, elapsed, [screenQuad]);
+                renderer.render(camera2, lambert, elapsed, [pipes]);
+            }
+            if (elapsed > 161000 && elapsed <= 170500) {
+                let velocity = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["c" /* vec2 */].fromValues(0, 0);
+                velocity[1] += -0.05 - Math.abs(Math.cos(10.471 * elapsed / 5000));
+                velocity[0] += 0.5 + Math.sin(10.471 * elapsed / 5000);
+                let newPos = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["c" /* vec2 */].fromValues(0, 0);
+                __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["c" /* vec2 */].add(newPos, velocity, planePos);
+                dark3.setPlanePos(newPos);
+                planePos = newPos;
+                renderer.render(camera, dark3, elapsed, [plane]);
+                renderer.render(camera, dark4, elapsed, [screenQuad]);
+            }
+            if (elapsed > 170500 && elapsed <= 180000) {
+                renderer.render(camera, dark16, elapsed, [screenQuad]);
+                renderer.render(camera3, lambert, elapsed, [pipes]);
+            }
+            if (elapsed > 180000 && elapsed <= 190000) {
+                renderer.render(camera, dark9, elapsed, [screenQuad]);
+                renderer.render(camera2, dark18, elapsed, [robot]);
+            }
+            if (elapsed > 190000 && elapsed <= 199000) {
+                renderer.render(camera, dark21, elapsed, [screenQuad]);
+            }
+            if (elapsed > 199000 && elapsed <= 209000) {
+                renderer.render(camera, dark22, elapsed, [screenQuad]);
+            }
+            if (elapsed > 209000 && elapsed <= 218000) {
+                renderer.render(camera, dark23, elapsed, [screenQuad]);
+            }
+            if (elapsed > 218000 && elapsed <= 223000) {
+                renderer.render(camera, dark24, elapsed, [screenQuad]);
+            }
+            //should start us over
+            if (elapsed > 225000) {
+                canGo = 0;
+            }
         }
         //renderer.render(camera, floor, [ground]);
         stats.end();
@@ -10107,6 +10113,7 @@ function main() {
             case 'w':
                 darkside.play();
                 start = new Date();
+                canGo = 1;
                 break;
         }
     }, false);
