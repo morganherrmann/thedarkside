@@ -6,6 +6,8 @@ https://morganherrmann.github.io/thedarkside
 
 TO RUN DEMO SO FAR - Click the link, and load the page. Wait about 5 seconds just to make sure everything is loaded.
 
+NOTE: You will likely need an updated GeForce Graphics card to run this project in the browser!
+
 Press the "w" key on your keyboard. *Music woohoo*
 
 ### PROJECT STATEMENT
